@@ -1,0 +1,19 @@
+services:
+  gaps:
+    image: housewrecker/gaps:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - TZ=America/Los_Angeles
+    volumes:
+    - ${APP_DATA_DIR}/data:/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8484
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

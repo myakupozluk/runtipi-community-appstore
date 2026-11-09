@@ -1,0 +1,25 @@
+{
+  "name": "Change Detection",
+  "id": "changedetection",
+  "available": true,
+  "short_desc": "Self-hosted website change detection monitoring. Source: https://github.com/dgtlmoon/changedetection.io",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "network",
+    "development",
+    "monitoring"
+  ],
+  "description": "Self-hosted website change detection monitoring. Source: https://github.com/dgtlmoon/changedetection.io",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

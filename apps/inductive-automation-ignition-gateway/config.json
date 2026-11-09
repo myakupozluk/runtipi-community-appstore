@@ -1,0 +1,25 @@
+{
+  "name": "Inductive Automation - Ignition Gateway",
+  "id": "inductive-automation-ignition-gateway",
+  "available": true,
+  "short_desc": "Ignition Gateway is the primary software service that drives everything in Ignition - Single Server Deployment",
+  "author": "portainer/templates",
+  "port": 9993,
+  "categories": [
+    "network",
+    "data",
+    "automation"
+  ],
+  "description": "Ignition Gateway is the primary software service that drives everything in Ignition - Single Server Deployment",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Asciinema {shmolf}",
+  "id": "asciinema",
+  "available": true,
+  "short_desc": "Self-hosted terminal recording and playback",
+  "author": "shmolf/portainer-templates",
+  "port": 9993,
+  "categories": [
+    "development"
+  ],
+  "description": "Self-hosted terminal recording and playback",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/shmolf/portainer-templates/",
+  "website": "https://github.com/shmolf/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

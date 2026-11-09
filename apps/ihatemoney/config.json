@@ -1,0 +1,23 @@
+{
+  "name": "I hate money",
+  "id": "ihatemoney",
+  "available": true,
+  "short_desc": "I hate money is a web application made to ease shared budget management. It keeps track of who bought what, when, and for whom; and helps to settle th...",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "finance"
+  ],
+  "description": "I hate money is a web application made to ease shared budget management. It keeps track of who bought what, when, and for whom; and helps to settle the bills.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

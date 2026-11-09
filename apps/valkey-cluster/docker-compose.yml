@@ -1,0 +1,101 @@
+name: valkey-cluster
+services:
+  valkey-node-1:
+    build: .
+    restart: unless-stopped
+    environment:
+      VALKEY_ROLE: node
+      VALKEY_PASSWORD: ${VALKEY_PASSWORD}
+      VALKEY_ANNOUNCE_HOST: valkey-node-1
+    volumes:
+    - ${APP_DATA_DIR}/valkey-node-1_node1-data:/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+  valkey-node-2:
+    build: .
+    restart: unless-stopped
+    environment:
+      VALKEY_ROLE: node
+      VALKEY_PASSWORD: ${VALKEY_PASSWORD}
+      VALKEY_ANNOUNCE_HOST: valkey-node-2
+    volumes:
+    - ${APP_DATA_DIR}/valkey-node-2_node2-data:/data
+    networks:
+    - tipi_main_network
+  valkey-node-3:
+    build: .
+    restart: unless-stopped
+    environment:
+      VALKEY_ROLE: node
+      VALKEY_PASSWORD: ${VALKEY_PASSWORD}
+      VALKEY_ANNOUNCE_HOST: valkey-node-3
+    volumes:
+    - ${APP_DATA_DIR}/valkey-node-3_node3-data:/data
+    networks:
+    - tipi_main_network
+  valkey-node-4:
+    build: .
+    restart: unless-stopped
+    environment:
+      VALKEY_ROLE: node
+      VALKEY_PASSWORD: ${VALKEY_PASSWORD}
+      VALKEY_ANNOUNCE_HOST: valkey-node-4
+    volumes:
+    - ${APP_DATA_DIR}/valkey-node-4_node4-data:/data
+    networks:
+    - tipi_main_network
+  valkey-node-5:
+    build: .
+    restart: unless-stopped
+    environment:
+      VALKEY_ROLE: node
+      VALKEY_PASSWORD: ${VALKEY_PASSWORD}
+      VALKEY_ANNOUNCE_HOST: valkey-node-5
+    volumes:
+    - ${APP_DATA_DIR}/valkey-node-5_node5-data:/data
+    networks:
+    - tipi_main_network
+  valkey-node-6:
+    build: .
+    restart: unless-stopped
+    environment:
+      VALKEY_ROLE: node
+      VALKEY_PASSWORD: ${VALKEY_PASSWORD}
+      VALKEY_ANNOUNCE_HOST: valkey-node-6
+    volumes:
+    - ${APP_DATA_DIR}/valkey-node-6_node6-data:/data
+    networks:
+    - tipi_main_network
+  valkey-init:
+    build: .
+    restart: 'no'
+    environment:
+      VALKEY_ROLE: init
+      VALKEY_PASSWORD: ${VALKEY_PASSWORD}
+      CLUSTER_NODES: valkey-node-1:6379 valkey-node-2:6379 valkey-node-3:6379 valkey-node-4:6379
+        valkey-node-5:6379 valkey-node-6:6379
+    depends_on:
+    - valkey-node-1
+    - valkey-node-2
+    - valkey-node-3
+    - valkey-node-4
+    - valkey-node-5
+    - valkey-node-6
+    networks:
+    - tipi_main_network
+    volumes: []
+volumes:
+  node1-data: null
+  node2-data: null
+  node3-data: null
+  node4-data: null
+  node5-data: null
+  node6-data: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,25 @@
+{
+  "name": "Obsidian",
+  "id": "obsidian",
+  "available": true,
+  "short_desc": "[Obsidian](https://obsidian.md) is a note-taking app that lets you create, link, and organize your notes on your device, with hundreds of plugins and ...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "[Obsidian](https://obsidian.md) is a note-taking app that lets you create, link, and organize your notes on your device, with hundreds of plugins and themes to customize your workflow. You can also publish your notes online, access them offline, and sync them securely with end-to-end encryption.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

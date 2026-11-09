@@ -1,0 +1,23 @@
+{
+  "name": "Seawise.io Client",
+  "id": "seawise-io-client",
+  "available": true,
+  "short_desc": "Share self-hosted apps with family and friends, no port forwarding. Client for the Seawise.io service (free account required).",
+  "author": "seawise-io/seawise-client",
+  "port": 9993,
+  "categories": [
+    "network"
+  ],
+  "description": "Share self-hosted apps with family and friends, no port forwarding. Client for the Seawise.io service (free account required).",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/seawise-io/seawise-client/",
+  "website": "https://github.com/seawise-io/seawise-client/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

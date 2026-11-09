@@ -1,0 +1,25 @@
+{
+  "name": "Termix",
+  "id": "termix",
+  "available": true,
+  "short_desc": "SSH terminal and server manager in the browser, with saved hosts, tunnels and a file editor. Source: https://github.com/Termix-SSH/Termix",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "network",
+    "development",
+    "games"
+  ],
+  "description": "SSH terminal and server manager in the browser, with saved hosts, tunnels and a file editor. Source: https://github.com/Termix-SSH/Termix",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

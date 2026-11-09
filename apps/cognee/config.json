@@ -1,0 +1,25 @@
+{
+  "name": "Cognee",
+  "id": "cognee",
+  "available": true,
+  "short_desc": "Cognee - the memory engine for AI agents: ingest documents, chats, and data; cognify them into a knowledge graph + vector index; query the result as l...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "productivity",
+    "data",
+    "social"
+  ],
+  "description": "Cognee - the memory engine for AI agents: ingest documents, chats, and data; cognify them into a knowledge graph + vector index; query the result as long-term memory.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

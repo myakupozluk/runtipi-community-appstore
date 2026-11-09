@@ -1,0 +1,39 @@
+services:
+  meshcentral-mongodb:
+    restart: always
+    image: mongo:latest
+    expose:
+    - 27017
+    volumes:
+    - ${APP_DATA_DIR}/meshcentral-mongodb_portainer_Files_AppData_Config_meshcentral_database:/data/db
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+  meshcentral:
+    restart: always
+    depends_on:
+    - meshcentral-mongodb
+    image: typhonragewind/meshcentral
+    ports:
+    - 8086:443
+    - 8087:800
+    environment:
+    - HOSTNAME=my.domain.com
+    - REVERSE_PROXY=false
+    - REVERSE_PROXY_TLS_PORT=443
+    - IFRAME=false
+    - ALLOW_NEW_ACCOUNTS=true
+    - WEBRTC=false
+    - NODE_ENV=production
+    volumes:
+    - ${APP_DATA_DIR}/meshcentral_portainer_Files_AppData_Config_meshcentral_data:/opt/meshcentral/meshcentral-data
+    - ${APP_DATA_DIR}/meshcentral_portainer_Files_AppData_Config_meshcentral_user_files:/opt/meshcentral/meshcentral-files
+    networks:
+    - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

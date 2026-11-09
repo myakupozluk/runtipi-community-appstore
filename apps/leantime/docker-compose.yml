@@ -1,0 +1,39 @@
+services:
+  leantimedb:
+    image: mysql:5.7.39
+    volumes:
+    - ${APP_DATA_DIR}/leantimedb_portainer_Files_AppData_Config_leantime_db:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 321.qwerty
+      MYSQL_DATABASE: leantime
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: 321.qwerty
+    command: --character-set-server=utf8 --collation-server=utf8_unicode_ci
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+  web:
+    image: leantime/leantime
+    environment:
+      LEAN_DB_HOST: mysql_leantime
+      LEAN_DB_USER: admin
+      LEAN_DB_PASSWORD: 321.qwerty
+      LEAN_DB_DATABASE: leantime
+    ports:
+    - 4805:80
+    depends_on:
+    - leantimedb
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+volumes:
+  db_data: {}
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

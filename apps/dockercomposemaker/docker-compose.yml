@@ -1,0 +1,15 @@
+services:
+  dcm:
+    image: ghcr.io/ajnart/dcm
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+    x-runtipi:
+      is_main: true
+      internal_port: 7576
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,25 @@
+{
+  "name": "Wakapi",
+  "id": "wakapi",
+  "available": true,
+  "short_desc": "Coding time tracker that works with the WakaTime editor plugins. Point them at your own server and get stats per project, language, editor and machine...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "Coding time tracker that works with the WakaTime editor plugins. Point them at your own server and get stats per project, language, editor and machine, plus badges you can put in a README. Source: https://github.com/muety/wakapi",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "GoToSocial",
+  "id": "gotosocial",
+  "available": true,
+  "short_desc": "An ActivityPub social network server written in Go, providing a lightweight alternative to Mastodon. Source: https://codeberg.org/superseriousbusiness...",
+  "author": "Community",
+  "port": 8080,
+  "categories": [
+    "network",
+    "development",
+    "productivity"
+  ],
+  "description": "An ActivityPub social network server written in Go, providing a lightweight alternative to Mastodon. Source: https://codeberg.org/superseriousbusiness/gotosocial",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

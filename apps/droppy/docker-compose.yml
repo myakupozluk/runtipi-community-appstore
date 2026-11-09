@@ -1,0 +1,31 @@
+services:
+  droppy:
+    image: silverwind/droppy:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - GID=15000
+    - UID=15000
+    - TZ=America/Los_Angeles
+    volumes:
+    - ${APP_DATA_DIR}/files_tvshows:/files/tvshows
+    - ${APP_DATA_DIR}/files_movies:/files/movies
+    - ${APP_DATA_DIR}/files_music:/files/music
+    - ${APP_DATA_DIR}/files_photos:/files/photos
+    - ${APP_DATA_DIR}/files_ebooks:/files/ebooks
+    - ${APP_DATA_DIR}/files_documents:/files/documents
+    - ${APP_DATA_DIR}/files_software:/files/software
+    - ${APP_DATA_DIR}/files_downloads:/files/downloads
+    - ${APP_DATA_DIR}/files_blackhole:/files/blackhole
+    - ${APP_DATA_DIR}/files_processing:/files/processing
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8989
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

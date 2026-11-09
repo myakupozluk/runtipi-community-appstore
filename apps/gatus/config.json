@@ -1,0 +1,25 @@
+{
+  "name": "Gatus",
+  "id": "gatus",
+  "available": true,
+  "short_desc": "Automated developer-oriented status page with highly configurable health checks. Source: https://github.com/TwiN/gatus",
+  "author": "Community",
+  "port": 8080,
+  "categories": [
+    "network",
+    "development",
+    "monitoring"
+  ],
+  "description": "Automated developer-oriented status page with highly configurable health checks. Source: https://github.com/TwiN/gatus",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

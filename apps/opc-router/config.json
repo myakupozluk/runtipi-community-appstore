@@ -1,0 +1,25 @@
+{
+  "name": "OPC Router",
+  "id": "opc-router",
+  "available": true,
+  "short_desc": "No-code middleware for industrial applications The OPC Router connects PLCs, PCS, SCADA, MES, SQL databases and servers, label printers, e-mail server...",
+  "author": "portainer/templates",
+  "port": 9993,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "No-code middleware for industrial applications The OPC Router connects PLCs, PCS, SCADA, MES, SQL databases and servers, label printers, e-mail servers and erp-systems via OPC UA, MQTT, REST, CSV and many others without any programming effort",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

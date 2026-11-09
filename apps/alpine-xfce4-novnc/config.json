@@ -1,0 +1,23 @@
+{
+  "name": "Alpine Xfce4 noVNC",
+  "id": "alpine-xfce4-novnc",
+  "available": true,
+  "short_desc": "Alpine xfce4 novnc",
+  "author": "novaspirit/pi-hosted",
+  "port": 6080,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Alpine xfce4 novnc",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

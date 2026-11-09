@@ -1,0 +1,23 @@
+{
+  "name": "Limnoria",
+  "id": "limnoria",
+  "available": true,
+  "short_desc": "[Limnoria](https://github.com/ProgVal/limnoria) A robust, full-featured, and user/programmer-friendly Python IRC bot, with many existing plugins. Succ...",
+  "author": "technorabilia/portainer-templates",
+  "port": 8080,
+  "categories": [
+    "development"
+  ],
+  "description": "[Limnoria](https://github.com/ProgVal/limnoria) A robust, full-featured, and user/programmer-friendly Python IRC bot, with many existing plugins. Successor of the well-known Supybot.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

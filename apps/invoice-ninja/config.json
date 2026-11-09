@@ -1,0 +1,25 @@
+{
+  "name": "Invoice Ninja (stack)",
+  "id": "invoice-ninja",
+  "available": true,
+  "short_desc": "Invoices, Expenses and Tasks built with Laravel and Flutter.",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "productivity",
+    "data",
+    "finance"
+  ],
+  "description": "Invoices, Expenses and Tasks built with Laravel and Flutter.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

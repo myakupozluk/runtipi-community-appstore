@@ -1,0 +1,20 @@
+services:
+  zusam:
+    image: zusam/zusam:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - INIT_USER=email@domain.example
+    - INIT_PASSWORD=initpass zusam
+    volumes:
+    - ${APP_DATA_DIR}/zusam_data:/zusam/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

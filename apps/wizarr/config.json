@@ -1,0 +1,23 @@
+{
+  "name": "Wizarr",
+  "id": "wizarr",
+  "available": true,
+  "short_desc": "Wizarr is an advanced user invitation and management system for Jellyfin, Plex, Emby etc.",
+  "author": "mediadepot/templates",
+  "port": 5690,
+  "categories": [
+    "media"
+  ],
+  "description": "Wizarr is an advanced user invitation and management system for Jellyfin, Plex, Emby etc.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mediadepot/templates/",
+  "website": "https://github.com/mediadepot/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

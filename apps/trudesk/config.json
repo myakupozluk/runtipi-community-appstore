@@ -1,0 +1,23 @@
+{
+  "name": "Trudesk",
+  "id": "trudesk",
+  "available": true,
+  "short_desc": "Trudesk is an Open Source Help Desk Software and Ticketing System",
+  "author": "xneo1/portainer_templates",
+  "port": 8118,
+  "categories": [
+    "productivity"
+  ],
+  "description": "Trudesk is an Open Source Help Desk Software and Ticketing System",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

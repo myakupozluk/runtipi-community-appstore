@@ -1,0 +1,19 @@
+services:
+  synclounge:
+    image: linuxserver/synclounge:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - AUTH_LIST=plexuser1,plexuser2,email1,machineid1
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8088
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

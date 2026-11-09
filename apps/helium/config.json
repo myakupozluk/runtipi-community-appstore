@@ -1,0 +1,23 @@
+{
+  "name": "Helium",
+  "id": "helium",
+  "available": true,
+  "short_desc": "[Helium](https://helium.computer/) is a Chromium-based web browser made for people, with love. Privacy-first with unbiased ad-blocking.",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "security"
+  ],
+  "description": "[Helium](https://helium.computer/) is a Chromium-based web browser made for people, with love. Privacy-first with unbiased ad-blocking.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

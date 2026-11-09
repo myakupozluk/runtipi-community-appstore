@@ -1,0 +1,24 @@
+{
+  "name": "SilverBullet",
+  "id": "silverbullet",
+  "available": true,
+  "short_desc": "Notes app for Markdown pages you can program, with two-way links, tasks, queries over everything you've written and Lua scripting for your own command...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 3300,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "Notes app for Markdown pages you can program, with two-way links, tasks, queries over everything you've written and Lua scripting for your own commands and widgets. Source: https://github.com/silverbulletmd/silverbullet",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

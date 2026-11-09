@@ -1,0 +1,23 @@
+{
+  "name": "Freshrss",
+  "id": "freshrss",
+  "available": true,
+  "short_desc": "[Freshrss](https://freshrss.org/) is a free, self-hostable aggregator for rss feeds.",
+  "author": "technorabilia/portainer-templates",
+  "port": 80,
+  "categories": [
+    "social"
+  ],
+  "description": "[Freshrss](https://freshrss.org/) is a free, self-hostable aggregator for rss feeds.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

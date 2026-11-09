@@ -1,0 +1,24 @@
+services:
+  goaccessnpm:
+    image: xavierh/goaccess-for-nginxproxymanager:latest
+    environment:
+    - PUID=1000
+    - PGID=1000
+    - TZ=Europe/Athens
+    - SKIP_ARCHIVED_LOGS=False
+    - BASIC_AUTH=False
+    - BASIC_AUTH_USERNAME=user
+    - BASIC_AUTH_PASSWORD=pass
+    volumes:
+    - ${APP_DATA_DIR}/goaccessnpm_portainer_Files_AppData_Config_Nginx-Proxy_data_logs:/opt/log
+    restart: always
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 7880
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

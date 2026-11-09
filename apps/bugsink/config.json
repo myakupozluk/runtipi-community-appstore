@@ -1,0 +1,24 @@
+{
+  "name": "Bugsink",
+  "id": "bugsink",
+  "available": true,
+  "short_desc": "Bugsink, self-hosted error tracking compatible with the Sentry SDKs, in a single container. The lightest way to own your error data: one app + one man...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "Bugsink, self-hosted error tracking compatible with the Sentry SDKs, in a single container. The lightest way to own your error data: one app + one managed Postgres.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Grafana Stack",
+  "id": "grafana-stack",
+  "available": true,
+  "short_desc": "Grafana + Prometheus + Loki - dashboards, metrics, and logs for everything in your project, at a flat price instead of per-host or per-GB-ingested Saa...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "Grafana + Prometheus + Loki - dashboards, metrics, and logs for everything in your project, at a flat price instead of per-host or per-GB-ingested SaaS pricing.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

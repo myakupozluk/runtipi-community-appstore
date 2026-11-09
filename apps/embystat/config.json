@@ -1,0 +1,24 @@
+{
+  "name": "EmbyStat",
+  "id": "embystat",
+  "available": true,
+  "short_desc": "Embystat is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let h...",
+  "author": "xneo1/portainer_templates",
+  "port": 6555,
+  "categories": [
+    "media",
+    "games"
+  ],
+  "description": "Embystat is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

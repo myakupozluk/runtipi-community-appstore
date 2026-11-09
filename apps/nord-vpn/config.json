@@ -1,0 +1,25 @@
+{
+  "name": "nord-vpn",
+  "id": "nord-vpn",
+  "available": true,
+  "short_desc": "This is an OpenVPN client docker container that uses recommended NordVPN server. It makes routing containers traffic through OpenVPN easy.",
+  "author": "novaspirit/pi-hosted",
+  "port": 8080,
+  "categories": [
+    "security",
+    "network",
+    "productivity"
+  ],
+  "description": "This is an OpenVPN client docker container that uses recommended NordVPN server. It makes routing containers traffic through OpenVPN easy.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

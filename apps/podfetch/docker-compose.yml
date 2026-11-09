@@ -1,0 +1,25 @@
+services:
+  podfetch:
+    image: samuel19982/podfetch:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - DATABASE_URL=sqlite:///app/db/podcast.db
+    - POLLING_INTERVAL=300
+    - BASIC_AUTH=false
+    - USERNAME=
+    - PASSWORD=
+    - GPODDER_INTEGRATION_ENABLED=false
+    volumes:
+    - ${APP_DATA_DIR}/app_podcasts:/app/podcasts
+    - ${APP_DATA_DIR}/app_db:/app/db
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

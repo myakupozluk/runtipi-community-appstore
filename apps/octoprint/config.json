@@ -1,0 +1,23 @@
+{
+  "name": "OctoPrint",
+  "id": "octoprint",
+  "available": true,
+  "short_desc": "OctoPrint is an open source 3D printer controller application, which provides a web interface for the connected printers.",
+  "author": "novaspirit/pi-hosted",
+  "port": 8051,
+  "categories": [
+    "development"
+  ],
+  "description": "OctoPrint is an open source 3D printer controller application, which provides a web interface for the connected printers.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

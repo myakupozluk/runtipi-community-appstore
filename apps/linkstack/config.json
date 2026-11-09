@@ -1,0 +1,24 @@
+{
+  "name": "Linkstack",
+  "id": "linkstack",
+  "available": true,
+  "short_desc": "Self-hosted open-source Linktree alternative. LinkStack is a highly customizable link sharing platform with an intuitive, easy to use user interface.",
+  "author": "xneo1/portainer_templates",
+  "port": 8188,
+  "categories": [
+    "development",
+    "social"
+  ],
+  "description": "Self-hosted open-source Linktree alternative. LinkStack is a highly customizable link sharing platform with an intuitive, easy to use user interface.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

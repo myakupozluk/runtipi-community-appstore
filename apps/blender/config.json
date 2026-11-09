@@ -1,0 +1,23 @@
+{
+  "name": "Blender",
+  "id": "blender",
+  "available": true,
+  "short_desc": "[Blender](https://www.blender.org/) is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, ...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "games"
+  ],
+  "description": "[Blender](https://www.blender.org/) is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, motion graphics, interactive 3D applications, virtual reality, and computer games. **This image does not support GPU rendering out of the box only accelerated workspace experience**",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

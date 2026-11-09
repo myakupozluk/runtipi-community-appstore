@@ -1,0 +1,24 @@
+{
+  "name": "Komga",
+  "id": "komga",
+  "available": true,
+  "short_desc": "Komga is a free and open source comics/mangas/magazines server.",
+  "author": "novaspirit/pi-hosted",
+  "port": 8995,
+  "categories": [
+    "media",
+    "games"
+  ],
+  "description": "Komga is a free and open source comics/mangas/magazines server.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

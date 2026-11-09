@@ -1,0 +1,26 @@
+name: qdrant
+services:
+  qdrant:
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - bash -c ':> /dev/tcp/127.0.0.1/6333'
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    image: qdrant/qdrant:v1.18.3
+    restart: unless-stopped
+    volumes:
+    - ${APP_DATA_DIR}/qdrant_qdrantdata:/qdrant/storage
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 6333
+volumes:
+  qdrantdata: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

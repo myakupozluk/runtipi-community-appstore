@@ -1,0 +1,18 @@
+services:
+  nexterm:
+    restart: always
+    volumes:
+    - ${APP_DATA_DIR}/nexterm_portainer_Files_AppData_Config_nexterm:/app/data
+    image: germannewsmaker/nexterm:1.0.2-OPEN-PREVIEW
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 6989
+volumes:
+  nexterm: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

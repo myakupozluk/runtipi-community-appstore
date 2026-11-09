@@ -1,0 +1,25 @@
+{
+  "name": "Influxdb 1.8.10",
+  "id": "influxdb1810",
+  "available": true,
+  "short_desc": "InfluxDB is an open source time series database for recording metrics, events, and analytics.",
+  "author": "novaspirit/pi-hosted",
+  "port": 8086,
+  "categories": [
+    "development",
+    "data",
+    "monitoring"
+  ],
+  "description": "InfluxDB is an open source time series database for recording metrics, events, and analytics.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

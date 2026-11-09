@@ -1,0 +1,23 @@
+{
+  "name": "Gotify",
+  "id": "gotify",
+  "available": true,
+  "short_desc": "A simple server for sending and receiving messages",
+  "author": "novaspirit/pi-hosted",
+  "port": 9008,
+  "categories": [
+    "games"
+  ],
+  "description": "A simple server for sending and receiving messages",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

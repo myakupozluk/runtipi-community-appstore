@@ -1,0 +1,24 @@
+{
+  "name": "Livebook",
+  "id": "livebook",
+  "available": true,
+  "short_desc": "Interactive Elixir notebooks saved as plain Markdown, with charts, tables, maps and forms built in, plus a way to turn a notebook into a small web app...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "media",
+    "development"
+  ],
+  "description": "Interactive Elixir notebooks saved as plain Markdown, with charts, tables, maps and forms built in, plus a way to turn a notebook into a small web app. Pulls in any Hex package from inside a notebook. Source: https://github.com/livebook-dev/livebook",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

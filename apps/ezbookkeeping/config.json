@@ -1,0 +1,25 @@
+{
+  "name": "ezBookkeeping",
+  "id": "ezbookkeeping",
+  "available": true,
+  "short_desc": "Personal finance app for logging what you spend and earn across accounts and currencies, with receipt photos, scheduled transactions and charts. Impor...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "media",
+    "development",
+    "data"
+  ],
+  "description": "Personal finance app for logging what you spend and earn across accounts and currencies, with receipt photos, scheduled transactions and charts. Imports bank statement files, GnuCash and Firefly III, and installs on a phone like an app. Source: https://github.com/mayswind/ezbookkeeping",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

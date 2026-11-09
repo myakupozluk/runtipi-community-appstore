@@ -1,0 +1,25 @@
+{
+  "name": "Apache Kafka",
+  "id": "kafka",
+  "available": true,
+  "short_desc": "3-node Apache Kafka cluster in KRaft mode (no ZooKeeper) with Kafbat UI, deployable locally with plain Docker Compose or to Miget as a compose stack.",
+  "author": "deployable-sh/stacks",
+  "port": 9092,
+  "categories": [
+    "media",
+    "productivity",
+    "social"
+  ],
+  "description": "3-node Apache Kafka cluster in KRaft mode (no ZooKeeper) with Kafbat UI, deployable locally with plain Docker Compose or to Miget as a compose stack.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

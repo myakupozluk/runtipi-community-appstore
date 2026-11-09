@@ -1,0 +1,25 @@
+{
+  "name": "Pi-Hole-Unbound",
+  "id": "pihole-unbound",
+  "available": true,
+  "short_desc": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole. This version has Ubound software installed...",
+  "author": "novaspirit/pi-hosted",
+  "port": 53,
+  "categories": [
+    "security",
+    "network",
+    "development"
+  ],
+  "description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole. This version has Ubound software installed on it so you don't need to rely on external DNS providers. When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article here",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,25 @@
+services:
+  anchor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: anchor
+    restart: unless-stopped
+    environment:
+    - PG_USER=anchor
+    - PG_PASSWORD=password
+    - PG_DATABASE=anchor
+    volumes:
+    - ${APP_DATA_DIR}/anchor_anchor_data:/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+volumes:
+  anchor_data: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

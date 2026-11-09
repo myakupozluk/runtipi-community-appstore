@@ -1,0 +1,23 @@
+{
+  "name": "Omada EAP Controller",
+  "id": "omada-controller",
+  "available": true,
+  "short_desc": "TP-Link Omada is a software-defined network solution. The EAP Controller is used to manage multiple EAPs. Raspberry Pi 1 and Zero are not supported.",
+  "author": "novaspirit/pi-hosted",
+  "port": 8088,
+  "categories": [
+    "network"
+  ],
+  "description": "TP-Link Omada is a software-defined network solution. The EAP Controller is used to manage multiple EAPs. Raspberry Pi 1 and Zero are not supported.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

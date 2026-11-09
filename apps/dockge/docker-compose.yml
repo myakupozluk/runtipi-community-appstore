@@ -1,0 +1,20 @@
+services:
+  dockge:
+    image: louislam/dockge:1
+    restart: unless-stopped
+    volumes:
+    - ${APP_DATA_DIR}/dockge_var_run_docker.sock:/var/run/docker.sock
+    - ${APP_DATA_DIR}/dockge_portainer_Files_AppData_Config_dockge_data:/app/data
+    - ${APP_DATA_DIR}/dockge_portainer_Files_AppData_Config_dockge_stacks:/opt/stacks
+    environment:
+    - DOCKGE_STACKS_DIR=/portainer/Files/AppData/Config/dockge/stacks
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5001
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

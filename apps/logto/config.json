@@ -1,0 +1,25 @@
+{
+  "name": "Logto",
+  "id": "logto",
+  "available": true,
+  "short_desc": "Logto - the open-source Auth0 experience: pre-built hosted sign-in pages, OIDC/OAuth, social logins, organizations, MFA, and clean SDKs for every fram...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "security",
+    "network",
+    "development"
+  ],
+  "description": "Logto - the open-source Auth0 experience: pre-built hosted sign-in pages, OIDC/OAuth, social logins, organizations, MFA, and clean SDKs for every framework. MPL-2.0, one container + a managed Postgres.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

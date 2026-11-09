@@ -1,0 +1,25 @@
+{
+  "name": "Cal.com",
+  "id": "calcom",
+  "available": true,
+  "short_desc": "Cal.com - open-source scheduling: personal and team booking pages, availability rules, round-robin and collective events, workflows and reminders, and...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "media",
+    "productivity",
+    "data"
+  ],
+  "description": "Cal.com - open-source scheduling: personal and team booking pages, availability rules, round-robin and collective events, workflows and reminders, and two-way calendar sync (Google, Office 365, CalDAV). A self-hosted Calendly alternative.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

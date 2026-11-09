@@ -1,0 +1,20 @@
+services:
+  tailscale:
+    image: tailscale/tailscale:stable
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - AUTH_KEY=
+    volumes:
+    - ${APP_DATA_DIR}/var_lib_tailscale:/var/lib/tailscale
+    - ${APP_DATA_DIR}/dev_net_tun:/dev/net/tun
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

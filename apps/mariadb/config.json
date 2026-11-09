@@ -1,0 +1,24 @@
+{
+  "name": "MariaDB (stack)",
+  "id": "mariadb",
+  "available": true,
+  "short_desc": "MariaDB 11.8 - the community-developed MySQL fork, as a single self-hosted node. Drop-in compatible with MySQL for most applications, configured throu...",
+  "author": "deployable-sh/stacks",
+  "port": 3306,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "MariaDB 11.8 - the community-developed MySQL fork, as a single self-hosted node. Drop-in compatible with MySQL for most applications, configured through the official image's environment variables, with data on a volume.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

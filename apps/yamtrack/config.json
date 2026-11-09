@@ -1,0 +1,25 @@
+{
+  "name": "Yamtrack",
+  "id": "yamtrack",
+  "available": true,
+  "short_desc": "Media tracker for films, TV, anime, manga, games, books, comics and board games, with ratings, progress, a calendar of upcoming releases and imports f...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "media",
+    "development",
+    "productivity"
+  ],
+  "description": "Media tracker for films, TV, anime, manga, games, books, comics and board games, with ratings, progress, a calendar of upcoming releases and imports from Trakt, Simkl, AniList, IMDb and more. Source: https://github.com/FuzzyGrim/Yamtrack",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,21 @@
+services:
+  lldap:
+    image: nitnelave/lldap:stable-debian
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - LLDAP_JWT_SECRET=somesecretjwt
+    - LLDAP_LDAP_USER_PASS=someadminpassword
+    - LLDAP_LDAP_BASE_DN=dc=example,dc=com
+    volumes:
+    - ${APP_DATA_DIR}/data:/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3890
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

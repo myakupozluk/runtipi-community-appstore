@@ -1,0 +1,23 @@
+{
+  "name": "Ungoogled-chromium",
+  "id": "ungoogled-chromium",
+  "available": true,
+  "short_desc": "[Ungoogled Chromium](https://github.com/ungoogled-software/ungoogled-chromium) is Google Chromium, sans dependency on Google web services.",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "development"
+  ],
+  "description": "[Ungoogled Chromium](https://github.com/ungoogled-software/ungoogled-chromium) is Google Chromium, sans dependency on Google web services.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

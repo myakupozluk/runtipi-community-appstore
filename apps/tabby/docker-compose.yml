@@ -1,0 +1,30 @@
+services:
+  tabby:
+    image: parksauce/tabby
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+  tabby-db:
+    image: linuxserver/mariadb
+    environment:
+    - PUID=1000
+    - PGID=1000
+    - MYSQL_ROOT_PASSWORD=ROOT_ACCESS_PASSWORD
+    - TZ=Europe/Athens
+    - MYSQL_DATABASE=tabby
+    - MYSQL_USER=tabby
+    - MYSQL_PASSWORD=tabby
+    volumes:
+    - ${APP_DATA_DIR}/tabby-db_portainer_Files_AppData_Config_tabby_db:/config
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

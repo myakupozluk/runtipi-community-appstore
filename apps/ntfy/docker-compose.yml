@@ -1,0 +1,21 @@
+services:
+  ntfy:
+    image: binwiederhier/ntfy:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - NTFY_BASE_URL=http://localhost:8080
+    - TZ=UTC
+    volumes:
+    - ${APP_DATA_DIR}/var_cache_ntfy:/var/cache/ntfy
+    - ${APP_DATA_DIR}/etc_ntfy:/etc/ntfy
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

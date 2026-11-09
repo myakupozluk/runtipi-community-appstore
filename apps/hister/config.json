@@ -1,0 +1,25 @@
+{
+  "name": "Hister",
+  "id": "hister",
+  "available": true,
+  "short_desc": "Search engine for your own browsing history. A browser extension sends every page you visit to it, and you search the full text of everything you've r...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity",
+    "games"
+  ],
+  "description": "Search engine for your own browsing history. A browser extension sends every page you visit to it, and you search the full text of everything you've read, with previews, rules for what gets kept and an MCP server for AI tools. Source: https://github.com/asciimoo/hister",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

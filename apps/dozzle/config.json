@@ -1,0 +1,25 @@
+{
+  "name": "Dozzle",
+  "id": "dozzle",
+  "available": true,
+  "short_desc": "Dozzle is a small lightweight application with a web based interface to monitor Docker logs. It doesn’t store any log files. It is for live monitoring...",
+  "author": "xneo1/portainer_templates",
+  "port": 8888,
+  "categories": [
+    "productivity",
+    "data",
+    "monitoring"
+  ],
+  "description": "Dozzle is a small lightweight application with a web based interface to monitor Docker logs. It doesn’t store any log files. It is for live monitoring of your container logs only.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

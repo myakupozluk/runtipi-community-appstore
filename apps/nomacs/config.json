@@ -1,0 +1,23 @@
+{
+  "name": "Nomacs",
+  "id": "nomacs",
+  "available": true,
+  "short_desc": "[Nomacs](https://github.com/nomacs/nomacs) is a free, open source image viewer, which supports multiple platforms. You can use it for viewing all comm...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "development"
+  ],
+  "description": "[Nomacs](https://github.com/nomacs/nomacs) is a free, open source image viewer, which supports multiple platforms. You can use it for viewing all common image formats including RAW and psd images.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

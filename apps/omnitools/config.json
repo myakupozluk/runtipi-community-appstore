@@ -1,0 +1,25 @@
+{
+  "name": "OmniTools",
+  "id": "omnitools",
+  "available": true,
+  "short_desc": "Toolbox of over a hundred small utilities for images, PDFs, video, audio, text, JSON, CSV and lists, like resizing, compressing, merging, trimming and...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8920,
+  "categories": [
+    "media",
+    "development",
+    "productivity"
+  ],
+  "description": "Toolbox of over a hundred small utilities for images, PDFs, video, audio, text, JSON, CSV and lists, like resizing, compressing, merging, trimming and converting, all run in your browser so files never reach the server. Source: https://github.com/iib0011/omni-tools",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

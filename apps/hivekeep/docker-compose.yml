@@ -1,0 +1,20 @@
+services:
+  hivekeep:
+    image: ghcr.io/marlburrow/hivekeep:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - HOST=0.0.0.0
+    - PUBLIC_URL=http://localhost:3000
+    volumes:
+    - ${APP_DATA_DIR}/app_data:/app/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,24 @@
+{
+  "name": "Redis (container)",
+  "id": "redis-container",
+  "available": true,
+  "short_desc": "Open-source in-memory data structure store",
+  "author": "portainer/templates",
+  "port": 6379,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "Open-source in-memory data structure store",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

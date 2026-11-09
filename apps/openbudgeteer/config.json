@@ -1,0 +1,24 @@
+{
+  "name": "OpenBudgeteer",
+  "id": "openbudgeteer",
+  "available": true,
+  "short_desc": "OpenBudgeteer is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB and Buckets.",
+  "author": "xneo1/portainer_templates",
+  "port": 8081,
+  "categories": [
+    "development",
+    "finance"
+  ],
+  "description": "OpenBudgeteer is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB and Buckets.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

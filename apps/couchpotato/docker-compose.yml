@@ -1,0 +1,22 @@
+services:
+  couchpotato:
+    image: linuxserver/couchpotato:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=100
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    - ${APP_DATA_DIR}/downloads:/downloads
+    - ${APP_DATA_DIR}/movies:/movies
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5050
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

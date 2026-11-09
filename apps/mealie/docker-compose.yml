@@ -1,0 +1,29 @@
+services:
+  mealie:
+    image: hkotel/mealie:v0.4.3
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=America/New_York
+    - WEB_CONCURRENCY=2
+    - MAX_WORKERS=8
+    - RECIPE_PUBLIC=true
+    - RECIPE_SHOW_NUTRITION=true
+    - RECIPE_SHOW_ASSETS=true
+    - RECIPE_LANDSCAPE_VIEW=true
+    - RECIPE_DISABLE_COMMENTS=false
+    - RECIPE_DISABLE_AMOUNT=false
+    volumes:
+    - ${APP_DATA_DIR}/app_data:/app/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 9000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

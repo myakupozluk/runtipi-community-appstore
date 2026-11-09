@@ -1,0 +1,24 @@
+{
+  "name": "Papra",
+  "id": "papra",
+  "available": true,
+  "short_desc": "Document archive for receipts, contracts, payslips and all the other paperwork you need to keep: upload them, search their text (scans included), and ...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "Document archive for receipts, contracts, payslips and all the other paperwork you need to keep: upload them, search their text (scans included), and tag them by hand or with rules, in separate organisations for home and work. Source: https://github.com/papra-hq/papra",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

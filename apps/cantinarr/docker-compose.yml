@@ -1,0 +1,20 @@
+services:
+  cantinarr:
+    image: ghcr.io/windoze95/cantinarr:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - CANTINARR_PUSH_GATEWAY_URL=https://push.cantinarr.com
+    - CANTINARR_ARR_CALLBACK_URL=
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8585
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

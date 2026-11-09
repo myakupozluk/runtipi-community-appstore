@@ -1,0 +1,24 @@
+{
+  "name": "Duplicacy",
+  "id": "duplicacy",
+  "available": true,
+  "short_desc": "Duplicacy backs up your files to many cloud storages with client-side encryption and the highest level of deduplication",
+  "author": "mediadepot/templates",
+  "port": 3875,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "Duplicacy backs up your files to many cloud storages with client-side encryption and the highest level of deduplication",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mediadepot/templates/",
+  "website": "https://github.com/mediadepot/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

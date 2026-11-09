@@ -1,0 +1,19 @@
+services:
+  stats:
+    image: virtualzone/docker-container-stats
+    environment:
+      STATS_UPDATE_INTERVAL: 10
+    volumes:
+    - ${APP_DATA_DIR}/stats_var_run_docker.sock:/var/run/docker.sock
+    - ${APP_DATA_DIR}/stats_portainer_Files_AppData_Config_docker-stats_db:/opt/docker-stats/db
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

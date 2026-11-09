@@ -1,0 +1,24 @@
+{
+  "name": "MusicBrainz",
+  "id": "musicbrainz",
+  "available": true,
+  "short_desc": "MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
+  "author": "xneo1/portainer_templates",
+  "port": 5000,
+  "categories": [
+    "media",
+    "data"
+  ],
+  "description": "MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

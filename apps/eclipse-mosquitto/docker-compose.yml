@@ -1,0 +1,20 @@
+services:
+  eclipse-mosquitto:
+    image: eclipse-mosquitto:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/mosquitto_config:/mosquitto/config
+    - ${APP_DATA_DIR}/mosquitto_data:/mosquitto/data
+    - ${APP_DATA_DIR}/mosquitto_log:/mosquitto/log
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 1883
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,27 @@
+services:
+  gitlab:
+    image: gitlab/gitlab-ce:latest
+    hostname: ${DOMAIN}
+    volumes:
+    - ${APP_DATA_DIR}/gitlab_${APPDATA}_gitlab_data:/var/opt/gitlab
+    - ${APP_DATA_DIR}/gitlab_${APPDATA}_gitlab_logs:/var/log/gitlab
+    - ${APP_DATA_DIR}/gitlab_${APPDATA}_gitlab_config:/etc/gitlab
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 22
+  gitlab-runner:
+    image: gitlab/gitlab-runner:alpine
+    volumes:
+    - ${APP_DATA_DIR}/gitlab-runner_${APPDATA}_gitlab_config-runner:/etc/gitlab-runner
+    - ${APP_DATA_DIR}/gitlab-runner_var_run_docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

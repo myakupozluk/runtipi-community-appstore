@@ -1,0 +1,59 @@
+services:
+  koillection:
+    image: koillection/koillection:dev
+    restart: always
+    environment:
+    - APP_ENV=dev
+    - APP_DEBUG=1
+    - DB_DRIVER=pdo_pgsql
+    - DB_NAME=koillection
+    - DB_HOST=postgresql
+    - DB_PORT=25432
+    - DB_USER=postgres
+    - DB_PASSWORD=password
+    - DB_VERSION=14
+    - PHP_TZ=Europe/Athens
+    - HTTPS_ENABLED=0
+    depends_on:
+    - koinmysql
+    - postgresql
+    volumes:
+    - ${APP_DATA_DIR}/koillection_portainer_Files_AppData_Config_koillection_public_uploads:/var/www/koillection/public/uploads
+    - ${APP_DATA_DIR}/koillection_portainer_Files_AppData_Config_koillection:/var/www/koillection
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+  postgresql:
+    image: postgres:14
+    environment:
+    - POSTGRES_DB=koillection
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=password
+    - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+    - 25432:5432
+    volumes:
+    - ${APP_DATA_DIR}/postgresql_portainer_Files_AppData_Config_postgresql:/var/lib/postgresql/data
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+  koinmysql:
+    image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+    - MYSQL_ROOT_PASSWORD=password
+    - MYSQL_DATABASE=koillection
+    ports:
+    - 43306:3306
+    volumes:
+    - ${APP_DATA_DIR}/koinmysql_portainer_Files_AppData_Config_koillection_koinmysql:/var/lib/mysql
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,24 @@
+{
+  "name": "OpenObserve",
+  "id": "openobserve",
+  "available": true,
+  "short_desc": "OpenObserve - logs, metrics, and traces in a single Rust binary: the open-source Datadog/Splunk/Elasticsearch alternative.",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "data",
+    "monitoring"
+  ],
+  "description": "OpenObserve - logs, metrics, and traces in a single Rust binary: the open-source Datadog/Splunk/Elasticsearch alternative.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

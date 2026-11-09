@@ -1,0 +1,24 @@
+{
+  "name": "Doplarr_rs",
+  "id": "doplarr-rs",
+  "available": true,
+  "short_desc": "[Doplarr_rs](https://github.com/activexray/doplarr_rs) is a Discord bot for requesting media through *arr backends, written in Rust.",
+  "author": "technorabilia/portainer-templates",
+  "port": 80,
+  "categories": [
+    "media",
+    "development"
+  ],
+  "description": "[Doplarr_rs](https://github.com/activexray/doplarr_rs) is a Discord bot for requesting media through *arr backends, written in Rust.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

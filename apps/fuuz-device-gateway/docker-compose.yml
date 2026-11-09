@@ -1,0 +1,25 @@
+services:
+  fuuz-device-gateway:
+    image: public.ecr.aws/n9a9v7z5/mfgx-native-app-device-gateway-server:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - FUUZ_API_KEY=
+    - FUUZ_GATEWAY_AUTO_UPDATE=
+    - FUUZ_GATEWAY_LOG_LEVEL=
+    - FUUZ_GATEWAY_LOG_RETENTION_DAYS=30
+    - FUUZ_GATEWAY_PORT=5500
+    - FUUZ_GATEWAY_LISTEN_ADDRESS=0.0.0.0
+    volumes:
+    - ${APP_DATA_DIR}/root_.fuuzdevicegateway:/root/.fuuzdevicegateway/
+    - ${APP_DATA_DIR}/fuuzdevicegateway_drivers:/fuuzdevicegateway/drivers/
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5500
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

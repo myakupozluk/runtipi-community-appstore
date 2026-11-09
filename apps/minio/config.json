@@ -1,0 +1,23 @@
+{
+  "name": "MinIO (stack)",
+  "id": "minio",
+  "available": true,
+  "short_desc": "MinIO, S3-compatible object storage, single node + 20 GB volume, with the web console as the public entrypoint.",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "data"
+  ],
+  "description": "MinIO, S3-compatible object storage, single node + 20 GB volume, with the web console as the public entrypoint.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

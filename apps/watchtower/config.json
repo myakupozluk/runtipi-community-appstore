@@ -1,0 +1,23 @@
+{
+  "name": "Watchtower",
+  "id": "watchtower",
+  "available": true,
+  "short_desc": "With watchtower you can update the running version of your containerized app simply by pushing a new image to the Docker Hub or your own image registr...",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "productivity"
+  ],
+  "description": "With watchtower you can update the running version of your containerized app simply by pushing a new image to the Docker Hub or your own image registry. Watchtower will pull down your new image, gracefully shut down your existing container and restart it with the same options that were used when it was deployed initially.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

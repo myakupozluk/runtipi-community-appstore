@@ -1,0 +1,24 @@
+{
+  "name": "Glances",
+  "id": "glances",
+  "available": true,
+  "short_desc": "Glances is an open-source system cross-platform monitoring tool. It allows real-time monitoring of various aspects of your system such as CPU, memory,...",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "network",
+    "monitoring"
+  ],
+  "description": "Glances is an open-source system cross-platform monitoring tool. It allows real-time monitoring of various aspects of your system such as CPU, memory, disk, network usage etc.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

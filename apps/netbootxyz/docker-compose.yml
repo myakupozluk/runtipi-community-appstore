@@ -1,0 +1,22 @@
+services:
+  netbootxyz:
+    image: linuxserver/netbootxyz:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PGID=15000
+    - PUID=15000
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    - ${APP_DATA_DIR}/assets:/assets
+    - ${APP_DATA_DIR}/etc_localtime:/etc/localtime
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

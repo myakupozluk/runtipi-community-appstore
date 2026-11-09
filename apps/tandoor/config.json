@@ -1,0 +1,23 @@
+{
+  "name": "Tandoor",
+  "id": "tandoor",
+  "available": true,
+  "short_desc": "The recipe manager that allows you to manage your ever growing collection of digital recipes.",
+  "author": "xneo1/portainer_templates",
+  "port": 82,
+  "categories": [
+    "development"
+  ],
+  "description": "The recipe manager that allows you to manage your ever growing collection of digital recipes.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

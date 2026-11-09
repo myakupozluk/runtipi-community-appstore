@@ -1,0 +1,24 @@
+{
+  "name": "CloudBeaver",
+  "id": "cloudbeaver",
+  "available": true,
+  "short_desc": "Cloud database manager providing a web interface for working with various databases. Source: https://github.com/dbeaver/cloudbeaver",
+  "author": "Community",
+  "port": 8978,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "Cloud database manager providing a web interface for working with various databases. Source: https://github.com/dbeaver/cloudbeaver",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

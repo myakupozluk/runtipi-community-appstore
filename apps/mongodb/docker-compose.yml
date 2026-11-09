@@ -1,0 +1,93 @@
+name: mongodb
+x-mongo:
+  image: mongo:8.0
+  restart: unless-stopped
+  command: &id001
+  - mongod
+  - --replSet=rs0
+  - --bind_ip_all
+services:
+  mongo-1:
+    image: mongo:8.0
+    restart: unless-stopped
+    command: *id001
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - mongosh --quiet --eval 'db.adminCommand({ping:1}).ok' | grep -q 1
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+    volumes:
+    - ${APP_DATA_DIR}/mongo-1_mongodata-1:/data/db
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 27017
+  mongo-2:
+    image: mongo:8.0
+    restart: unless-stopped
+    command: *id001
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - mongosh --quiet --eval 'db.adminCommand({ping:1}).ok' | grep -q 1
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+    ports:
+    - '27017'
+    volumes:
+    - ${APP_DATA_DIR}/mongo-2_mongodata-2:/data/db
+    networks:
+    - tipi_main_network
+  mongo-3:
+    image: mongo:8.0
+    restart: unless-stopped
+    command: *id001
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - mongosh --quiet --eval 'db.adminCommand({ping:1}).ok' | grep -q 1
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+    ports:
+    - '27017'
+    volumes:
+    - ${APP_DATA_DIR}/mongo-3_mongodata-3:/data/db
+    networks:
+    - tipi_main_network
+  rs-init:
+    image: mongo:8.0
+    restart: unless-stopped
+    depends_on:
+    - mongo-1
+    - mongo-2
+    - mongo-3
+    command:
+    - bash
+    - -c
+    - "until mongosh --host mongo-1 --quiet --eval 'db.runCommand({ping: 1})' >/dev/null\
+      \ 2>&1; do\n  echo 'waiting for mongo-1...'; sleep 5\ndone\nmongosh --host mongo-1\
+      \ --quiet --eval '\n  try {\n    rs.status()\n    print(\"replica set already\
+      \ initiated\")\n  } catch (e) {\n    rs.initiate({\n      _id: \"rs0\",\n  \
+      \    members: [\n        {_id: 0, host: \"mongo-1:27017\"},\n        {_id: 1,\
+      \ host: \"mongo-2:27017\"},\n        {_id: 2, host: \"mongo-3:27017\"}\n   \
+      \   ]\n    })\n    print(\"replica set initiated\")\n  }'\nsleep infinity\n"
+    networks:
+    - tipi_main_network
+    volumes: []
+volumes:
+  mongodata-1: null
+  mongodata-2: null
+  mongodata-3: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

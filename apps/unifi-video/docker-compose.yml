@@ -1,0 +1,23 @@
+services:
+  unifi-video:
+    image: pducharme/unifi-video-controller:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=99
+    - PGID=1000
+    - UMASK=002
+    - CONTEXT_PATH=UniFi Video
+    volumes:
+    - ${APP_DATA_DIR}/recordings:/recordings
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 1935
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,23 @@
+{
+  "name": "LiveKit Agents",
+  "id": "livekit-agents",
+  "available": true,
+  "short_desc": "A voice AI agent worker on the LiveKit Agents framework: it joins LiveKit rooms and converses - Deepgram for ears, ElevenLabs for voice, any OpenAI-co...",
+  "author": "deployable-sh/stacks",
+  "port": 8080,
+  "categories": [
+    "network"
+  ],
+  "description": "A voice AI agent worker on the LiveKit Agents framework: it joins LiveKit rooms and converses - Deepgram for ears, ElevenLabs for voice, any OpenAI-compatible LLM for the brain (the catalogue's `litellm` gateway slots in via",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

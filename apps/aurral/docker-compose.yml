@@ -1,0 +1,57 @@
+services:
+  aurral-backend:
+    image: ghcr.io/lklynet/aurral-backend:latest
+    restart: unless-stopped
+    environment:
+    - PORT=3001
+    - LIDARR_URL=${LIDARR_URL:-http://lidarr:8686}
+    - LIDARR_API_KEY=${LIDARR_API_KEY}
+    - LASTFM_API_KEY=${LASTFM_API_KEY}
+    - CONTACT_EMAIL=${CONTACT_EMAIL:-user@example.com}
+    - DEBUG=${DEBUG:-false}
+    - AUTH_PASSWORD=${AUTH_PASSWORD}
+    volumes:
+    - ${APP_DATA_DIR}/aurral-backend_portainer_Files_AppData_Config_aurral_backend-data:/app/data
+    security_opt:
+    - no-new-privileges:true
+    cap_drop:
+    - ALL
+    cap_add:
+    - SETUID
+    - SETGID
+    - CHOWN
+    networks:
+    - aurral-network
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3001
+  aurral-frontend:
+    image: ghcr.io/lklynet/aurral-frontend:latest
+    restart: unless-stopped
+    ports:
+    - ${FRONTEND_PORT:-3000}:80
+    environment:
+    - NODE_ENV=production
+    depends_on:
+    - aurral-backend
+    security_opt:
+    - no-new-privileges:true
+    cap_drop:
+    - ALL
+    cap_add:
+    - CHOWN
+    - SETUID
+    - SETGID
+    - NET_BIND_SERVICE
+    networks:
+    - aurral-network
+    - tipi_main_network
+    volumes: []
+networks:
+  aurral-network:
+    driver: bridge
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

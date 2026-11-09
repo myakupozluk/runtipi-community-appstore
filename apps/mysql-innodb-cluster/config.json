@@ -1,0 +1,24 @@
+{
+  "name": "MySQL InnoDB Cluster",
+  "id": "mysql-innodb-cluster",
+  "available": true,
+  "short_desc": "3-node high availability using MySQL Group Replication - the engine that MySQL InnoDB Cluster is built on.",
+  "author": "deployable-sh/stacks",
+  "port": 3306,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "3-node high availability using MySQL Group Replication - the engine that MySQL InnoDB Cluster is built on.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,28 @@
+services:
+  piper:
+    image: linuxserver/piper:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+    - PIPER_VOICE=en_US-lessac-medium
+    - LOCAL_ONLY=
+    - PIPER_LENGTH=1.0
+    - PIPER_NOISE=0.667
+    - PIPER_NOISEW=0.333
+    - PIPER_SPEAKER=0
+    - NO_STREAMING=
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 10200
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,20 @@
+services:
+  forgejo:
+    image: codeberg.org/forgejo/forgejo:15
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - USER_UID=1000
+    - USER_GID=1000
+    volumes:
+    - ${APP_DATA_DIR}/data:/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

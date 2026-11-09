@@ -1,0 +1,25 @@
+{
+  "name": "Bookstack (swarm)",
+  "id": "bookstack-swarm",
+  "available": true,
+  "short_desc": "Bookstack is a free and open source Wiki designed for creating beautiful documentation. Feautring a simple, but powerful WYSIWYG editor it allows for ...",
+  "author": "mikestraney/portainer-templates",
+  "port": 8080,
+  "categories": [
+    "media",
+    "development",
+    "productivity"
+  ],
+  "description": "Bookstack is a free and open source Wiki designed for creating beautiful documentation. Feautring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mikestraney/portainer-templates/",
+  "website": "https://github.com/mikestraney/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

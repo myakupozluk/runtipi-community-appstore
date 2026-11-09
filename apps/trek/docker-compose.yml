@@ -1,0 +1,21 @@
+services:
+  trek:
+    image: mauriceboe/trek:4
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - COOKIE_SECURE=
+    - TZ=UTC
+    volumes:
+    - ${APP_DATA_DIR}/app_data:/app/data
+    - ${APP_DATA_DIR}/app_uploads:/app/uploads
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

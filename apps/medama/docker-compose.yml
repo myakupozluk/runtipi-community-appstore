@@ -1,0 +1,18 @@
+services:
+  medama:
+    image: ghcr.io/medama-io/medama:latest
+    volumes:
+    - ${APP_DATA_DIR}/medama_portainer_Files_AppData_Config_medama:/app/data
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+volumes:
+  medama-data: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,23 @@
+{
+  "name": "Webcheck",
+  "id": "webcheck",
+  "available": true,
+  "short_desc": "Webcheck self-hosted application for Runtipi.",
+  "author": "Community",
+  "port": 3333,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Webcheck self-hosted application for Runtipi.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

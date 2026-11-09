@@ -1,0 +1,25 @@
+{
+  "name": "ManaWG",
+  "id": "manawg",
+  "available": true,
+  "short_desc": "Free, open-source app for shared flats: expenses, cleaning rota, shopping list, calendar and chat. Runs the app with PostgreSQL, sign-in and image sto...",
+  "author": "Abuarchiv/manawg",
+  "port": 5000,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "Free, open-source app for shared flats: expenses, cleaning rota, shopping list, calendar and chat. Runs the app with PostgreSQL, sign-in and image storage. Source: https://github.com/Abuarchiv/manawg",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/Abuarchiv/manawg/",
+  "website": "https://github.com/Abuarchiv/manawg/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

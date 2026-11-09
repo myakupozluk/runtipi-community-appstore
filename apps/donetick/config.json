@@ -1,0 +1,25 @@
+{
+  "name": "Donetick",
+  "id": "donetick",
+  "available": true,
+  "short_desc": "Chore and task tracker for households, with natural-language scheduling, assignee rotation, subtasks, points and rewards, labels, NFC tags and a calen...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 2021,
+  "categories": [
+    "development",
+    "productivity",
+    "automation"
+  ],
+  "description": "Chore and task tracker for households, with natural-language scheduling, assignee rotation, subtasks, points and rewards, labels, NFC tags and a calendar feed. Source: https://github.com/donetick/donetick",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

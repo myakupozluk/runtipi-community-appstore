@@ -1,0 +1,25 @@
+{
+  "name": "Teable",
+  "id": "teable",
+  "available": true,
+  "short_desc": "Spreadsheet-style database in the vein of Airtable, built on Postgres: grid, kanban, calendar, gallery and form views, file attachments, formulas, rea...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "media",
+    "development",
+    "productivity"
+  ],
+  "description": "Spreadsheet-style database in the vein of Airtable, built on Postgres: grid, kanban, calendar, gallery and form views, file attachments, formulas, real-time collaboration and an API. Source: https://github.com/teableio/teable",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

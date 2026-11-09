@@ -1,0 +1,24 @@
+{
+  "name": "iperf",
+  "id": "iperf",
+  "available": true,
+  "short_desc": "IPerf3 Docker Build for Network Performance and Bandwidth Testing",
+  "author": "xneo1/portainer_templates",
+  "port": 5201,
+  "categories": [
+    "network",
+    "productivity"
+  ],
+  "description": "IPerf3 Docker Build for Network Performance and Bandwidth Testing",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Superset",
+  "id": "superset",
+  "available": true,
+  "short_desc": "Superset - the Apache BI platform: dashboards, the no-code chart builder, SQL Lab, and alerts/reports, over practically every database.",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "data",
+    "monitoring"
+  ],
+  "description": "Superset - the Apache BI platform: dashboards, the no-code chart builder, SQL Lab, and alerts/reports, over practically every database.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

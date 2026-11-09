@@ -1,0 +1,23 @@
+{
+  "name": "GoCostWeb",
+  "id": "gocostweb",
+  "available": true,
+  "short_desc": "Golang-based web application for personal expense management, focused on a clean monthly workflow and intuitive tracking of recurring and non-recurrin...",
+  "author": "xneo1/portainer_templates",
+  "port": 4000,
+  "categories": [
+    "finance"
+  ],
+  "description": "Golang-based web application for personal expense management, focused on a clean monthly workflow and intuitive tracking of recurring and non-recurring costs.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

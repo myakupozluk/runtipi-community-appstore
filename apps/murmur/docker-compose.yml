@@ -1,0 +1,24 @@
+services:
+  murmur:
+    image: goofball222/murmur:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=100
+    - TZ=
+    volumes:
+    - ${APP_DATA_DIR}/etc_localtime:/etc/localtime
+    - ${APP_DATA_DIR}/opt_murmur_config:/opt/murmur/config
+    - ${APP_DATA_DIR}/opt_murmur_data:/opt/murmur/data
+    - ${APP_DATA_DIR}/opt_murmur_log:/opt/murmur/log
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 64738
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

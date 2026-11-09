@@ -1,0 +1,25 @@
+{
+  "name": "Baikal",
+  "id": "baikal",
+  "available": true,
+  "short_desc": "Baïkal is a lightweight CalDAV+CardDAV server. It offers an extensive web interface with easy management of users, address books and calendars.",
+  "author": "xneo1/portainer_templates",
+  "port": 8220,
+  "categories": [
+    "media",
+    "productivity",
+    "games"
+  ],
+  "description": "Baïkal is a lightweight CalDAV+CardDAV server. It offers an extensive web interface with easy management of users, address books and calendars.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

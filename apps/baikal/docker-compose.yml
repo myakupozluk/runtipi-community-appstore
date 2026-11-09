@@ -1,0 +1,20 @@
+services:
+  baikal:
+    image: ckulka/baikal:nginx
+    restart: always
+    volumes:
+    - ${APP_DATA_DIR}/baikal_portainer_Files_AppData_Config_baikal_config:/var/www/baikal/config
+    - ${APP_DATA_DIR}/baikal_portainer_Files_AppData_Config_baikal_data:/var/www/baikal/Specific
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+volumes:
+  config: null
+  data: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

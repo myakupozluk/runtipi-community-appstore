@@ -1,0 +1,21 @@
+services:
+  urbackup:
+    image: uroni/urbackup-server:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    volumes:
+    - ${APP_DATA_DIR}/var_urbackup:/var/urbackup
+    - ${APP_DATA_DIR}/backup:/backup
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 55415
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

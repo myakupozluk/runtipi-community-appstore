@@ -1,0 +1,22 @@
+services:
+  jdownloader:
+    image: jaymoulin/jdownloader:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - MYJD_DEVICE_NAME=
+    - MYJD_USER=
+    - MYJD_PASSWORD=
+    volumes:
+    - ${APP_DATA_DIR}/opt_JDownloader_app_cfg:/opt/JDownloader/app/cfg
+    - ${APP_DATA_DIR}/opt_JDownloader_Downloads:/opt/JDownloader/Downloads
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3129
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

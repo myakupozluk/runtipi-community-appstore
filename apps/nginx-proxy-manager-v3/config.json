@@ -1,0 +1,25 @@
+{
+  "name": "Nginx Proxy Manager v3 [DEVEL] NOT READY FOR USE",
+  "id": "nginx-proxy-manager-v3",
+  "available": true,
+  "short_desc": "[DEVEL] Not ready for production. Nginx Proxy Manager v3 Develop enables you to easily forward to your websites running at home or otherwise, includin...",
+  "author": "novaspirit/pi-hosted",
+  "port": 80,
+  "categories": [
+    "network",
+    "development",
+    "productivity"
+  ],
+  "description": "[DEVEL] Not ready for production. Nginx Proxy Manager v3 Develop enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt. Please see the install document at https://github.com/pi-hosted/pi-hosted/tree/master/docs installing the template",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

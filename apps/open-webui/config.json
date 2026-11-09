@@ -1,0 +1,25 @@
+{
+  "name": "Open WebUI",
+  "id": "open-webui",
+  "available": true,
+  "short_desc": "Open WebUI - the self-hosted AI chat workspace: ChatGPT-style UI over any OpenAI-compatible API, with RAG over uploaded documents, multi-user accounts...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "productivity",
+    "social"
+  ],
+  "description": "Open WebUI - the self-hosted AI chat workspace: ChatGPT-style UI over any OpenAI-compatible API, with RAG over uploaded documents, multi-user accounts, RBAC, and prompt/model presets. Single container + volume.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

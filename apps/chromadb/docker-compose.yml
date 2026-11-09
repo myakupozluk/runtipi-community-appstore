@@ -1,0 +1,22 @@
+name: chromadb
+services:
+  chroma:
+    image: chromadb/chroma:1.5.9
+    restart: unless-stopped
+    environment:
+      IS_PERSISTENT: 'TRUE'
+      ANONYMIZED_TELEMETRY: 'FALSE'
+    volumes:
+    - ${APP_DATA_DIR}/chroma_chromadata:/chroma/chroma
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+volumes:
+  chromadata: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,24 @@
+{
+  "name": "Mozilla Syncserver",
+  "id": "syncserver",
+  "available": true,
+  "short_desc": "Run-Your-Own Firefox Sync Server",
+  "author": "mediadepot/templates",
+  "port": 5000,
+  "categories": [
+    "data",
+    "games"
+  ],
+  "description": "Run-Your-Own Firefox Sync Server",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mediadepot/templates/",
+  "website": "https://github.com/mediadepot/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

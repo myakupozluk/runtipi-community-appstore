@@ -1,0 +1,21 @@
+services:
+  pixel-server:
+    image: macley/pixel-server:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/opt_pixel-server_auth.cfg:/opt/pixel-server/auth.cfg
+    - ${APP_DATA_DIR}/opt_pixel-server_pixelserver.cfg:/opt/pixel-server/pixelserver.cfg
+    - ${APP_DATA_DIR}/opt_pixel-server_users.cfg:/opt/pixel-server/users.cfg
+    - ${APP_DATA_DIR}/etc_crontabs:/etc/crontabs/
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

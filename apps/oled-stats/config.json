@@ -1,0 +1,23 @@
+{
+  "name": "System Stats OLED display",
+  "id": "oled-stats",
+  "available": true,
+  "short_desc": "A quick way to display system stats on a 128x64 I2C OLED display.",
+  "author": "novaspirit/pi-hosted",
+  "port": 8080,
+  "categories": [
+    "utilities"
+  ],
+  "description": "A quick way to display system stats on a 128x64 I2C OLED display.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

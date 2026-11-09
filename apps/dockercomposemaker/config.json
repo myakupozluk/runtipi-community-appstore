@@ -1,0 +1,24 @@
+{
+  "name": "Docker Compose maker",
+  "id": "dockercomposemaker",
+  "available": true,
+  "short_desc": "DCM (Docker Compose Maker) is a simple yet powerful tool that helps you create docker-compose.yaml files for your self-hosted applications.",
+  "author": "xneo1/portainer_templates",
+  "port": 7576,
+  "categories": [
+    "productivity",
+    "data"
+  ],
+  "description": "DCM (Docker Compose Maker) is a simple yet powerful tool that helps you create docker-compose.yaml files for your self-hosted applications.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

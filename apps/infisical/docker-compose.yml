@@ -1,0 +1,46 @@
+name: infisical
+services:
+  infisical:
+    image: infisical/infisical:v0.161.0
+    restart: unless-stopped
+    environment:
+      PORT: '5000'
+      SITE_URL: ${SITE_URL:-http://localhost:5000}
+      ENCRYPTION_KEY: ${ENCRYPTION_KEY}
+      AUTH_SECRET: ${AUTH_SECRET}
+      DB_CONNECTION_URI: postgres://infisical:infisical-local-only@db:5432/infisical
+      REDIS_URL: redis://broker:6379
+      TELEMETRY_ENABLED: 'false'
+    depends_on:
+    - db
+    - broker
+    networks:
+    - tipi_main_network
+    volumes: []
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+  broker:
+    build: ./broker
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: infisical
+      POSTGRES_PASSWORD: infisical-local-only
+      POSTGRES_DB: infisical
+    volumes:
+    - ${APP_DATA_DIR}/db_dbdata:/var/lib/postgresql/data
+    networks:
+    - tipi_main_network
+volumes:
+  dbdata: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

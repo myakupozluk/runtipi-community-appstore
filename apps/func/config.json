@@ -1,0 +1,23 @@
+{
+  "name": "OpenFaaS",
+  "id": "func",
+  "available": true,
+  "short_desc": "Serverless functions made simple",
+  "author": "portainer/templates",
+  "port": 9993,
+  "categories": [
+    "games"
+  ],
+  "description": "Serverless functions made simple",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

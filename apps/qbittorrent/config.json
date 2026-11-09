@@ -1,0 +1,23 @@
+{
+  "name": "Qbittorrent",
+  "id": "qbittorrent",
+  "available": true,
+  "short_desc": "The [Qbittorrent](https://www.qbittorrent.org/) is a bittorrent client programmed in C++ / Qt that uses libtorrent (sometimes called libtorrent-raster...",
+  "author": "technorabilia/portainer-templates",
+  "port": 8080,
+  "categories": [
+    "data"
+  ],
+  "description": "The [Qbittorrent](https://www.qbittorrent.org/) is a bittorrent client programmed in C++ / Qt that uses libtorrent (sometimes called libtorrent-rasterbar) by Arvid Norberg.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

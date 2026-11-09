@@ -1,0 +1,25 @@
+services:
+  ai-marketplace-monitor:
+    image: ghcr.io/bopeng/ai-marketplace-monitor:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - FACEBOOK_USERNAME=
+    - FACEBOOK_PASSWORD=
+    - UNITYSVC_API_KEY=svcpass_XXXXX
+    - TZ=UTC
+    - AIMM_WEBUI_AUTH=
+    - AIMM_WEBUI_USERNAME=admin
+    - AIMM_WEBUI_PASSWORD=
+    volumes:
+    - ${APP_DATA_DIR}/data:/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8467
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

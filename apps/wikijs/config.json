@@ -1,0 +1,24 @@
+{
+  "name": "Wikijs",
+  "id": "wikijs",
+  "available": true,
+  "short_desc": "[Wikijs](https://github.com/Requarks/wiki) A modern, lightweight and powerful wiki app built on NodeJS.",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "[Wikijs](https://github.com/Requarks/wiki) A modern, lightweight and powerful wiki app built on NodeJS.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

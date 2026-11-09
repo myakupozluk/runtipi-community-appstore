@@ -1,0 +1,24 @@
+{
+  "name": "Rclone Config Backup",
+  "id": "rclone",
+  "available": true,
+  "short_desc": "Rclone is a command line program to sync files and directories to and from cloud providers (Dropbox, GDrive, Box, etc)",
+  "author": "mediadepot/templates",
+  "port": 8080,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "Rclone is a command line program to sync files and directories to and from cloud providers (Dropbox, GDrive, Box, etc)",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mediadepot/templates/",
+  "website": "https://github.com/mediadepot/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

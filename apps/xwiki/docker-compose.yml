@@ -1,0 +1,43 @@
+networks:
+  bridge:
+    driver: bridge
+  tipi_main_network:
+    external: true
+services:
+  web:
+    image: xwiki:lts-mariadb-tomcat
+    depends_on:
+    - db
+    environment:
+    - DB_USER=xwiki
+    - DB_PASSWORD=xwiki
+    - DB_HOST=xwiki-mariadb-db
+    volumes:
+    - ${APP_DATA_DIR}/web_portainer_Files_AppData_Config_xwiki_data:/usr/local/xwiki
+    networks:
+    - bridge
+    - tipi_main_network
+    restart: unless-stopped
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+  db:
+    image: mariadb:10.5
+    volumes:
+    - ${APP_DATA_DIR}/db_portainer_Files_AppData_Config_xwiki_xwiki.cnf:/etc/mysql/conf.d/xwiki.cnf
+    - ${APP_DATA_DIR}/db_portainer_Files_AppData_Config_xwiki_mariadb:/var/lib/mysql
+    - ${APP_DATA_DIR}/db_init.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+    - MYSQL_ROOT_PASSWORD=xwiki
+    - MYSQL_USER=xwiki
+    - MYSQL_PASSWORD=xwiki
+    - MYSQL_DATABASE=xwiki
+    networks:
+    - bridge
+    - tipi_main_network
+    restart: unless-stopped
+volumes:
+  mariadb-data: {}
+  xwiki-data: {}
+x-runtipi:
+  schema_version: 2

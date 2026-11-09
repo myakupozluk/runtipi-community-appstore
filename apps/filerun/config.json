@@ -1,0 +1,25 @@
+{
+  "name": "Filerun",
+  "id": "filerun",
+  "available": true,
+  "short_desc": "access your files anywhere through self-hosted secure cloud storage, file backup and sharing for your photos, videos, files and more.",
+  "author": "mediadepot/templates",
+  "port": 9993,
+  "categories": [
+    "media",
+    "development",
+    "productivity"
+  ],
+  "description": "access your files anywhere through self-hosted secure cloud storage, file backup and sharing for your photos, videos, files and more.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mediadepot/templates/",
+  "website": "https://github.com/mediadepot/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

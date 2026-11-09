@@ -1,0 +1,23 @@
+{
+  "name": "Spoolman",
+  "id": "spoolman",
+  "available": true,
+  "short_desc": "3D printer filament tracker that keeps count of your spools, what's left on each and where they live, makes printable QR labels, and takes usage strai...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 7912,
+  "categories": [
+    "development"
+  ],
+  "description": "3D printer filament tracker that keeps count of your spools, what's left on each and where they live, makes printable QR labels, and takes usage straight from Moonraker (Klipper) or OctoPrint as you print. Source: https://github.com/Donkie/Spoolman",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

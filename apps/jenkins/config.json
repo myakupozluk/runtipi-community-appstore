@@ -1,0 +1,25 @@
+{
+  "name": "Jenkins (stack)",
+  "id": "jenkins",
+  "available": true,
+  "short_desc": "Jenkins LTS - the automation server: pipelines as code, 1,800+ plugins, and webhooks from every forge. Controller with the built-in node, which runs j...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "automation",
+    "games"
+  ],
+  "description": "Jenkins LTS - the automation server: pipelines as code, 1,800+ plugins, and webhooks from every forge. Controller with the built-in node, which runs jobs in-controller - the honest shape for small teams on a PaaS.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

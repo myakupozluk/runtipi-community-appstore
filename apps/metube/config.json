@@ -1,0 +1,25 @@
+{
+  "name": "MeTube",
+  "id": "metube",
+  "available": true,
+  "short_desc": "Web GUI for youtube-dl (using the yt-dlp fork) with playlist support. Allows you to download videos from YouTube and dozens of other sites (https://gi...",
+  "author": "novaspirit/pi-hosted",
+  "port": 8081,
+  "categories": [
+    "media",
+    "development",
+    "data"
+  ],
+  "description": "Web GUI for youtube-dl (using the yt-dlp fork) with playlist support. Allows you to download videos from YouTube and dozens of other sites (https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

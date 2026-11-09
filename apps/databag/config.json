@@ -1,0 +1,25 @@
+{
+  "name": "Databag",
+  "id": "databag",
+  "available": true,
+  "short_desc": "A lightweight federated messaging service. Source: https://github.com/balzack/databag",
+  "author": "Community",
+  "port": 7000,
+  "categories": [
+    "development",
+    "data",
+    "social"
+  ],
+  "description": "A lightweight federated messaging service. Source: https://github.com/balzack/databag",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

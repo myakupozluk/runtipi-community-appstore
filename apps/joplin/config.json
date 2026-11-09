@@ -1,0 +1,24 @@
+{
+  "name": "Joplin",
+  "id": "joplin",
+  "available": true,
+  "short_desc": "[Joplin](https://joplinapp.org/) is a free, open source note taking and to-do application, which can handle a large number of notes organised into not...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "media",
+    "productivity"
+  ],
+  "description": "[Joplin](https://joplinapp.org/) is a free, open source note taking and to-do application, which can handle a large number of notes organised into notebooks.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

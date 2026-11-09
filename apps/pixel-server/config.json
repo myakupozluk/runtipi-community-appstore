@@ -1,0 +1,23 @@
+{
+  "name": "Pixel-server",
+  "id": "pixel-server",
+  "available": true,
+  "short_desc": "Wireless control of PixelStrips or NeoPixels using a web graphical interface running on a Raspberry Pi.",
+  "author": "novaspirit/pi-hosted",
+  "port": 85,
+  "categories": [
+    "games"
+  ],
+  "description": "Wireless control of PixelStrips or NeoPixels using a web graphical interface running on a Raspberry Pi.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

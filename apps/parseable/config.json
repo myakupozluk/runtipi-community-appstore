@@ -1,0 +1,25 @@
+{
+  "name": "Parseable",
+  "id": "parseable",
+  "available": true,
+  "short_desc": "Parseable - a single-binary log lake built for object storage: ingest logs over HTTP, store them as compressed Parquet on S3, query with SQL. Rust, le...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "data",
+    "monitoring"
+  ],
+  "description": "Parseable - a single-binary log lake built for object storage: ingest logs over HTTP, store them as compressed Parquet on S3, query with SQL. Rust, lean (runs in 512 MB), and S3-native by design - a natural fit for Miget Buckets.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

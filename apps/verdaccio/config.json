@@ -1,0 +1,25 @@
+{
+  "name": "Verdaccio",
+  "id": "verdaccio",
+  "available": true,
+  "short_desc": "Private npm registry and caching proxy: publish your own packages to it, and install everything else through it so npmjs downloads get cached locally....",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 4873,
+  "categories": [
+    "network",
+    "development",
+    "data"
+  ],
+  "description": "Private npm registry and caching proxy: publish your own packages to it, and install everything else through it so npmjs downloads get cached locally. Works with npm, yarn and pnpm. Source: https://github.com/verdaccio/verdaccio",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

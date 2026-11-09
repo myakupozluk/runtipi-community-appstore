@@ -1,0 +1,24 @@
+{
+  "name": "Kanboard",
+  "id": "kanboard",
+  "available": true,
+  "short_desc": "Kanban project management that stays out of the way, with boards, swimlanes, subtasks, time tracking, automatic actions and a plugin system. Source: h...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8094,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "Kanban project management that stays out of the way, with boards, swimlanes, subtasks, time tracking, automatic actions and a plugin system. Source: https://github.com/kanboard/kanboard",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Wallos",
+  "id": "wallos",
+  "available": true,
+  "short_desc": "Subscription tracker for keeping an eye on recurring bills, with stats, multiple currencies and reminders before things renew. Source: https://github....",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8282,
+  "categories": [
+    "development",
+    "finance"
+  ],
+  "description": "Subscription tracker for keeping an eye on recurring bills, with stats, multiple currencies and reminders before things renew. Source: https://github.com/ellite/wallos",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

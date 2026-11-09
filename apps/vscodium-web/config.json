@@ -1,0 +1,24 @@
+{
+  "name": "Vscodium-web",
+  "id": "vscodium-web",
+  "available": true,
+  "short_desc": "[Vscodium-web](https://vscodium.com/) is a community-driven, freely-licensed binary distribution of the remote host web component of Microsoft's edito...",
+  "author": "technorabilia/portainer-templates",
+  "port": 8000,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "[Vscodium-web](https://vscodium.com/) is a community-driven, freely-licensed binary distribution of the remote host web component of Microsoft's editor VS Code.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

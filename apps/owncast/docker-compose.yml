@@ -1,0 +1,19 @@
+name: owncast
+services:
+  owncast:
+    build: .
+    restart: unless-stopped
+    volumes:
+    - ${APP_DATA_DIR}/owncast_owncastdata:/app/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+volumes:
+  owncastdata: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

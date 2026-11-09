@@ -1,0 +1,25 @@
+{
+  "name": "Thunderbird",
+  "id": "thunderbird",
+  "available": true,
+  "short_desc": "[Thunderbird](https://www.thunderbird.net/) is a free and open-source personal information manager primarily used as an e-mail client with a calendar ...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "media",
+    "productivity",
+    "social"
+  ],
+  "description": "[Thunderbird](https://www.thunderbird.net/) is a free and open-source personal information manager primarily used as an e-mail client with a calendar and contactbook, as well as an RSS feed reader, chat client, and news client.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

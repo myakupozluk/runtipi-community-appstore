@@ -1,0 +1,23 @@
+{
+  "name": "Jellyseerr",
+  "id": "jellyseerr",
+  "available": true,
+  "short_desc": "Jellyseer is a free and open source software application for managing requests for your media library.",
+  "author": "Qballjos/portainer_templates",
+  "port": 5055,
+  "categories": [
+    "media"
+  ],
+  "description": "Jellyseer is a free and open source software application for managing requests for your media library.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/Qballjos/portainer_templates/",
+  "website": "https://github.com/Qballjos/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Jellyseer",
+  "id": "jellyseer",
+  "available": true,
+  "short_desc": "Jellyseerr is a free and open source fork of Overseerr for managing requests for your media library. It integrates with your existing services, such a...",
+  "author": "xneo1/portainer_templates",
+  "port": 5055,
+  "categories": [
+    "media"
+  ],
+  "description": "Jellyseerr is a free and open source fork of Overseerr for managing requests for your media library. It integrates with your existing services, such as Sonarr, Radarr, and Jellyfin!",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

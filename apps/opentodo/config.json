@@ -1,0 +1,25 @@
+{
+  "name": "OpenTodo",
+  "id": "opentodo",
+  "available": true,
+  "short_desc": "Open-source, local-first task manager. Works offline and syncs every device from one small container. Source: https://github.com/OpenTodoApp/OpenTodo",
+  "author": "OpenTodoApp/OpenTodo",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "Open-source, local-first task manager. Works offline and syncs every device from one small container. Source: https://github.com/OpenTodoApp/OpenTodo",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/OpenTodoApp/OpenTodo/",
+  "website": "https://github.com/OpenTodoApp/OpenTodo/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

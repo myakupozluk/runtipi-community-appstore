@@ -1,0 +1,24 @@
+{
+  "name": "Muximux",
+  "id": "muximux",
+  "available": true,
+  "short_desc": "A lightweight portal to view, manage your HTPC apps without having to run anything more than a PHP enabled webserver. With Muximux you don't need to k...",
+  "author": "xneo1/portainer_templates",
+  "port": 80,
+  "categories": [
+    "media",
+    "games"
+  ],
+  "description": "A lightweight portal to view, manage your HTPC apps without having to run anything more than a PHP enabled webserver. With Muximux you don't need to keep multiple tabs open, or bookmark the URL to all of your apps.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

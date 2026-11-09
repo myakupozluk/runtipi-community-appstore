@@ -1,0 +1,25 @@
+{
+  "name": "FoundryVTT Server",
+  "id": "foundryvtt",
+  "available": true,
+  "short_desc": "This docker image provides the FoundryVTT system for hosting your own virtual table top games.",
+  "author": "novaspirit/pi-hosted",
+  "port": 30000,
+  "categories": [
+    "development",
+    "productivity",
+    "games"
+  ],
+  "description": "This docker image provides the FoundryVTT system for hosting your own virtual table top games.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

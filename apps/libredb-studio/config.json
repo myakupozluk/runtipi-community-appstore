@@ -1,0 +1,25 @@
+{
+  "name": "LibreDB Studio",
+  "id": "libredb-studio",
+  "available": true,
+  "short_desc": "Self-hosted database IDE you use from a browser, covering forty-two engines - PostgreSQL, MySQL, Oracle, SQL Server, MongoDB, Redis, ClickHouse, Cassa...",
+  "author": "libredb/libredb-studio",
+  "port": 3006,
+  "categories": [
+    "development",
+    "data",
+    "games"
+  ],
+  "description": "Self-hosted database IDE you use from a browser, covering forty-two engines - PostgreSQL, MySQL, Oracle, SQL Server, MongoDB, Redis, ClickHouse, Cassandra, Elasticsearch and more - with a schema browser and query history on all of them, and ER diagrams and EXPLAIN plans wherever the engine declares keys or returns a plan. Source: https://github.com/libredb/libredb-studio",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/libredb/libredb-studio/",
+  "website": "https://github.com/libredb/libredb-studio/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

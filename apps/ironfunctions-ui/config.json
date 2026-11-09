@@ -1,0 +1,23 @@
+{
+  "name": "IronFunctions UI",
+  "id": "ironfunctions-ui",
+  "available": true,
+  "short_desc": "Open-source user interface for IronFunctions",
+  "author": "mikestraney/portainer-templates",
+  "port": 4000,
+  "categories": [
+    "games"
+  ],
+  "description": "Open-source user interface for IronFunctions",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mikestraney/portainer-templates/",
+  "website": "https://github.com/mikestraney/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

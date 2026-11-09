@@ -1,0 +1,28 @@
+name: sftpgo
+services:
+  sftpgo:
+    image: drakkan/sftpgo:v2.7.5
+    restart: unless-stopped
+    environment:
+      SFTPGO_HTTPD__BINDINGS__0__ADDRESS: 0.0.0.0
+      SFTPGO_HTTPD__BINDINGS__0__PORT: '5000'
+      SFTPGO_SFTPD__BINDINGS__0__PORT: '2022'
+      SFTPGO_DATA_PROVIDER__CREATE_DEFAULT_ADMIN: 'true'
+      SFTPGO_DEFAULT_ADMIN_USERNAME: ${ADMIN_USERNAME:-admin}
+      SFTPGO_DEFAULT_ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+    volumes:
+    - ${APP_DATA_DIR}/sftpgo_sftpgodata:/var/lib/sftpgo
+    - ${APP_DATA_DIR}/sftpgo_sftpgohome:/srv/sftpgo
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+volumes:
+  sftpgodata: null
+  sftpgohome: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

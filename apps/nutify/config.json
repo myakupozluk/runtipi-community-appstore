@@ -1,0 +1,24 @@
+{
+  "name": "Nutify",
+  "id": "nutify",
+  "available": true,
+  "short_desc": "Nutify is a comprehensive monitoring system designed to track the health and performance of your Uninterruptible Power Supply (UPS) devices.",
+  "author": "xneo1/portainer_templates",
+  "port": 3493,
+  "categories": [
+    "development",
+    "monitoring"
+  ],
+  "description": "Nutify is a comprehensive monitoring system designed to track the health and performance of your Uninterruptible Power Supply (UPS) devices.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

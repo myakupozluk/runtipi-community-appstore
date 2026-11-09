@@ -1,0 +1,20 @@
+services:
+  maloja:
+    image: krateng/maloja:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - MALOJA_FORCE_PASSWORD=malojapassword
+    - MALOJA_DATA_DIRECTORY=/data
+    volumes:
+    - ${APP_DATA_DIR}/data:/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 42010
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

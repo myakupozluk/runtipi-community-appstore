@@ -1,0 +1,25 @@
+{
+  "name": "Webgrabplus",
+  "id": "webgrabplus",
+  "available": true,
+  "short_desc": "[Webgrabplus](https://www.webgrabplus.com) is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide site...",
+  "author": "technorabilia/portainer-templates",
+  "port": 80,
+  "categories": [
+    "media",
+    "development",
+    "data"
+  ],
+  "description": "[Webgrabplus](https://www.webgrabplus.com) is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

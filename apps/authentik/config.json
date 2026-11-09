@@ -1,0 +1,24 @@
+{
+  "name": "Authentik",
+  "id": "authentik",
+  "available": true,
+  "short_desc": "Authentik is an open-source Identity Provider focused on flexibility and versatility",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "security",
+    "development"
+  ],
+  "description": "Authentik is an open-source Identity Provider focused on flexibility and versatility",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

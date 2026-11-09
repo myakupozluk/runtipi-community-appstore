@@ -1,0 +1,23 @@
+{
+  "name": "Whisparr",
+  "id": "whisparr",
+  "available": true,
+  "short_desc": "Whisparr is an adult movie collection manager for Usenet and BitTorrent users.",
+  "author": "xneo1/portainer_templates",
+  "port": 6969,
+  "categories": [
+    "data"
+  ],
+  "description": "Whisparr is an adult movie collection manager for Usenet and BitTorrent users.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Adguardhome-sync",
+  "id": "adguardhome-sync",
+  "available": true,
+  "short_desc": "[Adguardhome-sync](https://github.com/bakito/adguardhome-sync/) is a tool to synchronize AdGuardHome config to replica instances.",
+  "author": "technorabilia/portainer-templates",
+  "port": 8080,
+  "categories": [
+    "security",
+    "network",
+    "development"
+  ],
+  "description": "[Adguardhome-sync](https://github.com/bakito/adguardhome-sync/) is a tool to synchronize AdGuardHome config to replica instances.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

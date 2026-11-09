@@ -1,0 +1,25 @@
+{
+  "name": "Homedex",
+  "id": "homedex",
+  "available": true,
+  "short_desc": "Read-only inventory for your homelab: services, hosts, ports, routes, certificates, domains and changes, discovered from Docker, Proxmox VE, Tailscale...",
+  "author": "HarshShah0203/homedex",
+  "port": 9993,
+  "categories": [
+    "security",
+    "network",
+    "development"
+  ],
+  "description": "Read-only inventory for your homelab: services, hosts, ports, routes, certificates, domains and changes, discovered from Docker, Proxmox VE, Tailscale and your reverse proxy. It never starts, stops or reconfigures anything. Source: https://github.com/HarshShah0203/homedex",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/HarshShah0203/homedex/",
+  "website": "https://github.com/HarshShah0203/homedex/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

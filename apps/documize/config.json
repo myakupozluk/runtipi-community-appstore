@@ -1,0 +1,23 @@
+{
+  "name": "Documize",
+  "id": "documize",
+  "available": true,
+  "short_desc": "Documize Community is an open source, modern, self-hosted, enterprise-grade knowledge management solution.",
+  "author": "xneo1/portainer_templates",
+  "port": 5432,
+  "categories": [
+    "productivity"
+  ],
+  "description": "Documize Community is an open source, modern, self-hosted, enterprise-grade knowledge management solution.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

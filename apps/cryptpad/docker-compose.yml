@@ -1,0 +1,35 @@
+services:
+  cryptpad:
+    image: cryptpad/cryptpad:version-2026.5.1
+    hostname: cryptpad
+    restart: unless-stopped
+    environment:
+    - CPAD_MAIN_DOMAIN=${CPAD_MAIN_DOMAIN}
+    - CPAD_SANDBOX_DOMAIN=${CPAD_SANDBOX_DOMAIN}
+    - CPAD_CONF=/cryptpad/config/config.js
+    volumes:
+    - ${APP_DATA_DIR}/cryptpad_cryptpad-blob:/cryptpad/blob
+    - ${APP_DATA_DIR}/cryptpad_cryptpad-block:/cryptpad/block
+    - ${APP_DATA_DIR}/cryptpad_cryptpad-customize:/cryptpad/customize
+    - ${APP_DATA_DIR}/cryptpad_cryptpad-data:/cryptpad/data
+    - ${APP_DATA_DIR}/cryptpad_cryptpad-datastore:/cryptpad/datastore
+    ulimits:
+      nofile:
+        soft: 1000000
+        hard: 1000000
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+volumes:
+  cryptpad-blob: null
+  cryptpad-block: null
+  cryptpad-customize: null
+  cryptpad-data: null
+  cryptpad-datastore: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

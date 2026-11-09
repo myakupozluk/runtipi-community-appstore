@@ -1,0 +1,23 @@
+{
+  "name": "GlitchTip",
+  "id": "glitchtip",
+  "available": true,
+  "short_desc": "GlitchTip, open-source, Sentry-API-compatible error tracking (point any Sentry SDK at its DSN) at a fraction of self-hosted Sentry's footprint.",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development"
+  ],
+  "description": "GlitchTip, open-source, Sentry-API-compatible error tracking (point any Sentry SDK at its DSN) at a fraction of self-hosted Sentry's footprint.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

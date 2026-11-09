@@ -1,0 +1,25 @@
+name: cronicle
+services:
+  cronicle:
+    image: soulteary/cronicle:0.9.80
+    restart: unless-stopped
+    hostname: cronicle
+    environment:
+      CRONICLE_WebServer__http_port: '5000'
+      CRONICLE_web_direct_connect: 'false'
+    volumes:
+    - ${APP_DATA_DIR}/cronicle_crondata:/opt/cronicle/data
+    - ${APP_DATA_DIR}/cronicle_cronlogs:/opt/cronicle/logs
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+volumes:
+  crondata: null
+  cronlogs: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

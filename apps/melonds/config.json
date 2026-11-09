@@ -1,0 +1,23 @@
+{
+  "name": "Melonds",
+  "id": "melonds",
+  "available": true,
+  "short_desc": "[melonDS](https://melonds.kuribo64.net/) aims at providing fast and accurate Nintendo DS emulation.",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "games"
+  ],
+  "description": "[melonDS](https://melonds.kuribo64.net/) aims at providing fast and accurate Nintendo DS emulation.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

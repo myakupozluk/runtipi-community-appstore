@@ -1,0 +1,24 @@
+{
+  "name": "Langfuse",
+  "id": "langfuse",
+  "available": true,
+  "short_desc": "Langfuse v3 - open-source LLM engineering platform: tracing, evaluations, prompt management, and usage dashboards. This template mirrors the official ...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "monitoring"
+  ],
+  "description": "Langfuse v3 - open-source LLM engineering platform: tracing, evaluations, prompt management, and usage dashboards. This template mirrors the official self-host topology.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

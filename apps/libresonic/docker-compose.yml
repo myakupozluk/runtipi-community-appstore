@@ -1,0 +1,26 @@
+services:
+  libresonic:
+    image: linuxserver/libresonic:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - CONTEXT_PATH=
+    - PUID=1000
+    - PGID=1000
+    - TZ=America/Chicago
+    volumes:
+    - ${APP_DATA_DIR}/music:/music
+    - ${APP_DATA_DIR}/playlists:/playlists
+    - ${APP_DATA_DIR}/podcasts:/podcasts
+    - ${APP_DATA_DIR}/media:/media
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 4040
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

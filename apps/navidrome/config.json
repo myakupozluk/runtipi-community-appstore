@@ -1,0 +1,25 @@
+{
+  "name": "Navidrome",
+  "id": "navidrome",
+  "available": true,
+  "short_desc": "Navidrome is an open source web-based music collection server and streamer. It gives you freedom to listen to your music collection from any browser o...",
+  "author": "xneo1/portainer_templates",
+  "port": 4533,
+  "categories": [
+    "media",
+    "development",
+    "games"
+  ],
+  "description": "Navidrome is an open source web-based music collection server and streamer. It gives you freedom to listen to your music collection from any browser or mobile device. It's like your personal Spotify!",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

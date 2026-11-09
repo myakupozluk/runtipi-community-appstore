@@ -1,0 +1,24 @@
+{
+  "name": "Pycharm",
+  "id": "pycharm",
+  "available": true,
+  "short_desc": "[PyCharm](https://www.jetbrains.com/pycharm/) offers out-of-the-box support for Python, databases, Jupyter, Git, Conda, PyTorch, TensorFlow, Hugging F...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "[PyCharm](https://www.jetbrains.com/pycharm/) offers out-of-the-box support for Python, databases, Jupyter, Git, Conda, PyTorch, TensorFlow, Hugging Face, Django, Flask, FastAPI, and more.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

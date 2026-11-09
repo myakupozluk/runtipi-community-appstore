@@ -1,0 +1,24 @@
+{
+  "name": "DashMachine",
+  "id": "dashmachine",
+  "available": true,
+  "short_desc": "Another application bookmark , with fun features.",
+  "author": "xneo1/portainer_templates",
+  "port": 5000,
+  "categories": [
+    "media",
+    "monitoring"
+  ],
+  "description": "Another application bookmark , with fun features.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,19 @@
+services:
+  pihole-doh-dot:
+    image: oijkn/pihole-doh-dot:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/etc_pihole:/etc/pihole
+    - ${APP_DATA_DIR}/etc_dnsmasq.d:/etc/dnsmasq.d
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 53
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

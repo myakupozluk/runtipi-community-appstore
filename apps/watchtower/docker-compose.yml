@@ -1,0 +1,18 @@
+services:
+  watchtower:
+    image: containrrr/watchtower:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/var_run_docker.sock:/var/run/docker.sock
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

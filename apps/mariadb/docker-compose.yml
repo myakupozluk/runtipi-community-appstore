@@ -1,0 +1,24 @@
+name: mariadb
+services:
+  mariadb:
+    image: mariadb:11.8
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD}
+      MARIADB_DATABASE: ${MARIADB_DATABASE:-app}
+      MARIADB_USER: ${MARIADB_USER:-app}
+      MARIADB_PASSWORD: ${MARIADB_PASSWORD}
+    volumes:
+    - ${APP_DATA_DIR}/mariadb_mariadbdata:/var/lib/mysql
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3306
+volumes:
+  mariadbdata: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

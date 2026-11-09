@@ -1,0 +1,23 @@
+{
+  "name": "Zen",
+  "id": "zen",
+  "available": true,
+  "short_desc": "[Zen Browser](https://zen-browser.app/) is a free and open-source fork of Mozilla Firefox with a focus on privacy, customizability and design.",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "security"
+  ],
+  "description": "[Zen Browser](https://zen-browser.app/) is a free and open-source fork of Mozilla Firefox with a focus on privacy, customizability and design.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

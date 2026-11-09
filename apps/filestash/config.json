@@ -1,0 +1,23 @@
+{
+  "name": "Filestash",
+  "id": "filestash",
+  "available": true,
+  "short_desc": "A Dropbox-like file manager that let you manage your data anywhere it is located.",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "data"
+  ],
+  "description": "A Dropbox-like file manager that let you manage your data anywhere it is located.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

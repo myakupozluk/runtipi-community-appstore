@@ -1,0 +1,24 @@
+{
+  "name": "Letta",
+  "id": "letta",
+  "available": true,
+  "short_desc": "Letta (the MemGPT lineage) - an agent server with memory as the core primitive: agents live server-side with self-editing persistent memory, and clien...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "games"
+  ],
+  "description": "Letta (the MemGPT lineage) - an agent server with memory as the core primitive: agents live server-side with self-editing persistent memory, and clients (SDKs, the hosted ADE at app.letta.com) connect to them over the REST API.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

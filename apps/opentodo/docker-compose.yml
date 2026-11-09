@@ -1,0 +1,22 @@
+services:
+  opentodo:
+    image: ghcr.io/opentodoapp/opentodo:stable
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - OPENTODO_SETUP_TOKEN=
+    - OPENTODO_BASE_URL=
+    - OPENTODO_ALLOW_SIGNUP=
+    - OPENTODO_TRUSTED_PROXIES=
+    volumes:
+    - ${APP_DATA_DIR}/data:/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

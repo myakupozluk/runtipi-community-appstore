@@ -1,0 +1,24 @@
+{
+  "name": "Speedtest Tracker (stack)",
+  "id": "speedtest-tracker",
+  "available": true,
+  "short_desc": "Speedtest Tracker is a self-hosted internet performance tracking application that runs speedtest checks against Ookla's Speedtest service. Source: htt...",
+  "author": "xneo1/portainer_templates",
+  "port": 8288,
+  "categories": [
+    "network",
+    "development"
+  ],
+  "description": "Speedtest Tracker is a self-hosted internet performance tracking application that runs speedtest checks against Ookla's Speedtest service. Source: https://github.com/alexjustesen/speedtest-tracker",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,21 @@
+services:
+  datadog-agent-container:
+    image: datadog/agent:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - DD_API_KEY=
+    volumes:
+    - ${APP_DATA_DIR}/var_run_docker.sock:/var/run/docker.sock
+    - ${APP_DATA_DIR}/host_sys_fs_cgroup:/host/sys/fs/cgroup
+    - ${APP_DATA_DIR}/host_proc:/host/proc
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

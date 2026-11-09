@@ -1,0 +1,28 @@
+services:
+  code-server:
+    image: linuxserver/code-server:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+    - PASSWORD=password
+    - HASHED_PASSWORD=
+    - SUDO_PASSWORD=password
+    - SUDO_PASSWORD_HASH=
+    - PROXY_DOMAIN=code-server.my.domain
+    - DEFAULT_WORKSPACE=/config/workspace
+    - PWA_APPNAME=code-server
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8443
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

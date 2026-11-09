@@ -1,0 +1,25 @@
+{
+  "name": "MongoDB Replica Set",
+  "id": "mongodb",
+  "available": true,
+  "short_desc": "3-node MongoDB 8 replica set (`rs0`), deployable locally with plain Docker Compose or to Miget as a compose stack.",
+  "author": "deployable-sh/stacks",
+  "port": 27017,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "3-node MongoDB 8 replica set (`rs0`), deployable locally with plain Docker Compose or to Miget as a compose stack.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

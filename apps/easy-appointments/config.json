@@ -1,0 +1,25 @@
+{
+  "name": "Easy!Appointments",
+  "id": "easy-appointments",
+  "available": true,
+  "short_desc": "Online booking site for appointments: customers pick a service, a provider and a free slot, and you manage it all from a calendar with working hours, ...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "media",
+    "development",
+    "productivity"
+  ],
+  "description": "Online booking site for appointments: customers pick a service, a provider and a free slot, and you manage it all from a calendar with working hours, breaks and holidays per provider. Syncs with Google or CalDAV calendars. Source: https://github.com/alextselegidis/easyappointments",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Plane",
+  "id": "plane",
+  "available": true,
+  "short_desc": "Project management tool from the future. An open-source software development tool to manage issues, sprints, and product roadmaps with peace of mind.",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "Project management tool from the future. An open-source software development tool to manage issues, sprints, and product roadmaps with peace of mind.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

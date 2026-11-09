@@ -1,0 +1,23 @@
+{
+  "name": "Penpot",
+  "id": "penpot",
+  "available": true,
+  "short_desc": "Penpot - the open-source design and prototyping platform (the Figma alternative): SVG-native, web-based, with real design-to-dev handoff. MPL-2.0. Fro...",
+  "author": "deployable-sh/stacks",
+  "port": 8080,
+  "categories": [
+    "development"
+  ],
+  "description": "Penpot - the open-source design and prototyping platform (the Figma alternative): SVG-native, web-based, with real design-to-dev handoff. MPL-2.0. Frontend + backend + exporter on a managed Postgres and a noeviction Valkey.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

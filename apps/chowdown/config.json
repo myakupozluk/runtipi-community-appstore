@@ -1,0 +1,23 @@
+{
+  "name": "Chowdown",
+  "id": "chowdown",
+  "available": true,
+  "short_desc": "Have recipes in seconds with plain text formatting and create beatiful recipe pages with automated ease.",
+  "author": "xneo1/portainer_templates",
+  "port": 4000,
+  "categories": [
+    "development"
+  ],
+  "description": "Have recipes in seconds with plain text formatting and create beatiful recipe pages with automated ease.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

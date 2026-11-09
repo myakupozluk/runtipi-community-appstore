@@ -1,0 +1,17 @@
+services:
+  grafana:
+    image: grafana/grafana:latest
+    restart: unless-stopped
+    volumes:
+    - ${APP_DATA_DIR}/grafana_portainer_Files_AppData_Config_grafana:/var/lib/grafana
+    user: '0'
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

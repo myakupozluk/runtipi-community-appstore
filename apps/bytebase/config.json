@@ -1,0 +1,24 @@
+{
+  "name": "Bytebase",
+  "id": "bytebase",
+  "available": true,
+  "short_desc": "Database change management for teams. Plan, review and roll out schema changes to Postgres, MySQL and 20-odd other databases with a full history, or q...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "Database change management for teams. Plan, review and roll out schema changes to Postgres, MySQL and 20-odd other databases with a full history, or query them from a web SQL editor. Source: https://github.com/bytebase/bytebase",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Dashdot",
+  "id": "dashdot",
+  "available": true,
+  "short_desc": "Dashdot is a modern server dashboard, running on the latest tech, designed with glassmorphism in mind. It is intended to be used for smaller VPS and p...",
+  "author": "xneo1/portainer_templates",
+  "port": 9980,
+  "categories": [
+    "monitoring",
+    "games"
+  ],
+  "description": "Dashdot is a modern server dashboard, running on the latest tech, designed with glassmorphism in mind. It is intended to be used for smaller VPS and private servers.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

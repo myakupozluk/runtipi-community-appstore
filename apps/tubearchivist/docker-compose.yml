@@ -1,0 +1,60 @@
+services:
+  tubearchivist:
+    restart: unless-stopped
+    image: bbilly1/tubearchivist
+    volumes:
+    - ${APP_DATA_DIR}/tubearchivist_portainer_media:/youtube
+    - ${APP_DATA_DIR}/tubearchivist_portainer_cache:/cache
+    environment:
+    - ES_URL=http://archivist-es:9200
+    - REDIS_HOST=archivist-redis
+    - HOST_UID=1000
+    - HOST_GID=1000
+    - TA_HOST=INSERT_YOURIP_OR_HOSTNAME
+    - TA_USERNAME=tubearchivist
+    - TA_PASSWORD=verysecret
+    - ELASTIC_PASSWORD=verysecret
+    - TZ=Europe/Athens
+    depends_on:
+    - archivist-es
+    - archivist-redis
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+  archivist-redis:
+    image: redis/redis-stack-server
+    restart: unless-stopped
+    expose:
+    - 6379
+    volumes:
+    - ${APP_DATA_DIR}/archivist-redis_portainer_Files_AppData_Config_tubearchivist_redis:/data
+    depends_on:
+    - archivist-es
+    networks:
+    - tipi_main_network
+  archivist-es:
+    image: bbilly1/tubearchivist-es
+    restart: unless-stopped
+    environment:
+    - ELASTIC_PASSWORD=verysecret
+    - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    - xpack.security.enabled=true
+    - discovery.type=single-node
+    - path.repo=/usr/share/elasticsearch/data/snapshot
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+    - ${APP_DATA_DIR}/archivist-es_portainer_Files_AppData_Config_tubearchivist_es:/usr/share/elasticsearch/data
+    expose:
+    - 9200
+    networks:
+    - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

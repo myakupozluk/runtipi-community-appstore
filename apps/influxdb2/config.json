@@ -1,0 +1,25 @@
+{
+  "name": "Influxdb",
+  "id": "influxdb2",
+  "available": true,
+  "short_desc": "InfluxDB is an open source time series database for recording metrics, events, and analytics.",
+  "author": "xneo1/portainer_templates",
+  "port": 8086,
+  "categories": [
+    "development",
+    "data",
+    "monitoring"
+  ],
+  "description": "InfluxDB is an open source time series database for recording metrics, events, and analytics.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

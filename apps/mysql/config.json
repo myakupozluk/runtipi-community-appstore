@@ -1,0 +1,24 @@
+{
+  "name": "MySQL (stack)",
+  "id": "mysql",
+  "available": true,
+  "short_desc": "MySQL 8.4 LTS - the world's most popular open- source relational database, as a single self-hosted node. Configured entirely through the official imag...",
+  "author": "deployable-sh/stacks",
+  "port": 3306,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "MySQL 8.4 LTS - the world's most popular open- source relational database, as a single self-hosted node. Configured entirely through the official image's environment variables, with data on a volume.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

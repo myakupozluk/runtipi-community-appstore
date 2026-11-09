@@ -1,0 +1,24 @@
+name: gitlab-runner
+services:
+  runner:
+    build: .
+    restart: unless-stopped
+    environment:
+      CI_SERVER_URL: ${CI_SERVER_URL:-https://gitlab.com}
+      CI_SERVER_TOKEN: ${CI_SERVER_TOKEN}
+    volumes:
+    - ${APP_DATA_DIR}/runner_runnerconfig:/etc/gitlab-runner
+    - ${APP_DATA_DIR}/runner_runnerhome:/home/gitlab-runner
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+volumes:
+  runnerconfig: null
+  runnerhome: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

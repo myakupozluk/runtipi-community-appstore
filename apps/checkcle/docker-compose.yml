@@ -1,0 +1,23 @@
+services:
+  checkcle:
+    image: operacle/checkcle:latest
+    restart: unless-stopped
+    volumes:
+    - ${APP_DATA_DIR}/checkcle_portainer_Files_AppData_Config_checkcle_pb_data:/mnt/pb_data
+    ulimits:
+      nofile:
+        soft: 4096
+        hard: 8192
+    networks:
+    - checkcle-network
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8090
+networks:
+  checkcle-network:
+    driver: bridge
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

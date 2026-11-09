@@ -1,0 +1,25 @@
+{
+  "name": "Hermes Agent",
+  "id": "hermes",
+  "available": true,
+  "short_desc": "Hermes Agent (Nous Research), a self-improving AI agent with a learning loop (skills from experience), cron, hooks, and a web dashboard. Official imag...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "data",
+    "monitoring"
+  ],
+  "description": "Hermes Agent (Nous Research), a self-improving AI agent with a learning loop (skills from experience), cron, hooks, and a web dashboard. Official image, single container + `/opt/data` volume (sessions, memories, skills, config all persist).",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

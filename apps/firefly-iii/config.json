@@ -1,0 +1,24 @@
+{
+  "name": "Firefly III",
+  "id": "firefly-iii",
+  "available": true,
+  "short_desc": "Personal finance manager for tracking what comes in and goes out, with budgets, subscriptions, recurring transactions, rules and reports. This one run...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "finance"
+  ],
+  "description": "Personal finance manager for tracking what comes in and goes out, with budgets, subscriptions, recurring transactions, rules and reports. This one runs on Postgres. Source: https://github.com/firefly-iii/firefly-iii",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

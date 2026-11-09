@@ -1,0 +1,23 @@
+{
+  "name": "Garage",
+  "id": "garage",
+  "available": true,
+  "short_desc": "Garage - the S3-compatible object store the self-hosting community moved to after MinIO archived its open source in 2026: a single static Rust binary,...",
+  "author": "deployable-sh/stacks",
+  "port": 3900,
+  "categories": [
+    "data"
+  ],
+  "description": "Garage - the S3-compatible object store the self-hosting community moved to after MinIO archived its open source in 2026: a single static Rust binary, AGPL, actively released, designed for exactly this job.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,23 @@
+services:
+  sickgear:
+    image: linuxserver/sickgear:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    - ${APP_DATA_DIR}/tv:/tv
+    - ${APP_DATA_DIR}/downloads:/downloads
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8081
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

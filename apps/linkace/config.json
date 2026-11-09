@@ -1,0 +1,25 @@
+{
+  "name": "LinkAce",
+  "id": "linkace",
+  "available": true,
+  "short_desc": "Bookmark archive for keeping links you want to come back to, with tags, lists, notes, private or shared links, a browser bookmarklet, imports from any...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "media",
+    "development",
+    "productivity"
+  ],
+  "description": "Bookmark archive for keeping links you want to come back to, with tags, lists, notes, private or shared links, a browser bookmarklet, imports from any browser, and regular checks for links that have died. Source: https://github.com/Kovah/LinkAce",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

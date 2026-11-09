@@ -1,0 +1,23 @@
+{
+  "name": "Modrinth",
+  "id": "modrinth",
+  "available": true,
+  "short_desc": "[Modrinth App](https://modrinth.com/) is a unique, open source launcher that allows you to play your favorite mods, and keep them up to date, all in o...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "games"
+  ],
+  "description": "[Modrinth App](https://modrinth.com/) is a unique, open source launcher that allows you to play your favorite mods, and keep them up to date, all in one neat little package.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

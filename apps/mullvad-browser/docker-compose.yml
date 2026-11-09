@@ -1,0 +1,22 @@
+services:
+  mullvad-browser:
+    image: linuxserver/mullvad-browser:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+    - LOCAL_NET=192.168.0.0/16
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

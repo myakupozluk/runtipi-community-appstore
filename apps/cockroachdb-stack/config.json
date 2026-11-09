@@ -1,0 +1,23 @@
+{
+  "name": "CockroachDB (stack)",
+  "id": "cockroachdb-stack",
+  "available": true,
+  "short_desc": "CockroachDB cluster",
+  "author": "mikestraney/portainer-templates",
+  "port": 8080,
+  "categories": [
+    "utilities"
+  ],
+  "description": "CockroachDB cluster",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mikestraney/portainer-templates/",
+  "website": "https://github.com/mikestraney/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

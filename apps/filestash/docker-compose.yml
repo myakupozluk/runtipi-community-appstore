@@ -1,0 +1,23 @@
+services:
+  filestash:
+    hostname: filestash
+    image: machines/filestash:latest
+    restart: unless-stopped
+    expose:
+    - 8334
+    environment:
+    - APPLICATION_URL=MYHOSTIP
+    volumes:
+    - ${APP_DATA_DIR}/filestash_etc_localtime:/etc/localtime
+    - ${APP_DATA_DIR}/filestash_portainer_Files_AppData_Config_filestash_data:/app/data/state
+    - ${APP_DATA_DIR}/filestash_mnt_MYSMBMOUNT:/mnt/MYSMBMOUNT
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,24 @@
+{
+  "name": "Timescale DB",
+  "id": "timescale-db",
+  "available": true,
+  "short_desc": "Open-source time series database developed by Timescale Inc",
+  "author": "portainer/templates",
+  "port": 9993,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "Open-source time series database developed by Timescale Inc",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,23 @@
+name: kilo
+services:
+  kilo:
+    build: .
+    image: miget-kilo:local
+    restart: unless-stopped
+    environment:
+      KILO_SERVER_PASSWORD: ${KILO_SERVER_PASSWORD}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+    volumes:
+    - ${APP_DATA_DIR}/kilo_workspace:/workspace
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+volumes:
+  workspace: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

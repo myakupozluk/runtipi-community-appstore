@@ -1,0 +1,25 @@
+{
+  "name": "drawDB",
+  "id": "drawdb",
+  "available": true,
+  "short_desc": "Database diagram editor for drawing entity relationships in the browser, then exporting them as SQL for MySQL, PostgreSQL, SQLite, MariaDB or SQL Serv...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8098,
+  "categories": [
+    "development",
+    "data",
+    "games"
+  ],
+  "description": "Database diagram editor for drawing entity relationships in the browser, then exporting them as SQL for MySQL, PostgreSQL, SQLite, MariaDB or SQL Server, or importing an existing schema to see it. Source: https://github.com/drawdb-io/drawdb",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

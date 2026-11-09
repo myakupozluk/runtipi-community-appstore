@@ -1,0 +1,20 @@
+services:
+  joomla:
+    image: joomla:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - JOOMLA_DB_HOST=
+    - JOOMLA_DB_PASSWORD=
+    volumes:
+    - ${APP_DATA_DIR}/var_www_html:/var/www/html
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

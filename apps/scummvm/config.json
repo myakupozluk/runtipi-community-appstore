@@ -1,0 +1,25 @@
+{
+  "name": "Scummvm",
+  "id": "scummvm",
+  "available": true,
+  "short_desc": "[ScummVM](https://www.scummvm.org/) is a program which allows you to run certain classic graphical adventure and role-playing games, provided you alre...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "security",
+    "development",
+    "data"
+  ],
+  "description": "[ScummVM](https://www.scummvm.org/) is a program which allows you to run certain classic graphical adventure and role-playing games, provided you already have their data files. The clever part about this: ScummVM just replaces the executables shipped with the games, allowing you to play them on systems for which they were never designed! ScummVM is a complete rewrite of these games' executables and is not an emulator.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

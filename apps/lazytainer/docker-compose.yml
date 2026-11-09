@@ -1,0 +1,50 @@
+services:
+  lazytainer:
+    image: ghcr.io/vmorganp/lazytainer:master
+    environment:
+    - PORT=81,82
+    - LABEL=lazytainer
+    - TIMEOUT=30
+    - MINPACKETTHRESH=10
+    - POLLRATE=1
+    - VERBOSE=true
+    - INTERFACE=eth0
+    volumes:
+    - ${APP_DATA_DIR}/lazytainer_var_run_docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 81
+  whoami1:
+    image: containous/whoami
+    command: --port 81
+    network_mode: service:lazytainer
+    depends_on:
+    - lazytainer
+    labels:
+    - lazytainer.marker=lazytainer
+    - lazytainer.sleepMethod=pause
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+  whoami2:
+    image: containous/whoami
+    command: --port 82
+    network_mode: service:lazytainer
+    depends_on:
+    - lazytainer
+    labels:
+    - lazytainer.marker=lazytainer
+    - lazytainer.sleepMethod=stop
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,25 @@
+{
+  "name": "Keycloak",
+  "id": "keycloak",
+  "available": true,
+  "short_desc": "Keycloak, identity & access management (OIDC, SAML, social login, user federation) backed by a managed Postgres.",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "security",
+    "network",
+    "development"
+  ],
+  "description": "Keycloak, identity & access management (OIDC, SAML, social login, user federation) backed by a managed Postgres.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

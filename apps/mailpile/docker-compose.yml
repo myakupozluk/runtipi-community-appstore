@@ -1,0 +1,17 @@
+services:
+  mailpile:
+    image: rroemhild/mailpile
+    volumes:
+    - ${APP_DATA_DIR}/mailpile_portainer_Files_AppData_Config_mailpile:/root/.local/share/Mailpile
+    - ${APP_DATA_DIR}/mailpile_portainer_Files_AppData_Config_mailpile_gnu:/root/.gnupg
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 33411
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,23 @@
+{
+  "name": "Twitch Points Miner",
+  "id": "twitch-points-miner",
+  "available": true,
+  "short_desc": "A simple script that will watch a stream for you and earn the channel points.",
+  "author": "Qballjos/portainer_templates",
+  "port": 5000,
+  "categories": [
+    "utilities"
+  ],
+  "description": "A simple script that will watch a stream for you and earn the channel points.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/Qballjos/portainer_templates/",
+  "website": "https://github.com/Qballjos/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

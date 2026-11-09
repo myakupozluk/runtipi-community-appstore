@@ -1,0 +1,23 @@
+{
+  "name": "McMyAdmin 2",
+  "id": "mcmyadmin2",
+  "available": true,
+  "short_desc": "McMyAdmin 2 is the leading web control panel and administration console for Minecraft servers.",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "games"
+  ],
+  "description": "McMyAdmin 2 is the leading web control panel and administration console for Minecraft servers.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

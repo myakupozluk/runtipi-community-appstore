@@ -1,0 +1,24 @@
+{
+  "name": "Hasura",
+  "id": "hasura",
+  "available": true,
+  "short_desc": "Hasura v2 CE - instant GraphQL over Postgres: track tables and get queries, mutations, and live subscriptions with row-level permissions, remote schem...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "Hasura v2 CE - instant GraphQL over Postgres: track tables and get queries, mutations, and live subscriptions with row-level permissions, remote schemas, and event triggers. Stateless single container; everything lives in the database.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Librewolf",
+  "id": "librewolf",
+  "available": true,
+  "short_desc": "[LibreWolf](https://librewolf.net/) is a custom and independent version of Firefox, with the primary goals of privacy, security and user freedom. Libr...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "security",
+    "data"
+  ],
+  "description": "[LibreWolf](https://librewolf.net/) is a custom and independent version of Firefox, with the primary goals of privacy, security and user freedom. LibreWolf also aims to remove all the telemetry, data collection and annoyances, as well as disabling anti-freedom features like DRM.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

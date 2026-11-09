@@ -1,0 +1,25 @@
+{
+  "name": "Documenso",
+  "id": "documenso",
+  "available": true,
+  "short_desc": "Documenso - the open-source DocuSign alternative: signing workflows, templates, teams, and an API, with real PKCS#12 document sealing. One app contain...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "security",
+    "development",
+    "productivity"
+  ],
+  "description": "Documenso - the open-source DocuSign alternative: signing workflows, templates, teams, and an API, with real PKCS#12 document sealing. One app container + a managed Postgres; no volumes (the signing cert rides env as base64).",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

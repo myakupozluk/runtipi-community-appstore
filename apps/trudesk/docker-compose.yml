@@ -1,0 +1,59 @@
+services:
+  trudesk:
+    image: polonel/trudesk
+    restart: always
+    dns:
+    - 8.8.8.8
+    - 1.1.1.1
+    environment:
+      NODE_ENV: production
+      TRUDESK_DOCKER: true
+      TD_MONGODB_SERVER: mongo
+      TD_MONGODB_DATABASE: trudesk
+      ELATICSEARCH_URI: http://elasticsearch:9200
+      TZ: Europe/Athens
+    volumes:
+    - ${APP_DATA_DIR}/trudesk_portainer_Files_AppData_Config_trudesk_uploads:/usr/src/trudesk/public/uploads
+    - ${APP_DATA_DIR}/trudesk_portainer_Files_AppData_Config_trudesk_backups:/usr/src/trudesk/backups
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8118
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+    - 27017:27017
+    volumes:
+    - ${APP_DATA_DIR}/mongo_portainer_Files_AppData_Config_trudesk_mongo:/var/lib/mongo
+    - ${APP_DATA_DIR}/mongo_portainer_Files_AppData_Config_trudesk_mongo:/data/configdb
+    - ${APP_DATA_DIR}/mongo_portainer_Files_AppData_Config_trudesk_mongo:/data/db
+    networks:
+    - tipi_main_network
+  elasticsearch:
+    image: elasticsearch:8.0.0
+    restart: always
+    environment:
+    - xpack.security.enabled=false
+    - xpack.security.http.ssl.enabled=false
+    - node.name=estrudesk01
+    - cluster.initial_master_nodes=estrudesk01
+    - discovery.seed_hosts=estrudesk01
+    - bootstrap.memory_lock=true
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+    - 9200:9200
+    - 9300:9300
+    volumes:
+    - ${APP_DATA_DIR}/elasticsearch_volume1_docker_trudesk_elasticsearch:/usr/share/elasticsearch/data
+    networks:
+    - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

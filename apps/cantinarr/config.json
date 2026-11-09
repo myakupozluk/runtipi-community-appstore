@@ -1,0 +1,25 @@
+{
+  "name": "Cantinarr",
+  "id": "cantinarr",
+  "available": true,
+  "short_desc": "Media requests and server management in one app. Household members browse and request movies, shows, books, and music, follow downloads, and get notif...",
+  "author": "Community",
+  "port": 8585,
+  "categories": [
+    "security",
+    "media",
+    "development"
+  ],
+  "description": "Media requests and server management in one app. Household members browse and request movies, shows, books, and music, follow downloads, and get notified when content is ready. Administrators manage Radarr, Sonarr, Chaptarr, Lidarr, and download clients, review approvals, and investigate stuck downloads. AI is optional, and authorized MCP clients can use the same server. GitHub: [windoze95/cantinarr](https://github.com/windoze95/cantinarr)",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

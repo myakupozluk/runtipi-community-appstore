@@ -1,0 +1,23 @@
+{
+  "name": "Huginn",
+  "id": "huginn",
+  "available": true,
+  "short_desc": "Create agents that monitor and act on your behalf.",
+  "author": "xneo1/portainer_templates",
+  "port": 3000,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Create agents that monitor and act on your behalf.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

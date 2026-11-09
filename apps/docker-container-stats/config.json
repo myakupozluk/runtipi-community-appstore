@@ -1,0 +1,23 @@
+{
+  "name": "Docker Container Stats",
+  "id": "docker-container-stats",
+  "available": true,
+  "short_desc": "Docker Container Stats is a web interface for viewing historical and current statistics per docker container (cpu, mem, net i/o, block i/o) - in a doc...",
+  "author": "xneo1/portainer_templates",
+  "port": 8383,
+  "categories": [
+    "productivity"
+  ],
+  "description": "Docker Container Stats is a web interface for viewing historical and current statistics per docker container (cpu, mem, net i/o, block i/o) - in a docker container.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

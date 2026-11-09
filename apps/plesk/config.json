@@ -1,0 +1,23 @@
+{
+  "name": "Plesk",
+  "id": "plesk",
+  "available": true,
+  "short_desc": "WebOps platform and hosting control panel",
+  "author": "mikestraney/portainer-templates",
+  "port": 21,
+  "categories": [
+    "utilities"
+  ],
+  "description": "WebOps platform and hosting control panel",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mikestraney/portainer-templates/",
+  "website": "https://github.com/mikestraney/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

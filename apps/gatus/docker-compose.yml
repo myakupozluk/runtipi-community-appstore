@@ -1,0 +1,18 @@
+services:
+  gatus:
+    image: twinproduction/gatus:stable
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

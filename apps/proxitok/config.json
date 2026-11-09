@@ -1,0 +1,24 @@
+{
+  "name": "ProxiTok",
+  "id": "proxitok",
+  "available": true,
+  "short_desc": "Use Tiktok with an alternative frontend, inspired by Nitter.",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "development",
+    "social"
+  ],
+  "description": "Use Tiktok with an alternative frontend, inspired by Nitter.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

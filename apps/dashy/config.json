@@ -1,0 +1,25 @@
+{
+  "name": "Dashy (container)",
+  "id": "dashy",
+  "available": true,
+  "short_desc": "The ultimate personal dashboard, keep all your self-hosted services and websites organized. Includes live status monitoring, widgets, icons, themes, 3...",
+  "author": "Community",
+  "port": 4000,
+  "categories": [
+    "security",
+    "development",
+    "monitoring"
+  ],
+  "description": "The ultimate personal dashboard, keep all your self-hosted services and websites organized. Includes live status monitoring, widgets, icons, themes, 30+ languages, instant search, multi-page support, UI editor, authentication and more. GitHub: [lissy93/dashy](https://github.com/lissy93/dashy)",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

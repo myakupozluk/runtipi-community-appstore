@@ -1,0 +1,25 @@
+{
+  "name": "Valheim Server",
+  "id": "valheim-server-docker",
+  "available": true,
+  "short_desc": "Valheim dedicated gameserver in Docker with full modding support. Source: https://github.com/lloesche/valheim-server-docker",
+  "author": "Community",
+  "port": 2456,
+  "categories": [
+    "development",
+    "productivity",
+    "games"
+  ],
+  "description": "Valheim dedicated gameserver in Docker with full modding support. Source: https://github.com/lloesche/valheim-server-docker",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

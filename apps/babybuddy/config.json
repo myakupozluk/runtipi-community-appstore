@@ -1,0 +1,24 @@
+{
+  "name": "Babybuddy",
+  "id": "babybuddy",
+  "available": true,
+  "short_desc": "[Babybuddy](https://github.com/babybuddy/babybuddy) is a buddy for babies! Helps caregivers track sleep, feedings, diaper changes, tummy time and more...",
+  "author": "technorabilia/portainer-templates",
+  "port": 8000,
+  "categories": [
+    "development",
+    "social"
+  ],
+  "description": "[Babybuddy](https://github.com/babybuddy/babybuddy) is a buddy for babies! Helps caregivers track sleep, feedings, diaper changes, tummy time and more to learn about and predict baby's needs without (as much) guess work.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

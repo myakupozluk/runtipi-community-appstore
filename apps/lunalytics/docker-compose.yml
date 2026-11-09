@@ -1,0 +1,17 @@
+services:
+  lunalytics:
+    image: ksjaay/lunalytics:latest
+    volumes:
+    - ${APP_DATA_DIR}/lunalytics_portainer_Files_AppData_Config_lunalytics_data:/app/data
+    - ${APP_DATA_DIR}/lunalytics_portainer_Files_AppData_Config_lunalytics_logs:/app/logs
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 2308
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

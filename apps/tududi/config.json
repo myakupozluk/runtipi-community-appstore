@@ -1,0 +1,25 @@
+{
+  "name": "tududi",
+  "id": "tududi",
+  "available": true,
+  "short_desc": "Task manager for organising your life into areas, projects and tasks, with notes, tags, recurring tasks, Today and Upcoming views, and CalDAV sync wit...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "Task manager for organising your life into areas, projects and tasks, with notes, tags, recurring tasks, Today and Upcoming views, and CalDAV sync with your other apps. Source: https://github.com/chrisvel/tududi",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

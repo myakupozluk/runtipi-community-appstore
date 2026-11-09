@@ -1,0 +1,23 @@
+{
+  "name": "Steam",
+  "id": "steam",
+  "available": true,
+  "short_desc": "[Steam](https://store.steampowered.com/) is the ultimate destination for playing, discussing, and creating games.",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "games"
+  ],
+  "description": "[Steam](https://store.steampowered.com/) is the ultimate destination for playing, discussing, and creating games.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

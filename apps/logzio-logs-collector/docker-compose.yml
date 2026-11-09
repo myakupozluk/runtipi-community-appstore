@@ -1,0 +1,21 @@
+services:
+  logzio-logs-collector:
+    image: logzio/docker-collector-logs:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - LOGZIO_TOKEN=REPLACE-LOGZIO-TOKEN-HERE
+    - LOGZIO_URL=listener.logz.io:5015
+    volumes:
+    - ${APP_DATA_DIR}/var_run_docker.sock:/var/run/docker.sock
+    - ${APP_DATA_DIR}/var_lib_docker_containers:/var/lib/docker/containers
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

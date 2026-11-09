@@ -1,0 +1,25 @@
+{
+  "name": "Lazylibrarian",
+  "id": "lazylibrarian",
+  "available": true,
+  "short_desc": "[Lazylibrarian](https://lazylibrarian.gitlab.io/) is a program to follow authors and grab metadata for all your digital reading needs. It uses a combi...",
+  "author": "technorabilia/portainer-templates",
+  "port": 5299,
+  "categories": [
+    "security",
+    "media",
+    "development"
+  ],
+  "description": "[Lazylibrarian](https://lazylibrarian.gitlab.io/) is a program to follow authors and grab metadata for all your digital reading needs. It uses a combination of HardCover, OpenLibrary, Librarything, GoodReads, and optionally GoogleBooks as sources for author info and book info.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

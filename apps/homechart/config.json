@@ -1,0 +1,25 @@
+{
+  "name": "Homechart",
+  "id": "homechart",
+  "available": true,
+  "short_desc": "Your Budgets, Calendars, Meals, Inventory, Tasks, and so much more in one simple app.For everyone in your household.On all of your devices.In the clou...",
+  "author": "xneo1/portainer_templates",
+  "port": 3030,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "Your Budgets, Calendars, Meals, Inventory, Tasks, and so much more in one simple app.For everyone in your household.On all of your devices.In the cloud or self-hosted",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

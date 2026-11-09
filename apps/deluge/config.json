@@ -1,0 +1,23 @@
+{
+  "name": "Deluge",
+  "id": "deluge",
+  "available": true,
+  "short_desc": "[Deluge](http://deluge-torrent.org/) is a lightweight, Free Software, cross-platform BitTorrent client. * Full Encryption * WebUI * Plugin System * Mu...",
+  "author": "technorabilia/portainer-templates",
+  "port": 8112,
+  "categories": [
+    "data"
+  ],
+  "description": "[Deluge](http://deluge-torrent.org/) is a lightweight, Free Software, cross-platform BitTorrent client. * Full Encryption * WebUI * Plugin System * Much more...",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

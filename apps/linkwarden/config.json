@@ -1,0 +1,25 @@
+{
+  "name": "Linkwarden",
+  "id": "linkwarden",
+  "available": true,
+  "short_desc": "Linkwarden - a bookmark manager that actually keeps your links: every save is preserved as a screenshot, PDF, readable HTML, and an archive.org snapsh...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "media",
+    "productivity",
+    "finance"
+  ],
+  "description": "Linkwarden - a bookmark manager that actually keeps your links: every save is preserved as a screenshot, PDF, readable HTML, and an archive.org snapshot, so a dead page is still readable years later.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

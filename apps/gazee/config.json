@@ -1,0 +1,24 @@
+{
+  "name": "Gazee",
+  "id": "gazee",
+  "available": true,
+  "short_desc": "A WebApp Comic Reader for your favorite digital comics. Reach and read your comic library from any web connected device with a modern web browser.",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "media",
+    "development"
+  ],
+  "description": "A WebApp Comic Reader for your favorite digital comics. Reach and read your comic library from any web connected device with a modern web browser.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

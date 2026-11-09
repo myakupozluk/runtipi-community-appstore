@@ -1,0 +1,20 @@
+services:
+  wowza:
+    image: sameersbn/wowza:4.1.2-8
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - WOWZA_ACCEPT_LICENSE=yes
+    - WOWZA_KEY=
+    volumes:
+    - ${APP_DATA_DIR}/var_lib_wowza:/var/lib/wowza
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 1935
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

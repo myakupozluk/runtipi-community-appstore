@@ -1,0 +1,30 @@
+name: parseable
+services:
+  parseable:
+    build: .
+    restart: unless-stopped
+    environment:
+      P_ADDR: 0.0.0.0:5000
+      P_USERNAME: ${P_USERNAME:-admin}
+      P_PASSWORD: ${P_PASSWORD}
+      P_STAGING_DIR: /data/staging
+      P_FS_DIR: /data/store
+      P_S3_URL: ${P_S3_URL:-}
+      P_S3_ACCESS_KEY: ${P_S3_ACCESS_KEY:-}
+      P_S3_SECRET_KEY: ${P_S3_SECRET_KEY:-}
+      P_S3_REGION: ${P_S3_REGION:-us-east-1}
+      P_S3_BUCKET: ${P_S3_BUCKET:-}
+    volumes:
+    - ${APP_DATA_DIR}/parseable_parseabledata:/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+volumes:
+  parseabledata: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,21 @@
+services:
+  traefik:
+    image: traefik:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/traefik.yml:/traefik.yml
+    - ${APP_DATA_DIR}/config.yml:/config.yml
+    - ${APP_DATA_DIR}/acme.json:/acme.json
+    - ${APP_DATA_DIR}/var_run_docker.sock:/var/run/docker.sock
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

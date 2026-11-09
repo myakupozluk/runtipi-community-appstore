@@ -1,0 +1,19 @@
+services:
+  nginx:
+    image: nginx:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/etc_nginx:/etc/nginx
+    - ${APP_DATA_DIR}/usr_share_nginx_html:/usr/share/nginx/html
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

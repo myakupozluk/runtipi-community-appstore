@@ -1,0 +1,23 @@
+{
+  "name": "Samba",
+  "id": "samba",
+  "available": true,
+  "short_desc": "Samba has provided secure, stable and fast file and print services for all clients using the SMB/CIFS protocol, such as all versions of DOS and Window...",
+  "author": "novaspirit/pi-hosted",
+  "port": 139,
+  "categories": [
+    "development"
+  ],
+  "description": "Samba has provided secure, stable and fast file and print services for all clients using the SMB/CIFS protocol, such as all versions of DOS and Windows, OS/2, Linux and many others.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

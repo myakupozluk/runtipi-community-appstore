@@ -1,0 +1,25 @@
+{
+  "name": "Softing SDEX Suite",
+  "id": "softing-sdex-suite",
+  "available": true,
+  "short_desc": "Connect PLCs and CNCs from multiple manufacturers and provide their industrial data to IT applications via OPC UA and MQTT.",
+  "author": "portainer/templates",
+  "port": 9993,
+  "categories": [
+    "development",
+    "data",
+    "automation"
+  ],
+  "description": "Connect PLCs and CNCs from multiple manufacturers and provide their industrial data to IT applications via OPC UA and MQTT.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

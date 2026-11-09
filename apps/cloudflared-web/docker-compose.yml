@@ -1,0 +1,21 @@
+services:
+  cloudflared-web:
+    image: wisdomsky/cloudflared-web:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - WEBUI_PORT=14333
+    - BASIC_AUTH_USER=admin
+    - BASIC_AUTH_PASS=
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

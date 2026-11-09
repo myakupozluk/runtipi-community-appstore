@@ -1,0 +1,25 @@
+{
+  "name": "Redis (stack)",
+  "id": "redis",
+  "available": true,
+  "short_desc": "Redis - the in-memory data store used for caching, queues, pub/sub, streams, rate-limiting, and rich data structures. This is a single node, password-...",
+  "author": "deployable-sh/stacks",
+  "port": 6379,
+  "categories": [
+    "security",
+    "development",
+    "data"
+  ],
+  "description": "Redis - the in-memory data store used for caching, queues, pub/sub, streams, rate-limiting, and rich data structures. This is a single node, password-protected, with append-only persistence on a volume.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

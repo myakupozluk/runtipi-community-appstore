@@ -1,0 +1,25 @@
+{
+  "name": "ConvertX",
+  "id": "convertx",
+  "available": true,
+  "short_desc": "File converter for over a thousand formats, covering images, documents, audio, video and ebooks. Source: https://github.com/C4illin/ConvertX",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 3000,
+  "categories": [
+    "media",
+    "development",
+    "productivity"
+  ],
+  "description": "File converter for over a thousand formats, covering images, documents, audio, video and ebooks. Source: https://github.com/C4illin/ConvertX",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

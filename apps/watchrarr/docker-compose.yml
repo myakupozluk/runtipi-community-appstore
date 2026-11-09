@@ -1,0 +1,19 @@
+services:
+  watchrarr:
+    image: homelabineer/watchrarr:latest
+    restart: unless-stopped
+    volumes:
+    - ${APP_DATA_DIR}/watchrarr_portainer_Files_AppData_Config_watchrarr_config.yaml:/app/config.yaml
+    - ${APP_DATA_DIR}/watchrarr_portainer_Files_AppData_Config_watchrarr_logs:/app/logs
+    - ${APP_DATA_DIR}/watchrarr_portainer_Files_AppData_Config_watchrarr_db:/app/db
+    - ${APP_DATA_DIR}/watchrarr_portainer_Files_AppData_Config_watchrarr:/app/watch
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,24 @@
+services:
+  nzbget:
+    image: linuxserver/nzbget:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+    - NZBGET_USER=nzbget
+    - NZBGET_PASS=tegbzn6789
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    - ${APP_DATA_DIR}/downloads:/downloads
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 6789
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

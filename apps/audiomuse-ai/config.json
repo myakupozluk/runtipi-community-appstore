@@ -1,0 +1,25 @@
+{
+  "name": "AudioMuse-AI",
+  "id": "audiomuse-ai",
+  "available": true,
+  "short_desc": "Automatic playlist generation for self-hosted music servers. Analyses your library locally to group tracks by how they sound. Works with Navidrome, Je...",
+  "author": "Community",
+  "port": 8080,
+  "categories": [
+    "media",
+    "development",
+    "games"
+  ],
+  "description": "Automatic playlist generation for self-hosted music servers. Analyses your library locally to group tracks by how they sound. Works with Navidrome, Jellyfin, LMS, Lyrion, Emby and Plex. GitHub: [NeptuneHub/AudioMuse-AI](https://github.com/NeptuneHub/AudioMuse-AI)",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

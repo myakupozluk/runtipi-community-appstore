@@ -1,0 +1,25 @@
+{
+  "name": "LubeLogger",
+  "id": "lubelogger",
+  "available": true,
+  "short_desc": "Vehicle maintenance and fuel tracker: log services, repairs, fuel-ups, taxes and odometer readings for each car, attach receipts, and get reminders wh...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8180,
+  "categories": [
+    "development",
+    "productivity",
+    "finance"
+  ],
+  "description": "Vehicle maintenance and fuel tracker: log services, repairs, fuel-ups, taxes and odometer readings for each car, attach receipts, and get reminders when something's due. Source: https://github.com/hargata/lubelog",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

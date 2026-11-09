@@ -1,0 +1,23 @@
+{
+  "name": "IronFunctions",
+  "id": "ironfunctions",
+  "available": true,
+  "short_desc": "Open-source serverless computing platform",
+  "author": "portainer/templates",
+  "port": 8080,
+  "categories": [
+    "games"
+  ],
+  "description": "Open-source serverless computing platform",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

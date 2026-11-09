@@ -1,0 +1,27 @@
+services:
+  airsonic-advanced:
+    image: linuxserver/airsonic-advanced:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+    - CONTEXT_PATH=
+    - JAVA_OPTS=
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    - ${APP_DATA_DIR}/music:/music
+    - ${APP_DATA_DIR}/playlists:/playlists
+    - ${APP_DATA_DIR}/podcasts:/podcasts
+    - ${APP_DATA_DIR}/media:/media
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 4040
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

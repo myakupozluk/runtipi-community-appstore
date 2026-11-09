@@ -1,0 +1,24 @@
+{
+  "name": "Flame",
+  "id": "flame",
+  "available": true,
+  "short_desc": "Flame is self-hosted startpage for your server. Its design is inspired (heavily) by SUI. Flame is very easy to setup and use. With built-in editors, i...",
+  "author": "novaspirit/pi-hosted",
+  "port": 5005,
+  "categories": [
+    "development",
+    "games"
+  ],
+  "description": "Flame is self-hosted startpage for your server. Its design is inspired (heavily) by SUI. Flame is very easy to setup and use. With built-in editors, it allows you to setup your very own application hub in no time - no file editing necessary.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Tooljet",
+  "id": "tooljet",
+  "available": true,
+  "short_desc": "Tooljet is an Open-source low-code application development platform for building and deploying business applications.",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "development"
+  ],
+  "description": "Tooljet is an Open-source low-code application development platform for building and deploying business applications.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Whoogle",
+  "id": "whoogle",
+  "available": true,
+  "short_desc": "Self-hosted, ad-free, privacy-respecting Google metasearch engine.",
+  "author": "xneo1/portainer_templates",
+  "port": 5001,
+  "categories": [
+    "security"
+  ],
+  "description": "Self-hosted, ad-free, privacy-respecting Google metasearch engine.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

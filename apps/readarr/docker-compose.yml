@@ -1,0 +1,25 @@
+services:
+  readarr:
+    image: ghcr.io/linuxserver/readarr:nightly
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PGID=15000
+    - PUID=15000
+    - TZ=America/Los_Angeles
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    - ${APP_DATA_DIR}/downloads:/downloads
+    - ${APP_DATA_DIR}/books:/books
+    - ${APP_DATA_DIR}/blackhole:/blackhole
+    - ${APP_DATA_DIR}/etc_localtime:/etc/localtime
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8787
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

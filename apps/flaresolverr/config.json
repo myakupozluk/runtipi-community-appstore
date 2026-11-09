@@ -1,0 +1,25 @@
+{
+  "name": "FlareSolverr",
+  "id": "flaresolverr",
+  "available": true,
+  "short_desc": "FlareSolverr is a proxy server to bypass Cloudflare and DDoS-GUARD protection.",
+  "author": "novaspirit/pi-hosted",
+  "port": 8191,
+  "categories": [
+    "network",
+    "data",
+    "games"
+  ],
+  "description": "FlareSolverr is a proxy server to bypass Cloudflare and DDoS-GUARD protection.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

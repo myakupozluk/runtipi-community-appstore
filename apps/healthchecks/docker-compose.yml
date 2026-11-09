@@ -1,0 +1,40 @@
+services:
+  healthchecks:
+    image: linuxserver/healthchecks:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+    - SECRET_KEY=
+    - SITE_ROOT=
+    - SITE_NAME=
+    - SUPERUSER_EMAIL=
+    - SUPERUSER_PASSWORD=
+    - ALLOWED_HOSTS=
+    - APPRISE_ENABLED=False
+    - CSRF_TRUSTED_ORIGINS=
+    - DEBUG=True
+    - DEFAULT_FROM_EMAIL=
+    - EMAIL_HOST=
+    - EMAIL_PORT=
+    - EMAIL_HOST_USER=
+    - EMAIL_HOST_PASSWORD=
+    - EMAIL_USE_TLS=
+    - INTEGRATIONS_ALLOW_PRIVATE_IPS=
+    - PING_EMAIL_DOMAIN=
+    - RP_ID=
+    - SITE_LOGO_URL=
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

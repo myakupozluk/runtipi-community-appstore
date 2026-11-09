@@ -1,0 +1,24 @@
+services:
+  gathio:
+    build: .
+    links:
+    - mongo
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+  mongo:
+    image: mongo:latest
+    volumes:
+    - ${APP_DATA_DIR}/mongo_portainer_Files_AppData_Config_gathio_mongodb_data_db:/data/db
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

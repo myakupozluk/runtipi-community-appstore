@@ -1,0 +1,22 @@
+services:
+  ariang:
+    image: hurlenko/aria2-ariang:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - ARIA2RPCPORT=443
+    volumes:
+    - ${APP_DATA_DIR}/aria2_conf:/aria2/conf
+    - ${APP_DATA_DIR}/aria2_data:/aria2/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

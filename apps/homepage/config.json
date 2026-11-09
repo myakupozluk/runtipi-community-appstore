@@ -1,0 +1,25 @@
+{
+  "name": "Homepage (container)",
+  "id": "homepage",
+  "available": true,
+  "short_desc": "A modern (fully static, fast), secure (fully proxied), highly customizable application dashboard with integrations for more than 25 services and trans...",
+  "author": "mediadepot/templates",
+  "port": 3000,
+  "categories": [
+    "productivity",
+    "data",
+    "monitoring"
+  ],
+  "description": "A modern (fully static, fast), secure (fully proxied), highly customizable application dashboard with integrations for more than 25 services and translations for over 15 languages. Easily configured via YAML files (or discovery via docker labels).",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mediadepot/templates/",
+  "website": "https://github.com/mediadepot/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

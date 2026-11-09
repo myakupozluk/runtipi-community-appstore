@@ -1,0 +1,24 @@
+{
+  "name": "Kodi Headless",
+  "id": "kodi-headless",
+  "available": true,
+  "short_desc": "Headless installation of Kodi™ (formerly known as XBMC™), to enable library updates.",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "media",
+    "development"
+  ],
+  "description": "Headless installation of Kodi™ (formerly known as XBMC™), to enable library updates.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

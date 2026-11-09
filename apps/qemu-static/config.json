@@ -1,0 +1,25 @@
+{
+  "name": "Qemu-static",
+  "id": "qemu-static",
+  "available": true,
+  "short_desc": "# This container needs special attention. Please check https://hub.docker.com/r/linuxserver/qemu-static for details.",
+  "author": "technorabilia/portainer-templates",
+  "port": 80,
+  "categories": [
+    "development",
+    "productivity",
+    "games"
+  ],
+  "description": "# This container needs special attention. Please check https://hub.docker.com/r/linuxserver/qemu-static for details.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

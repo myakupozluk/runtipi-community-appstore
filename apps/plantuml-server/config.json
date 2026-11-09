@@ -1,0 +1,25 @@
+{
+  "name": "PlantUML Server",
+  "id": "plantuml-server",
+  "available": true,
+  "short_desc": "Web editor and rendering server for PlantUML, turning plain-text descriptions into sequence, class, component and other diagrams as PNG, SVG or ASCII,...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8380,
+  "categories": [
+    "development",
+    "productivity",
+    "games"
+  ],
+  "description": "Web editor and rendering server for PlantUML, turning plain-text descriptions into sequence, class, component and other diagrams as PNG, SVG or ASCII, with a link for each one you can embed in docs and wikis. Source: https://github.com/plantuml/plantuml-server",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

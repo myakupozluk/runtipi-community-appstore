@@ -1,0 +1,19 @@
+services:
+  revealjs:
+    image: cloudogu/reveal.js:latest
+    restart: always
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/reveal_docs_slides:/reveal/docs/slides
+    - ${APP_DATA_DIR}/resources:/resources
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,25 @@
+{
+  "name": "Mathesar",
+  "id": "mathesar",
+  "available": true,
+  "short_desc": "Spreadsheet-like interface for PostgreSQL, for browsing, editing and linking tables without SQL, building queries by pointing and clicking and importi...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "Spreadsheet-like interface for PostgreSQL, for browsing, editing and linking tables without SQL, building queries by pointing and clicking and importing CSVs. Runs on its own database or connects to Postgres you already have. Source: https://github.com/mathesar-foundation/mathesar",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

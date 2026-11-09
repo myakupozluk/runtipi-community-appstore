@@ -1,0 +1,24 @@
+services:
+  jellyfin:
+    image: linuxserver/jellyfin:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+    - JELLYFIN_PublishedServerUrl=http://192.168.0.5
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    - ${APP_DATA_DIR}/data_tvshows:/data/tvshows
+    - ${APP_DATA_DIR}/data_movies:/data/movies
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8096
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

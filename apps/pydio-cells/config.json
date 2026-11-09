@@ -1,0 +1,23 @@
+{
+  "name": "Pydio-cells",
+  "id": "pydio-cells",
+  "available": true,
+  "short_desc": "[Pydio-cells](https://pydio.com/) is the nextgen file sharing platform for organizations. It is a full rewrite of the Pydio project using the Go langu...",
+  "author": "technorabilia/portainer-templates",
+  "port": 8080,
+  "categories": [
+    "productivity"
+  ],
+  "description": "[Pydio-cells](https://pydio.com/) is the nextgen file sharing platform for organizations. It is a full rewrite of the Pydio project using the Go language following a micro-service architecture.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

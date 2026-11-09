@@ -1,0 +1,25 @@
+{
+  "name": "DbGate",
+  "id": "dbgate",
+  "available": true,
+  "short_desc": "Database manager in the browser for PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB, Redis and more: browse and edit tables, write queries, co...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "data",
+    "games"
+  ],
+  "description": "Database manager in the browser for PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB, Redis and more: browse and edit tables, write queries, compare schemas, draw diagrams and import or export data. Source: https://github.com/dbgate/dbgate",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

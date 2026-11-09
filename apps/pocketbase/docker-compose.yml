@@ -1,0 +1,22 @@
+name: pocketbase
+services:
+  pocketbase:
+    image: ghcr.io/muchobien/pocketbase:0.39.8
+    restart: unless-stopped
+    command:
+    - serve
+    - --http=0.0.0.0:5000
+    volumes:
+    - ${APP_DATA_DIR}/pocketbase_pbdata:/pb_data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+volumes:
+  pbdata: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

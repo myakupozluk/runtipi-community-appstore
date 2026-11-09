@@ -1,0 +1,18 @@
+services:
+  kratos-selfservice-ui-node:
+    environment:
+    - PORT=4455
+    - SECURITY_MODE=
+    - KRATOS_BROWSER_URL=http://127.0.0.1:4433/
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+    x-runtipi:
+      is_main: true
+      internal_port: 4455
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

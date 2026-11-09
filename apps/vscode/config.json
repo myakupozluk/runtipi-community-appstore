@@ -1,0 +1,25 @@
+{
+  "name": "Vscode",
+  "id": "vscode",
+  "available": true,
+  "short_desc": "[VS Code](https://code.visualstudio.com/) is an integrated development environment developed by Microsoft. This container runs the full desktop applic...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "development",
+    "productivity",
+    "games"
+  ],
+  "description": "[VS Code](https://code.visualstudio.com/) is an integrated development environment developed by Microsoft. This container runs the full desktop application, for a web native version see [Code Server](https://github.com/linuxserver/docker-code-server).",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Hivekeep",
+  "id": "hivekeep",
+  "available": true,
+  "short_desc": "Self-hosted platform of autonomous, persistent personal AI agents that collaborate, remember, and build their own tools. Reachable via Telegram, Whats...",
+  "author": "Community",
+  "port": 3000,
+  "categories": [
+    "development",
+    "productivity",
+    "social"
+  ],
+  "description": "Self-hosted platform of autonomous, persistent personal AI agents that collaborate, remember, and build their own tools. Reachable via Telegram, WhatsApp, Slack, Discord, Signal and Matrix. Single container with Bun and SQLite, no external infrastructure. Source: https://github.com/MarlBurroW/hivekeep",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

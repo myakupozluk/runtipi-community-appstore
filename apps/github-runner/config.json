@@ -1,0 +1,25 @@
+{
+  "name": "GitHub Actions Runner",
+  "id": "github-runner",
+  "available": true,
+  "short_desc": "A self-hosted GitHub Actions runner: your workflows, your hardware, zero per-minute billing. Uses `myoung34/github-runner` (the de-facto env-driven ru...",
+  "author": "deployable-sh/stacks",
+  "port": 8080,
+  "categories": [
+    "development",
+    "data",
+    "monitoring"
+  ],
+  "description": "A self-hosted GitHub Actions runner: your workflows, your hardware, zero per-minute billing. Uses `myoung34/github-runner` (the de-facto env-driven runner image) with PAT-based auto-registration.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

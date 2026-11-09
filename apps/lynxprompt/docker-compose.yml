@@ -1,0 +1,67 @@
+services:
+  postgres:
+    image: postgres:18-alpine
+    restart: unless-stopped
+    volumes:
+    - ${APP_DATA_DIR}/postgres_pgdata:/var/lib/postgresql
+    environment:
+      POSTGRES_DB: lynxprompt
+      POSTGRES_USER: lynxprompt
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?DB_PASSWORD must be set}
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - pg_isready -U lynxprompt -d lynxprompt
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+    - tipi_main_network
+  lynxprompt:
+    image: drumsergio/lynxprompt:2.1.40
+    platform: linux/amd64
+    restart: unless-stopped
+    volumes:
+    - ${APP_DATA_DIR}/lynxprompt_uploads:/data/uploads
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DB_APP_HOST: postgres
+      DB_APP_USER: lynxprompt
+      DB_APP_PASSWORD: ${DB_PASSWORD}
+      DB_APP_NAME: lynxprompt
+      DB_USERS_HOST: postgres
+      DB_USERS_USER: lynxprompt
+      DB_USERS_PASSWORD: ${DB_PASSWORD}
+      DB_USERS_NAME: lynxprompt_users
+      DB_BLOG_HOST: postgres
+      DB_BLOG_USER: lynxprompt
+      DB_BLOG_PASSWORD: ${DB_PASSWORD}
+      DB_BLOG_NAME: lynxprompt_blog
+      DB_SUPPORT_HOST: postgres
+      DB_SUPPORT_USER: lynxprompt
+      DB_SUPPORT_PASSWORD: ${DB_PASSWORD}
+      DB_SUPPORT_NAME: lynxprompt_support
+      NEXTAUTH_SECRET: ${NEXTAUTH_SECRET:?NEXTAUTH_SECRET must be set}
+      NEXTAUTH_URL: ${APP_URL:?APP_URL must be set}
+      APP_URL: ${APP_URL:?APP_URL must be set}
+      SUPERADMIN_EMAIL: ${SUPERADMIN_EMAIL:-}
+      SMTP_HOST: ${SMTP_HOST:?SMTP_HOST must be set}
+      SMTP_PORT: ${SMTP_PORT:-587}
+      SMTP_USER: ${SMTP_USER:-}
+      SMTP_PASSWORD: ${SMTP_PASSWORD:-}
+      SMTP_FROM: ${SMTP_FROM:?SMTP_FROM must be set}
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+volumes:
+  pgdata: null
+  uploads: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

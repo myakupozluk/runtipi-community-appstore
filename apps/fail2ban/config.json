@@ -1,0 +1,24 @@
+{
+  "name": "Fail2ban",
+  "id": "fail2ban",
+  "available": true,
+  "short_desc": "[Fail2ban](http://www.fail2ban.org/) is a daemon to ban hosts that cause multiple authentication errors.",
+  "author": "technorabilia/portainer-templates",
+  "port": 80,
+  "categories": [
+    "security",
+    "network"
+  ],
+  "description": "[Fail2ban](http://www.fail2ban.org/) is a daemon to ban hosts that cause multiple authentication errors.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

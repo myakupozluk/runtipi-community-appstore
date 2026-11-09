@@ -1,0 +1,19 @@
+services:
+  commafeed:
+    image: athou/commafeed:latest-h2
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - QUARKUS_HTTP_AUTH_SESSION_ENCRYPTION_KEY=
+    volumes:
+    - ${APP_DATA_DIR}/commafeed_data:/commafeed/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8082
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

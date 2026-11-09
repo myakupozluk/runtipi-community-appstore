@@ -1,0 +1,25 @@
+{
+  "name": "Metabase",
+  "id": "metabase",
+  "available": true,
+  "short_desc": "Metabase OSS - the BI tool non-analysts actually use: point-and-click questions, dashboards, and SQL when you want it. One JVM container + a managed P...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "data",
+    "finance"
+  ],
+  "description": "Metabase OSS - the BI tool non-analysts actually use: point-and-click questions, dashboards, and SQL when you want it. One JVM container + a managed Postgres for the app database.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

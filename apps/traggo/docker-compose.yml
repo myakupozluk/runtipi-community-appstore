@@ -1,0 +1,19 @@
+services:
+  traggo:
+    image: traggo/server:latest
+    environment:
+      TRAGGO_DEFAULT_USER_NAME: admin
+      TRAGGO_DEFAULT_USER_PASS: mynewpassword
+    volumes:
+    - ${APP_DATA_DIR}/traggo_portainer_Files_AppData_Config_traggo_data:/opt/traggo/data
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3030
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

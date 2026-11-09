@@ -1,0 +1,24 @@
+{
+  "name": "hydra2",
+  "id": "hydra2",
+  "available": true,
+  "short_desc": "NZBHydra is a meta search for NZB indexers and the \"spiritual successor\" to NZBmegasearcH. It provides easy access to a number of raw and newznab base...",
+  "author": "dnburgess/self-hosted-template",
+  "port": 5076,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "NZBHydra is a meta search for NZB indexers and the \"spiritual successor\" to NZBmegasearcH. It provides easy access to a number of raw and newznab based indexers.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/dnburgess/self-hosted-template/",
+  "website": "https://github.com/dnburgess/self-hosted-template/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

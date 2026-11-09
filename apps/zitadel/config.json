@@ -1,0 +1,25 @@
+{
+  "name": "Zitadel",
+  "id": "zitadel",
+  "available": true,
+  "short_desc": "Zitadel - modern identity infrastructure: OIDC, SAML, passkeys-first login, multi-tenant organizations, and JS actions for custom logic. One stateless...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "security",
+    "network",
+    "development"
+  ],
+  "description": "Zitadel - modern identity infrastructure: OIDC, SAML, passkeys-first login, multi-tenant organizations, and JS actions for custom logic. One stateless Go binary on Postgres - the lightest full IdP in the catalogue (~512 MB).",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

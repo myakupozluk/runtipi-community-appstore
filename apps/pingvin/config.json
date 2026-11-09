@@ -1,0 +1,23 @@
+{
+  "name": "Pingvin",
+  "id": "pingvin",
+  "available": true,
+  "short_desc": "Pingvin self-hosted application for Runtipi.",
+  "author": "Community",
+  "port": 3123,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Pingvin self-hosted application for Runtipi.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

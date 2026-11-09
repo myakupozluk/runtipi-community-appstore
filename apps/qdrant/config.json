@@ -1,0 +1,25 @@
+{
+  "name": "Qdrant",
+  "id": "qdrant",
+  "available": true,
+  "short_desc": "Qdrant vector database, single container + volume, internal-only by default (no API key is configured; the project network is the boundary).",
+  "author": "deployable-sh/stacks",
+  "port": 6333,
+  "categories": [
+    "network",
+    "development",
+    "productivity"
+  ],
+  "description": "Qdrant vector database, single container + volume, internal-only by default (no API key is configured; the project network is the boundary).",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

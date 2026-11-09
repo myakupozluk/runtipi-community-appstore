@@ -1,0 +1,25 @@
+{
+  "name": "NetAlertX",
+  "id": "netalertx",
+  "available": true,
+  "short_desc": "WIFI / LAN intruder detector. Scans for devices connected to your network and alerts you if new and unknown devices are found.",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "network",
+    "development",
+    "monitoring"
+  ],
+  "description": "WIFI / LAN intruder detector. Scans for devices connected to your network and alerts you if new and unknown devices are found.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

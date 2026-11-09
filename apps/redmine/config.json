@@ -1,0 +1,23 @@
+{
+  "name": "Redmine",
+  "id": "redmine",
+  "available": true,
+  "short_desc": "Open-source project management tool",
+  "author": "portainer/templates",
+  "port": 3000,
+  "categories": [
+    "productivity"
+  ],
+  "description": "Open-source project management tool",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

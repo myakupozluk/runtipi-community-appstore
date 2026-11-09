@@ -1,0 +1,25 @@
+{
+  "name": "SickChill",
+  "id": "sickchill",
+  "available": true,
+  "short_desc": "Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
+  "author": "xneo1/portainer_templates",
+  "port": 8081,
+  "categories": [
+    "media",
+    "development",
+    "data"
+  ],
+  "description": "Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

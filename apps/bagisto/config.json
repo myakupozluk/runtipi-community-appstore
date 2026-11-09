@@ -1,0 +1,23 @@
+{
+  "name": "Bagisto",
+  "id": "bagisto",
+  "available": true,
+  "short_desc": "Bagisto - the open-source Laravel ecommerce platform: catalog, cart, checkout, multi-channel and multi-currency storefronts, and a full admin. MIT-lic...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Bagisto - the open-source Laravel ecommerce platform: catalog, cart, checkout, multi-channel and multi-currency storefronts, and a full admin. MIT-licensed.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Dokku (container)",
+  "id": "dokku-container",
+  "available": true,
+  "short_desc": "Dokku setup as a container",
+  "author": "portainer/templates",
+  "port": 22,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Dokku setup as a container",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Luanti",
+  "id": "luanti",
+  "available": true,
+  "short_desc": "[Luanti](https://www.luanti.org/) (formerly Minetest) is an open source voxel game-creation platform with easy modding and game creation",
+  "author": "technorabilia/portainer-templates",
+  "port": 30000,
+  "categories": [
+    "games"
+  ],
+  "description": "[Luanti](https://www.luanti.org/) (formerly Minetest) is an open source voxel game-creation platform with easy modding and game creation",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

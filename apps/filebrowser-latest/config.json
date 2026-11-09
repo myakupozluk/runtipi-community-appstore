@@ -1,0 +1,23 @@
+{
+  "name": "FileBrowser latest",
+  "id": "filebrowser-latest",
+  "available": true,
+  "short_desc": "Web File Browser which can be used as a middleware or standalone app.",
+  "author": "novaspirit/pi-hosted",
+  "port": 8082,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Web File Browser which can be used as a middleware or standalone app.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

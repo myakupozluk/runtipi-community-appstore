@@ -1,0 +1,25 @@
+services:
+  kasm:
+    image: linuxserver/kasm:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - KASM_PORT=443
+    - DOCKER_HUB_USERNAME=USER
+    - DOCKER_HUB_PASSWORD=PASS
+    - DOCKER_MTU=1500
+    volumes:
+    - ${APP_DATA_DIR}/opt:/opt
+    - ${APP_DATA_DIR}/profiles:/profiles
+    - ${APP_DATA_DIR}/dev_input:/dev/input
+    - ${APP_DATA_DIR}/run_udev_data:/run/udev/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

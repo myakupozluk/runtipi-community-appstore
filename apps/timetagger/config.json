@@ -1,0 +1,23 @@
+{
+  "name": "TimeTagger",
+  "id": "timetagger",
+  "available": true,
+  "short_desc": "Open source time-tracker with an interactive user experience and powerful reporting.",
+  "author": "xneo1/portainer_templates",
+  "port": 280,
+  "categories": [
+    "productivity"
+  ],
+  "description": "Open source time-tracker with an interactive user experience and powerful reporting.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

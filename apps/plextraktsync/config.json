@@ -1,0 +1,25 @@
+{
+  "name": "PlexTraktSync",
+  "id": "plextraktsync",
+  "available": true,
+  "short_desc": "A python script that syncs the movies, shows and ratings between trakt and Plex",
+  "author": "mediadepot/templates",
+  "port": 9993,
+  "categories": [
+    "media",
+    "productivity",
+    "data"
+  ],
+  "description": "A python script that syncs the movies, shows and ratings between trakt and Plex",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mediadepot/templates/",
+  "website": "https://github.com/mediadepot/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

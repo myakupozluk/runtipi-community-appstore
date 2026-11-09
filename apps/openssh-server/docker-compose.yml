@@ -1,0 +1,31 @@
+services:
+  openssh-server:
+    image: linuxserver/openssh-server:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+    - PUBLIC_KEY=yourpublickey
+    - PUBLIC_KEY_FILE=/path/to/file
+    - PUBLIC_KEY_DIR=/path/to/directory/containing/_only_/pubkeys
+    - PUBLIC_KEY_URL=https://github.com/username.keys
+    - SUDO_ACCESS=false
+    - PASSWORD_ACCESS=false
+    - USER_PASSWORD=password
+    - USER_PASSWORD_FILE=/path/to/file
+    - USER_NAME=linuxserver.io
+    - LOG_STDOUT=
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 2222
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

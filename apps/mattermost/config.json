@@ -1,0 +1,25 @@
+{
+  "name": "Mattermost",
+  "id": "mattermost",
+  "available": true,
+  "short_desc": "Mattermost - open-source team chat: channels, threads, DMs, voice calls, slash commands, integrations, and plugins. Team Edition image on a managed Po...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "network",
+    "development",
+    "social"
+  ],
+  "description": "Mattermost - open-source team chat: channels, threads, DMs, voice calls, slash commands, integrations, and plugins. Team Edition image on a managed Postgres - it listens on :5000 directly, so no proxy.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

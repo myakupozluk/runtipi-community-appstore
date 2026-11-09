@@ -1,0 +1,20 @@
+services:
+  dashy:
+    image: lissy93/dashy:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - NODE_ENV=production
+    - TZ=UTC
+    volumes:
+    - ${APP_DATA_DIR}/app_user-data:/app/user-data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

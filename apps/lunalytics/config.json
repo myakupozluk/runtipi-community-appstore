@@ -1,0 +1,24 @@
+{
+  "name": "Lunalytics",
+  "id": "lunalytics",
+  "available": true,
+  "short_desc": "Open source monitoring tool built with Node.js & React",
+  "author": "xneo1/portainer_templates",
+  "port": 2308,
+  "categories": [
+    "data",
+    "monitoring"
+  ],
+  "description": "Open source monitoring tool built with Node.js & React",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Socket-proxy",
+  "id": "socket-proxy",
+  "available": true,
+  "short_desc": "# This container needs special attention. Please check https://hub.docker.com/r/linuxserver/socket-proxy for details.",
+  "author": "technorabilia/portainer-templates",
+  "port": 80,
+  "categories": [
+    "network",
+    "development",
+    "productivity"
+  ],
+  "description": "# This container needs special attention. Please check https://hub.docker.com/r/linuxserver/socket-proxy for details.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

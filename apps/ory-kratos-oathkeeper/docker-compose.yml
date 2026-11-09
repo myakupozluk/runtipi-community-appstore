@@ -1,0 +1,42 @@
+services:
+  kratos:
+    environment:
+    - SERVE_PUBLIC_BASE_URL=http://127.0.0.1:4455/.ory/kratos/public/
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+  kratos-selfservice-ui-node:
+    environment:
+    - PORT=4435
+    - KRATOS_BROWSER_URL=http://127.0.0.1:4455/.ory/kratos/public
+    - JWKS_URL=http://oathkeeper:4456/.well-known/jwks.json
+    - SECURITY_MODE=jwks
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+  oathkeeper:
+    image: oryd/oathkeeper:v0.40
+    depends_on:
+    - kratos
+    ports:
+    - 4455:4455
+    - 4456:4456
+    command: serve proxy -c "/etc/config/oathkeeper/oathkeeper.yml"
+    environment:
+    - LOG_LEVEL=debug
+    restart: on-failure
+    networks:
+    - intranet
+    - tipi_main_network
+    volumes:
+    - ${APP_DATA_DIR}/oathkeeper_portainer_Files_AppData_Config_oathkeeper:/etc/config/oathkeeper
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

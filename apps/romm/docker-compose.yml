@@ -1,0 +1,56 @@
+services:
+  romm:
+    image: rommapp/romm:latest
+    restart: unless-stopped
+    environment:
+    - DB_HOST=romm-db
+    - DB_NAME=romm
+    - DB_USER=romm-user
+    - DB_PASSWD=
+    - ROMM_AUTH_SECRET_KEY=
+    - IGDB_CLIENT_ID=
+    - IGDB_CLIENT_SECRET=
+    - MOBYGAMES_API_KEY=
+    - STEAMGRIDDB_API_KEY=
+    volumes:
+    - ${APP_DATA_DIR}/romm_portainer_Files_AppData_Config_romm_resources:/romm/resources
+    - ${APP_DATA_DIR}/romm_portainer_Files_AppData_Config_romm_redis_data:/redis-data
+    - ${APP_DATA_DIR}/romm_portainer_roms_library:/romm/library
+    - ${APP_DATA_DIR}/romm_portainer_roms_assets:/romm/assets
+    - ${APP_DATA_DIR}/romm_portainer_Files_AppData_Config_romm_config:/romm/config
+    depends_on:
+      romm-db:
+        condition: service_healthy
+        restart: true
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+  romm-db:
+    image: mariadb:latest
+    restart: unless-stopped
+    env_file:
+    - romm.env
+    volumes:
+    - ${APP_DATA_DIR}/romm-db_portainer_Files_AppData_Config_romm_maria-db:/var/lib/mysql
+    healthcheck:
+      test:
+      - CMD
+      - healthcheck.sh
+      - --connect
+      - --innodb_initialized
+      start_period: 30s
+      start_interval: 10s
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    ports:
+    - $DB_PORT:3306
+    networks:
+    - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

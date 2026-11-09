@@ -1,0 +1,24 @@
+{
+  "name": "Gaps",
+  "id": "gaps",
+  "available": true,
+  "short_desc": "Gaps searches through your Plex Server or local folders for all movies, then queries for known movies in the same collection.",
+  "author": "mediadepot/templates",
+  "port": 8484,
+  "categories": [
+    "media",
+    "games"
+  ],
+  "description": "Gaps searches through your Plex Server or local folders for all movies, then queries for known movies in the same collection.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mediadepot/templates/",
+  "website": "https://github.com/mediadepot/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

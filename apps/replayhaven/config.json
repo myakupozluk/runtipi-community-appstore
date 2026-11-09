@@ -1,0 +1,25 @@
+{
+  "name": "ReplayHaven",
+  "id": "replayhaven",
+  "available": true,
+  "short_desc": "Game clip archive: a Windows client names every clip with a local AI, this server keeps the originals and streams them to your devices. Source: https:...",
+  "author": "SauerExe/ReplayHaven",
+  "port": 5000,
+  "categories": [
+    "media",
+    "development",
+    "games"
+  ],
+  "description": "Game clip archive: a Windows client names every clip with a local AI, this server keeps the originals and streams them to your devices. Source: https://github.com/SauerExe/ReplayHaven",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/SauerExe/ReplayHaven/",
+  "website": "https://github.com/SauerExe/ReplayHaven/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

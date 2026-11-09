@@ -1,0 +1,20 @@
+services:
+  jfa-go:
+    image: hrfee/jfa-go:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/jf:/jf
+    - ${APP_DATA_DIR}/data:/data
+    - ${APP_DATA_DIR}/etc_localtime:/etc/localtime
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8056
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

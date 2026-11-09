@@ -1,0 +1,16 @@
+name: deployable-sh
+services:
+  deployable-sh:
+    build: .
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,27 @@
+services:
+  funkwhale:
+    restart: unless-stopped
+    image: funkwhale/all-in-one:1.2.10
+    environment:
+    - PUID=1000
+    - PGID=1000
+    - FUNKWHALE_HOSTNAME=your.funkwhale.example
+    - FUNKWHALE_PROTOCOL=https
+    - NGINX_MAX_BODY_SIZE=100M
+    - FUNKWHALE_API_IP=127.0.0.1
+    - FUNKWHALE_API_PORT=5500
+    - DJANGO_SECRET_KEY=$(openssl rand -hex 45)
+    - NESTED_PROXY=1
+    volumes:
+    - ${APP_DATA_DIR}/funkwhale_portainer_Files_AppData_Config_funkwhale_data:/data
+    - ${APP_DATA_DIR}/funkwhale_portainer_multimedia_music_dir:/music
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

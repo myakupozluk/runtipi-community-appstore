@@ -1,0 +1,23 @@
+{
+  "name": "Meilisearch",
+  "id": "meilisearch",
+  "available": true,
+  "short_desc": "Meilisearch is a **RESTful search API**. It aims to be a **ready-to-go solution** for everyone who wants a **fast and relevant search experience** for...",
+  "author": "xneo1/portainer_templates",
+  "port": 7700,
+  "categories": [
+    "development"
+  ],
+  "description": "Meilisearch is a **RESTful search API**. It aims to be a **ready-to-go solution** for everyone who wants a **fast and relevant search experience** for their end-users",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

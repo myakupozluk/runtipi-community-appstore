@@ -1,0 +1,25 @@
+{
+  "name": "Percona Server",
+  "id": "percona-server",
+  "available": true,
+  "short_desc": "Percona Server for MySQL - a free, fully MySQL-compatible drop-in with extra instrumentation (detailed `INFORMATION_SCHEMA` and `PERFORMANCE_SCHEMA` t...",
+  "author": "deployable-sh/stacks",
+  "port": 3306,
+  "categories": [
+    "development",
+    "data",
+    "games"
+  ],
+  "description": "Percona Server for MySQL - a free, fully MySQL-compatible drop-in with extra instrumentation (detailed `INFORMATION_SCHEMA` and `PERFORMANCE_SCHEMA` tables), improved diagnostics, and performance enhancements.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

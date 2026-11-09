@@ -1,0 +1,28 @@
+services:
+  rport-server:
+    image: iotech17/rport:latest
+    restart: always
+    privileged: true
+    volumes:
+    - type: bind
+      source: /portainer/Files/AppData/Config/rport/rportd.conf
+      target: /etc/rport/rportd.conf:ro
+    - type: bind
+      source: /portainer/Files/AppData/Config/rport/rport.key
+      target: /var/lib/rport/rport.key:ro
+    - type: bind
+      source: /portainer/Files/AppData/Config/rport/rport.crt
+      target: /var/lib/rport/rport.crt:ro
+    - type: bind
+      source: /portainer/Files/AppData/Config/rport/data
+      target: /var/lib/rport/
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

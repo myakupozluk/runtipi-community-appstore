@@ -1,0 +1,25 @@
+{
+  "name": "Zipline",
+  "id": "zipline",
+  "available": true,
+  "short_desc": "File sharing and screenshot host that works with ShareX, Flameshot and the like, with a link shortener, text pastes, folders, and files that can expir...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "security",
+    "development",
+    "data"
+  ],
+  "description": "File sharing and screenshot host that works with ShareX, Flameshot and the like, with a link shortener, text pastes, folders, and files that can expire, need a password or delete themselves after so many views. Source: https://github.com/diced/zipline",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

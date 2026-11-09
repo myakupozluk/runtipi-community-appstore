@@ -1,0 +1,24 @@
+{
+  "name": "Murmur",
+  "id": "murmur",
+  "available": true,
+  "short_desc": "Mumble is a voicechat program for gamers written on top of Qt and Opus. Murmur is the server backend for Mumble.",
+  "author": "xneo1/portainer_templates",
+  "port": 64738,
+  "categories": [
+    "social",
+    "games"
+  ],
+  "description": "Mumble is a voicechat program for gamers written on top of Qt and Opus. Murmur is the server backend for Mumble.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

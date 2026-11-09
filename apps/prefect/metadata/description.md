@@ -1,0 +1,15 @@
+# Prefect
+
+Prefect 3 - workflow orchestration for Python people: flows are decorated functions, deployments schedule them, and the UI shows every run. The server here holds UI/API/schedules; your flow code runs in WORKERS that connect outbound.
+
+## Overview
+* **Category:** Development, Automation, Games
+* **Default Port:** `5000` (Internal: `5000`)
+* **Architectures:** amd64, arm64
+* **Author / Project:** deployable-sh/stacks
+* **Source:** [https://github.com/deployable-sh/stacks/](https://github.com/deployable-sh/stacks/)
+
+## Features & Configuration
+This application is packaged for Runtipi with Dynamic Compose (Schema Version 2).
+Data is persistently stored in your Runtipi storage path (`${APP_DATA_DIR}`).
+You can expose this application through your custom domain via Runtipi's Traefik reverse proxy.

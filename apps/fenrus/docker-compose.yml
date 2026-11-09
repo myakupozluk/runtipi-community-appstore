@@ -1,0 +1,19 @@
+services:
+  fenrus:
+    image: revenz/fenrus
+    environment:
+    - TZ=Europe/Athens
+    volumes:
+    - ${APP_DATA_DIR}/fenrus_portainer_Files_AppData_Config_fenrus_data:/app/data
+    - ${APP_DATA_DIR}/fenrus_portainer_Files_AppData_Config_fenrus_images:/app/wwwroot/images
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

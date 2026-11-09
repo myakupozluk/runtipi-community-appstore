@@ -1,0 +1,24 @@
+{
+  "name": "Petio",
+  "id": "petio",
+  "available": true,
+  "short_desc": "Petio is a third party companion app available to Plex server owners to allow their users to request, review and discover content.",
+  "author": "xneo1/portainer_templates",
+  "port": 7777,
+  "categories": [
+    "media",
+    "games"
+  ],
+  "description": "Petio is a third party companion app available to Plex server owners to allow their users to request, review and discover content.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

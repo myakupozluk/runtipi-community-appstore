@@ -1,0 +1,23 @@
+{
+  "name": "Trilium",
+  "id": "trilium",
+  "available": true,
+  "short_desc": "Trilium Notes is a hierarchical note taking application with focus on building large personal knowledge bases",
+  "author": "xneo1/portainer_templates",
+  "port": 3388,
+  "categories": [
+    "productivity"
+  ],
+  "description": "Trilium Notes is a hierarchical note taking application with focus on building large personal knowledge bases",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

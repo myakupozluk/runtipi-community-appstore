@@ -1,0 +1,24 @@
+{
+  "name": "Seerr",
+  "id": "seerr",
+  "available": true,
+  "short_desc": "Request manager for Jellyfin, Plex and Emby, where people ask for films and shows and Sonarr and Radarr fetch them. It's the merged successor to Overs...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 5055,
+  "categories": [
+    "media",
+    "development"
+  ],
+  "description": "Request manager for Jellyfin, Plex and Emby, where people ask for films and shows and Sonarr and Radarr fetch them. It's the merged successor to Overseerr and Jellyseerr. Source: https://github.com/seerr-team/seerr",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

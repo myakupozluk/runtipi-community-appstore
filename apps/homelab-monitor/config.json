@@ -1,0 +1,25 @@
+{
+  "name": "HomeLab Monitor",
+  "id": "homelab-monitor",
+  "available": true,
+  "short_desc": "Self-hosted homelab dashboard, one container. Per-container GPU/VRAM attribution (which process holds the card, not just total load), Docker health/lo...",
+  "author": "Community",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity",
+    "monitoring"
+  ],
+  "description": "Self-hosted homelab dashboard, one container. Per-container GPU/VRAM attribution (which process holds the card, not just total load), Docker health/logs, systemd status, host vitals (CPU/RAM/disk/temps), multiple hosts over SSH. Alerts via Discord/ntfy/Telegram. Read-only MCP server on :9810. MIT. Source: https://github.com/SikamikanikoBG/homelab-monitor",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

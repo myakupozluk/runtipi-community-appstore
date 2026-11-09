@@ -1,0 +1,25 @@
+{
+  "name": "Supabase",
+  "id": "supabase",
+  "available": true,
+  "short_desc": "The full Supabase stack, Postgres (supabase image with extensions), Auth (GoTrue), REST (PostgREST), Realtime, Storage, postgres-meta, Studio, behind ...",
+  "author": "deployable-sh/stacks",
+  "port": 3000,
+  "categories": [
+    "security",
+    "network",
+    "development"
+  ],
+  "description": "The full Supabase stack, Postgres (supabase image with extensions), Auth (GoTrue), REST (PostgREST), Realtime, Storage, postgres-meta, Studio, behind the Kong gateway, adapted from the official self-hosting compose.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

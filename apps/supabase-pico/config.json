@@ -1,0 +1,24 @@
+{
+  "name": "Supabase Pico",
+  "id": "supabase-pico",
+  "available": true,
+  "short_desc": "Supabase's API surface - Postgres, Auth (GoTrue) and REST (PostgREST) - in 512 MiB total.",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "security",
+    "development"
+  ],
+  "description": "Supabase's API surface - Postgres, Auth (GoTrue) and REST (PostgREST) - in 512 MiB total.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

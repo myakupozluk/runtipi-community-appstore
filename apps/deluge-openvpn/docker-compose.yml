@@ -1,0 +1,25 @@
+services:
+  deluge-openvpn:
+    image: sgtsquiggs/deluge-openvpn:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1001
+    - PUID=1001
+    - OPENVPN_PROVIDER=MULLVAD
+    - OPENVPN_USERNAME=
+    - OPENVPN_PASSWORD=
+    volumes:
+    - ${APP_DATA_DIR}/etc_localtime:/etc/localtime
+    - ${APP_DATA_DIR}/downloads:/downloads
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8112
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

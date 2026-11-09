@@ -1,0 +1,21 @@
+services:
+  shaarli:
+    image: ghcr.io/shaarli/shaarli:latest
+    restart: on-failure
+    volumes:
+    - ${APP_DATA_DIR}/shaarli_portainer_Files_AppData_Config_shaarli_cache:/var/www/shaarli/cache
+    - ${APP_DATA_DIR}/shaarli_portainer_Files_AppData_Config_shaarli_data:/var/www/shaarli/data
+    environment:
+      PUID: 1026
+      PGID: 100
+      TZ: Europe/Athens
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

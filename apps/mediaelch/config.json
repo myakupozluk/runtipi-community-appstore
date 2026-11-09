@@ -1,0 +1,25 @@
+{
+  "name": "Mediaelch",
+  "id": "mediaelch",
+  "available": true,
+  "short_desc": "[MediaElch](https://github.com/Komet/MediaElch) is a MediaManager for Kodi. Information about Movies, TV Shows, Concerts and Music are stored as nfo f...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "security",
+    "media",
+    "development"
+  ],
+  "description": "[MediaElch](https://github.com/Komet/MediaElch) is a MediaManager for Kodi. Information about Movies, TV Shows, Concerts and Music are stored as nfo files. Fanarts are downloaded automatically from fanart.tv. Using the nfo generator, MediaElch can be used with other MediaCenters as well.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

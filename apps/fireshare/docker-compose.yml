@@ -1,0 +1,25 @@
+services:
+  fireshare:
+    image: shaneisrael/fireshare:latest
+    restart: unless-stopped
+    volumes:
+    - ${APP_DATA_DIR}/fireshare_portainer_Files_AppData_Config_fireshare_data:/data
+    - ${APP_DATA_DIR}/fireshare_portainer_Files_AppData_Config_fireshare_processed:/processed
+    - ${APP_DATA_DIR}/fireshare_portainer_Files_AppData_Config_fireshare_videos:/videos
+    environment:
+    - ADMIN_USERNAME=fireadmin
+    - ADMIN_PASSWORD=firepwd
+    - SECRET_KEY=replace_this_with_some_random_string0x0
+    - MINUTES_BETWEEN_VIDEO_SCANS=1
+    - PUID=998
+    - PGID=100
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

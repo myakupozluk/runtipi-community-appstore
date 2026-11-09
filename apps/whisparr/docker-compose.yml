@@ -1,0 +1,21 @@
+services:
+  get_iplayer:
+    image: ghcr.io/thespad/whisparr:latest
+    environment:
+    - PUID=1000
+    - PGID=1000
+    - TZ=Europe/Athens
+    volumes:
+    - ${APP_DATA_DIR}/get_iplayer_portainer_Files_AppData_Config_whisparr:/config
+    - ${APP_DATA_DIR}/get_iplayer_portainer_Files_AppData_Config_whisparr_downloads:/downloads
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 6969
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

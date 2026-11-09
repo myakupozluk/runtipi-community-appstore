@@ -1,0 +1,25 @@
+{
+  "name": "Overseerr (container)",
+  "id": "overseerr",
+  "available": true,
+  "short_desc": "Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem.",
+  "author": "mediadepot/templates",
+  "port": 5055,
+  "categories": [
+    "media",
+    "development",
+    "data"
+  ],
+  "description": "Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mediadepot/templates/",
+  "website": "https://github.com/mediadepot/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

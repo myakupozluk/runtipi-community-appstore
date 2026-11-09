@@ -1,0 +1,24 @@
+{
+  "name": "EspoCRM",
+  "id": "espocrm",
+  "available": true,
+  "short_desc": "CRM for keeping track of customers and sales: accounts, contacts, leads, opportunities, cases, meetings and calls, with a shared calendar, email inbox...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "CRM for keeping track of customers and sales: accounts, contacts, leads, opportunities, cases, meetings and calls, with a shared calendar, email inbox, reports and a no-code entity builder. Source: https://github.com/espocrm/espocrm",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Linkding",
+  "id": "linkding",
+  "available": true,
+  "short_desc": "Self-hosted bookmark manager that is minimal and fast. Source: https://github.com/sissbruecker/linkding",
+  "author": "Community",
+  "port": 9090,
+  "categories": [
+    "media",
+    "development",
+    "productivity"
+  ],
+  "description": "Self-hosted bookmark manager that is minimal and fast. Source: https://github.com/sissbruecker/linkding",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

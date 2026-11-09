@@ -1,0 +1,25 @@
+{
+  "name": "Changedetection.io (container)",
+  "id": "changedetection-io",
+  "available": true,
+  "short_desc": "[Changedetection.io](https://github.com/dgtlmoon/changedetection.io) provides free, open-source web page monitoring, notification and change detection...",
+  "author": "technorabilia/portainer-templates",
+  "port": 5000,
+  "categories": [
+    "development",
+    "automation",
+    "monitoring"
+  ],
+  "description": "[Changedetection.io](https://github.com/dgtlmoon/changedetection.io) provides free, open-source web page monitoring, notification and change detection.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

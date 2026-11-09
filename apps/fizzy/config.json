@@ -1,0 +1,24 @@
+{
+  "name": "Fizzy",
+  "id": "fizzy",
+  "available": true,
+  "short_desc": "Fizzy - 37signals' free, open-source kanban: fast, focused boards for bugs, issues, ideas, and small projects.",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "Fizzy - 37signals' free, open-source kanban: fast, focused boards for bugs, issues, ideas, and small projects.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Teleport",
+  "id": "teleport",
+  "available": true,
+  "short_desc": "Teleport allows engineers and security professionals to unify access for SSH servers, Kubernetes clusters, web applications, and databases across all ...",
+  "author": "xneo1/portainer_templates",
+  "port": 3080,
+  "categories": [
+    "security",
+    "development",
+    "data"
+  ],
+  "description": "Teleport allows engineers and security professionals to unify access for SSH servers, Kubernetes clusters, web applications, and databases across all environments.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

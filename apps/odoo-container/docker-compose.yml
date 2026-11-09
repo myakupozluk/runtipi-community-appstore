@@ -1,0 +1,22 @@
+services:
+  odoo-container:
+    image: odoo:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - HOST=
+    - USER=
+    - PASSWORD=
+    volumes:
+    - ${APP_DATA_DIR}/var_lib_odoo:/var/lib/odoo
+    - ${APP_DATA_DIR}/mnt_extra-addons:/mnt/extra-addons
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8069
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

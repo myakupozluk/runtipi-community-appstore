@@ -1,0 +1,50 @@
+name: garage
+services:
+  garage:
+    build: ./garage
+    restart: unless-stopped
+    environment:
+      GARAGE_RPC_SECRET: ${GARAGE_RPC_SECRET}
+      GARAGE_ADMIN_TOKEN: ${GARAGE_ADMIN_TOKEN}
+    volumes:
+    - ${APP_DATA_DIR}/garage_garagemeta:/var/lib/garage/meta
+    - ${APP_DATA_DIR}/garage_garagedata:/var/lib/garage/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3900
+  webui:
+    image: khairul169/garage-webui:1.1.0
+    restart: unless-stopped
+    environment:
+      API_BASE_URL: http://garage:3903
+      API_ADMIN_KEY: ${GARAGE_ADMIN_TOKEN}
+      S3_ENDPOINT_URL: http://garage:3900
+    ports:
+    - '3909'
+    depends_on:
+    - garage
+    networks:
+    - tipi_main_network
+    volumes: []
+  web:
+    build: ./proxy
+    restart: unless-stopped
+    environment:
+      PROXY_TARGET: http://webui:3909
+    ports:
+    - 5000:5000
+    depends_on:
+    - webui
+    networks:
+    - tipi_main_network
+    volumes: []
+volumes:
+  garagemeta: null
+  garagedata: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

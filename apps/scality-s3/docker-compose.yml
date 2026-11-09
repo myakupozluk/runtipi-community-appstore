@@ -1,0 +1,21 @@
+services:
+  scality-s3:
+    image: scality/s3server:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - SCALITY_ACCESS_KEY=
+    - SCALITY_SECRET_KEY=
+    volumes:
+    - ${APP_DATA_DIR}/usr_src_app_localData:/usr/src/app/localData
+    - ${APP_DATA_DIR}/usr_src_app_localMetadata:/usr/src/app/localMetadata
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

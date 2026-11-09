@@ -1,0 +1,25 @@
+{
+  "name": "Cloudflared-web",
+  "id": "cloudflared-web",
+  "available": true,
+  "short_desc": "A docker image that packages both cloudflared cli and a simple Web UI to easily start or stop remotely-managed Cloudflare tunnel. Source: https://gith...",
+  "author": "Community",
+  "port": 8080,
+  "categories": [
+    "network",
+    "development",
+    "productivity"
+  ],
+  "description": "A docker image that packages both cloudflared cli and a simple Web UI to easily start or stop remotely-managed Cloudflare tunnel. Source: https://github.com/WisdomSky/Cloudflared-web",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

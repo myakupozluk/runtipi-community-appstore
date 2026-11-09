@@ -1,0 +1,24 @@
+{
+  "name": "Homebridge - Debian",
+  "id": "homebridge-debian",
+  "available": true,
+  "short_desc": "Debian Homebridge allows you to integrate with smart home devices that do not natively support HomeKit. There are over 2,000 Homebridge plugins suppor...",
+  "author": "novaspirit/pi-hosted",
+  "port": 8080,
+  "categories": [
+    "development",
+    "automation"
+  ],
+  "description": "Debian Homebridge allows you to integrate with smart home devices that do not natively support HomeKit. There are over 2,000 Homebridge plugins supporting thousands of different smart accessories.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

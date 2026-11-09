@@ -1,0 +1,22 @@
+services:
+  adguard:
+    image: adguard/adguardhome:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=100
+    - CONTEXT_PATH=adguard home
+    volumes:
+    - ${APP_DATA_DIR}/opt_adguardhome_work:/opt/adguardhome/work
+    - ${APP_DATA_DIR}/opt_adguardhome_conf:/opt/adguardhome/conf
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 53
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

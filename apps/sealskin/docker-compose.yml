@@ -1,0 +1,24 @@
+services:
+  sealskin:
+    image: linuxserver/sealskin:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+    - HOST_URL=IP or subdomain.domain.com
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    - ${APP_DATA_DIR}/storage:/storage
+    - ${APP_DATA_DIR}/var_run_docker.sock:/var/run/docker.sock
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8443
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

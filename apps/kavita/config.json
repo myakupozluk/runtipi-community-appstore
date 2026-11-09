@@ -1,0 +1,25 @@
+{
+  "name": "Kavita",
+  "id": "kavita",
+  "available": true,
+  "short_desc": "[Kavita](https://github.com/Kareadita/Kavita) is a fast, feature rich, cross platform reading server. Built with a focus for being a full solution for...",
+  "author": "technorabilia/portainer-templates",
+  "port": 5000,
+  "categories": [
+    "media",
+    "development",
+    "games"
+  ],
+  "description": "[Kavita](https://github.com/Kareadita/Kavita) is a fast, feature rich, cross platform reading server. Built with a focus for being a full solution for all your reading needs. Setup your own server and share your reading collection with your friends and family!",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

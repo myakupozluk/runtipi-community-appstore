@@ -1,0 +1,24 @@
+{
+  "name": "ClickHouse Cluster",
+  "id": "clickhouse",
+  "available": true,
+  "short_desc": "3-node ClickHouse cluster, one shard, three replicas, with embedded ClickHouse Keeper (no separate ZooKeeper pods). Internal-only; 20 GB per node.",
+  "author": "deployable-sh/stacks",
+  "port": 8123,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "3-node ClickHouse cluster, one shard, three replicas, with embedded ClickHouse Keeper (no separate ZooKeeper pods). Internal-only; 20 GB per node.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

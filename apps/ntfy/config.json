@@ -1,0 +1,24 @@
+{
+  "name": "ntfy (container)",
+  "id": "ntfy",
+  "available": true,
+  "short_desc": "Simple HTTP-based pub-sub notification service. Send push notifications to your phone or desktop via PUT/POST. Source: https://github.com/binwiederhie...",
+  "author": "Community",
+  "port": 8080,
+  "categories": [
+    "development",
+    "social"
+  ],
+  "description": "Simple HTTP-based pub-sub notification service. Send push notifications to your phone or desktop via PUT/POST. Source: https://github.com/binwiederhier/ntfy",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

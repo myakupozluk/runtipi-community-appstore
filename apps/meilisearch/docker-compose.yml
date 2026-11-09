@@ -1,0 +1,25 @@
+services:
+  meilisearch:
+    restart: unless-stopped
+    image: getmeili/meilisearch:latest
+    environment:
+    - http_proxy
+    - https_proxy
+    - MEILI_MASTER_KEY=${MEILI_MASTER_KEY:-masterKey}
+    - MEILI_NO_ANALYTICS=${MEILI_NO_ANALYTICS:-true}
+    - MEILI_ENV=${MEILI_ENV:-development}
+    - MEILI_LOG_LEVEL
+    - MEILI_DB_PATH=${MEILI_DB_PATH:-/data.ms}
+    networks:
+    - meilisearch
+    - tipi_main_network
+    volumes:
+    - ${APP_DATA_DIR}/meilisearch_portainer_Files_AppData_Config_meilisearch_data.ms:/data.ms
+    x-runtipi:
+      is_main: true
+      internal_port: 7700
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,23 @@
+{
+  "name": "Chibisafe",
+  "id": "chibisafe",
+  "available": true,
+  "short_desc": "Chibisafe is a modern and self-hosted take on file uploading services that can handle anything you throw at it thanks to it's robust and fast API, chu...",
+  "author": "xneo1/portainer_templates",
+  "port": 2425,
+  "categories": [
+    "development"
+  ],
+  "description": "Chibisafe is a modern and self-hosted take on file uploading services that can handle anything you throw at it thanks to it's robust and fast API, chunked uploads support and more.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

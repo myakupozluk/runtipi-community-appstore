@@ -1,0 +1,23 @@
+{
+  "name": "Pingvin",
+  "id": "pingvin-share",
+  "available": true,
+  "short_desc": "Pingvin Share is self-hosted file sharing platform and an alternative for WeTransfer.",
+  "author": "xneo1/portainer_templates",
+  "port": 3123,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Pingvin Share is self-hosted file sharing platform and an alternative for WeTransfer.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

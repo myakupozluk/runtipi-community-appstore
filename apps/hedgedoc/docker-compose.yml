@@ -1,0 +1,32 @@
+services:
+  hedgedoc:
+    image: linuxserver/hedgedoc:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+    - DB_HOST=<hostname or ip>
+    - DB_PORT=3306
+    - DB_USER=hedgedoc
+    - DB_PASS=<secret password>
+    - DB_NAME=hedgedoc
+    - CMD_DOMAIN=localhost
+    - CMD_URL_ADDPORT=false
+    - CMD_PROTOCOL_USESSL=false
+    - CMD_PORT=3000
+    - CMD_ALLOW_ORIGIN=['localhost']
+    - CMD_DB_DIALECT=
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,27 @@
+services:
+  dockroute:
+    image: ghcr.io/dockroute/dockroute:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - DOCKROUTE_PROVIDER=log
+    - DOCKROUTE_OWNER_ID=default
+    - DOCKROUTE_POLICY=sync
+    - DOCKROUTE_DEFAULT_TARGET=
+    - DOCKROUTE_DOMAIN_FILTER=
+    - DOCKROUTE_RESYNC_SECONDS=60
+    - CLOUDFLARE_API_TOKEN=
+    - CLOUDFLARE_ACCOUNT_ID=
+    - CLOUDFLARE_TUNNEL_ID=
+    volumes:
+    - ${APP_DATA_DIR}/var_run_docker.sock:/var/run/docker.sock
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

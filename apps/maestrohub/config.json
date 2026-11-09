@@ -1,0 +1,24 @@
+{
+  "name": "MaestroHub",
+  "id": "maestrohub",
+  "available": true,
+  "short_desc": "Industrial data orchestrator with a Unified Namespace, drag-and-drop pipelines, and 40+ protocol connectors. Built-in MCP server brings AI agents into...",
+  "author": "portainer/templates",
+  "port": 9993,
+  "categories": [
+    "data",
+    "games"
+  ],
+  "description": "Industrial data orchestrator with a Unified Namespace, drag-and-drop pipelines, and 40+ protocol connectors. Built-in MCP server brings AI agents into your operational data stack.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

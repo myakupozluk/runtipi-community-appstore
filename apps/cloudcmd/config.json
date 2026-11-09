@@ -1,0 +1,25 @@
+{
+  "name": "Cloud Commander",
+  "id": "cloudcmd",
+  "available": true,
+  "short_desc": "Cloud Commander a file manager for the web with console and editor.",
+  "author": "mediadepot/templates",
+  "port": 8000,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "Cloud Commander a file manager for the web with console and editor.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mediadepot/templates/",
+  "website": "https://github.com/mediadepot/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

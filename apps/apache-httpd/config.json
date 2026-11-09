@@ -1,0 +1,25 @@
+{
+  "name": "Apache Httpd",
+  "id": "apache-httpd",
+  "available": true,
+  "short_desc": "The Apache HTTP Server is a free and open-source cross-platform web server software, released under the terms of Apache License 2.0. Apache is develop...",
+  "author": "novaspirit/pi-hosted",
+  "port": 8080,
+  "categories": [
+    "network",
+    "development",
+    "games"
+  ],
+  "description": "The Apache HTTP Server is a free and open-source cross-platform web server software, released under the terms of Apache License 2.0. Apache is developed and maintained by an open community of developers under the auspices of the Apache Software Foundation.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

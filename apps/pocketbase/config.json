@@ -1,0 +1,25 @@
+{
+  "name": "PocketBase",
+  "id": "pocketbase",
+  "available": true,
+  "short_desc": "Pocketbase, an entire backend (SQLite, auth, realtime subscriptions, file storage, admin UI) in one container. The simplest template in the catalogue:...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "security",
+    "development",
+    "data"
+  ],
+  "description": "Pocketbase, an entire backend (SQLite, auth, realtime subscriptions, file storage, admin UI) in one container. The simplest template in the catalogue: one service, one 2 GB volume.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

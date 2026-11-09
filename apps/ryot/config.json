@@ -1,0 +1,25 @@
+{
+  "name": "Ryot",
+  "id": "ryot",
+  "available": true,
+  "short_desc": "Tracker for the films, shows, books, anime, music and podcasts you get through, plus your workouts: progress, ratings, reviews and stats in one place,...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "media",
+    "development",
+    "productivity"
+  ],
+  "description": "Tracker for the films, shows, books, anime, music and podcasts you get through, plus your workouts: progress, ratings, reviews and stats in one place, with imports from Trakt, Goodreads, Jellyfin, Plex and more. Source: https://github.com/IgnisDa/ryot",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

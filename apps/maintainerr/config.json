@@ -1,0 +1,24 @@
+{
+  "name": "Maintainerr",
+  "id": "maintainerr",
+  "available": true,
+  "short_desc": "Library tidier for Plex, Jellyfin and Emby. You write rules like \"nobody's watched it in six months\", it gathers what matches into a leaving-soon coll...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 6246,
+  "categories": [
+    "media",
+    "development"
+  ],
+  "description": "Library tidier for Plex, Jellyfin and Emby. You write rules like \"nobody's watched it in six months\", it gathers what matches into a leaving-soon collection, then has Sonarr and Radarr delete it once the grace period's up. Source: https://github.com/Maintainerr/Maintainerr",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

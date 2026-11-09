@@ -1,0 +1,25 @@
+{
+  "name": "Odoo (stack)",
+  "id": "odoo",
+  "available": true,
+  "short_desc": "Odoo Community 18 - the open-source business suite: CRM, sales, inventory, accounting, projects, manufacturing, website, and ecommerce, with a vast ap...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "productivity",
+    "finance"
+  ],
+  "description": "Odoo Community 18 - the open-source business suite: CRM, sales, inventory, accounting, projects, manufacturing, website, and ecommerce, with a vast app store. LGPL-3 Community edition on a managed Postgres.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,32 @@
+volumes:
+  postgres: {}
+services:
+  homechart:
+    depends_on:
+    - postgres
+    environment:
+      HOMECHART_POSTGRESQL_HOSTNAME: postgres
+      HOMECHART_POSTGRESQL_PASSWORD: postgres
+      HOMECHART_POSTGRESQL_USERNAME: postgres
+    image: ghcr.io/candiddev/homechart:latest
+    restart: always
+    networks:
+    - tipi_main_network
+    volumes: []
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+  postgres:
+    environment:
+      POSTGRES_PASSWORD: postgres
+    image: postgres:14
+    restart: always
+    volumes:
+    - ${APP_DATA_DIR}/postgres_portainer_Files_AppData_Config_postgres:/var/lib/postgresql/data
+    networks:
+    - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

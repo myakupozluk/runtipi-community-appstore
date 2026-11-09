@@ -1,0 +1,26 @@
+services:
+  trip:
+    image: ghcr.io/itskovacs/trip:1
+    restart: unless-stopped
+    environment:
+    - TRIP_SECRET_KEY=${TRIP_SECRET_KEY}
+    - TRIP_OIDC_ISSUER=${TRIP_OIDC_ISSUER}
+    - TRIP_OIDC_CLIENT_ID=${TRIP_OIDC_CLIENT_ID}
+    - TRIP_OIDC_CLIENT_SECRET=${TRIP_OIDC_CLIENT_SECRET}
+    - TRIP_OIDC_REDIRECT_URI=${TRIP_OIDC_REDIRECT_URI:-http://localhost:8080/auth/callback}
+    - TRIP_OIDC_SCOPES=${TRIP_OIDC_SCOPES:-openid profile email}
+    volumes:
+    - ${APP_DATA_DIR}/trip_portainer_Files_AppData_Config_trip_storage:/app/storage
+    networks:
+    - trip-network
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+networks:
+  trip-network:
+    driver: bridge
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

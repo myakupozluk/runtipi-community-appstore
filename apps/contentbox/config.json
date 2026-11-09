@@ -1,0 +1,23 @@
+{
+  "name": "ContentBox",
+  "id": "contentbox",
+  "available": true,
+  "short_desc": "Open-source modular CMS",
+  "author": "portainer/templates",
+  "port": 8080,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Open-source modular CMS",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

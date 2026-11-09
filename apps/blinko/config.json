@@ -1,0 +1,24 @@
+{
+  "name": "Blinko",
+  "id": "blinko",
+  "available": true,
+  "short_desc": "Blinko is an innovative open-source project designed for individuals who want to quickly capture and organize their fleeting thoughts. Blinko allows u...",
+  "author": "xneo1/portainer_templates",
+  "port": 1111,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "Blinko is an innovative open-source project designed for individuals who want to quickly capture and organize their fleeting thoughts. Blinko allows users to seamlessly jot down ideas the moment they strike, ensuring that no spark of creativity is lost.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

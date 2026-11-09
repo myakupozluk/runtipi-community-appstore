@@ -1,0 +1,23 @@
+{
+  "name": "Nzbhydra2",
+  "id": "nzbhydra2",
+  "available": true,
+  "short_desc": "[Nzbhydra2](https://github.com/theotherp/nzbhydra2) is a meta search application for NZB indexers, the spiritual successor to NZBmegasearcH, and an ev...",
+  "author": "technorabilia/portainer-templates",
+  "port": 5076,
+  "categories": [
+    "development"
+  ],
+  "description": "[Nzbhydra2](https://github.com/theotherp/nzbhydra2) is a meta search application for NZB indexers, the spiritual successor to NZBmegasearcH, and an evolution of the original application [NZBHydra](https://github.com/theotherp/nzbhydra). It provides easy access to a number of raw and newznab based indexers.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

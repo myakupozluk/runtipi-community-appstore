@@ -1,0 +1,18 @@
+services:
+  kapowarr:
+    volumes:
+    - ${APP_DATA_DIR}/kapowarr_portainer_Files_AppData_Config_kapowarr-db:/app/db
+    - ${APP_DATA_DIR}/kapowarr_portainer_comics_downloads:/app/temp_downloads
+    - ${APP_DATA_DIR}/kapowarr_portainer_comics_kapowarr:/content
+    image: mrcas/kapowarr:latest
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5656
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

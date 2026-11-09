@@ -1,0 +1,25 @@
+{
+  "name": "LibreTranslate",
+  "id": "libretranslate",
+  "available": true,
+  "short_desc": "Machine translation server with a page for translating text and documents, plus a JSON API for other apps to call. Runs its own models, so nothing you...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity",
+    "games"
+  ],
+  "description": "Machine translation server with a page for translating text and documents, plus a JSON API for other apps to call. Runs its own models, so nothing you translate leaves the box. Source: https://github.com/LibreTranslate/LibreTranslate",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

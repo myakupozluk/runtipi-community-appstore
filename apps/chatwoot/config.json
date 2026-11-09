@@ -1,0 +1,25 @@
+{
+  "name": "Chatwoot",
+  "id": "chatwoot",
+  "available": true,
+  "short_desc": "Chatwoot - open-source customer support: shared team inbox, website live-chat widget, email and social channels, help center, and automations. This te...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "productivity",
+    "automation"
+  ],
+  "description": "Chatwoot - open-source customer support: shared team inbox, website live-chat widget, email and social channels, help center, and automations. This template runs the community-edition image (`v4-ce`, pure MIT - no enterprise code).",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

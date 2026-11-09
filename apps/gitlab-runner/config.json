@@ -1,0 +1,23 @@
+{
+  "name": "GitLab Runner",
+  "id": "gitlab-runner",
+  "available": true,
+  "short_desc": "A self-hosted GitLab Runner in shell mode: jobs run inside this container, your own compute, no CI-minute quota. Registers itself on first boot and pe...",
+  "author": "deployable-sh/stacks",
+  "port": 8080,
+  "categories": [
+    "development"
+  ],
+  "description": "A self-hosted GitLab Runner in shell mode: jobs run inside this container, your own compute, no CI-minute quota. Registers itself on first boot and persists registration on a volume.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

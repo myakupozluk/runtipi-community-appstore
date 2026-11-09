@@ -1,0 +1,25 @@
+{
+  "name": "Atrium",
+  "id": "atrium",
+  "available": true,
+  "short_desc": "Client portal for agencies and freelancers. Share project progress, files, tasks and invoices through a branded portal. Source: https://github.com/Vib...",
+  "author": "Community",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "Client portal for agencies and freelancers. Share project progress, files, tasks and invoices through a branded portal. Source: https://github.com/Vibra-Labs/Atrium",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

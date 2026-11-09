@@ -1,0 +1,22 @@
+services:
+  gotosocial:
+    image: superseriousbusiness/gotosocial:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - GTS_HOST=localhost
+    - GTS_DB_TYPE=sqlite
+    - GTS_DB_ADDRESS=/gotosocial/storage/sqlite.db
+    - GTS_LETSENCRYPT_ENABLED=false
+    volumes:
+    - ${APP_DATA_DIR}/gotosocial_storage:/gotosocial/storage
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

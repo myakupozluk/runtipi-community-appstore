@@ -1,0 +1,24 @@
+{
+  "name": "Cryptofolio",
+  "id": "cryptofolio",
+  "available": true,
+  "short_desc": "Cryptofolio is an open-source, and self-hosted solution for tracking your cryptocurrency holdings. It features a web interface, an Android mobile app,...",
+  "author": "xneo1/portainer_templates",
+  "port": 7280,
+  "categories": [
+    "finance",
+    "monitoring"
+  ],
+  "description": "Cryptofolio is an open-source, and self-hosted solution for tracking your cryptocurrency holdings. It features a web interface, an Android mobile app, and a cross-platform desktop application for Windows, macOS, and Linux.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

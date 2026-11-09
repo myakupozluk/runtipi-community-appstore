@@ -1,0 +1,24 @@
+{
+  "name": "YOURLS",
+  "id": "yourls",
+  "available": true,
+  "short_desc": "URL shortener you run yourself: short links on your own address with custom keywords, click stats with referrers and countries, bookmarklets and an AP...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "media",
+    "development"
+  ],
+  "description": "URL shortener you run yourself: short links on your own address with custom keywords, click stats with referrers and countries, bookmarklets and an API for making links from scripts. Source: https://github.com/YOURLS/YOURLS",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

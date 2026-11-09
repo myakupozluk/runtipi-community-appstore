@@ -1,0 +1,22 @@
+services:
+  gitea:
+    image: gitea/gitea:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=100
+    volumes:
+    - ${APP_DATA_DIR}/data:/data
+    - ${APP_DATA_DIR}/etc_timezone:ro:/etc/timezone:ro
+    - ${APP_DATA_DIR}/etc_localtime:ro:/etc/localtime:ro
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

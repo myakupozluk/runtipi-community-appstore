@@ -1,0 +1,22 @@
+services:
+  qflood:
+    image: hotio/qflood
+    restart: always
+    environment:
+    - PUID=1000
+    - PGID=1000
+    - UMASK=002
+    - TZ=Europe/Athens
+    - FLOOD_AUTH=false
+    volumes:
+    - ${APP_DATA_DIR}/qflood_portainer_Files_AppData_Config_flood:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

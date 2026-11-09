@@ -1,0 +1,25 @@
+{
+  "name": "Littlelink Server",
+  "id": "littlelink-server",
+  "available": true,
+  "short_desc": "LittleLink is an open source DIY self-hosted alternative to services like Linktree and many.link.",
+  "author": "xneo1/portainer_templates",
+  "port": 8480,
+  "categories": [
+    "development",
+    "social",
+    "games"
+  ],
+  "description": "LittleLink is an open source DIY self-hosted alternative to services like Linktree and many.link.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

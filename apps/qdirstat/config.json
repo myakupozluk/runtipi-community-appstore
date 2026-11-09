@@ -1,0 +1,25 @@
+{
+  "name": "Qdirstat",
+  "id": "qdirstat",
+  "available": true,
+  "short_desc": "[QDirStat](https://github.com/shundhammer/qdirstat) Qt-based directory statistics: KDirStat without any KDE -- from the author of the original KDirSta...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "security",
+    "development",
+    "data"
+  ],
+  "description": "[QDirStat](https://github.com/shundhammer/qdirstat) Qt-based directory statistics: KDirStat without any KDE -- from the author of the original KDirStat.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

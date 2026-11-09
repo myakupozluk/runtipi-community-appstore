@@ -1,0 +1,25 @@
+{
+  "name": "AnythingLLM",
+  "id": "anythingllm",
+  "available": true,
+  "short_desc": "Private ChatGPT-style workspace for your own documents: upload files or scrape web pages, then chat with them using whichever model you like, from Ope...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "media",
+    "development",
+    "productivity"
+  ],
+  "description": "Private ChatGPT-style workspace for your own documents: upload files or scrape web pages, then chat with them using whichever model you like, from OpenAI or Anthropic keys to a local Ollama. Embeddings and the vector store run built in. Source: https://github.com/Mintplex-Labs/anything-llm",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

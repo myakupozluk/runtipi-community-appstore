@@ -1,0 +1,22 @@
+name: jenkins
+services:
+  jenkins:
+    image: jenkins/jenkins:lts-jdk21
+    restart: unless-stopped
+    environment:
+      JENKINS_OPTS: --httpPort=5000
+      JAVA_OPTS: -Xmx1536m
+    volumes:
+    - ${APP_DATA_DIR}/jenkins_jenkins_home:/var/jenkins_home
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+volumes:
+  jenkins_home: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

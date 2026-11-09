@@ -1,0 +1,17 @@
+services:
+  dokemon:
+    image: productiveops/dokemon:latest
+    restart: unless-stopped
+    volumes:
+    - ${APP_DATA_DIR}/dokemon_var_run_docker.sock:/var/run/docker.sock
+    - ${APP_DATA_DIR}/dokemon_portainer_Files_AppData_Config_dokemon_data:/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 9090
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,24 @@
+{
+  "name": "Aria2 Pro",
+  "id": "aria2-pro",
+  "available": true,
+  "short_desc": "A perfect Aria2 Docker image. Out of the box, just add download tasks and don't need to think about anything else.",
+  "author": "xneo1/portainer_templates",
+  "port": 6800,
+  "categories": [
+    "productivity",
+    "data"
+  ],
+  "description": "A perfect Aria2 Docker image. Out of the box, just add download tasks and don't need to think about anything else.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

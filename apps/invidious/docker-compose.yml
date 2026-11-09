@@ -1,0 +1,51 @@
+services:
+  invidious:
+    image: quay.io/invidious/invidious:latest
+    restart: unless-stopped
+    environment:
+      INVIDIOUS_CONFIG: "db:\n  dbname: invidious\n  user: oneusr\n  password: onepwd\n\
+        \  host: invidious-db\n  port: 5432\ncheck_tables: true\n# external_port:\n\
+        # domain:\n# https_only: false\n# statistics_enabled: false\nhmac_key: \"\
+        CHANGE_ME!!\"\n"
+    healthcheck:
+      test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/trending || exit
+        1
+      interval: 30s
+      timeout: 5s
+      retries: 2
+    logging:
+      options:
+        max-size: 1G
+        max-file: '4'
+    depends_on:
+    - invidious-db
+    networks:
+    - tipi_main_network
+    volumes: []
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+  invidious-db:
+    image: docker.io/library/postgres:14
+    restart: unless-stopped
+    volumes:
+    - ${APP_DATA_DIR}/invidious-db_portainer_Files_AppData_Config_invidious_postgresdata:/var/lib/postgresql/data
+    - ${APP_DATA_DIR}/invidious-db_portainer_Files_AppData_Config_invidious_postgresdata_config_sql:/config/sql
+    - ${APP_DATA_DIR}/invidious-db_portainer_Files_AppData_Config_invidious_postgresdata_init-invidious-db.sh:/docker-entrypoint-initdb.d/init-invidious-db.sh
+    environment:
+      POSTGRES_DB: invidious
+      POSTGRES_USER: theuser
+      POSTGRES_PASSWORD: thepwd
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB
+    networks:
+    - tipi_main_network
+volumes:
+  postgresdata: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

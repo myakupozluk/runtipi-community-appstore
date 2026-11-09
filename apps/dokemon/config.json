@@ -1,0 +1,24 @@
+{
+  "name": "Dokemon",
+  "id": "dokemon",
+  "available": true,
+  "short_desc": "Deploy compose files, start/stop containers, delete unused images, view logs",
+  "author": "xneo1/portainer_templates",
+  "port": 9090,
+  "categories": [
+    "data",
+    "monitoring"
+  ],
+  "description": "Deploy compose files, start/stop containers, delete unused images, view logs",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

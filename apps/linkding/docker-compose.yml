@@ -1,0 +1,21 @@
+services:
+  linkding:
+    image: sissbruecker/linkding:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - LD_SUPERUSER_NAME=admin
+    - LD_SUPERUSER_PASSWORD=changeme
+    - LD_SUPERUSER_EMAIL=
+    volumes:
+    - ${APP_DATA_DIR}/etc_linkding_data:/etc/linkding/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 9090
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,25 @@
+{
+  "name": "Kaneo",
+  "id": "kaneo",
+  "available": true,
+  "short_desc": "Project management for small teams: kanban boards, a backlog, Gantt charts, labels, time tracking and GitHub, GitLab or Gitea issue sync, in workspace...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "Project management for small teams: kanban boards, a backlog, Gantt charts, labels, time tracking and GitHub, GitLab or Gitea issue sync, in workspaces you invite people into. Source: https://github.com/usekaneo/kaneo",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

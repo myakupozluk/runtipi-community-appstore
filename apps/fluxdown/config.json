@@ -1,0 +1,24 @@
+{
+  "name": "FluxDown",
+  "id": "fluxdown",
+  "available": true,
+  "short_desc": "Multi-protocol download manager with a web UI. Handles HTTP/HTTPS, FTP, BitTorrent (DHT/magnet), eD2K/Kad, HLS and DASH, with dynamic file segmentatio...",
+  "author": "zerx-lab",
+  "port": 17800,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "Multi-protocol download manager with a web UI. Handles HTTP/HTTPS, FTP, BitTorrent (DHT/magnet), eD2K/Kad, HLS and DASH, with dynamic file segmentation, token-bucket rate limiting and SQLite-backed resume. Exposes an aria2-compatible JSON-RPC API. GitHub: [zerx-lab/FluxDown](https://github.com/zerx-lab/FluxDown)",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

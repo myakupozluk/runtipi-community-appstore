@@ -1,0 +1,25 @@
+services:
+  mailserver:
+    image: analogic/poste.io
+    restart: always
+    environment:
+    - TZ=Europe/Athens
+    - h=mail.[some-domain].com
+    - HTTP_PORT=82
+    - HTTPS_PORT=445
+    - DISABLE_CLAMAV=TRUE
+    - DISABLE_RSPAMD=TRUE
+    volumes:
+    - ${APP_DATA_DIR}/mailserver_etc_localtime:/etc/localtime
+    - ${APP_DATA_DIR}/mailserver_portainer_Files_AppData_Config_poste_data_nginx_html_.well-known:/opt/www/.well-known
+    - ${APP_DATA_DIR}/mailserver_portainer_Files_AppData_Config_poste_data_mailserver:/dataroot
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

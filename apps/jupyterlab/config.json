@@ -1,0 +1,25 @@
+{
+  "name": "JupyterLab",
+  "id": "jupyterlab",
+  "available": true,
+  "short_desc": "Python notebooks in the browser for poking at data and plotting it, with a terminal alongside. It's Jupyter's scipy-notebook image, so pandas, NumPy, ...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8888,
+  "categories": [
+    "media",
+    "development",
+    "productivity"
+  ],
+  "description": "Python notebooks in the browser for poking at data and plotting it, with a terminal alongside. It's Jupyter's scipy-notebook image, so pandas, NumPy, matplotlib and scikit-learn come installed. Source: https://github.com/jupyter/docker-stacks",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Castopod",
+  "id": "castopod",
+  "available": true,
+  "short_desc": "Castopod is a free and open-source hosting platform made for podcasters.",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "media"
+  ],
+  "description": "Castopod is a free and open-source hosting platform made for podcasters.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

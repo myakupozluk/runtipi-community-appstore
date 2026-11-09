@@ -1,0 +1,23 @@
+{
+  "name": "Kapowarr",
+  "id": "kapowarr",
+  "available": true,
+  "short_desc": "Kapowarr is a software to build and manage a comic book library, fitting in the *arr suite of software.",
+  "author": "xneo1/portainer_templates",
+  "port": 5656,
+  "categories": [
+    "media"
+  ],
+  "description": "Kapowarr is a software to build and manage a comic book library, fitting in the *arr suite of software.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

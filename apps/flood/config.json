@@ -1,0 +1,25 @@
+{
+  "name": "Flood",
+  "id": "flood",
+  "available": true,
+  "short_desc": "A docker image with qBittorrent and the Flood UI, also optional WireGuard VPN support.",
+  "author": "xneo1/portainer_templates",
+  "port": 8282,
+  "categories": [
+    "security",
+    "productivity",
+    "data"
+  ],
+  "description": "A docker image with qBittorrent and the Flood UI, also optional WireGuard VPN support.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

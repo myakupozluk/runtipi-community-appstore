@@ -1,0 +1,25 @@
+{
+  "name": "TREK",
+  "id": "trek",
+  "available": true,
+  "short_desc": "Trip planner for working out each day of a holiday on a map, with bookings, budgets, packing lists and live editing with whoever's coming along. Sourc...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8099,
+  "categories": [
+    "media",
+    "development",
+    "productivity"
+  ],
+  "description": "Trip planner for working out each day of a holiday on a map, with bookings, budgets, packing lists and live editing with whoever's coming along. Source: https://github.com/liketrek/TREK",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Kdenlive",
+  "id": "kdenlive",
+  "available": true,
+  "short_desc": "[Kdenlive](https://kdenlive.org/) is a powerful free and open source cross-platform video editing program made by the KDE community. Feature rich and ...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "media",
+    "development"
+  ],
+  "description": "[Kdenlive](https://kdenlive.org/) is a powerful free and open source cross-platform video editing program made by the KDE community. Feature rich and production ready.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

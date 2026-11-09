@@ -1,0 +1,26 @@
+services:
+  vscodium-web:
+    image: linuxserver/vscodium-web:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+    - CONNECTION_TOKEN=
+    - CONNECTION_TOKEN_FILE=
+    - SUDO_PASSWORD=password
+    - SUDO_PASSWORD_HASH=
+    - CODE_ARGS=
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

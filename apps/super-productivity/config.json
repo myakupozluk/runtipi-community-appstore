@@ -1,0 +1,24 @@
+{
+  "name": "Super Productivity",
+  "id": "super-productivity",
+  "available": true,
+  "short_desc": "To-do list with timeboxing and time tracking built in, and it can pull in issues from Jira, GitHub and GitLab. Source: https://github.com/super-produc...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8095,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "To-do list with timeboxing and time tracking built in, and it can pull in issues from Jira, GitHub and GitLab. Source: https://github.com/super-productivity/super-productivity",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

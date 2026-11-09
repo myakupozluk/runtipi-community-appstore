@@ -1,0 +1,25 @@
+{
+  "name": "Synclounge",
+  "id": "synclounge",
+  "available": true,
+  "short_desc": "[Synclounge](https://github.com/samcm/synclounge) is a third party tool that allows you to watch Plex in sync with your friends/family, wherever you a...",
+  "author": "technorabilia/portainer-templates",
+  "port": 8088,
+  "categories": [
+    "media",
+    "development",
+    "data"
+  ],
+  "description": "[Synclounge](https://github.com/samcm/synclounge) is a third party tool that allows you to watch Plex in sync with your friends/family, wherever you are.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Reactive-Resume",
+  "id": "reactive-resume",
+  "available": true,
+  "short_desc": "A one-of-a-kind resume builder that's not out to get your data. Completely secure, customizable, portable, open-source and free forever.",
+  "author": "xneo1/portainer_templates",
+  "port": 80,
+  "categories": [
+    "data"
+  ],
+  "description": "A one-of-a-kind resume builder that's not out to get your data. Completely secure, customizable, portable, open-source and free forever.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

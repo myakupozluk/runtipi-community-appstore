@@ -1,0 +1,23 @@
+{
+  "name": "Scrutiny",
+  "id": "scrutiny",
+  "available": true,
+  "short_desc": "WebUI for smartd S.M.A.R.T monitoring",
+  "author": "mediadepot/templates",
+  "port": 8080,
+  "categories": [
+    "monitoring"
+  ],
+  "description": "WebUI for smartd S.M.A.R.T monitoring",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mediadepot/templates/",
+  "website": "https://github.com/mediadepot/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

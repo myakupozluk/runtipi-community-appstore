@@ -1,0 +1,25 @@
+{
+  "name": "Ferret",
+  "id": "ferret",
+  "available": true,
+  "short_desc": "Self-hosted home inventory: find anything you own. Photos, barcodes, QR labels, warranties, maintenance and an insurance report, with a REST API, an M...",
+  "author": "ferret-project/ferret",
+  "port": 8787,
+  "categories": [
+    "media",
+    "development",
+    "productivity"
+  ],
+  "description": "Self-hosted home inventory: find anything you own. Photos, barcodes, QR labels, warranties, maintenance and an insurance report, with a REST API, an MCP server and optional AI on your own models.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/ferret-project/ferret/",
+  "website": "https://github.com/ferret-project/ferret/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

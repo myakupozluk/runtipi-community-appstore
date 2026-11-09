@@ -1,0 +1,16 @@
+services:
+  myfeedcord:
+    image: qolors/feedcord:latest
+    restart: unless-stopped
+    volumes:
+    - ${APP_DATA_DIR}/myfeedcord_portainer_Files_AppData_Config_feedcord_appsettings.json:/app/config/appsettings.json
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

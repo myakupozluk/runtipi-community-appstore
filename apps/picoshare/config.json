@@ -1,0 +1,24 @@
+{
+  "name": "PicoShare",
+  "id": "picoshare",
+  "available": true,
+  "short_desc": "Minimalist file sharing: upload any file and get a direct link to it, with no re-encoding, no size limit and an optional expiry date. Guest links let ...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "Minimalist file sharing: upload any file and get a direct link to it, with no re-encoding, no size limit and an optional expiry date. Guest links let other people upload files to you. Source: https://github.com/mtlynch/picoshare",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Reach Me Out",
+  "id": "reach-me-out",
+  "available": true,
+  "short_desc": "Static, config-driven link-in-bio page. Profile card, tappable links, vCard download, QR share — all driven from a single YAML file baked at build tim...",
+  "author": "Community",
+  "port": 8080,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "Static, config-driven link-in-bio page. Profile card, tappable links, vCard download, QR share — all driven from a single YAML file baked at build time. Source: https://github.com/kartikeychoudhary/Reach-me-out",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

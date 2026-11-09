@@ -1,0 +1,24 @@
+{
+  "name": "Statping",
+  "id": "statping",
+  "available": true,
+  "short_desc": "An easy to use Status Page for your websites and applications. Statping will automatically fetch the application and render a beautiful status page wi...",
+  "author": "xneo1/portainer_templates",
+  "port": 4040,
+  "categories": [
+    "network",
+    "monitoring"
+  ],
+  "description": "An easy to use Status Page for your websites and applications. Statping will automatically fetch the application and render a beautiful status page with tons of features for you to build an even better status page.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,21 @@
+services:
+  octoprint:
+    image: octoprint/octoprint:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - 'NODE_ENV=development '
+    - ENABLE_MJPG_STREAMER=true
+    volumes:
+    - ${APP_DATA_DIR}/octoprint:/octoprint
+    - ${APP_DATA_DIR}/dev:/dev
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

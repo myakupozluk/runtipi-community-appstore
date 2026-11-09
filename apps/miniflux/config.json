@@ -1,0 +1,23 @@
+{
+  "name": "Miniflux",
+  "id": "miniflux",
+  "available": true,
+  "short_desc": "Miniflux is a minimalist and opinionated feed reader.",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "social"
+  ],
+  "description": "Miniflux is a minimalist and opinionated feed reader.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,19 @@
+services:
+  glances-monitoring:
+    image: nicolargo/glances:latest-alpine
+    restart: always
+    pid: host
+    volumes:
+    - ${APP_DATA_DIR}/glances-monitoring_var_run_docker.sock:/var/run/docker.sock
+    environment:
+    - GLANCES_OPT=-w
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,25 @@
+{
+  "name": "Kilo (headless)",
+  "id": "kilo",
+  "available": true,
+  "short_desc": "Kilo, open-source AI coding agent, running in server mode (`kilo serve`) on Miget: a persistent remote agent whose HTTP+SSE API your Kilo clients atta...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "data",
+    "games"
+  ],
+  "description": "Kilo, open-source AI coding agent, running in server mode (`kilo serve`) on Miget: a persistent remote agent whose HTTP+SSE API your Kilo clients attach to (IDE extension, `kilo attach`, or the Cloud Agents web UI via Remote Connections).",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

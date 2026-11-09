@@ -1,0 +1,38 @@
+services:
+  dev:
+    user: vscode
+    privileged: true
+    shm_size: 256mb
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.dev
+    volumes:
+    - ${APP_DATA_DIR}/dev_etc_localtime:/etc/localtime
+    - ${APP_DATA_DIR}/dev_data:/lab/frigate
+    - ${APP_DATA_DIR}/dev_portainer_Files_AppData_Config_frigatenvr_config.yml:/config/config.yml
+    - ${APP_DATA_DIR}/dev_debug:/media/frigate
+    - ${APP_DATA_DIR}/dev_dev_bus_usb:/dev/bus/usb
+    - ${APP_DATA_DIR}/dev_dev_dri:/dev/dri
+    entrypoint:
+    - sudo
+    - /init
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 1935
+  mqtt:
+    image: eclipse-mosquitto:1.6
+    ports:
+    - 1883:1883
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

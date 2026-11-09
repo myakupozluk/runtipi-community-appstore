@@ -1,0 +1,23 @@
+{
+  "name": "Shiori (container)",
+  "id": "shiori",
+  "available": true,
+  "short_desc": "Shiori is a simple bookmarks manager written in Go language. Intended as a simple clone of Pocket. You can use it as command line application or as we...",
+  "author": "novaspirit/pi-hosted",
+  "port": 7564,
+  "categories": [
+    "media"
+  ],
+  "description": "Shiori is a simple bookmarks manager written in Go language. Intended as a simple clone of Pocket. You can use it as command line application or as web application.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

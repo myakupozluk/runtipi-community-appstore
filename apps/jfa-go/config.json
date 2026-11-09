@@ -1,0 +1,24 @@
+{
+  "name": "Jellyfin-Accounts",
+  "id": "jfa-go",
+  "available": true,
+  "short_desc": "jfa-go is a user management app for Jellyfin (and now Emby) that provides invite-based account creation as well as other features that make one's inst...",
+  "author": "novaspirit/pi-hosted",
+  "port": 8056,
+  "categories": [
+    "media",
+    "development"
+  ],
+  "description": "jfa-go is a user management app for Jellyfin (and now Emby) that provides invite-based account creation as well as other features that make one's instance much easier to manage.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

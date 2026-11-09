@@ -1,0 +1,25 @@
+{
+  "name": "Maloja",
+  "id": "maloja",
+  "available": true,
+  "short_desc": "Simple self-hosted music scrobble database to create personal listening statistics. No recommendations, no social network, no nonsense.",
+  "author": "novaspirit/pi-hosted",
+  "port": 42010,
+  "categories": [
+    "media",
+    "network",
+    "development"
+  ],
+  "description": "Simple self-hosted music scrobble database to create personal listening statistics. No recommendations, no social network, no nonsense.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

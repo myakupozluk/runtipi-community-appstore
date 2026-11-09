@@ -1,0 +1,19 @@
+services:
+  jenkins-container:
+    image: jenkins/jenkins:lts
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - JENKINS_OPTS=
+    volumes:
+    - ${APP_DATA_DIR}/var_jenkins_home:/var/jenkins_home
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

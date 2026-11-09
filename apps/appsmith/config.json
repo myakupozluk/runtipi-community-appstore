@@ -1,0 +1,25 @@
+{
+  "name": "Appsmith",
+  "id": "appsmith",
+  "available": true,
+  "short_desc": "Appsmith (www.appsmith.com) is the first open-source low-code tool that helps developers build dashboards and admin panels very quickly.",
+  "author": "xneo1/portainer_templates",
+  "port": 1810,
+  "categories": [
+    "development",
+    "productivity",
+    "monitoring"
+  ],
+  "description": "Appsmith (www.appsmith.com) is the first open-source low-code tool that helps developers build dashboards and admin panels very quickly.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

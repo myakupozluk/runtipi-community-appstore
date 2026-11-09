@@ -1,0 +1,23 @@
+{
+  "name": "Wallabag",
+  "id": "wallabag",
+  "available": true,
+  "short_desc": "wallabag is a web application allowing you to save web pages for later reading. Click, save and read it when you want.",
+  "author": "xneo1/portainer_templates",
+  "port": 1180,
+  "categories": [
+    "utilities"
+  ],
+  "description": "wallabag is a web application allowing you to save web pages for later reading. Click, save and read it when you want.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

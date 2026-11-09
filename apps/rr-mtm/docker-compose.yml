@@ -1,0 +1,58 @@
+services:
+  lidarr:
+    environment:
+    - PUID=${PUID}
+    - PGID=${PGID}
+    - UMASK=${UMASK}
+    - TZ=${TZ}
+    image: hotio/lidarr:nightly
+    restart: unless-stopped
+    privileged: true
+    volumes:
+    - ${APP_DATA_DIR}/lidarr_${APPDATA}_lidarr:/config
+    - ${APP_DATA_DIR}/lidarr_${DOWNLOAD}:/data
+    - ${APP_DATA_DIR}/lidarr_${MUSIC}:/music
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8686
+  radarr:
+    environment:
+    - PUID=${PUID}
+    - PGID=${PGID}
+    - UMASK=${UMASK}
+    - TZ=${TZ}
+    image: hotio/radarr:nightly
+    restart: unless-stopped
+    privileged: true
+    ports:
+    - ${RADARRPORT}:7878
+    volumes:
+    - ${APP_DATA_DIR}/radarr_${APPDATA}_radarr:/config
+    - ${APP_DATA_DIR}/radarr_${DOWNLOAD}:/data
+    - ${APP_DATA_DIR}/radarr_${MOVIES}:/movie
+    networks:
+    - tipi_main_network
+  sonarr:
+    environment:
+    - PUID=${PUID}
+    - PGID=${PGID}
+    - UMASK=${UMASK}
+    - TZ=${TZ}
+    image: hotio/sonarr:nightly
+    restart: unless-stopped
+    privileged: true
+    ports:
+    - ${SONARRPORT}:8989
+    volumes:
+    - ${APP_DATA_DIR}/sonarr_${APPDATA}_sonarr:/config
+    - ${APP_DATA_DIR}/sonarr_${DOWNLOAD}:/data
+    - ${APP_DATA_DIR}/sonarr_${TV}:/tv
+    networks:
+    - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

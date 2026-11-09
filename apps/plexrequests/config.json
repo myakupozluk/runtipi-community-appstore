@@ -1,0 +1,25 @@
+{
+  "name": "Plex Requests",
+  "id": "plexrequests",
+  "available": true,
+  "short_desc": "Simple automated way for users to request new content for Plex.",
+  "author": "xneo1/portainer_templates",
+  "port": 3000,
+  "categories": [
+    "media",
+    "development",
+    "data"
+  ],
+  "description": "Simple automated way for users to request new content for Plex.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

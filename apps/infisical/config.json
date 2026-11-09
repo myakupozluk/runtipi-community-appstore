@@ -1,0 +1,25 @@
+{
+  "name": "Infisical",
+  "id": "infisical",
+  "available": true,
+  "short_desc": "Infisical - the open-source secrets manager: projects with environments, secret versioning, references, dynamic secrets, and first-class integrations ...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "security",
+    "development",
+    "productivity"
+  ],
+  "description": "Infisical - the open-source secrets manager: projects with environments, secret versioning, references, dynamic secrets, and first-class integrations (Kubernetes operator, CI runners, Terraform, SDKs).",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

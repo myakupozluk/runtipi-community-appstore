@@ -1,0 +1,17 @@
+services:
+  codex:
+    image: docker.io/ajslater/codex
+    volumes:
+    - ${APP_DATA_DIR}/codex_portainer_Files_AppData_Config_codex:/config
+    - ${APP_DATA_DIR}/codex_portainer_comics:/comics
+    restart: on-failure
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 9810
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

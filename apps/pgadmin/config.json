@@ -1,0 +1,25 @@
+{
+  "name": "pgAdmin",
+  "id": "pgadmin",
+  "available": true,
+  "short_desc": "PGAdmin is a web-based GUI tool used to interact with the Postgres database sessions, both locally and remote servers as well. You can use PGAdmin to ...",
+  "author": "novaspirit/pi-hosted",
+  "port": 5050,
+  "categories": [
+    "development",
+    "data",
+    "games"
+  ],
+  "description": "PGAdmin is a web-based GUI tool used to interact with the Postgres database sessions, both locally and remote servers as well. You can use PGAdmin to perform any sort of database administration required for a Postgres database.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

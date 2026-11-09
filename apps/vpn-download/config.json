@@ -1,0 +1,24 @@
+{
+  "name": "Vpn_Download",
+  "id": "vpn-download",
+  "available": true,
+  "short_desc": "Vpn_Download self-hosted application for Runtipi.",
+  "author": "Community",
+  "port": 6881,
+  "categories": [
+    "security",
+    "data"
+  ],
+  "description": "Vpn_Download self-hosted application for Runtipi.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

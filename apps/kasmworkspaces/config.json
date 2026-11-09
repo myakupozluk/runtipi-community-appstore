@@ -1,0 +1,25 @@
+{
+  "name": "Kasm Workspaces",
+  "id": "kasmworkspaces",
+  "available": true,
+  "short_desc": "The Workspace Streaming Platform.Stream your workspace directly to your web browser on any device and from any location.",
+  "author": "xneo1/portainer_templates",
+  "port": 63000,
+  "categories": [
+    "media",
+    "development",
+    "productivity"
+  ],
+  "description": "The Workspace Streaming Platform.Stream your workspace directly to your web browser on any device and from any location.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

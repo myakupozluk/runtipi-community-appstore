@@ -1,0 +1,17 @@
+services:
+  filegator:
+    image: filegator/filegator:latest
+    volumes:
+    - ${APP_DATA_DIR}/filegator_mnt_MYSMBMOUNT:/srv/files
+    - ${APP_DATA_DIR}/filegator_portainer_Files_AppData_Config_filegator_data:/config
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

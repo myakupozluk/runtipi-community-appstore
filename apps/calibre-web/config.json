@@ -1,0 +1,25 @@
+{
+  "name": "Calibre-web",
+  "id": "calibre-web",
+  "available": true,
+  "short_desc": "[Calibre-web](https://github.com/janeczku/calibre-web) is a web app providing a clean interface for browsing, reading and downloading eBooks using an ...",
+  "author": "technorabilia/portainer-templates",
+  "port": 8083,
+  "categories": [
+    "media",
+    "development",
+    "data"
+  ],
+  "description": "[Calibre-web](https://github.com/janeczku/calibre-web) is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself. This software is a fork of library and licensed under the GPL v3 License.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Langflow",
+  "id": "langflow",
+  "available": true,
+  "short_desc": "Visual builder for AI agents and workflows: drag together models, prompts, tools, vector stores and MCP servers on a canvas, chat with the result in a...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "automation",
+    "social"
+  ],
+  "description": "Visual builder for AI agents and workflows: drag together models, prompts, tools, vector stores and MCP servers on a canvas, chat with the result in a playground, then call it as an API or serve it as an MCP server. Source: https://github.com/langflow-ai/langflow",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Tailscale (container)",
+  "id": "tailscale",
+  "available": true,
+  "short_desc": "Connect your devices and users together in your own secure Zero config virtual private network.",
+  "author": "novaspirit/pi-hosted",
+  "port": 8080,
+  "categories": [
+    "security",
+    "network",
+    "development"
+  ],
+  "description": "Connect your devices and users together in your own secure Zero config virtual private network.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

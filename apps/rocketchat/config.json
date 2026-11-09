@@ -1,0 +1,25 @@
+{
+  "name": "Rocket.Chat",
+  "id": "rocketchat",
+  "available": true,
+  "short_desc": "Rocket.Chat - the open-source team communication platform: channels, DMs, threads, voice/video, an apps marketplace, and omnichannel (livechat/email/s...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "media",
+    "development",
+    "productivity"
+  ],
+  "description": "Rocket.Chat - the open-source team communication platform: channels, DMs, threads, voice/video, an apps marketplace, and omnichannel (livechat/email/social). MIT core. The app is stateless - all state lives in MongoDB.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

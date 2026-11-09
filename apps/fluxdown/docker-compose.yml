@@ -1,0 +1,20 @@
+services:
+  fluxdown:
+    image: ghcr.io/zerx-lab/fluxdown-server:0.2.3
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - TZ=UTC
+    volumes:
+    - ${APP_DATA_DIR}/data:/data
+    - ${APP_DATA_DIR}/root_Downloads:/root/Downloads
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 17800
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

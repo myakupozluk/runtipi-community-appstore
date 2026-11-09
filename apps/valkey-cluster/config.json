@@ -1,0 +1,23 @@
+{
+  "name": "Valkey Cluster",
+  "id": "valkey-cluster",
+  "available": true,
+  "short_desc": "Horizontally-scaled Valkey where the keyspace is partitioned across multiple master shards, each with a replica - the same design as Redis Cluster, BS...",
+  "author": "deployable-sh/stacks",
+  "port": 8080,
+  "categories": [
+    "development"
+  ],
+  "description": "Horizontally-scaled Valkey where the keyspace is partitioned across multiple master shards, each with a replica - the same design as Redis Cluster, BSD-licensed and Redis-protocol compatible.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

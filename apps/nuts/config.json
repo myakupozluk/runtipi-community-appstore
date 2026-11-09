@@ -1,0 +1,24 @@
+{
+  "name": "NUTS",
+  "id": "nuts",
+  "available": true,
+  "short_desc": "Network UPS Tools server",
+  "author": "xneo1/portainer_templates",
+  "port": 3493,
+  "categories": [
+    "network",
+    "games"
+  ],
+  "description": "Network UPS Tools server",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,37 @@
+services:
+  db_recipes:
+    image: postgres
+    environment:
+    - POSTGRES_DB=postgres
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=postgres
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+  recipes:
+    image: vabene1111/recipes
+    volumes:
+    - ${APP_DATA_DIR}/recipes_portainer_Files_AppData_Config_tandoor_staticfiles:/opt/recipes/staticfiles
+    - ${APP_DATA_DIR}/recipes_portainer_Files_AppData_Config_tandoor_mediafiles:/opt/recipes/mediafiles
+    environment:
+    - SECRET_KEY=YOUR_SECRET_KEY
+    - DB_ENGINE=django.db.backends.postgresql
+    - POSTGRES_HOST=db_recipes
+    - POSTGRES_PORT=5432
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=postgres
+    - POSTGRES_DB=postgres
+    restart: unless-stopped
+    depends_on:
+    - db_recipes
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

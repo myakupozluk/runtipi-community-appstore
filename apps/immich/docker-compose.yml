@@ -1,0 +1,111 @@
+services:
+  immich-server:
+    image: altran1502/immich-server:release
+    entrypoint:
+    - /bin/sh
+    - ./start-server.sh
+    volumes:
+    - ${APP_DATA_DIR}/immich-server_portainer_Files_AppData_Config_immich:/usr/src/app/upload
+    environment:
+    - NODE_ENV=production
+    - IMMICH_SERVER_URL=http://immich-server:3001
+    - DB_HOSTNAME=immich_postgres
+    - DB_USERNAME=postgres
+    - DB_PASSWORD=postgres
+    - DB_DATABASE_NAME=immich
+    depends_on:
+    - immich-redis
+    - immich-database
+    restart: always
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+  immich-microservices:
+    image: altran1502/immich-server:release
+    entrypoint:
+    - /bin/sh
+    - ./start-microservices.sh
+    volumes:
+    - ${APP_DATA_DIR}/immich-microservices_portainer_Files_AppData_Config_immich:/usr/src/app/upload
+    environment:
+    - NODE_ENV=production
+    - DB_HOSTNAME=immich_postgres
+    - DB_USERNAME=postgres
+    - DB_PASSWORD=postgres
+    - DB_DATABASE_NAME=immich
+    depends_on:
+    - immich-redis
+    - immich-database
+    restart: always
+    networks:
+    - tipi_main_network
+  immich-machine-learning:
+    image: altran1502/immich-machine-learning:release
+    entrypoint:
+    - /bin/sh
+    - ./entrypoint.sh
+    volumes:
+    - ${APP_DATA_DIR}/immich-machine-learning_portainer_Files_AppData_Config_immich:/usr/src/app/upload
+    environment:
+    - NODE_ENV=production
+    depends_on:
+    - immich-database
+    restart: always
+    networks:
+    - tipi_main_network
+  immich-web:
+    image: altran1502/immich-web:release
+    entrypoint:
+    - /bin/sh
+    - ./entrypoint.sh
+    environment:
+    - VITE_SERVER_ENDPOINT=http://immich-web:2283/api
+    restart: always
+    networks:
+    - tipi_main_network
+    volumes: []
+  immich-redis:
+    image: redis:6.2
+    restart: always
+    environment:
+    - REDIS_HOSTNAME=immich_redis
+    networks:
+    - tipi_main_network
+    volumes: []
+  immich-database:
+    image: postgres:14
+    environment:
+    - DB_HOSTNAME=immich_postgres
+    - DB_USERNAME=postgres
+    - DB_PASSWORD=postgres
+    - DB_DATABASE_NAME=immich
+    - POSTGRES_PASSWORD=postgres
+    - POSTGRES_USER=postgres
+    - POSTGRES_DB=immich
+    volumes:
+    - ${APP_DATA_DIR}/immich-database_portainer_Files_AppData_Config_immich_pgdata:/var/lib/postgresql/data
+    restart: always
+    networks:
+    - tipi_main_network
+  immich-proxy:
+    image: altran1502/immich-proxy:release
+    environment:
+    - IMMICH_SERVER_URL=http://immich-server:3001
+    - IMMICH_WEB_URL=http://immich-web:3000
+    ports:
+    - 2283:8080
+    logging:
+      driver: none
+    depends_on:
+    - immich-server
+    restart: always
+    networks:
+    - tipi_main_network
+    volumes: []
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

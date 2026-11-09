@@ -1,0 +1,23 @@
+services:
+  logzio-metrics-collector:
+    image: logzio/docker-collector-metrics:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - LOGZIO_TOKEN=REPLACE-LOGZIO-TOKEN-HERE
+    - LOGZIO_MODULES=system,docker
+    volumes:
+    - ${APP_DATA_DIR}/var_run_docker.sock:/var/run/docker.sock
+    - ${APP_DATA_DIR}/hostfs_sys_fs_cgroup:/hostfs/sys/fs/cgroup
+    - ${APP_DATA_DIR}/hostfs_proc:/hostfs/proc
+    - ${APP_DATA_DIR}/hostfs:/hostfs
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

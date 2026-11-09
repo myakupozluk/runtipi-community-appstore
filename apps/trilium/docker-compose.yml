@@ -1,0 +1,20 @@
+services:
+  trilium:
+    image: zadam/trilium:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - TRILIUM_DATA_DIR=/home/node/trilium-data
+    - PORT=
+    volumes:
+    - ${APP_DATA_DIR}/home_node_trilium-data:/home/node/trilium-data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

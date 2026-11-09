@@ -1,0 +1,24 @@
+{
+  "name": "AudioMuse-AI (NVIDIA GPU)",
+  "id": "audiomuse-ai-nvidia",
+  "available": true,
+  "short_desc": "AudioMuse-AI with NVIDIA GPU acceleration for the analysis and clustering jobs. Needs the NVIDIA Container Toolkit on the host. GitHub: [NeptuneHub/Au...",
+  "author": "Community",
+  "port": 8080,
+  "categories": [
+    "media",
+    "development"
+  ],
+  "description": "AudioMuse-AI with NVIDIA GPU acceleration for the analysis and clustering jobs. Needs the NVIDIA Container Toolkit on the host. GitHub: [NeptuneHub/AudioMuse-AI](https://github.com/NeptuneHub/AudioMuse-AI)",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

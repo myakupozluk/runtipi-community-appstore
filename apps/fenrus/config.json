@@ -1,0 +1,23 @@
+{
+  "name": "Fenrus",
+  "id": "fenrus",
+  "available": true,
+  "short_desc": "Fenrus is a Node application and requires NodeJS to run. Once NodeJS is installed you can run Fenrus",
+  "author": "xneo1/portainer_templates",
+  "port": 3003,
+  "categories": [
+    "monitoring"
+  ],
+  "description": "Fenrus is a Node application and requires NodeJS to run. Once NodeJS is installed you can run Fenrus",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

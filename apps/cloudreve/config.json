@@ -1,0 +1,25 @@
+{
+  "name": "Cloudreve",
+  "id": "cloudreve",
+  "available": true,
+  "short_desc": "Cloud drive for your own files, with share links, WebDAV, previews for documents, photos and video, and offline downloads. Source: https://github.com/...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 5212,
+  "categories": [
+    "media",
+    "development",
+    "productivity"
+  ],
+  "description": "Cloud drive for your own files, with share links, WebDAV, previews for documents, photos and video, and offline downloads. Source: https://github.com/cloudreve/cloudreve",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

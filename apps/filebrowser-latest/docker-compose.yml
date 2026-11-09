@@ -1,0 +1,20 @@
+services:
+  filebrowser-latest:
+    image: filebrowser/filebrowser:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/srv:/srv
+    - ${APP_DATA_DIR}/database_filebrowser.db:/database/filebrowser.db
+    - ${APP_DATA_DIR}/config_settings.json:/config/settings.json
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,23 @@
+{
+  "name": "Mermaid Live Editor",
+  "id": "mermaid-live-editor",
+  "available": true,
+  "short_desc": "Browser editor for Mermaid diagrams, previewing flowcharts, sequence, class, Gantt and dozens of other diagram types live as you write them in plain t...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8980,
+  "categories": [
+    "development"
+  ],
+  "description": "Browser editor for Mermaid diagrams, previewing flowcharts, sequence, class, Gantt and dozens of other diagram types live as you write them in plain text, then exporting them as PNG or SVG or sharing them as a link. Source: https://github.com/mermaid-js/mermaid-live-editor",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Freecad",
+  "id": "freecad",
+  "available": true,
+  "short_desc": "[FreeCAD](https://www.freecad.org/) is a general-purpose parametric 3D computer-aided design (CAD) modeler and a building information modeling (BIM) s...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "development"
+  ],
+  "description": "[FreeCAD](https://www.freecad.org/) is a general-purpose parametric 3D computer-aided design (CAD) modeler and a building information modeling (BIM) software application with finite element method (FEM) support.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

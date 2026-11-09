@@ -1,0 +1,25 @@
+{
+  "name": "Grist",
+  "id": "grist",
+  "available": true,
+  "short_desc": "Spreadsheet that works like a database, with typed columns, Python formulas, linked tables, charts and forms. Source: https://github.com/gristlabs/gri...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "Spreadsheet that works like a database, with typed columns, Python formulas, linked tables, charts and forms. Source: https://github.com/gristlabs/grist-core",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

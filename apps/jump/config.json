@@ -1,0 +1,24 @@
+{
+  "name": "Jump",
+  "id": "jump",
+  "available": true,
+  "short_desc": "Jump is yet another self-hosted startpage for your server designed to be simple, stylish, fast and secure.",
+  "author": "xneo1/portainer_templates",
+  "port": 9123,
+  "categories": [
+    "monitoring",
+    "games"
+  ],
+  "description": "Jump is yet another self-hosted startpage for your server designed to be simple, stylish, fast and secure.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

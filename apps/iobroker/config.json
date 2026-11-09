@@ -1,0 +1,25 @@
+{
+  "name": "iobroker",
+  "id": "iobroker",
+  "available": true,
+  "short_desc": "IoBroker is a open source IoT platform written in JavaScript that easily connects smarthome components from different manufactures. With the help of p...",
+  "author": "novaspirit/pi-hosted",
+  "port": 8081,
+  "categories": [
+    "development",
+    "automation",
+    "monitoring"
+  ],
+  "description": "IoBroker is a open source IoT platform written in JavaScript that easily connects smarthome components from different manufactures. With the help of plugins (called: adapters) ioBroker is able to communicate with a big variety of IoT hardware and services using different protocols and APIs.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

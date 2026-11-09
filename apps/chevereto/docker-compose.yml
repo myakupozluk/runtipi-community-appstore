@@ -1,0 +1,25 @@
+services:
+  chevereto:
+    image: nmtan/chevereto:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=100
+    - CHEVERETO_DB_HOST=
+    - CHEVERETO_DB_USERNAME=
+    - CHEVERETO_DB_PASSWORD=
+    - CHEVERETO_DB_NAME=
+    - CHEVERETO_DB_PREFIX=
+    volumes:
+    - ${APP_DATA_DIR}/var_www_html_images:/var/www/html/images
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,23 @@
+{
+  "name": "Registry (cache)",
+  "id": "registry-cache",
+  "available": true,
+  "short_desc": "Docker image registry configured as a DockerHub pull through cache",
+  "author": "portainer/templates",
+  "port": 5000,
+  "categories": [
+    "productivity"
+  ],
+  "description": "Docker image registry configured as a DockerHub pull through cache",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

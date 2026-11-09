@@ -1,0 +1,23 @@
+{
+  "name": "Flagsmith",
+  "id": "flagsmith",
+  "available": true,
+  "short_desc": "Feature flags and remote config for your apps: switch features on per environment, roll out to a percentage or a segment of users, and change values w...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development"
+  ],
+  "description": "Feature flags and remote config for your apps: switch features on per environment, roll out to a percentage or a segment of users, and change values without a deploy, with SDKs for most languages. Source: https://github.com/Flagsmith/flagsmith",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "MariaDB Galera",
+  "id": "mariadb-galera",
+  "available": true,
+  "short_desc": "3-node MariaDB 11.8 LTS cluster with Galera synchronous multi-primary replication - every node accepts writes, any node can die. Runs the OFFICIAL mar...",
+  "author": "deployable-sh/stacks",
+  "port": 8080,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "3-node MariaDB 11.8 LTS cluster with Galera synchronous multi-primary replication - every node accepts writes, any node can die. Runs the OFFICIAL mariadb image (the Galera library ships in it); clustering is pure command-line flags.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

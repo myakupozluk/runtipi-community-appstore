@@ -1,0 +1,23 @@
+{
+  "name": "Activepieces",
+  "id": "activepieces",
+  "available": true,
+  "short_desc": "Automate your marketing, sales and operations",
+  "author": "xneo1/portainer_templates",
+  "port": 38080,
+  "categories": [
+    "automation"
+  ],
+  "description": "Automate your marketing, sales and operations",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

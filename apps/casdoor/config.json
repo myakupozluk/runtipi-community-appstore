@@ -1,0 +1,25 @@
+{
+  "name": "Casdoor",
+  "id": "casdoor",
+  "available": true,
+  "short_desc": "Identity and single sign-on server, so your other apps can share one login over OAuth 2, OIDC, SAML or CAS, with a web UI for users, organisations, ap...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "security",
+    "development",
+    "social"
+  ],
+  "description": "Identity and single sign-on server, so your other apps can share one login over OAuth 2, OIDC, SAML or CAS, with a web UI for users, organisations, apps, MFA and social logins. Source: https://github.com/casdoor/casdoor",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Flexget",
+  "id": "flexget",
+  "available": true,
+  "short_desc": "[Flexget](http://flexget.com/) is a multipurpose automation tool for all of your media.",
+  "author": "technorabilia/portainer-templates",
+  "port": 5050,
+  "categories": [
+    "media",
+    "data",
+    "automation"
+  ],
+  "description": "[Flexget](http://flexget.com/) is a multipurpose automation tool for all of your media.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

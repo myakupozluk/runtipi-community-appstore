@@ -1,0 +1,23 @@
+{
+  "name": "Typesense",
+  "id": "typesense",
+  "available": true,
+  "short_desc": "Typesense - the typo-tolerant instant-search engine built for raw speed: a C++ binary with in-memory indexes, facets, filtering, vector + hybrid searc...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Typesense - the typo-tolerant instant-search engine built for raw speed: a C++ binary with in-memory indexes, facets, filtering, vector + hybrid search, and an InstantSearch-compatible adapter.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

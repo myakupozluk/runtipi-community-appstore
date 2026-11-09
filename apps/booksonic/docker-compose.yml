@@ -1,0 +1,23 @@
+services:
+  booksonic:
+    image: linuxserver/booksonic:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=100
+    - CONTEXT_PATH=booksonic
+    volumes:
+    - ${APP_DATA_DIR}/books:/books
+    - ${APP_DATA_DIR}/podcast:/podcast
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 4040
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

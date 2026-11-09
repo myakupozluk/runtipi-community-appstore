@@ -1,0 +1,17 @@
+services:
+  broadlinkmanager:
+    image: techblog/broadlinkmanager
+    network_mode: host
+    restart: unless-stopped
+    volumes:
+    - ${APP_DATA_DIR}/broadlinkmanager_portainer_Files_AppData_Config_broadlinkmanager:/opt/broadlinkmanager/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

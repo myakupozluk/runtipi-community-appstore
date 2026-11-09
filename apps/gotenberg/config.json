@@ -1,0 +1,25 @@
+{
+  "name": "Gotenberg",
+  "id": "gotenberg",
+  "available": true,
+  "short_desc": "Docker-powered stateless API for PDF files: conversions, generation, merging, and more. Source: https://github.com/gotenberg/gotenberg",
+  "author": "Community",
+  "port": 3000,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "Docker-powered stateless API for PDF files: conversions, generation, merging, and more. Source: https://github.com/gotenberg/gotenberg",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

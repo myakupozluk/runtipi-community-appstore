@@ -1,0 +1,23 @@
+services:
+  duplicacy:
+    image: mediadepot/duplicacy:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - TZ=America/Los_Angeles
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    - ${APP_DATA_DIR}/logs:/logs
+    - ${APP_DATA_DIR}/cache:/cache
+    - ${APP_DATA_DIR}/source_apps:/source/apps
+    - ${APP_DATA_DIR}/source_storage:/source/storage
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3875
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

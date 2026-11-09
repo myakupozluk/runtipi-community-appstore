@@ -1,0 +1,25 @@
+{
+  "name": "NocoBase",
+  "id": "nocobase",
+  "available": true,
+  "short_desc": "No-code platform for building internal tools and business apps: define your own data tables and relations, then build pages, forms, kanbans and calend...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "No-code platform for building internal tools and business apps: define your own data tables and relations, then build pages, forms, kanbans and calendars on top, with roles, permissions and workflows. Source: https://github.com/nocobase/nocobase",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

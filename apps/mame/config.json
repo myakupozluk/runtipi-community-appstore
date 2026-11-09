@@ -1,0 +1,25 @@
+{
+  "name": "Mame",
+  "id": "mame",
+  "available": true,
+  "short_desc": "[MAME](https://www.mamedev.org/) is a free and open-source emulator designed to emulate the hardware of arcade games, video game consoles, old compute...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "media",
+    "development",
+    "monitoring"
+  ],
+  "description": "[MAME](https://www.mamedev.org/) is a free and open-source emulator designed to emulate the hardware of arcade games, video game consoles, old computers and other systems in software on modern personal computers.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

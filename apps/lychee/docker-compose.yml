@@ -1,0 +1,31 @@
+services:
+  lychee:
+    image: linuxserver/lychee:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+    - DB_CONNECTION=
+    - DB_HOST=
+    - DB_PORT=
+    - DB_USERNAME=
+    - DB_PASSWORD=
+    - DB_DATABASE=
+    - APP_NAME=Lychee
+    - APP_URL=
+    - TRUSTED_PROXIES=
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    - ${APP_DATA_DIR}/pictures:/pictures
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

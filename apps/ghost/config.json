@@ -1,0 +1,24 @@
+{
+  "name": "Ghost (stack)",
+  "id": "ghost",
+  "available": true,
+  "short_desc": "Create your own platform on the web. Ghost is a powerful app for new-media creators to publish, share, and grow a business around their content. It co...",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "media",
+    "social"
+  ],
+  "description": "Create your own platform on the web. Ghost is a powerful app for new-media creators to publish, share, and grow a business around their content. It comes with modern tools to build a website, publish content, send newsletters & offer paid subscriptions to members.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

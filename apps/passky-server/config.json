@@ -1,0 +1,24 @@
+{
+  "name": "Passky Server",
+  "id": "passky-server",
+  "available": true,
+  "short_desc": "Passky is a simple, modern, lightweight, open-source and secure password manager.",
+  "author": "Qballjos/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "security",
+    "games"
+  ],
+  "description": "Passky is a simple, modern, lightweight, open-source and secure password manager.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/Qballjos/portainer_templates/",
+  "website": "https://github.com/Qballjos/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

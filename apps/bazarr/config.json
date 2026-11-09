@@ -1,0 +1,24 @@
+{
+  "name": "Bazarr (container)",
+  "id": "bazarr",
+  "available": true,
+  "short_desc": "[Bazarr](https://www.bazarr.media/) is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. ...",
+  "author": "technorabilia/portainer-templates",
+  "port": 6767,
+  "categories": [
+    "media",
+    "data"
+  ],
+  "description": "[Bazarr](https://www.bazarr.media/) is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

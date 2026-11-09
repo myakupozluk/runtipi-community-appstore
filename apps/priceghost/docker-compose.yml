@@ -1,0 +1,56 @@
+services:
+  priceghost-postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: priceghost
+    volumes:
+    - ${APP_DATA_DIR}/priceghost-postgres_priceghost-postgres_data:/var/lib/postgresql/data
+    - ${APP_DATA_DIR}/priceghost-postgres_database_init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - pg_isready -U postgres
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5432
+  priceghost-backend:
+    image: ghcr.io/clucraft/priceghost-backend:latest
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/priceghost
+      JWT_SECRET: ${JWT_SECRET:-change-this-in-production-use-strong-secret}
+      PORT: 3001
+      NODE_ENV: production
+    ports:
+    - 3001:3001
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+  priceghost-frontend:
+    image: ghcr.io/clucraft/priceghost-frontend:latest
+    ports:
+    - 80:80
+    depends_on:
+    - backend
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+volumes:
+  priceghost-postgres_data: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

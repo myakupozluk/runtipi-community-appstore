@@ -1,0 +1,24 @@
+{
+  "name": "Handbrake",
+  "id": "handbrake",
+  "available": true,
+  "short_desc": "[HandBrake](https://handbrake.fr/) is an open-source tool, built by volunteers, for converting video from nearly any format to a selection of modern, ...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "media",
+    "development"
+  ],
+  "description": "[HandBrake](https://handbrake.fr/) is an open-source tool, built by volunteers, for converting video from nearly any format to a selection of modern, widely supported codecs.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

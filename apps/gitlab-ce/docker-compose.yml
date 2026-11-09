@@ -1,0 +1,20 @@
+services:
+  gitlab-ce:
+    image: gitlab/gitlab-ce:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/etc_gitlab:/etc/gitlab
+    - ${APP_DATA_DIR}/var_log_gitlab:/var/log/gitlab
+    - ${APP_DATA_DIR}/var_opt_gitlab:/var/opt/gitlab
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

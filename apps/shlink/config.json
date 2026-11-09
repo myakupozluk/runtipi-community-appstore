@@ -1,0 +1,24 @@
+{
+  "name": "Shlink",
+  "id": "shlink",
+  "available": true,
+  "short_desc": "Shlink - a self-hosted URL shortener: short links on your own domain with a full REST API, QR codes, rich visit analytics (with optional GeoIP), tags,...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "Shlink - a self-hosted URL shortener: short links on your own domain with a full REST API, QR codes, rich visit analytics (with optional GeoIP), tags, device-based redirect rules, and link expiration.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

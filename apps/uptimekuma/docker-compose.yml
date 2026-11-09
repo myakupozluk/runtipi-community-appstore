@@ -1,0 +1,17 @@
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:1
+    volumes:
+    - ${APP_DATA_DIR}/uptime-kuma_portainer_Files_AppData_Config_uptime-kuma-data:/app/data
+    - ${APP_DATA_DIR}/uptime-kuma_var_run_docker.sock:/var/run/docker.sock
+    restart: always
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3001
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

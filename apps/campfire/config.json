@@ -1,0 +1,23 @@
+{
+  "name": "Campfire",
+  "id": "campfire",
+  "available": true,
+  "short_desc": "Campfire - 37signals' free, open-source group chat: rooms, direct messages, file sharing, full-text search, @mentions, sounds, and Web Push. It was th...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "social"
+  ],
+  "description": "Campfire - 37signals' free, open-source group chat: rooms, direct messages, file sharing, full-text search, @mentions, sounds, and Web Push. It was the first ONCE app (a one-time paid product) and is now MIT-licensed and free.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

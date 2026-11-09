@@ -1,0 +1,18 @@
+services:
+  reach-me-out:
+    image: kartikey31choudhary/reach-me-out:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/usr_share_nginx_html_config.yaml:/usr/share/nginx/html/config.yaml
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

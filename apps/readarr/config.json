@@ -1,0 +1,25 @@
+{
+  "name": "Readarr (container)",
+  "id": "readarr",
+  "available": true,
+  "short_desc": "Readarr - Book Manager and Automation (Sonarr for Ebooks)",
+  "author": "mediadepot/templates",
+  "port": 8787,
+  "categories": [
+    "media",
+    "data",
+    "automation"
+  ],
+  "description": "Readarr - Book Manager and Automation (Sonarr for Ebooks)",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mediadepot/templates/",
+  "website": "https://github.com/mediadepot/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

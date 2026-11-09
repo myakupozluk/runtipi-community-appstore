@@ -1,0 +1,24 @@
+services:
+  qflood:
+    image: hotio/qflood:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - UMASK=002
+    - TZ=America/New_York
+    - FLOOD_AUTH=false
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    - ${APP_DATA_DIR}/app_qBittorrent_downloads:/app/qBittorrent/downloads
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

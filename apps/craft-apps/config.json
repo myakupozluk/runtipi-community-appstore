@@ -1,0 +1,24 @@
+{
+  "name": "Craft-apps",
+  "id": "craft-apps",
+  "available": true,
+  "short_desc": "[ArtCraft](https://getartcraft.com/) is a suite of open source creative applications written in Rust. This image bundles PhotoCraft (image editor), Ve...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "media",
+    "development"
+  ],
+  "description": "[ArtCraft](https://getartcraft.com/) is a suite of open source creative applications written in Rust. This image bundles PhotoCraft (image editor), VectorCraft (vector illustration), FilmCraft (video editor), LightCraft (photo library and raw developer), PdfCraft (PDF workbench), EffectCraft (motion graphics and VFX compositor), DesignCraft (page layout and publishing), FigCraft (interface design and prototyping), TextureCraft (3D texture painting) and MaterialCraft (node-based material design) in a single desktop.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

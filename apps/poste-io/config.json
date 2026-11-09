@@ -1,0 +1,24 @@
+{
+  "name": "Poste.io",
+  "id": "poste-io",
+  "available": true,
+  "short_desc": "Full stack mailserver solution with TLS support. POP3s, SMTP(s), IMAPs, RSPAMD, Clamav, Roundcube(HTTPS), SPF, DKIM with simple installation and web a...",
+  "author": "xneo1/portainer_templates",
+  "port": 82,
+  "categories": [
+    "productivity",
+    "games"
+  ],
+  "description": "Full stack mailserver solution with TLS support. POP3s, SMTP(s), IMAPs, RSPAMD, Clamav, Roundcube(HTTPS), SPF, DKIM with simple installation and web administration.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

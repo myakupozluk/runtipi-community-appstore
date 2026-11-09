@@ -1,0 +1,19 @@
+services:
+  jellyseerr:
+    image: fallenbagel/jellyseerr:latest
+    environment:
+    - LOG_LEVEL=INFO
+    - TZ=Europe/Athens
+    volumes:
+    - ${APP_DATA_DIR}/jellyseerr_portainer_Files_AppData_Config_jellyseer:/app/config
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5055
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

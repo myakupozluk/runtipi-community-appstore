@@ -1,0 +1,23 @@
+services:
+  syslog-ng:
+    image: linuxserver/syslog-ng:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+    - LOG_TO_STDOUT=
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    - ${APP_DATA_DIR}/var_log:/var/log
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5514
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

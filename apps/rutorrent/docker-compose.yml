@@ -1,0 +1,26 @@
+services:
+  rutorrent:
+    image: crazymax/rtorrent-rutorrent:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=America/New_York
+    - MAX_FILE_UPLOADS=50
+    - RT_LOG_LEVEL=info
+    - RU_REMOVE_CORE_PLUGINS=erasedata,httprpc
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    - ${APP_DATA_DIR}/downloads:/downloads
+    - ${APP_DATA_DIR}/passwd:/passwd
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 6881
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

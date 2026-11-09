@@ -1,0 +1,24 @@
+{
+  "name": "Hauk",
+  "id": "hauk",
+  "available": true,
+  "short_desc": "Hauk is a fully open source, self-hosted location sharing service. Install the backend code on a PHP-compatible web server, install the companion app ...",
+  "author": "xneo1/portainer_templates",
+  "port": 7735,
+  "categories": [
+    "development",
+    "games"
+  ],
+  "description": "Hauk is a fully open source, self-hosted location sharing service. Install the backend code on a PHP-compatible web server, install the companion app on your phone, and you're good to go!",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

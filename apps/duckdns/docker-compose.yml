@@ -1,0 +1,26 @@
+services:
+  duckdns:
+    image: linuxserver/duckdns:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+    - SUBDOMAINS=subdomain1,subdomain2
+    - TOKEN=token
+    - UPDATE_IP=ipv4
+    - LOG_FILE=false
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

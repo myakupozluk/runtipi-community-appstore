@@ -1,0 +1,24 @@
+{
+  "name": "Aldine",
+  "id": "aldine",
+  "available": true,
+  "short_desc": "Collaborative LaTeX editor you host yourself, an alternative to Overleaf. Real-time editing, a git repository per project, and a sandboxed TeX Live co...",
+  "author": "Community",
+  "port": 9993,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "Collaborative LaTeX editor you host yourself, an alternative to Overleaf. Real-time editing, a git repository per project, and a sandboxed TeX Live compiler. Source: https://github.com/trahloff/Aldine",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

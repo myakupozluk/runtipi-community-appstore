@@ -1,0 +1,20 @@
+services:
+  solidping:
+    image: ghcr.io/fclairamb/solidping:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - SP_NODE_NAME=solidping
+    - SP_BASE_URL=http://localhost:4000
+    volumes:
+    - ${APP_DATA_DIR}/data:/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 4000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

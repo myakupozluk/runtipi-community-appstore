@@ -1,0 +1,23 @@
+{
+  "name": "ruTorrent",
+  "id": "rutorrent",
+  "available": true,
+  "short_desc": "Popular torrent client with a webui for ease of use.",
+  "author": "novaspirit/pi-hosted",
+  "port": 6881,
+  "categories": [
+    "data"
+  ],
+  "description": "Popular torrent client with a webui for ease of use.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

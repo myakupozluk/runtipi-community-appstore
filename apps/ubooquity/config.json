@@ -1,0 +1,25 @@
+{
+  "name": "Ubooquity",
+  "id": "ubooquity",
+  "available": true,
+  "short_desc": "[Ubooquity](https://vaemendis.net/ubooquity/) is a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your fil...",
+  "author": "technorabilia/portainer-templates",
+  "port": 2202,
+  "categories": [
+    "media",
+    "data",
+    "games"
+  ],
+  "description": "[Ubooquity](https://vaemendis.net/ubooquity/) is a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

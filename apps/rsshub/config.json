@@ -1,0 +1,24 @@
+{
+  "name": "RSSHub",
+  "id": "rsshub",
+  "available": true,
+  "short_desc": "RSS feed maker for thousands of sites that don't have a feed of their own, like GitHub issues, news sites, forums and shops. Source: https://github.co...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 1200,
+  "categories": [
+    "development",
+    "social"
+  ],
+  "description": "RSS feed maker for thousands of sites that don't have a feed of their own, like GitHub issues, news sites, forums and shops. Source: https://github.com/DIYgod/RSSHub",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

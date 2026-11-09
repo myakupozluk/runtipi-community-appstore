@@ -1,0 +1,25 @@
+{
+  "name": "Thelounge",
+  "id": "thelounge",
+  "available": true,
+  "short_desc": "[Thelounge](https://thelounge.github.io/) (a fork of shoutIRC) is a web IRC client that you host on your own server.",
+  "author": "technorabilia/portainer-templates",
+  "port": 9000,
+  "categories": [
+    "development",
+    "social",
+    "games"
+  ],
+  "description": "[Thelounge](https://thelounge.github.io/) (a fork of shoutIRC) is a web IRC client that you host on your own server.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

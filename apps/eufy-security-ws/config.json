@@ -1,0 +1,23 @@
+{
+  "name": "Eufy Security WS",
+  "id": "eufy-security-ws",
+  "available": true,
+  "short_desc": "Eufy Security Web Socket. Edit container and add username & password.",
+  "author": "xneo1/portainer_templates",
+  "port": 3993,
+  "categories": [
+    "security"
+  ],
+  "description": "Eufy Security Web Socket. Edit container and add username & password.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

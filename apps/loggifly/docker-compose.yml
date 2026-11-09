@@ -1,0 +1,19 @@
+services:
+  loggifly:
+    image: ghcr.io/clemcer/loggifly:latest
+    volumes:
+    - ${APP_DATA_DIR}/loggifly_var_run_docker.sock:/var/run/docker.sock
+    - ${APP_DATA_DIR}/loggifly_portainer_Files_AppData_Config_loggifly_config.yaml:/config
+    environment:
+    - TZ=Europe/Athens
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

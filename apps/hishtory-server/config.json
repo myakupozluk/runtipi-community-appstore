@@ -1,0 +1,25 @@
+{
+  "name": "Hishtory-server",
+  "id": "hishtory-server",
+  "available": true,
+  "short_desc": "[hiSHtory](https://github.com/ddworken/hishtory) is a better shell history. It stores your shell history in context (what directory you ran the comman...",
+  "author": "technorabilia/portainer-templates",
+  "port": 8080,
+  "categories": [
+    "development",
+    "data",
+    "games"
+  ],
+  "description": "[hiSHtory](https://github.com/ddworken/hishtory) is a better shell history. It stores your shell history in context (what directory you ran the command in, whether it succeeded or failed, how long it took, etc). This is all stored locally and end-to-end encrypted for syncing to to all your other computers.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

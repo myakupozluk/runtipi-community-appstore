@@ -1,0 +1,25 @@
+{
+  "name": "Supabase Nano",
+  "id": "supabase-nano",
+  "available": true,
+  "short_desc": "supabase-lite squeezed into a 1 GiB plan - the same six services (Postgres, Auth, REST, Kong, Studio, postgres-meta), memory- tuned until the whole st...",
+  "author": "deployable-sh/stacks",
+  "port": 3000,
+  "categories": [
+    "security",
+    "development",
+    "monitoring"
+  ],
+  "description": "supabase-lite squeezed into a 1 GiB plan - the same six services (Postgres, Auth, REST, Kong, Studio, postgres-meta), memory- tuned until the whole stack, dashboard included, allocates exactly 1024 MiB.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

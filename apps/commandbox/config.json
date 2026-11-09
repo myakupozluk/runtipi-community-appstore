@@ -1,0 +1,23 @@
+{
+  "name": "CommandBox",
+  "id": "commandbox",
+  "available": true,
+  "short_desc": "ColdFusion (CFML) CLI",
+  "author": "portainer/templates",
+  "port": 8080,
+  "categories": [
+    "development"
+  ],
+  "description": "ColdFusion (CFML) CLI",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "AI Marketplace Monitor",
+  "id": "ai-marketplace-monitor",
+  "available": true,
+  "short_desc": "Watch Facebook Marketplace for the items you want, rate each new listing with AI, and get notified of good deals. Source: https://github.com/BoPeng/ai...",
+  "author": "BoPeng/ai-marketplace-monitor",
+  "port": 8467,
+  "categories": [
+    "media",
+    "development",
+    "productivity"
+  ],
+  "description": "Watch Facebook Marketplace for the items you want, rate each new listing with AI, and get notified of good deals. Source: https://github.com/BoPeng/ai-marketplace-monitor",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/BoPeng/ai-marketplace-monitor/",
+  "website": "https://github.com/BoPeng/ai-marketplace-monitor/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

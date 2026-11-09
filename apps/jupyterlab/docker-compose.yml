@@ -1,0 +1,18 @@
+services:
+  jupyterlab:
+    image: quay.io/jupyter/scipy-notebook:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/home_jovyan:/home/jovyan
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8888
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

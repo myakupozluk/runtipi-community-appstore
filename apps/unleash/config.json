@@ -1,0 +1,23 @@
+{
+  "name": "Unleash",
+  "id": "unleash",
+  "available": true,
+  "short_desc": "Unleash - the open-source feature flag and toggle platform: gradual rollouts, user/segment targeting, A/B testing, kill switches, and SDKs for every l...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development"
+  ],
+  "description": "Unleash - the open-source feature flag and toggle platform: gradual rollouts, user/segment targeting, A/B testing, kill switches, and SDKs for every language. Single stateless container on a managed Postgres (no Redis).",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

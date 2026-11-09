@@ -1,0 +1,24 @@
+{
+  "name": "MariaDB (container)",
+  "id": "mariadb-container",
+  "available": true,
+  "short_desc": "Performance beyond MySQL",
+  "author": "portainer/templates",
+  "port": 3306,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "Performance beyond MySQL",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

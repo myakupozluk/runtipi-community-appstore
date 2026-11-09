@@ -1,0 +1,23 @@
+{
+  "name": "Magento 2",
+  "id": "magento-2",
+  "available": true,
+  "short_desc": "Open-source e-commerce platform",
+  "author": "mikestraney/portainer-templates",
+  "port": 80,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Open-source e-commerce platform",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mikestraney/portainer-templates/",
+  "website": "https://github.com/mikestraney/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

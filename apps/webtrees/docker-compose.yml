@@ -1,0 +1,70 @@
+services:
+  webtrees_db:
+    image: postgres:16
+    hostname: webtrees_db
+    mem_limit: 1g
+    cpu_shares: 768
+    security_opt:
+    - no-new-privileges:true
+    healthcheck:
+      test:
+      - CMD
+      - pg_isready
+      - -q
+      - -d
+      - webtrees
+      - -U
+      - webtreesusr
+      timeout: 45s
+      interval: 10s
+      retries: 10
+    volumes:
+    - ${APP_DATA_DIR}/webtrees_db_portainer_Files_AppData_Config_webtrees_db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: webtrees
+      POSTGRES_USER: webtreesuser
+      POSTGRES_PASSWORD: webtreespass
+    restart: on-failure:5
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+  webtrees:
+    image: ghcr.io/nathanvaughn/webtrees:latest
+    hostname: webtrees
+    security_opt:
+    - no-new-privileges:true
+    ports:
+    - 5495:80
+    volumes:
+    - ${APP_DATA_DIR}/webtrees_portainer_Files_AppData_Config_webtrees_data:/var/www/webtrees/data
+    environment:
+      TZ: Europe/Athens
+      BASE_URL: https://webtrees.homelab
+      PRETTY_URLS: true
+      WT_USER: xneo1
+      WT_PASS: webtreespwd
+      WT_NAME: Your Name
+      WT_EMAIL: me@email.com
+      PHP_MEMORY_LIMIT: 8192M
+      PHP_MAX_EXECUTION_TIME: 3600
+      PHP_POST_MAX_SIZE: 512M
+      PHP_UPLOAD_MAX_FILE_SIZE: 512M
+      DB_HOST: webtrees_db
+      DB_PORT: 5432
+      POSTGRES_USER: webtreesusr
+      POSTGRES_PASSWORD: webtreespwd
+      DB_TYPE: pgsql
+      DB_PREFIX: wt_
+      POSTGRES_DB: webtrees
+      HTTPS_REDIRECT: false
+      HTTPS: false
+    restart: on-failure:5
+    networks:
+    - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

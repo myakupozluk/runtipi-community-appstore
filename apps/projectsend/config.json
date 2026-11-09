@@ -1,0 +1,25 @@
+{
+  "name": "Projectsend",
+  "id": "projectsend",
+  "available": true,
+  "short_desc": "[Projectsend](http://www.projectsend.org) is a self-hosted application that lets you upload files and assign them to specific clients that you create ...",
+  "author": "technorabilia/portainer-templates",
+  "port": 80,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "[Projectsend](http://www.projectsend.org) is a self-hosted application that lets you upload files and assign them to specific clients that you create yourself. Secure, private and easy. No more depending on external services or e-mail to send those files.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

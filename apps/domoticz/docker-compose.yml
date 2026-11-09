@@ -1,0 +1,20 @@
+services:
+  domoticz:
+    image: linuxserver/domoticz:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=100
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 1443
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,43 @@
+name: odoo
+services:
+  odoo:
+    build: .
+    restart: unless-stopped
+    environment:
+      HOST: db
+      DB_PORT: '5432'
+      DB_NAME: odoo
+      USER: odoo
+      PASSWORD: odoo-local-only
+      ODOO_ADMIN_PASSWORD: ${ODOO_ADMIN_PASSWORD}
+      ODOO_LIST_DB: ${ODOO_LIST_DB:-True}
+    volumes:
+    - ${APP_DATA_DIR}/odoo_odoodata:/var/lib/odoo
+    - ${APP_DATA_DIR}/odoo_odooaddons:/mnt/extra-addons
+    depends_on:
+    - db
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: odoo
+      POSTGRES_PASSWORD: odoo-local-only
+      POSTGRES_DB: postgres
+    volumes:
+    - ${APP_DATA_DIR}/db_dbdata:/var/lib/postgresql/data
+    networks:
+    - tipi_main_network
+volumes:
+  odoodata: null
+  odooaddons: null
+  dbdata: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,24 @@
+{
+  "name": "Signal",
+  "id": "signal",
+  "available": true,
+  "short_desc": "[Signal](https://signal.org/) is a messaging app with privacy at its core. It is free and easy to use, with strong end-to-end encryption that keeps yo...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "security",
+    "social"
+  ],
+  "description": "[Signal](https://signal.org/) is a messaging app with privacy at its core. It is free and easy to use, with strong end-to-end encryption that keeps your communication completely private.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

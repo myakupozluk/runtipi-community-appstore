@@ -1,0 +1,24 @@
+{
+  "name": "Flycast",
+  "id": "flycast",
+  "available": true,
+  "short_desc": "[Flycast](https://github.com/flyinghead/flycast) is a multi-platform Sega Dreamcast, Naomi, Naomi 2, and Atomiswave emulator derived from reicast.",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "development",
+    "games"
+  ],
+  "description": "[Flycast](https://github.com/flyinghead/flycast) is a multi-platform Sega Dreamcast, Naomi, Naomi 2, and Atomiswave emulator derived from reicast.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Chrony NTP",
+  "id": "chrony-ntp",
+  "available": true,
+  "short_desc": "chrony is a versatile implementation of the Network Time Protocol (NTP). It can synchronise the system clock with NTP servers, reference clocks (e.g. ...",
+  "author": "novaspirit/pi-hosted",
+  "port": 123,
+  "categories": [
+    "network",
+    "development",
+    "data"
+  ],
+  "description": "chrony is a versatile implementation of the Network Time Protocol (NTP). It can synchronise the system clock with NTP servers, reference clocks (e.g. GPS receiver), and manual input using wristwatch and keyboard. It can also operate as an NTPv4 (RFC 5905) server and peer to provide a time service to other computers in the network.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,26 @@
+services:
+  netdata:
+    image: netdata/netdata:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - DOCKER_USR=1000
+    - DOCKER_GRP=1000
+    volumes:
+    - ${APP_DATA_DIR}/etc_netdata:/etc/netdata
+    - ${APP_DATA_DIR}/var_lib_netdata:/var/lib/netdata
+    - ${APP_DATA_DIR}/host_etc_passwd:ro:/host/etc/passwd:ro
+    - ${APP_DATA_DIR}/host_etc_group:ro:/host/etc/group:ro
+    - ${APP_DATA_DIR}/host_proc:ro:/host/proc:ro
+    - ${APP_DATA_DIR}/host_sys:ro:/host/sys:ro
+    - ${APP_DATA_DIR}/host_etc_os-release:ro:/host/etc/os-release:ro
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 19999
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

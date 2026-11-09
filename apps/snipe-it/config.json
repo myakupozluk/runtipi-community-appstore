@@ -1,0 +1,24 @@
+{
+  "name": "Snipe-IT",
+  "id": "snipe-it",
+  "available": true,
+  "short_desc": "IT asset manager for keeping track of laptops, licences, accessories and consumables: who has what, check-outs and check-ins, audits, maintenance, dep...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "IT asset manager for keeping track of laptops, licences, accessories and consumables: who has what, check-outs and check-ins, audits, maintenance, depreciation and asset tag labels. Source: https://github.com/grokability/snipe-it",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

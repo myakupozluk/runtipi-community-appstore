@@ -1,0 +1,25 @@
+name: mailpit
+services:
+  mailpit:
+    image: axllent/mailpit:v1.30.5
+    restart: unless-stopped
+    environment:
+      MP_UI_BIND_ADDR: 0.0.0.0:5000
+      MP_SMTP_BIND_ADDR: 0.0.0.0:1025
+      MP_UI_AUTH: ${MP_UI_AUTH}
+      MP_DATABASE: /data/mailpit.db
+      MP_MAX_MESSAGES: '5000'
+    volumes:
+    - ${APP_DATA_DIR}/mailpit_mailpitdata:/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+volumes:
+  mailpitdata: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,23 @@
+{
+  "name": "Excalidraw",
+  "id": "excalidraw",
+  "available": true,
+  "short_desc": "Virtual whiteboard for sketching hand-drawn like diagrams. Collaborative and end-to-end encrypted.",
+  "author": "xneo1/portainer_templates",
+  "port": 3111,
+  "categories": [
+    "productivity"
+  ],
+  "description": "Virtual whiteboard for sketching hand-drawn like diagrams. Collaborative and end-to-end encrypted.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

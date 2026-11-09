@@ -1,0 +1,24 @@
+{
+  "name": "Flowise",
+  "id": "flowise",
+  "available": true,
+  "short_desc": "Flowise - the visual builder for LLM apps: drag-and-drop chatflows and agentflows over 100+ integrations (models, vector stores, tools), with APIs and...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "social"
+  ],
+  "description": "Flowise - the visual builder for LLM apps: drag-and-drop chatflows and agentflows over 100+ integrations (models, vector stores, tools), with APIs and embeddable chat widgets. One app container + a managed Postgres.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

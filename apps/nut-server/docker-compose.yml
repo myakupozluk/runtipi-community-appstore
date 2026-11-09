@@ -1,0 +1,25 @@
+services:
+  nut-server:
+    image: instantlinux/nut-upsd:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - SERIAL=none
+    - NAME=none
+    - VENDOR ID=none
+    - API_PASSWORD=none
+    - DESCRIPTION=none
+    volumes:
+    - ${APP_DATA_DIR}/data:/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3493
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

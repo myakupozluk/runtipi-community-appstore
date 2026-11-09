@@ -1,0 +1,18 @@
+services:
+  fusion:
+    volumes:
+    - ${APP_DATA_DIR}/fusion_portainer_Files_AppData_Config_fusion:/data
+    environment:
+    - PASSWORD=changeme
+    image: rook1e404/fusion
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

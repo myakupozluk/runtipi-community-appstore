@@ -1,0 +1,64 @@
+services:
+  client:
+    image: bluewaveuptime/uptime_client:latest
+    restart: always
+    environment:
+      UPTIME_APP_API_BASE_URL: http://localhost:5000/api/v1
+    ports:
+    - 1180:80
+    - 11443:443
+    depends_on:
+    - server
+    networks:
+    - tipi_main_network
+    volumes: []
+  server:
+    image: bluewaveuptime/uptime_server:latest
+    restart: always
+    depends_on:
+    - redis
+    - mongodb
+    environment:
+    - DB_CONNECTION_STRING=mongodb://mongodb:27017/uptime_db
+    - REDIS_HOST=redis
+    networks:
+    - tipi_main_network
+    volumes: []
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+  redis:
+    image: bluewaveuptime/uptime_redis:latest
+    restart: always
+    ports:
+    - 6379:6379
+    volumes:
+    - ${APP_DATA_DIR}/redis_portainer_Files_AppData_Config_checkmate_redis_data:/data
+    healthcheck:
+      test:
+      - CMD
+      - redis-cli
+      - ping
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 5s
+    networks:
+    - tipi_main_network
+  mongodb:
+    image: bluewaveuptime/uptime_database_mongo:latest
+    restart: always
+    volumes:
+    - ${APP_DATA_DIR}/mongodb_portainer_Files_AppData_Config_checkmate_mongo_data:/data/db
+    command:
+    - mongod
+    - --quiet
+    ports:
+    - 27017:27017
+    networks:
+    - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

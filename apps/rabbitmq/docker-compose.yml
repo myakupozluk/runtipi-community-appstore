@@ -1,0 +1,91 @@
+name: rabbitmq
+x-rmq:
+  build: .
+  image: miget-rabbitmq:local
+  restart: unless-stopped
+services:
+  rmq-1:
+    build: .
+    image: miget-rabbitmq:local
+    restart: unless-stopped
+    healthcheck:
+      test:
+      - CMD
+      - rabbitmq-diagnostics
+      - -q
+      - ping
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    hostname: rmq-1
+    environment:
+      RABBITMQ_NODENAME: rabbit@rmq-1
+    volumes:
+    - ${APP_DATA_DIR}/rmq-1_rmqdata-1:/var/lib/rabbitmq/mnesia
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+  rmq-2:
+    build: .
+    image: miget-rabbitmq:local
+    restart: unless-stopped
+    healthcheck:
+      test:
+      - CMD
+      - rabbitmq-diagnostics
+      - -q
+      - ping
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    hostname: rmq-2
+    environment:
+      RABBITMQ_NODENAME: rabbit@rmq-2
+    ports:
+    - '5000'
+    - '5672'
+    - '4369'
+    - '25672'
+    volumes:
+    - ${APP_DATA_DIR}/rmq-2_rmqdata-2:/var/lib/rabbitmq/mnesia
+    networks:
+    - tipi_main_network
+  rmq-3:
+    build: .
+    image: miget-rabbitmq:local
+    restart: unless-stopped
+    healthcheck:
+      test:
+      - CMD
+      - rabbitmq-diagnostics
+      - -q
+      - ping
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    hostname: rmq-3
+    environment:
+      RABBITMQ_NODENAME: rabbit@rmq-3
+    ports:
+    - '5000'
+    - '5672'
+    - '4369'
+    - '25672'
+    volumes:
+    - ${APP_DATA_DIR}/rmq-3_rmqdata-3:/var/lib/rabbitmq/mnesia
+    networks:
+    - tipi_main_network
+volumes:
+  rmqdata-1: null
+  rmqdata-2: null
+  rmqdata-3: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

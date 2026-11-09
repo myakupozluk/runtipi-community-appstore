@@ -1,0 +1,24 @@
+{
+  "name": "Wowza",
+  "id": "wowza",
+  "available": true,
+  "short_desc": "Streaming media server",
+  "author": "mikestraney/portainer-templates",
+  "port": 1935,
+  "categories": [
+    "media",
+    "games"
+  ],
+  "description": "Streaming media server",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mikestraney/portainer-templates/",
+  "website": "https://github.com/mikestraney/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

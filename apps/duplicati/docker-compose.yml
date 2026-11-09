@@ -1,0 +1,26 @@
+services:
+  duplicati:
+    image: linuxserver/duplicati:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+    - SETTINGS_ENCRYPTION_KEY=
+    - CLI_ARGS=
+    - DUPLICATI__WEBSERVICE_PASSWORD=
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    - ${APP_DATA_DIR}/backups:/backups
+    - ${APP_DATA_DIR}/source:/source
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8200
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

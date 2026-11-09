@@ -1,0 +1,25 @@
+{
+  "name": "Gathio",
+  "id": "gathio",
+  "available": true,
+  "short_desc": "Gathio is a simple, federated, privacy-first event hosting platform.",
+  "author": "xneo1/portainer_templates",
+  "port": 3022,
+  "categories": [
+    "security",
+    "development",
+    "social"
+  ],
+  "description": "Gathio is a simple, federated, privacy-first event hosting platform.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

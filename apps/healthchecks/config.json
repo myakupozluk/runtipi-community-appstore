@@ -1,0 +1,25 @@
+{
+  "name": "Healthchecks",
+  "id": "healthchecks",
+  "available": true,
+  "short_desc": "[Healthchecks](https://github.com/healthchecks/healthchecks) is a watchdog for your cron jobs. It's a web server that listens for pings from your cron...",
+  "author": "technorabilia/portainer-templates",
+  "port": 8000,
+  "categories": [
+    "development",
+    "monitoring",
+    "games"
+  ],
+  "description": "[Healthchecks](https://github.com/healthchecks/healthchecks) is a watchdog for your cron jobs. It's a web server that listens for pings from your cron jobs, plus a web interface.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

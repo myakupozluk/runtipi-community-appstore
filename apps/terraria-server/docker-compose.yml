@@ -1,0 +1,24 @@
+services:
+  terraria-server:
+    image: hexlo/terraria-server-docker:latest
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    volumes:
+    - ${APP_DATA_DIR}/terraria-server_terraria-worlds:/root/.local/share/Terraria/Worlds
+    environment:
+    - world=/root/.local/share/Terraria/Worlds/newworld.wld
+    - password=${SERVER_PASSWORD:-changeme123}
+    - motd=${MOTD:-Welcome to my server!}
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 7777
+volumes:
+  terraria-worlds: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

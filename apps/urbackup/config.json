@@ -1,0 +1,24 @@
+{
+  "name": "UrBackup",
+  "id": "urbackup",
+  "available": true,
+  "short_desc": "UrBackup is an easy to setup Open Source client/server backup system, that through a combination of image and file backups accomplishes both data safe...",
+  "author": "novaspirit/pi-hosted",
+  "port": 55415,
+  "categories": [
+    "data",
+    "games"
+  ],
+  "description": "UrBackup is an easy to setup Open Source client/server backup system, that through a combination of image and file backups accomplishes both data safety and a fast restoration time.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

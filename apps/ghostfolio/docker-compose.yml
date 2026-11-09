@@ -1,0 +1,45 @@
+services:
+  ghostfolio:
+    image: ghostfolio/ghostfolio:latest
+    environment:
+      DATABASE_URL: postgresql://user:postgrespwd@postgres:5432/ghostfolio-db?sslmode=prefer
+      REDIS_HOST: redis
+      REDIS_PASSWORD: ${REDIS_PASSWORD}
+      ACCESS_TOKEN_SALT: bvnbvnbcdfbdrf
+      ALPHA_VANTAGE_API_KEY: null
+      JWT_SECRET_KEY: szvbt45rtfsg5rtgf
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+    x-runtipi:
+      is_main: true
+      internal_port: 3333
+  postgres:
+    image: postgres:12
+    environment:
+      POSTGRES_DB: ghostfolio-db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: postgrespwd
+    volumes:
+    - ${APP_DATA_DIR}/postgres_postgres:/var/lib/postgresql/data
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+  redis:
+    image: redis:alpine
+    environment:
+      REDIS_HOST: 127.0.0.1
+      REDIS_PORT: 6379
+      REDIS_PASSWORD: redispwd
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+volumes:
+  postgres: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

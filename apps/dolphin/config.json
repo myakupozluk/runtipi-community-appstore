@@ -1,0 +1,23 @@
+{
+  "name": "Dolphin",
+  "id": "dolphin",
+  "available": true,
+  "short_desc": "[Dolphin Emulator](https://dolphin-emu.org/) lets you play GameCube and Wii games with various graphical enhancements and other features are available...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "games"
+  ],
+  "description": "[Dolphin Emulator](https://dolphin-emu.org/) lets you play GameCube and Wii games with various graphical enhancements and other features are available to improve your game experience.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

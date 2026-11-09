@@ -1,0 +1,23 @@
+{
+  "name": "Vlmcsd - KMS",
+  "id": "vlmcsd-kms",
+  "available": true,
+  "short_desc": "This is a replacement for Microsoft's KMS server.",
+  "author": "novaspirit/pi-hosted",
+  "port": 1688,
+  "categories": [
+    "games"
+  ],
+  "description": "This is a replacement for Microsoft's KMS server.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

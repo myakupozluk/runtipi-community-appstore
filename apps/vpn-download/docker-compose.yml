@@ -1,0 +1,84 @@
+services:
+  jackett:
+    depends_on:
+    - qbittorrent
+    environment:
+    - PUID=${PUID}
+    - PGID=${PGID}
+    - UMASK=${UMASK}
+    - TZ=${TZ}
+    image: hotio/jackett
+    network_mode: service:qbittorrent
+    restart: unless-stopped
+    volumes:
+    - ${APP_DATA_DIR}/jackett_${APPDATA}_jackett:/config
+    - ${APP_DATA_DIR}/jackett_${DOWNLOAD}:/data
+    networks:
+    - tipi_main_network
+  nzbget:
+    depends_on:
+    - qbittorrent
+    environment:
+    - PUID=${PUID}
+    - PGID=${PGID}
+    - UMASK=${UMASK}
+    - TZ=${TZ}
+    image: hotio/nzbget
+    network_mode: service:qbittorrent
+    restart: unless-stopped
+    volumes:
+    - ${APP_DATA_DIR}/nzbget_${APPDATA}_nzbget:/config
+    - ${APP_DATA_DIR}/nzbget_${DOWNLOAD}:/data
+    networks:
+    - tipi_main_network
+  nzbhydra2:
+    depends_on:
+    - qbittorrent
+    environment:
+    - PUID=${PUID}
+    - PGID=${PGID}
+    - UMASK=${UMASK}
+    - TZ=${TZ}
+    image: hotio/nzbhydra2
+    network_mode: service:qbittorrent
+    restart: unless-stopped
+    volumes:
+    - ${APP_DATA_DIR}/nzbhydra2_${APPDATA}_nzbhydra2:/config
+    networks:
+    - tipi_main_network
+  qbittorrent:
+    environment:
+    - PUID=${PUID}
+    - PGID=${PGID}
+    - UMASK=${UMASK}
+    - TZ=${TZ}
+    - VPN_ENABLED=${VPN_ENABLED}
+    - VPN_USER=${VPN_USER}
+    - VPN_PASS=${VPN_PASS}
+    - VPN_PROV=${VPN_PROV}
+    - VPN_CLIENT=${VPN_CLIENT}
+    - VPN_OPTIONS=${VPN_OPTIONS}
+    - STRICT_PORT_FORWARD=${STRICT_PORT_FORWARD}
+    - ENABLE_PRIVOXY=${ENABLE_PRIVOXY}
+    - LAN_NETWORK=${LAN_NETWORK}
+    - NAME_SERVERS=${NAME_SERVERS}
+    - ADDITIONAL_PORTS=${ADDITIONAL_PORTS}
+    - DEBUG=${DEBUG}
+    - WEBUI_PORT=${QBITTORENTPORT}
+    image: binhex/arch-qbittorrentvpn
+    privileged: true
+    restart: unless-stopped
+    volumes:
+    - ${APP_DATA_DIR}/qbittorrent_${APPDATA}_qbittorrent:/config
+    - ${APP_DATA_DIR}/qbittorrent_${DOWNLOAD}:/data
+    - ${APP_DATA_DIR}/qbittorrent_etc_localtime:/etc/localtime
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 6881
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

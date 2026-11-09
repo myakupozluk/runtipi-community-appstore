@@ -1,0 +1,23 @@
+{
+  "name": "Cockpit {shmolf}",
+  "id": "cockpit-cms",
+  "available": true,
+  "short_desc": "Cockpit is a headless CMS with an API-first approach that puts content first.",
+  "author": "shmolf/portainer-templates",
+  "port": 8088,
+  "categories": [
+    "development"
+  ],
+  "description": "Cockpit is a headless CMS with an API-first approach that puts content first.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/shmolf/portainer-templates/",
+  "website": "https://github.com/shmolf/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

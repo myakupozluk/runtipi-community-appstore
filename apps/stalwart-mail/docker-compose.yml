@@ -1,0 +1,20 @@
+services:
+  stalwart-mail:
+    image: stalwartlabs/stalwart:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - STALWART_RECOVERY_ADMIN=
+    volumes:
+    - ${APP_DATA_DIR}/etc_stalwart:/etc/stalwart
+    - ${APP_DATA_DIR}/var_lib_stalwart:/var/lib/stalwart
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

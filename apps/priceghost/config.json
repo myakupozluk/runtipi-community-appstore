@@ -1,0 +1,23 @@
+{
+  "name": "PriceGhost",
+  "id": "priceghost",
+  "available": true,
+  "short_desc": "A self-hosted price tracking application that monitors product prices from any website.Get notified when prices drop, hit your target price, or items ...",
+  "author": "xneo1/portainer_templates",
+  "port": 5432,
+  "categories": [
+    "social"
+  ],
+  "description": "A self-hosted price tracking application that monitors product prices from any website.Get notified when prices drop, hit your target price, or items come back in stock.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

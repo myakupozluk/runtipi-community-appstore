@@ -1,0 +1,24 @@
+{
+  "name": "Arcane",
+  "id": "arcane",
+  "available": true,
+  "short_desc": "A beautiful, intuitive interface for managing your Docker containers, images, networks, and volumes. No terminal required.",
+  "author": "xneo1/portainer_templates",
+  "port": 3552,
+  "categories": [
+    "network",
+    "productivity"
+  ],
+  "description": "A beautiful, intuitive interface for managing your Docker containers, images, networks, and volumes. No terminal required.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

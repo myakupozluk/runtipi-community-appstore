@@ -1,0 +1,24 @@
+{
+  "name": "Planka (container)",
+  "id": "planka",
+  "available": true,
+  "short_desc": "[Planka](https://github.com/plankanban/planka/) is an elegant open source project tracking tool.",
+  "author": "technorabilia/portainer-templates",
+  "port": 1337,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "[Planka](https://github.com/plankanban/planka/) is an elegant open source project tracking tool.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,35 @@
+services:
+  swag:
+    image: linuxserver/swag:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+    - URL=example.com
+    - VALIDATION=http
+    - SUBDOMAINS=www,
+    - CERTPROVIDER=
+    - CERT_PROFILE=
+    - DNSPLUGIN=cloudflare
+    - PROPAGATION=
+    - EMAIL=
+    - ONLY_SUBDOMAINS=false
+    - EXTRA_DOMAINS=
+    - STAGING=false
+    - DISABLE_F2B=
+    - SWAG_AUTORELOAD=
+    - SWAG_AUTORELOAD_WATCHLIST=
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 443
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

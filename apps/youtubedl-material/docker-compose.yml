@@ -1,0 +1,22 @@
+services:
+  youtubedl-material:
+    image: tzahi12345/youtubedl-material:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/app_appdata:/app/appdata
+    - ${APP_DATA_DIR}/app_video:/app/video
+    - ${APP_DATA_DIR}/app_subscriptions:/app/subscriptions
+    - ${APP_DATA_DIR}/app_users:/app/users
+    - ${APP_DATA_DIR}/app_audio:/app/audio
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 17442
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

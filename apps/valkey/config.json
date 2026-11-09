@@ -1,0 +1,24 @@
+{
+  "name": "Valkey",
+  "id": "valkey",
+  "available": true,
+  "short_desc": "Valkey - the BSD-licensed, Redis-compatible in-memory data store, forked and stewarded by the Linux Foundation after Redis changed its license. Drop-i...",
+  "author": "deployable-sh/stacks",
+  "port": 6379,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "Valkey - the BSD-licensed, Redis-compatible in-memory data store, forked and stewarded by the Linux Foundation after Redis changed its license. Drop-in for Redis clients: caching, queues, pub/sub, streams, and data structures.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

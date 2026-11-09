@@ -1,0 +1,18 @@
+services:
+  dashmachine:
+    image: rmountjoy/dashmachine:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/dashmachine_dashmachine_user_data:/dashmachine/dashmachine/user_data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

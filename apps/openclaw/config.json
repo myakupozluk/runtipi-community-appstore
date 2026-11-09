@@ -1,0 +1,25 @@
+{
+  "name": "OpenClaw",
+  "id": "openclaw",
+  "available": true,
+  "short_desc": "OpenClaw, an autonomous AI agent you run yourself: web dashboard, scheduled tasks, plugins, persistent workspace. This template uses the coollabsio al...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "network",
+    "productivity",
+    "data"
+  ],
+  "description": "OpenClaw, an autonomous AI agent you run yourself: web dashboard, scheduled tasks, plugins, persistent workspace. This template uses the coollabsio all-in-one image (nginx + gateway, env-driven).",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

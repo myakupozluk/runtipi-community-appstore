@@ -1,0 +1,24 @@
+{
+  "name": "Saleor",
+  "id": "saleor",
+  "available": true,
+  "short_desc": "Saleor - headless, GraphQL-first e-commerce (BSD-3): the API your custom storefront talks to, with a polished dashboard for the team. Official images,...",
+  "author": "deployable-sh/stacks",
+  "port": 8000,
+  "categories": [
+    "development",
+    "monitoring"
+  ],
+  "description": "Saleor - headless, GraphQL-first e-commerce (BSD-3): the API your custom storefront talks to, with a polished dashboard for the team. Official images, mirrored from the saleor-platform compose.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

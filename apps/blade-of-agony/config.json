@@ -1,0 +1,24 @@
+{
+  "name": "Blade-of-agony",
+  "id": "blade-of-agony",
+  "available": true,
+  "short_desc": "[Wolfenstein: Blade of Agony](https://boa.realm667.com/) is a story-driven WWII shooter inspired by Wolfenstein and Doom.",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "data",
+    "games"
+  ],
+  "description": "[Wolfenstein: Blade of Agony](https://boa.realm667.com/) is a story-driven WWII shooter inspired by Wolfenstein and Doom.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Litmus Edge Digital Factory Demo",
+  "id": "litmus-edge-digital-factory-demo",
+  "available": true,
+  "short_desc": "Demo System for Litmus Edge. Litmus Edge is an edge data platform that enables industrial AI at scale. It connects, processes, and analyzes real-time ...",
+  "author": "portainer/templates",
+  "port": 9993,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "Demo System for Litmus Edge. Litmus Edge is an edge data platform that enables industrial AI at scale. It connects, processes, and analyzes real-time OT data at the edge to power smart manufacturing. Note: Requires 5GB Disk Space / 3GB RAM available on the Host for deployment to succeed.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

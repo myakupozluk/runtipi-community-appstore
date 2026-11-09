@@ -1,0 +1,23 @@
+{
+  "name": "Ghost (container)",
+  "id": "ghost-container",
+  "available": true,
+  "short_desc": "Free and open-source blogging platform",
+  "author": "portainer/templates",
+  "port": 2368,
+  "categories": [
+    "social"
+  ],
+  "description": "Free and open-source blogging platform",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,43 @@
+services:
+  documize-db:
+    image: postgres:12
+    restart: always
+    environment:
+      POSTGRES_USER: documize
+      POSTGRES_PASSWORD: hsk3Acndky8cdTNx3
+      POSTGRES_DB: documize
+    volumes:
+    - ${APP_DATA_DIR}/documize-db_portainer_Files_AppData_Config_documize_db-data:/var/lib/postgresql/data
+    networks:
+    - documizenet
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5432
+  documize-app:
+    image: debian:latest
+    command: /bin/sh -c "apt-get -qq update && apt-get -qq install -y wget && wget
+      https://community-downloads.s3.us-east-2.amazonaws.com/documize-community-plus-linux-amd64
+      && chmod 777 ./documize-community-plus-linux-amd64 && ./documize-community-plus-linux-amd64"
+    depends_on:
+    - documize-db
+    ports:
+    - 5001:5001
+    environment:
+      DOCUMIZEPORT: 5001
+      DOCUMIZEDB: host=db port=5432 dbname=documize user=documize password=Passw0rd
+        sslmode=disable
+      DOCUMIZEDBTYPE: postgresql
+      DOCUMIZESALT: hsk3Acndky8cdTNx3
+      DOCUMIZELOCATION: selfhost
+    networks:
+    - documizenet
+    - tipi_main_network
+    restart: unless-stopped
+    volumes: []
+networks:
+  documizenet: null
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

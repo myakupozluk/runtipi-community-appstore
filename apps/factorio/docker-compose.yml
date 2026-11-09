@@ -1,0 +1,24 @@
+name: factorio
+services:
+  factorio:
+    image: factoriotools/factorio:stable
+    restart: unless-stopped
+    environment:
+      LOAD_LATEST_SAVE: 'true'
+      GENERATE_NEW_SAVE: 'true'
+      SAVE_NAME: ${SAVE_NAME:-miget}
+      UPDATE_MODS_ON_START: ${UPDATE_MODS_ON_START:-false}
+    volumes:
+    - ${APP_DATA_DIR}/factorio_factoriodata:/factorio
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 34197
+volumes:
+  factoriodata: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

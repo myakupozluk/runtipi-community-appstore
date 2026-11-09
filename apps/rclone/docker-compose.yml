@@ -1,0 +1,19 @@
+services:
+  rclone:
+    image: mediadepot/rclone:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/srv_rclone_config:/srv/rclone/config
+    - ${APP_DATA_DIR}/mnt_data:/mnt/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

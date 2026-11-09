@@ -1,0 +1,25 @@
+{
+  "name": "Mongo",
+  "id": "mongo",
+  "available": true,
+  "short_desc": "Open-source document-oriented database",
+  "author": "portainer/templates",
+  "port": 27017,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "Open-source document-oriented database",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

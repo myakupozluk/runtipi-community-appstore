@@ -1,0 +1,24 @@
+{
+  "name": "Zus.am",
+  "id": "zusam",
+  "available": true,
+  "short_desc": "Zusam is a free and open-source way to self-host private forums for groups of friends.",
+  "author": "xneo1/portainer_templates",
+  "port": 4180,
+  "categories": [
+    "development",
+    "social"
+  ],
+  "description": "Zusam is a free and open-source way to self-host private forums for groups of friends.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

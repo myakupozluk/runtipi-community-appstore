@@ -1,0 +1,24 @@
+{
+  "name": "Ferdi Server",
+  "id": "ferdi-server",
+  "available": true,
+  "short_desc": "Ferdi is a messaging browser that allows you to combine your favourite messaging services into one application",
+  "author": "xneo1/portainer_templates",
+  "port": 3333,
+  "categories": [
+    "social",
+    "games"
+  ],
+  "description": "Ferdi is a messaging browser that allows you to combine your favourite messaging services into one application",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

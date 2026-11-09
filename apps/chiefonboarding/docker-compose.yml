@@ -1,0 +1,46 @@
+services:
+  cob-db:
+    restart: always
+    image: postgres:latest
+    expose:
+    - '5432'
+    volumes:
+    - ${APP_DATA_DIR}/cob-db_portainer_Files_AppData_Config_chiefonboarding_pgdata:/var/lib/postgresql/data/
+    environment:
+    - POSTGRES_DB=postgres
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=postgres
+    networks:
+    - global
+    - tipi_main_network
+  cob-web:
+    restart: always
+    build:
+      dockerfile: ./Dockerfile-dev
+      context: ./back/
+    environment:
+    - DEBUG=True
+    - SECRET_KEY=somethingsupersecret
+    - BASE_URL=http://0.0.0.0:3111
+    - DATABASE_URL=postgres://postgres:postgres@db:5432/postgres
+    - DEFAULT_FROM_EMAIL=hello@chiefonboarding.com
+    - ACCOUNT_EMAIL=admin@example.com
+    - ACCOUNT_PASSWORD=admin
+    volumes:
+    - ${APP_DATA_DIR}/cob-web_portainer_Files_AppData_Config_chiefonboarding_back:/app
+    depends_on:
+    - cob-db
+    networks:
+    - global
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+volumes:
+  pgdata: null
+networks:
+  global: null
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

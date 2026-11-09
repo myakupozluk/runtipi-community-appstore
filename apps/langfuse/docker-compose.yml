@@ -1,0 +1,151 @@
+name: langfuse
+x-langfuse-env: &id001
+  DATABASE_URL: postgresql://langfuse:langfuse-local-only@db:5432/langfuse
+  SALT: ${SALT}
+  ENCRYPTION_KEY: ${ENCRYPTION_KEY}
+  CLICKHOUSE_MIGRATION_URL: clickhouse://clickhouse:9000
+  CLICKHOUSE_URL: http://clickhouse:8123
+  CLICKHOUSE_USER: langfuse
+  CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD}
+  CLICKHOUSE_CLUSTER_ENABLED: 'false'
+  REDIS_HOST: cache
+  REDIS_PORT: '6379'
+  REDIS_AUTH: ${REDIS_AUTH}
+  LANGFUSE_S3_EVENT_UPLOAD_BUCKET: langfuse
+  LANGFUSE_S3_EVENT_UPLOAD_REGION: auto
+  LANGFUSE_S3_EVENT_UPLOAD_ENDPOINT: http://blob:9000
+  LANGFUSE_S3_EVENT_UPLOAD_ACCESS_KEY_ID: langfuse
+  LANGFUSE_S3_EVENT_UPLOAD_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD}
+  LANGFUSE_S3_EVENT_UPLOAD_FORCE_PATH_STYLE: 'true'
+  LANGFUSE_S3_EVENT_UPLOAD_PREFIX: events/
+  LANGFUSE_S3_MEDIA_UPLOAD_BUCKET: langfuse
+  LANGFUSE_S3_MEDIA_UPLOAD_REGION: auto
+  LANGFUSE_S3_MEDIA_UPLOAD_ENDPOINT: http://blob:9000
+  LANGFUSE_S3_MEDIA_UPLOAD_ACCESS_KEY_ID: langfuse
+  LANGFUSE_S3_MEDIA_UPLOAD_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD}
+  LANGFUSE_S3_MEDIA_UPLOAD_FORCE_PATH_STYLE: 'true'
+  LANGFUSE_S3_MEDIA_UPLOAD_PREFIX: media/
+  TELEMETRY_ENABLED: 'false'
+services:
+  web:
+    image: langfuse/langfuse:3
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://langfuse:langfuse-local-only@db:5432/langfuse
+      SALT: ${SALT}
+      ENCRYPTION_KEY: ${ENCRYPTION_KEY}
+      CLICKHOUSE_MIGRATION_URL: clickhouse://clickhouse:9000
+      CLICKHOUSE_URL: http://clickhouse:8123
+      CLICKHOUSE_USER: langfuse
+      CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD}
+      CLICKHOUSE_CLUSTER_ENABLED: 'false'
+      REDIS_HOST: cache
+      REDIS_PORT: '6379'
+      REDIS_AUTH: ${REDIS_AUTH}
+      LANGFUSE_S3_EVENT_UPLOAD_BUCKET: langfuse
+      LANGFUSE_S3_EVENT_UPLOAD_REGION: auto
+      LANGFUSE_S3_EVENT_UPLOAD_ENDPOINT: http://blob:9000
+      LANGFUSE_S3_EVENT_UPLOAD_ACCESS_KEY_ID: langfuse
+      LANGFUSE_S3_EVENT_UPLOAD_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD}
+      LANGFUSE_S3_EVENT_UPLOAD_FORCE_PATH_STYLE: 'true'
+      LANGFUSE_S3_EVENT_UPLOAD_PREFIX: events/
+      LANGFUSE_S3_MEDIA_UPLOAD_BUCKET: langfuse
+      LANGFUSE_S3_MEDIA_UPLOAD_REGION: auto
+      LANGFUSE_S3_MEDIA_UPLOAD_ENDPOINT: http://blob:9000
+      LANGFUSE_S3_MEDIA_UPLOAD_ACCESS_KEY_ID: langfuse
+      LANGFUSE_S3_MEDIA_UPLOAD_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD}
+      LANGFUSE_S3_MEDIA_UPLOAD_FORCE_PATH_STYLE: 'true'
+      LANGFUSE_S3_MEDIA_UPLOAD_PREFIX: media/
+      TELEMETRY_ENABLED: 'false'
+      PORT: '5000'
+      HOSTNAME: 0.0.0.0
+      NEXTAUTH_URL: ${NEXTAUTH_URL:-http://localhost:5000}
+      NEXTAUTH_SECRET: ${NEXTAUTH_SECRET}
+    depends_on:
+    - db
+    - clickhouse
+    - cache
+    - blob
+    networks:
+    - tipi_main_network
+    volumes: []
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+  worker:
+    image: langfuse/langfuse-worker:3
+    restart: unless-stopped
+    environment: *id001
+    depends_on:
+    - db
+    - clickhouse
+    - cache
+    - blob
+    networks:
+    - tipi_main_network
+    volumes: []
+  db:
+    image: postgres:17
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: langfuse
+      POSTGRES_PASSWORD: langfuse-local-only
+      POSTGRES_DB: langfuse
+    volumes:
+    - ${APP_DATA_DIR}/db_dbdata:/var/lib/postgresql/data
+    networks:
+    - tipi_main_network
+  clickhouse:
+    image: clickhouse/clickhouse-server:26.6.1.1193
+    restart: unless-stopped
+    environment:
+      CLICKHOUSE_DB: default
+      CLICKHOUSE_USER: langfuse
+      CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD}
+    ports:
+    - 9000:9000
+    - 8123:8123
+    volumes:
+    - ${APP_DATA_DIR}/clickhouse_chdata:/var/lib/clickhouse
+    networks:
+    - tipi_main_network
+  cache:
+    image: valkey/valkey:8
+    command:
+    - sh
+    - -c
+    - exec valkey-server --requirepass "$REDIS_AUTH" --maxmemory-policy noeviction
+    restart: unless-stopped
+    environment:
+      REDIS_AUTH: ${REDIS_AUTH}
+    ports:
+    - 6379:6379
+    networks:
+    - tipi_main_network
+    volumes: []
+  blob:
+    image: minio/minio:RELEASE.2025-09-07T16-13-09Z
+    command:
+    - server
+    - /data
+    - --address
+    - :9000
+    restart: unless-stopped
+    environment:
+      MINIO_ROOT_USER: langfuse
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+    ports:
+    - 9000:9000
+    volumes:
+    - ${APP_DATA_DIR}/blob_blobdata:/data
+    networks:
+    - tipi_main_network
+volumes:
+  dbdata: null
+  chdata: null
+  blobdata: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

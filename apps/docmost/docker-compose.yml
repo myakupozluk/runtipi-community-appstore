@@ -1,0 +1,52 @@
+services:
+  docmost:
+    image: docmost/docmost:latest
+    restart: unless-stopped
+    environment:
+    - APP_URL=${APP_URL:-http://localhost:3000}
+    - APP_SECRET=${APP_SECRET}
+    - DATABASE_URL=postgresql://docmost:docmost@postgres:5432/docmost?sslmode=disable
+    - REDIS_URL=redis://redis:6379
+    volumes:
+    - ${APP_DATA_DIR}/docmost_docmost-data:/app/data/storage
+    depends_on:
+    - postgres
+    - redis
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+    - POSTGRES_DB=docmost
+    - POSTGRES_USER=docmost
+    - POSTGRES_PASSWORD=docmost
+    volumes:
+    - ${APP_DATA_DIR}/postgres_postgres-data:/var/lib/postgresql/data
+    networks:
+    - tipi_main_network
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command:
+    - redis-server
+    - --appendonly
+    - 'yes'
+    - --maxmemory-policy
+    - noeviction
+    volumes:
+    - ${APP_DATA_DIR}/redis_redis-data:/data
+    networks:
+    - tipi_main_network
+volumes:
+  docmost-data: null
+  postgres-data: null
+  redis-data: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

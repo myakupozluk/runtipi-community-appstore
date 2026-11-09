@@ -1,0 +1,25 @@
+{
+  "name": "Kometa",
+  "id": "kometa",
+  "available": true,
+  "short_desc": "[Kometa](https://github.com/Kometa-Team/Kometa) is a powerful tool designed to give you complete control over your media libraries. With Kometa, you c...",
+  "author": "technorabilia/portainer-templates",
+  "port": 80,
+  "categories": [
+    "media",
+    "development",
+    "data"
+  ],
+  "description": "[Kometa](https://github.com/Kometa-Team/Kometa) is a powerful tool designed to give you complete control over your media libraries. With Kometa, you can take your customization to the next level, with granular control over metadata, collections, overlays, and much more.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

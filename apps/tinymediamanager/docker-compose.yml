@@ -1,0 +1,25 @@
+services:
+  tinymediamanager:
+    image: tinymediamanager/tinymediamanager:latest
+    environment:
+    - USER_ID=1000
+    - GROUP_ID=100
+    - ALLOW_DIRECT_VNC=true
+    - LC_ALL=en_US.UTF-8
+    - LANG=en_US.UTF-8
+    - PASSWORD=tinymediamanager
+    volumes:
+    - ${APP_DATA_DIR}/tinymediamanager_portainer_Files_AppData_Config_tinemediamanager_data:/data
+    - ${APP_DATA_DIR}/tinymediamanager_portainer_movies:/media/movies
+    - ${APP_DATA_DIR}/tinymediamanager_portainer_tvshows:/media/tvshows
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5900
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

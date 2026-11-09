@@ -1,0 +1,24 @@
+{
+  "name": "systemprompt",
+  "id": "systemprompt",
+  "available": true,
+  "short_desc": "Self-owned AI control plane: governance gateway for Claude, OpenAI, and Gemini with policy checks, audit, rate limits, and MCP orchestration. Bundles ...",
+  "author": "Community",
+  "port": 8080,
+  "categories": [
+    "network",
+    "development"
+  ],
+  "description": "Self-owned AI control plane: governance gateway for Claude, OpenAI, and Gemini with policy checks, audit, rate limits, and MCP orchestration. Bundles Postgres. GitHub: [systempromptio/systemprompt-template](https://github.com/systempromptio/systemprompt-template)",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "UniFi Controller",
+  "id": "unifi-controller",
+  "available": true,
+  "short_desc": "The Unifi-controller Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low la...",
+  "author": "xneo1/portainer_templates",
+  "port": 3478,
+  "categories": [
+    "development",
+    "monitoring"
+  ],
+  "description": "The Unifi-controller Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

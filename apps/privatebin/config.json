@@ -1,0 +1,25 @@
+{
+  "name": "PrivateBin",
+  "id": "privatebin",
+  "available": true,
+  "short_desc": "PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data!",
+  "author": "novaspirit/pi-hosted",
+  "port": 8080,
+  "categories": [
+    "productivity",
+    "data",
+    "games"
+  ],
+  "description": "PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data!",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Actual",
+  "id": "actual",
+  "available": true,
+  "short_desc": "Actual is a super fast privacy-focused app for managing your finances.",
+  "author": "xneo1/portainer_templates",
+  "port": 5007,
+  "categories": [
+    "security",
+    "finance"
+  ],
+  "description": "Actual is a super fast privacy-focused app for managing your finances.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

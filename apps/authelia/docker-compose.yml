@@ -1,0 +1,19 @@
+services:
+  authelia:
+    image: authelia/authelia:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - TZ=
+    volumes:
+    - ${APP_DATA_DIR}/etc_authelia:/etc/authelia/
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 9091
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

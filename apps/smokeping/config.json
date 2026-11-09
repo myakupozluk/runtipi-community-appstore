@@ -1,0 +1,25 @@
+{
+  "name": "Smokeping",
+  "id": "smokeping",
+  "available": true,
+  "short_desc": "[Smokeping](https://oss.oetiker.ch/smokeping/) keeps track of your network latency. For a full example of what this application is capable of visit [U...",
+  "author": "technorabilia/portainer-templates",
+  "port": 80,
+  "categories": [
+    "network",
+    "development",
+    "monitoring"
+  ],
+  "description": "[Smokeping](https://oss.oetiker.ch/smokeping/) keeps track of your network latency. For a full example of what this application is capable of visit [UCDavis](http://smokeping.ucdavis.edu/cgi-bin/smokeping.fcgi).",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

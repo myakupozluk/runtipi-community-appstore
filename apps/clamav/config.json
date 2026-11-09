@@ -1,0 +1,24 @@
+{
+  "name": "Clamav",
+  "id": "clamav",
+  "available": true,
+  "short_desc": "ClamAV® is an open source antivirus engine for detecting trojans, viruses, malware & other malicious threats.",
+  "author": "novaspirit/pi-hosted",
+  "port": 3310,
+  "categories": [
+    "media",
+    "development"
+  ],
+  "description": "ClamAV® is an open source antivirus engine for detecting trojans, viruses, malware & other malicious threats.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

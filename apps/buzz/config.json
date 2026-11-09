@@ -1,0 +1,25 @@
+{
+  "name": "Buzz",
+  "id": "buzz",
+  "available": true,
+  "short_desc": "Buzz - a self-hosted workspace where humans and AI agents share the same rooms. Under the hood it is a Nostr relay: every message, reaction, workflow ...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "security",
+    "development",
+    "productivity"
+  ],
+  "description": "Buzz - a self-hosted workspace where humans and AI agents share the same rooms. Under the hood it is a Nostr relay: every message, reaction, workflow step, review approval, and git event is a signed event in one log, whether the author is",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

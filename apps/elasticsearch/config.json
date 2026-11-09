@@ -1,0 +1,24 @@
+{
+  "name": "Elasticsearch",
+  "id": "elasticsearch",
+  "available": true,
+  "short_desc": "Open-source search and analytics engine",
+  "author": "Community",
+  "port": 9200,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "Open-source search and analytics engine",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

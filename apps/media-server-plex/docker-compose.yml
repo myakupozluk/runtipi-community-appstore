@@ -1,0 +1,57 @@
+services:
+  plex:
+    image: hotio/plex
+    restart: unless-stopped
+    environment:
+    - PUID=${PUID}
+    - PGID=${PGID}
+    - UMASK=${UMASK}
+    - TZ=${TZ}
+    - PLEX_CLAIM=${PLEXCLAIM}
+    - ADVERTISE_IP=${ADVERTISEIP}
+    - ALLOWED_NETWORKS=${ALLOWEDNETWORKS}
+    - PLEX_PASS=${PLEXPASS}
+    volumes:
+    - ${APP_DATA_DIR}/plex_${APPDATA}_plex:/config
+    - ${APP_DATA_DIR}/plex_${TRANSCODE}:/transcode
+    - ${APP_DATA_DIR}/plex_${MOVIES}:/movie
+    - ${APP_DATA_DIR}/plex_${TV}:/tv
+    - ${APP_DATA_DIR}/plex_${MUSIC}:/music
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 32400
+  tautulli:
+    image: hotio/tautulli
+    restart: unless-stopped
+    ports:
+    - ${TAUTULLIPORT}:8181
+    environment:
+    - PUID=${PUID}
+    - PGID=${PGID}
+    - UMASK=${UMASK}
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/tautulli_${APPDATA}_tautulli:/config
+    networks:
+    - tipi_main_network
+  ombi:
+    image: hotio/ombi
+    restart: unless-stopped
+    ports:
+    - ${OMBIPORT}:5000
+    environment:
+    - PUID=${PUID}
+    - PGID=${PGID}
+    - UMASK=${UMASK}
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/ombi_${APPDATA}_ombi:/config
+    networks:
+    - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

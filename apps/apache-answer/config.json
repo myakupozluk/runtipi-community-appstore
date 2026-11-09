@@ -1,0 +1,25 @@
+{
+  "name": "Apache Answer",
+  "id": "apache-answer",
+  "available": true,
+  "short_desc": "Question-and-answer site for a community, product forum or team knowledge base, with voting, accepted answers, tags, reputation and badges. Source: ht...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 9080,
+  "categories": [
+    "development",
+    "productivity",
+    "social"
+  ],
+  "description": "Question-and-answer site for a community, product forum or team knowledge base, with voting, accepted answers, tags, reputation and badges. Source: https://github.com/apache/answer",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

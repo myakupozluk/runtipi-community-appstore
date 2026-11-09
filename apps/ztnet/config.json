@@ -1,0 +1,25 @@
+{
+  "name": "ZTNet",
+  "id": "ztnet",
+  "available": true,
+  "short_desc": "ZeroTier network controller with a web UI. Source: https://github.com/sinamics/ztnet",
+  "author": "Community",
+  "port": 3000,
+  "categories": [
+    "security",
+    "network",
+    "development"
+  ],
+  "description": "ZeroTier network controller with a web UI. Source: https://github.com/sinamics/ztnet",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

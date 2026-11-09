@@ -1,0 +1,25 @@
+{
+  "name": "SQL Server (stack)",
+  "id": "mssql",
+  "available": true,
+  "short_desc": "Official SQL Server on Linux container (SQL Server 2025), Express edition by default - the edition Microsoft licenses for production at no cost. Singl...",
+  "author": "deployable-sh/stacks",
+  "port": 1433,
+  "categories": [
+    "development",
+    "data",
+    "games"
+  ],
+  "description": "Official SQL Server on Linux container (SQL Server 2025), Express edition by default - the edition Microsoft licenses for production at no cost. Single node + 10 GB volume, internal-only (databases never get a public domain).",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

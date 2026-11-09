@@ -1,0 +1,20 @@
+services:
+  lubelogger:
+    image: ghcr.io/hargata/lubelogger:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - LUBELOGGER_LOCALE_OVERRIDE=en-US
+    volumes:
+    - ${APP_DATA_DIR}/App_data:/App/data
+    - ${APP_DATA_DIR}/root_.aspnet_DataProtection-Keys:/root/.aspnet/DataProtection-Keys
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,25 @@
+{
+  "name": "Kong Gateway",
+  "id": "kong",
+  "available": true,
+  "short_desc": "DB-backed Kong Gateway (OSS) in front of your project's apps, deployable locally with plain Docker Compose or to Miget as a compose stack.",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "security",
+    "network",
+    "development"
+  ],
+  "description": "DB-backed Kong Gateway (OSS) in front of your project's apps, deployable locally with plain Docker Compose or to Miget as a compose stack.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

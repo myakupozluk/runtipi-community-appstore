@@ -1,0 +1,24 @@
+{
+  "name": "Rpcs3",
+  "id": "rpcs3",
+  "available": true,
+  "short_desc": "[RPCS3](https://rpcs3.net/) is a multi-platform open-source Sony PlayStation 3 emulator and debugger written in C++ for Windows, Linux, macOS and Free...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "data",
+    "games"
+  ],
+  "description": "[RPCS3](https://rpcs3.net/) is a multi-platform open-source Sony PlayStation 3 emulator and debugger written in C++ for Windows, Linux, macOS and FreeBSD.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

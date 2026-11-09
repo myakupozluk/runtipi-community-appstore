@@ -1,0 +1,29 @@
+services:
+  transmission:
+    image: linuxserver/transmission:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+    - TRANSMISSION_WEB_HOME=
+    - USER=
+    - PASS=
+    - WHITELIST=
+    - PEERPORT=
+    - HOST_WHITELIST=
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    - ${APP_DATA_DIR}/downloads:/downloads
+    - ${APP_DATA_DIR}/watch:/watch
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 9091
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

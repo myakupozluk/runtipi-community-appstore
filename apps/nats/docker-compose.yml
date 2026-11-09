@@ -1,0 +1,75 @@
+name: nats
+x-node:
+  image: nats:2.14-alpine
+  restart: unless-stopped
+  healthcheck: &id001
+    test:
+    - CMD
+    - wget
+    - --spider
+    - -q
+    - http://localhost:8222/healthz?js-server-only=true
+    interval: 10s
+    timeout: 5s
+    retries: 6
+services:
+  nats-0:
+    image: nats:2.14-alpine
+    restart: unless-stopped
+    healthcheck: *id001
+    command:
+    - --server_name=nats-0
+    - --cluster_name=NATS
+    - --cluster=nats://0.0.0.0:6222
+    - --routes=nats://nats-0:6222,nats://nats-1:6222,nats://nats-2:6222
+    - --jetstream
+    - --store_dir=/data
+    - -m=8222
+    volumes:
+    - ${APP_DATA_DIR}/nats-0_natsdata-0:/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+  nats-1:
+    image: nats:2.14-alpine
+    restart: unless-stopped
+    healthcheck: *id001
+    command:
+    - --server_name=nats-1
+    - --cluster_name=NATS
+    - --cluster=nats://0.0.0.0:6222
+    - --routes=nats://nats-0:6222,nats://nats-1:6222,nats://nats-2:6222
+    - --jetstream
+    - --store_dir=/data
+    - -m=8222
+    volumes:
+    - ${APP_DATA_DIR}/nats-1_natsdata-1:/data
+    networks:
+    - tipi_main_network
+  nats-2:
+    image: nats:2.14-alpine
+    restart: unless-stopped
+    healthcheck: *id001
+    command:
+    - --server_name=nats-2
+    - --cluster_name=NATS
+    - --cluster=nats://0.0.0.0:6222
+    - --routes=nats://nats-0:6222,nats://nats-1:6222,nats://nats-2:6222
+    - --jetstream
+    - --store_dir=/data
+    - -m=8222
+    volumes:
+    - ${APP_DATA_DIR}/nats-2_natsdata-2:/data
+    networks:
+    - tipi_main_network
+volumes:
+  natsdata-0: null
+  natsdata-1: null
+  natsdata-2: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

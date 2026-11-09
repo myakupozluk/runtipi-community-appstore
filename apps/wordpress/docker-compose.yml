@@ -1,0 +1,48 @@
+name: wordpress
+services:
+  wordpress:
+    image: wordpress:apache
+    restart: unless-stopped
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress-local-only
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_CONFIG_EXTRA: "if (isset($$_SERVER['HTTP_X_FORWARDED_PROTO']) && $$_SERVER['HTTP_X_FORWARDED_PROTO']\
+        \ === 'https') {\n  $$_SERVER['HTTPS'] = 'on';\n}\n"
+    command:
+    - sh
+    - -c
+    - sed -i 's/Listen 80/Listen 5000/' /etc/apache2/ports.conf && sed -i 's/:80>/:5000>/'
+      /etc/apache2/sites-enabled/000-default.conf && exec docker-entrypoint.sh apache2-foreground
+    volumes:
+    - ${APP_DATA_DIR}/wordpress_wpdata:/var/www/html
+    depends_on:
+    - db
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+  db:
+    image: mysql:8
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root-local-only
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress-local-only
+      MYSQL_DATABASE: wordpress
+    ports:
+    - 3306:3306
+    volumes:
+    - ${APP_DATA_DIR}/db_dbdata:/var/lib/mysql
+    networks:
+    - tipi_main_network
+volumes:
+  wpdata: null
+  dbdata: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

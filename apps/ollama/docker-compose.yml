@@ -1,0 +1,21 @@
+name: ollama
+services:
+  ollama:
+    image: ollama/ollama:0.30.8
+    restart: unless-stopped
+    environment:
+      OLLAMA_HOST: 0.0.0.0:5000
+    volumes:
+    - ${APP_DATA_DIR}/ollama_models:/root/.ollama
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+volumes:
+  models: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

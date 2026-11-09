@@ -1,0 +1,25 @@
+{
+  "name": "Vaultwarden (container)",
+  "id": "vaultwarden",
+  "available": true,
+  "short_desc": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where ru...",
+  "author": "xneo1/portainer_templates",
+  "port": 80,
+  "categories": [
+    "security",
+    "development",
+    "games"
+  ],
+  "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

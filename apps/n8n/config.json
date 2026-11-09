@@ -1,0 +1,24 @@
+{
+  "name": "n8n (container)",
+  "id": "n8n",
+  "available": true,
+  "short_desc": "n8n allows you to build flexible workflows focused on deep data integration.",
+  "author": "mediadepot/templates",
+  "port": 5678,
+  "categories": [
+    "data",
+    "automation"
+  ],
+  "description": "n8n allows you to build flexible workflows focused on deep data integration.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mediadepot/templates/",
+  "website": "https://github.com/mediadepot/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,24 @@
+services:
+  drawio:
+    image: fjudith/draw.io
+    restart: unless-stopped
+    environment:
+      PUBLIC_DNS: domain
+      ORGANISATION_UNIT: unit
+      ORGANISATION: org
+      CITY: Athens
+      STATE: Attica
+      COUNTRY_CODE: Greece
+      DRAWIO_GITLAB_URL: http://mygitlab.net
+      DRAWIO_GITLAB_ID: change_to_your_app_id
+    networks:
+    - tipi_main_network
+    volumes: []
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

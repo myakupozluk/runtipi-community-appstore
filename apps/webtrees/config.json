@@ -1,0 +1,25 @@
+{
+  "name": "Webtrees",
+  "id": "webtrees",
+  "available": true,
+  "short_desc": "Webtrees is the web’s leading online collaborative genealogy application. [GEDCOM files support]",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "development",
+    "data",
+    "social"
+  ],
+  "description": "Webtrees is the web’s leading online collaborative genealogy application. [GEDCOM files support]",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

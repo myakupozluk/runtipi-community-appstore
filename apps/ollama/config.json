@@ -1,0 +1,23 @@
+{
+  "name": "Ollama",
+  "id": "ollama",
+  "available": true,
+  "short_desc": "Ollama - run open large language models locally behind a simple HTTP API. Pull a model (Llama, Mistral, Qwen, Gemma, Phi, and many more) and serve it ...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development"
+  ],
+  "description": "Ollama - run open large language models locally behind a simple HTTP API. Pull a model (Llama, Mistral, Qwen, Gemma, Phi, and many more) and serve it from your own infrastructure, with OpenAI-compatible endpoints.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

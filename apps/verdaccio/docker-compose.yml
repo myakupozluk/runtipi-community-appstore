@@ -1,0 +1,18 @@
+services:
+  verdaccio:
+    image: verdaccio/verdaccio:6
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/verdaccio_storage:/verdaccio/storage
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 4873
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

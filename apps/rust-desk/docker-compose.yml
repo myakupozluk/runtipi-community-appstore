@@ -1,0 +1,34 @@
+networks:
+  rustdesk-net:
+    external: false
+  tipi_main_network:
+    external: true
+services:
+  hbbs:
+    image: rustdesk/rustdesk-server:latest
+    command: hbbs -r rustdesk.example.com:21117
+    volumes:
+    - ${APP_DATA_DIR}/hbbs_portainer_Files_AppData_Config_rustdesk_data:/root
+    networks:
+    - rustdesk-net
+    - tipi_main_network
+    depends_on:
+    - hbbr
+    restart: unless-stopped
+    x-runtipi:
+      is_main: true
+      internal_port: 21115
+  hbbr:
+    ports:
+    - 21117:21117
+    - 21119:21119
+    image: rustdesk/rustdesk-server:latest
+    command: hbbr
+    volumes:
+    - ${APP_DATA_DIR}/hbbr_portainer_Files_AppData_Config_hbbr_data:/root
+    networks:
+    - rustdesk-net
+    - tipi_main_network
+    restart: unless-stopped
+x-runtipi:
+  schema_version: 2

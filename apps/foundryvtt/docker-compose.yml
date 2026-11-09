@@ -1,0 +1,22 @@
+services:
+  foundryvtt:
+    image: felddy/foundryvtt:release
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - FOUNDRY_USERNAME=John
+    - FOUNDRY_PASSWORD=password
+    - FOUNDRY_ADMIN_KEY=changeme
+    - CONTAINER_PRESERVE_CONFIG=true
+    volumes:
+    - ${APP_DATA_DIR}/data:/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 30000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

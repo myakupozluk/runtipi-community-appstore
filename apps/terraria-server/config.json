@@ -1,0 +1,25 @@
+{
+  "name": "Terraria Server",
+  "id": "terraria-server",
+  "available": true,
+  "short_desc": "Dedicated Terraria server in a Docker container. Source: https://github.com/hexlo/terraria-server-docker",
+  "author": "Community",
+  "port": 7779,
+  "categories": [
+    "development",
+    "productivity",
+    "games"
+  ],
+  "description": "Dedicated Terraria server in a Docker container. Source: https://github.com/hexlo/terraria-server-docker",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

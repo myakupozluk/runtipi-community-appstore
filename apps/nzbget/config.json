@@ -1,0 +1,23 @@
+{
+  "name": "Nzbget",
+  "id": "nzbget",
+  "available": true,
+  "short_desc": "[Nzbget](http://nzbget.com/) is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using v...",
+  "author": "technorabilia/portainer-templates",
+  "port": 6789,
+  "categories": [
+    "data"
+  ],
+  "description": "[Nzbget](http://nzbget.com/) is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

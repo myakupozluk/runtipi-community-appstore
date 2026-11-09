@@ -1,0 +1,24 @@
+{
+  "name": "DaVinci Postgres Server",
+  "id": "davinci-postgres-server",
+  "available": true,
+  "short_desc": "DaVinci Resolve Postgresql Server, Davinci requires a specific version of postgres db, this container will install the version needed",
+  "author": "novaspirit/pi-hosted",
+  "port": 5432,
+  "categories": [
+    "development",
+    "games"
+  ],
+  "description": "DaVinci Resolve Postgresql Server, Davinci requires a specific version of postgres db, this container will install the version needed",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

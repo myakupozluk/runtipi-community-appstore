@@ -1,0 +1,25 @@
+{
+  "name": "SolidPing",
+  "id": "solidping",
+  "available": true,
+  "short_desc": "Uptime and synthetic monitoring with status pages, incidents and alerts. Checks HTTP, DNS, TCP, ICMP, TLS expiry, databases, message brokers, heartbea...",
+  "author": "Community",
+  "port": 4000,
+  "categories": [
+    "security",
+    "network",
+    "development"
+  ],
+  "description": "Uptime and synthetic monitoring with status pages, incidents and alerts. Checks HTTP, DNS, TCP, ICMP, TLS expiry, databases, message brokers, heartbeats and headless browser scenarios. Source: https://github.com/fclairamb/solidping",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

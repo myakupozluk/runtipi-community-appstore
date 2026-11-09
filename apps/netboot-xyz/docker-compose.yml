@@ -1,0 +1,23 @@
+services:
+  netbootxyz:
+    image: lscr.io/linuxserver/netbootxyz:latest
+    environment:
+    - PUID=1000
+    - PGID=1000
+    - TZ=Europe/Athens
+    - PORT_RANGE=30000:30010
+    - SUBFOLDER=/
+    volumes:
+    - ${APP_DATA_DIR}/netbootxyz_portainer_Files_AppData_Config_netbootxyz_config:/config
+    - ${APP_DATA_DIR}/netbootxyz_portainer_Files_AppData_Config_netbootxyz_assets:/assets
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

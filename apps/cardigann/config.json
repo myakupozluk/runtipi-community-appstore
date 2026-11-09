@@ -1,0 +1,25 @@
+{
+  "name": "Cardigann",
+  "id": "cardigann",
+  "available": true,
+  "short_desc": "Cardigann, a server for adding extra indexers to Sonarr, SickRage and CouchPotato via Torznab and TorrentPotato proxies. Behind the scenes Cardigann l...",
+  "author": "mediadepot/templates",
+  "port": 5060,
+  "categories": [
+    "media",
+    "data",
+    "monitoring"
+  ],
+  "description": "Cardigann, a server for adding extra indexers to Sonarr, SickRage and CouchPotato via Torznab and TorrentPotato proxies. Behind the scenes Cardigann logs in and runs searches and then transforms the results into a compatible format.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mediadepot/templates/",
+  "website": "https://github.com/mediadepot/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

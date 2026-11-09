@@ -1,0 +1,25 @@
+{
+  "name": "useSend",
+  "id": "usesend",
+  "available": true,
+  "short_desc": "useSend (formerly Unsend) - the open-source Resend alternative: transactional email API, campaigns, contacts, and delivery analytics, with the actual ...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "useSend (formerly Unsend) - the open-source Resend alternative: transactional email API, campaigns, contacts, and delivery analytics, with the actual sending done by your AWS SES (~$0.10 per 1,000 emails - deliverability is SES's job, the",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

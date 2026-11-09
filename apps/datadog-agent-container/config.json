@@ -1,0 +1,24 @@
+{
+  "name": "Datadog agent (container)",
+  "id": "datadog-agent-container",
+  "available": true,
+  "short_desc": "Collect events and metrics",
+  "author": "portainer/templates",
+  "port": 8080,
+  "categories": [
+    "data",
+    "monitoring"
+  ],
+  "description": "Collect events and metrics",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

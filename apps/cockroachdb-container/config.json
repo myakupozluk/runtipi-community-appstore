@@ -1,0 +1,24 @@
+{
+  "name": "CockroachDB (container)",
+  "id": "cockroachdb-container",
+  "available": true,
+  "short_desc": "An open-source, survivable, strongly consistent, scale-out SQL database",
+  "author": "mikestraney/portainer-templates",
+  "port": 26257,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "An open-source, survivable, strongly consistent, scale-out SQL database",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mikestraney/portainer-templates/",
+  "website": "https://github.com/mikestraney/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,38 @@
+services:
+  woodpecker-server:
+    image: woodpeckerci/woodpecker-server:v3
+    restart: unless-stopped
+    environment:
+      WOODPECKER_OPEN: 'true'
+      WOODPECKER_HOST: ${WOODPECKER_HOST:-http://localhost:8000}
+      WOODPECKER_AGENT_SECRET: ${WOODPECKER_AGENT_SECRET:-changeme-generate-a-long-random-secret}
+      WOODPECKER_GITHUB: 'true'
+      WOODPECKER_GITHUB_CLIENT: ${WOODPECKER_GITHUB_CLIENT}
+      WOODPECKER_GITHUB_SECRET: ${WOODPECKER_GITHUB_SECRET}
+    volumes:
+    - ${APP_DATA_DIR}/woodpecker-server_woodpecker-data:/var/lib/woodpecker/
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+  woodpecker-agent:
+    image: woodpeckerci/woodpecker-agent:v3
+    restart: unless-stopped
+    command: agent
+    environment:
+      WOODPECKER_SERVER: woodpecker-server:9000
+      WOODPECKER_AGENT_SECRET: ${WOODPECKER_AGENT_SECRET:-changeme-generate-a-long-random-secret}
+    volumes:
+    - ${APP_DATA_DIR}/woodpecker-agent_var_run_docker.sock:/var/run/docker.sock
+    depends_on:
+    - woodpecker-server
+    networks:
+    - tipi_main_network
+volumes:
+  woodpecker-data: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

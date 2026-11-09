@@ -1,0 +1,23 @@
+{
+  "name": "Snibox (container)",
+  "id": "snibox",
+  "available": true,
+  "short_desc": "Self-hosted snippet manager.",
+  "author": "Qballjos/portainer_templates",
+  "port": 3010,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Self-hosted snippet manager.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/Qballjos/portainer_templates/",
+  "website": "https://github.com/Qballjos/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

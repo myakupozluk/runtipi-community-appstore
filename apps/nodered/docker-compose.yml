@@ -1,0 +1,20 @@
+services:
+  node-red:
+    image: nodered/node-red:latest
+    environment:
+    - TZ=Europe/Athens
+    networks:
+    - node-red-net
+    - tipi_main_network
+    volumes:
+    - ${APP_DATA_DIR}/node-red_portainer_Files_AppData_Config_nodered:/data
+    restart: unless-stopped
+    x-runtipi:
+      is_main: true
+      internal_port: 1880
+networks:
+  node-red-net: null
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

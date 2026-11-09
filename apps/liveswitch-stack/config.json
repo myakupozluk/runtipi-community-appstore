@@ -1,0 +1,25 @@
+{
+  "name": "LiveSwitch (stack)",
+  "id": "liveswitch-stack",
+  "available": true,
+  "short_desc": "A basic LiveSwitch compose with gateway, caching, database and media server",
+  "author": "portainer/templates",
+  "port": 9993,
+  "categories": [
+    "media",
+    "network",
+    "development"
+  ],
+  "description": "A basic LiveSwitch compose with gateway, caching, database and media server",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

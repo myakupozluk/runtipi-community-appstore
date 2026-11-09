@@ -1,0 +1,24 @@
+{
+  "name": "Scality S3",
+  "id": "scality-s3",
+  "available": true,
+  "short_desc": "Standalone AWS S3 protocol server",
+  "author": "portainer/templates",
+  "port": 8000,
+  "categories": [
+    "data",
+    "games"
+  ],
+  "description": "Standalone AWS S3 protocol server",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

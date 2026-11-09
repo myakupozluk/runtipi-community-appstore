@@ -1,0 +1,23 @@
+{
+  "name": "Roundcube",
+  "id": "roundcube",
+  "available": true,
+  "short_desc": "Roundcube - the standard open-source webmail client: folders, search, contacts, filters, and a clean responsive skin.",
+  "author": "deployable-sh/stacks",
+  "port": 80,
+  "categories": [
+    "productivity"
+  ],
+  "description": "Roundcube - the standard open-source webmail client: folders, search, contacts, filters, and a clean responsive skin.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

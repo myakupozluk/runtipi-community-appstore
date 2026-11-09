@@ -1,0 +1,22 @@
+name: memos
+services:
+  memos:
+    image: neosmemo/memos:0.29.1
+    restart: unless-stopped
+    environment:
+      MEMOS_PORT: '5000'
+      MEMOS_MODE: prod
+    volumes:
+    - ${APP_DATA_DIR}/memos_memosdata:/var/opt/memos
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+volumes:
+  memosdata: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

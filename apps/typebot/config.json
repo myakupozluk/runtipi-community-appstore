@@ -1,0 +1,24 @@
+{
+  "name": "Typebot",
+  "id": "typebot",
+  "available": true,
+  "short_desc": "Typebot - the open-source conversational form builder: drag-and-drop bot flows that outconvert static forms, embeds for any site, and results analytic...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "Typebot - the open-source conversational form builder: drag-and-drop bot flows that outconvert static forms, embeds for any site, and results analytics. Two stateless apps (builder + viewer) on one managed Postgres.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,18 @@
+services:
+  protonmail-bridge:
+    image: shenxn/protonmail-bridge:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/root:/root
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 143
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

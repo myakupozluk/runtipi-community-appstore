@@ -1,0 +1,25 @@
+{
+  "name": "OpenList",
+  "id": "openlist",
+  "available": true,
+  "short_desc": "File list that puts your cloud drives and storage behind one web UI and WebDAV server, from OneDrive, Google Drive, Dropbox and S3 to SMB, FTP and loc...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "data",
+    "games"
+  ],
+  "description": "File list that puts your cloud drives and storage behind one web UI and WebDAV server, from OneDrive, Google Drive, Dropbox and S3 to SMB, FTP and local folders, with previews, share links and offline downloads. Source: https://github.com/OpenListTeam/OpenList",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

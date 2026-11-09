@@ -1,0 +1,23 @@
+{
+  "name": "Manyfold",
+  "id": "manyfold",
+  "available": true,
+  "short_desc": "[Manyfold](https://github.com/manyfold3d/manyfold/) is an open source, self-hosted web application for managing a collection of 3D models, particularl...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3214,
+  "categories": [
+    "development"
+  ],
+  "description": "[Manyfold](https://github.com/manyfold3d/manyfold/) is an open source, self-hosted web application for managing a collection of 3D models, particularly focused on 3D printing.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

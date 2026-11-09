@@ -1,0 +1,25 @@
+{
+  "name": "Redpanda",
+  "id": "redpanda",
+  "available": true,
+  "short_desc": "3-broker Redpanda cluster (Kafka-compatible, no ZooKeeper/JVM) with Redpanda Console, deployable locally with plain Docker Compose or to Miget as a co...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "media",
+    "productivity",
+    "social"
+  ],
+  "description": "3-broker Redpanda cluster (Kafka-compatible, no ZooKeeper/JVM) with Redpanda Console, deployable locally with plain Docker Compose or to Miget as a compose stack.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Droppy",
+  "id": "droppy",
+  "available": true,
+  "short_desc": "Droppy is a self-hosted file storage server",
+  "author": "mediadepot/templates",
+  "port": 8989,
+  "categories": [
+    "data",
+    "games"
+  ],
+  "description": "Droppy is a self-hosted file storage server",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mediadepot/templates/",
+  "website": "https://github.com/mediadepot/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

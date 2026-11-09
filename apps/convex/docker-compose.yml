@@ -1,0 +1,63 @@
+name: convex
+services:
+  backend:
+    image: ghcr.io/get-convex/convex-backend:abdd9b30f89c0e7c18c4213b99cd10e4bad33f8c
+    restart: unless-stopped
+    environment:
+      INSTANCE_NAME: ${INSTANCE_NAME:-convex-self-hosted}
+      INSTANCE_SECRET: ${INSTANCE_SECRET}
+      CONVEX_CLOUD_ORIGIN: ${CONVEX_CLOUD_ORIGIN:-http://127.0.0.1:5000}
+      CONVEX_SITE_ORIGIN: ${CONVEX_SITE_ORIGIN:-http://127.0.0.1:5001}
+    volumes:
+    - ${APP_DATA_DIR}/backend_convexdata:/convex/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3210
+  api:
+    build: ./proxy
+    image: miget-convex-proxy:local
+    restart: unless-stopped
+    environment:
+      PROXY_TARGET: http://backend:3210
+    ports:
+    - 5000:5000
+    depends_on:
+    - backend
+    networks:
+    - tipi_main_network
+    volumes: []
+  site:
+    build: ./proxy
+    image: miget-convex-proxy:local
+    restart: unless-stopped
+    environment:
+      PROXY_TARGET: http://backend:3211
+    ports:
+    - 5001:5000
+    depends_on:
+    - backend
+    networks:
+    - tipi_main_network
+    volumes: []
+  dashboard:
+    image: ghcr.io/get-convex/convex-dashboard:abdd9b30f89c0e7c18c4213b99cd10e4bad33f8c
+    restart: unless-stopped
+    environment:
+      PORT: '5000'
+      NEXT_PUBLIC_DEPLOYMENT_URL: ${CONVEX_CLOUD_ORIGIN:-http://127.0.0.1:5000}
+    ports:
+    - 6791:5000
+    depends_on:
+    - backend
+    networks:
+    - tipi_main_network
+    volumes: []
+volumes:
+  convexdata: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

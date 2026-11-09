@@ -1,0 +1,25 @@
+{
+  "name": "Grafana",
+  "id": "grafana",
+  "available": true,
+  "short_desc": "Grafana is the open source analytics & monitoring solution for every database.",
+  "author": "xneo1/portainer_templates",
+  "port": 3023,
+  "categories": [
+    "development",
+    "data",
+    "monitoring"
+  ],
+  "description": "Grafana is the open source analytics & monitoring solution for every database.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

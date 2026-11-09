@@ -1,0 +1,23 @@
+{
+  "name": "Krita",
+  "id": "krita",
+  "available": true,
+  "short_desc": "[Krita](https://krita.org/en/) is a professional FREE and open source painting program. It is made by artists that want to see affordable art tools fo...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "development"
+  ],
+  "description": "[Krita](https://krita.org/en/) is a professional FREE and open source painting program. It is made by artists that want to see affordable art tools for everyone.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

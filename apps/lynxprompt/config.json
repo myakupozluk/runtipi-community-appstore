@@ -1,0 +1,24 @@
+{
+  "name": "LynxPrompt",
+  "id": "lynxprompt",
+  "available": true,
+  "short_desc": "Self-hostable AI config management platform for AGENTS.md, CLAUDE.md, Cursor rules, and 30+ AI assistant formats. Source: https://github.com/GeiserX/L...",
+  "author": "Community",
+  "port": 3000,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "Self-hostable AI config management platform for AGENTS.md, CLAUDE.md, Cursor rules, and 30+ AI assistant formats. Source: https://github.com/GeiserX/LynxPrompt",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

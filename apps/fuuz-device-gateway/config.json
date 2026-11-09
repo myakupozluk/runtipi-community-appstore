@@ -1,0 +1,25 @@
+{
+  "name": "Fuuz Device Gateway",
+  "id": "fuuz-device-gateway",
+  "available": true,
+  "short_desc": "A secure gateway that connects on-premise devices, PLCs, and data sources to the Fuuz Cloud for seamless, real-time integration.",
+  "author": "portainer/templates",
+  "port": 5500,
+  "categories": [
+    "network",
+    "development",
+    "data"
+  ],
+  "description": "A secure gateway that connects on-premise devices, PLCs, and data sources to the Fuuz Cloud for seamless, real-time integration.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

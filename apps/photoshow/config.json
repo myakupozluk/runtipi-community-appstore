@@ -1,0 +1,23 @@
+{
+  "name": "PhotoShow",
+  "id": "photoshow",
+  "available": true,
+  "short_desc": "A simple, easy way to turn a photo album into a webgallery.",
+  "author": "xneo1/portainer_templates",
+  "port": 80,
+  "categories": [
+    "media"
+  ],
+  "description": "A simple, easy way to turn a photo album into a webgallery.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,26 @@
+services:
+  kometa:
+    image: linuxserver/kometa:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+    - KOMETA_CONFIG=/config/config.yml
+    - KOMETA_TIMES=03:00
+    - KOMETA_RUN=False
+    - KOMETA_TESTS=False
+    - KOMETA_NO_MISSING=False
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

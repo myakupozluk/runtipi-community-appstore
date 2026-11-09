@@ -1,0 +1,29 @@
+services:
+  vsftpd:
+    image: delfer/alpine-ftp-server:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - ADDRESS=
+    - USERS=depot|badpass|/home/depot|15000
+    volumes:
+    - ${APP_DATA_DIR}/home_depot_tvshows:/home/depot/tvshows
+    - ${APP_DATA_DIR}/home_depot_movies:/home/depot/movies
+    - ${APP_DATA_DIR}/home_depot_music:/home/depot/music
+    - ${APP_DATA_DIR}/home_depot_ebooks:/home/depot/ebooks
+    - ${APP_DATA_DIR}/home_depot_photos:/home/depot/photos
+    - ${APP_DATA_DIR}/home_depot_documents:/home/depot/documents
+    - ${APP_DATA_DIR}/home_depot_downloads:/home/depot/downloads
+    - ${APP_DATA_DIR}/home_depot_software:/home/depot/software
+    - ${APP_DATA_DIR}/home_depot_blackhole:/home/depot/blackhole
+    - ${APP_DATA_DIR}/home_depot_processing:/home/depot/processing
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 21
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

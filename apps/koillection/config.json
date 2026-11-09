@@ -1,0 +1,24 @@
+{
+  "name": "Koillection",
+  "id": "koillection",
+  "available": true,
+  "short_desc": "Koillection is a self-hosted collection manager created to keep track of physical (mostly) collections of any kind like books, DVDs, stamps, games..",
+  "author": "xneo1/portainer_templates",
+  "port": 181,
+  "categories": [
+    "media",
+    "games"
+  ],
+  "description": "Koillection is a self-hosted collection manager created to keep track of physical (mostly) collections of any kind like books, DVDs, stamps, games..",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

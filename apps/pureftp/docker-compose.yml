@@ -1,0 +1,35 @@
+services:
+  pureftp:
+    image: stilliard/pure-ftpd:hardened
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - FTP_USER_NAME=depot
+    - FTP_USER_PASS=badpass
+    - FTP_USER_HOME=/data
+    - FTP_USER_GID=15000
+    - FTP_USER_UID=15000
+    - TZ=America/Los_Angeles
+    - PUBLICHOST=localhost
+    volumes:
+    - ${APP_DATA_DIR}/etc_pure-ftpd_passwd:/etc/pure-ftpd/passwd
+    - ${APP_DATA_DIR}/data_tvshows:/data/tvshows
+    - ${APP_DATA_DIR}/data_movies:/data/movies
+    - ${APP_DATA_DIR}/data_music:/data/music
+    - ${APP_DATA_DIR}/data_ebooks:/data/ebooks
+    - ${APP_DATA_DIR}/data_photos:/data/photos
+    - ${APP_DATA_DIR}/data_documents:/data/documents
+    - ${APP_DATA_DIR}/data_downloads:/data/downloads
+    - ${APP_DATA_DIR}/data_software:/data/software
+    - ${APP_DATA_DIR}/data_blackhole:/data/blackhole
+    - ${APP_DATA_DIR}/data_processing:/data/processing
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 21
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

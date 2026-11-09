@@ -1,0 +1,25 @@
+{
+  "name": "Autobrr",
+  "id": "autobrr",
+  "available": true,
+  "short_desc": "Autobrr is the modern download automation tool for torrents.",
+  "author": "xneo1/portainer_templates",
+  "port": 7474,
+  "categories": [
+    "media",
+    "data",
+    "automation"
+  ],
+  "description": "Autobrr is the modern download automation tool for torrents.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

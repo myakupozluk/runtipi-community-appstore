@@ -1,0 +1,25 @@
+{
+  "name": "Plausible",
+  "id": "plausible",
+  "available": true,
+  "short_desc": "Plausible - privacy-friendly web analytics: a lightweight, cookie-free, open-source Google Analytics alternative. A clean single-page dashboard, no pe...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "security",
+    "data",
+    "monitoring"
+  ],
+  "description": "Plausible - privacy-friendly web analytics: a lightweight, cookie-free, open-source Google Analytics alternative. A clean single-page dashboard, no personal data collection, no consent banner needed, and a script ~75x smaller than GA.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

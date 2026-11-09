@@ -1,0 +1,21 @@
+services:
+  homelab-monitor:
+    image: sikamikaniko123/homelab-monitor:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - SAMPLE_INTERVAL=10
+    - RETENTION_DAYS=180
+    volumes:
+    - ${APP_DATA_DIR}/var_run_docker.sock:/var/run/docker.sock
+    - ${APP_DATA_DIR}/data:/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

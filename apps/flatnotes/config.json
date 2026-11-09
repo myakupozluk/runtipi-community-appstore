@@ -1,0 +1,25 @@
+{
+  "name": "flatnotes",
+  "id": "flatnotes",
+  "available": true,
+  "short_desc": "Distraction-free notes app with no folders or database, just a folder of markdown files behind full-text search, tags, wikilinks and a raw or WYSIWYG ...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "Distraction-free notes app with no folders or database, just a folder of markdown files behind full-text search, tags, wikilinks and a raw or WYSIWYG editor. Source: https://github.com/dullage/flatnotes",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

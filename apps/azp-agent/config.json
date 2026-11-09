@@ -1,0 +1,24 @@
+{
+  "name": "Azure Pipelines Agent",
+  "id": "azp-agent",
+  "available": true,
+  "short_desc": "A self-hosted Azure Pipelines agent (Azure DevOps), built from Microsoft's official Dockerfile recipe - the agent ships no container image, this is th...",
+  "author": "deployable-sh/stacks",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "A self-hosted Azure Pipelines agent (Azure DevOps), built from Microsoft's official Dockerfile recipe - the agent ships no container image, this is the documented path.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

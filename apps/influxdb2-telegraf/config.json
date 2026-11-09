@@ -1,0 +1,23 @@
+{
+  "name": "Influxdb2_Telegraf",
+  "id": "influxdb2-telegraf",
+  "available": true,
+  "short_desc": "Influxdb2_Telegraf self-hosted application for Runtipi.",
+  "author": "Community",
+  "port": 8086,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Influxdb2_Telegraf self-hosted application for Runtipi.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

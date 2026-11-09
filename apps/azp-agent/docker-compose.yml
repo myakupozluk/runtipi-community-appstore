@@ -1,0 +1,24 @@
+name: azp-agent
+services:
+  agent:
+    build: .
+    restart: unless-stopped
+    environment:
+      AZP_URL: ${AZP_URL}
+      AZP_TOKEN: ${AZP_TOKEN}
+      AZP_POOL: ${AZP_POOL:-Default}
+      AZP_AGENT_NAME: ${AZP_AGENT_NAME:-miget-agent}
+    volumes:
+    - ${APP_DATA_DIR}/agent_agentwork:/azp/_work
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+volumes:
+  agentwork: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

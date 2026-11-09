@@ -1,0 +1,22 @@
+name: buildkite-agent
+services:
+  agent:
+    image: buildkite/agent:3-ubuntu
+    restart: unless-stopped
+    environment:
+      BUILDKITE_AGENT_TOKEN: ${BUILDKITE_AGENT_TOKEN}
+      BUILDKITE_AGENT_TAGS: ${BUILDKITE_AGENT_TAGS:-queue=miget}
+    volumes:
+    - ${APP_DATA_DIR}/agent_builds:/buildkite/builds
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+volumes:
+  builds: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,25 @@
+{
+  "name": "Umami",
+  "id": "umami",
+  "available": true,
+  "short_desc": "Umami v3 - privacy-first web analytics: no cookies, no cross-site tracking, GDPR/PECR-friendly, with a clean dashboard and a ~2 KB tracking script. On...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "security",
+    "development",
+    "data"
+  ],
+  "description": "Umami v3 - privacy-first web analytics: no cookies, no cross-site tracking, GDPR/PECR-friendly, with a clean dashboard and a ~2 KB tracking script. One stateless container + a managed Postgres (Umami v3 dropped MySQL - Postgres only).",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

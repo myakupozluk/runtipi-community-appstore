@@ -1,0 +1,18 @@
+services:
+  nuts:
+    image: upshift/nut-upsd:latest
+    restart: always
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/app:/app
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3493
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

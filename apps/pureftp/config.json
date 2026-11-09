@@ -1,0 +1,23 @@
+{
+  "name": "Pure-FTP Server",
+  "id": "pureftp",
+  "available": true,
+  "short_desc": "Pure-FTPd is a free (BSD), secure, production-quality and standard-conformant FTP server.",
+  "author": "mediadepot/templates",
+  "port": 21,
+  "categories": [
+    "games"
+  ],
+  "description": "Pure-FTPd is a free (BSD), secure, production-quality and standard-conformant FTP server.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mediadepot/templates/",
+  "website": "https://github.com/mediadepot/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

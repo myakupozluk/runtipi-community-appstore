@@ -1,0 +1,33 @@
+services:
+  db:
+    image: mariadb
+    command: --max-allowed-packet=64MB
+    restart: always
+    volumes:
+    - ${APP_DATA_DIR}/db_portainer_Files_AppData_Config_mariadb_matomo:/var/lib/mysql
+    environment:
+    - MYSQL_ROOT_PASSWORD=enterYOURpwd
+    networks:
+    - tipi_main_network
+  app:
+    image: matomo
+    restart: always
+    volumes:
+    - ${APP_DATA_DIR}/app_portainer_Files_AppData_Config_matomo_config:/var/www/html/config
+    - ${APP_DATA_DIR}/app_portainer_Files_AppData_Config_matomo_logs:/var/www/html/logs
+    - ${APP_DATA_DIR}/app_matomo:/var/www/html
+    environment:
+    - MATOMO_DATABASE_HOST=db
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+volumes:
+  db: null
+  matomo: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

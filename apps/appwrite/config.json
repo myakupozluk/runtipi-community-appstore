@@ -1,0 +1,23 @@
+{
+  "name": "Appwrite",
+  "id": "appwrite",
+  "available": true,
+  "short_desc": "Appwrite is a self-hosted backend-as-a-service platform that provides developers with all the core APIs required to build any application.",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "development"
+  ],
+  "description": "Appwrite is a self-hosted backend-as-a-service platform that provides developers with all the core APIs required to build any application.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

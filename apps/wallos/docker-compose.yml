@@ -1,0 +1,20 @@
+services:
+  wallos:
+    image: bellamy/wallos:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - TZ=UTC
+    volumes:
+    - ${APP_DATA_DIR}/var_www_html_db:/var/www/html/db
+    - ${APP_DATA_DIR}/var_www_html_images_uploads_logos:/var/www/html/images/uploads/logos
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,21 @@
+services:
+  donetick:
+    image: donetick/donetick:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - DT_SQLITE_PATH=/donetick-data/donetick.db
+    - DT_SERVER_PUBLIC_HOST=http://localhost:2021
+    volumes:
+    - ${APP_DATA_DIR}/donetick-data:/donetick-data
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 2021
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

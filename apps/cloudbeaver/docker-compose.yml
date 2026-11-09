@@ -1,0 +1,18 @@
+services:
+  cloudbeaver:
+    image: dbeaver/cloudbeaver:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/opt_cloudbeaver_workspace:/opt/cloudbeaver/workspace
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8978
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

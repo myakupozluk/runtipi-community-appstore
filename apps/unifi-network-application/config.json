@@ -1,0 +1,25 @@
+{
+  "name": "Unifi-network-application",
+  "id": "unifi-network-application",
+  "available": true,
+  "short_desc": "The [Unifi-network-application](https://ui.com/) software is a powerful, enterprise wireless software engine ideal for high-density client deployments...",
+  "author": "technorabilia/portainer-templates",
+  "port": 8443,
+  "categories": [
+    "network",
+    "development",
+    "monitoring"
+  ],
+  "description": "The [Unifi-network-application](https://ui.com/) software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

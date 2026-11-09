@@ -1,0 +1,23 @@
+{
+  "name": "Stirling PDF {shmolf}",
+  "id": "stirling-pdf",
+  "available": true,
+  "short_desc": "Your locally hosted one-stop-shop for all your PDF needs.",
+  "author": "shmolf/portainer-templates",
+  "port": 5417,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Your locally hosted one-stop-shop for all your PDF needs.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/shmolf/portainer-templates/",
+  "website": "https://github.com/shmolf/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

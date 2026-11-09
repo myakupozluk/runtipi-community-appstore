@@ -1,0 +1,24 @@
+{
+  "name": "YouTubeDL-Material",
+  "id": "youtubedl-material",
+  "available": true,
+  "short_desc": "YoutubeDL-Material is a Material Design frontend for youtube-dl. It's coded using Angular 9 for the frontend, and Node.js on the backend.",
+  "author": "xneo1/portainer_templates",
+  "port": 17442,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "YoutubeDL-Material is a Material Design frontend for youtube-dl. It's coded using Angular 9 for the frontend, and Node.js on the backend.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,40 @@
+services:
+  bookstack:
+    image: linuxserver/bookstack
+    environment:
+    - PUID=${PUID}
+    - PGID=${PGID}
+    - DB_HOST=bookstack_db
+    - DB_USER=bookstack
+    - DB_PASS=${DATABASE_PASSWORD}
+    - DB_DATABASE=bookstackapp
+    volumes:
+    - ${APP_DATA_DIR}/bookstack_portainer_Files_AppData_Config_Bookstack_Data:/config
+    restart: unless-stopped
+    depends_on:
+    - bookstack_db
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+  bookstack_db:
+    image: linuxserver/mariadb
+    environment:
+    - PUID=${PUID}
+    - PGID=${PGID}
+    - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    - TZ=${TZ}
+    - MYSQL_DATABASE=bookstackapp
+    - MYSQL_USER=bookstack
+    - MYSQL_PASSWORD=${DATABASE_PASSWORD}
+    volumes:
+    - ${APP_DATA_DIR}/bookstack_db_portainer_Files_AppData_Bookstack_DB:/config
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

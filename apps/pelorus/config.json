@@ -1,0 +1,24 @@
+{
+  "name": "Pelorus",
+  "id": "pelorus",
+  "available": true,
+  "short_desc": "[Pelorus](https://github.com/linuxserver/pelorus) is an AI navigator for Selkies-powered Linux desktops. Pelorus runs a FastAPI server that gives an L...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3001,
+  "categories": [
+    "development",
+    "games"
+  ],
+  "description": "[Pelorus](https://github.com/linuxserver/pelorus) is an AI navigator for Selkies-powered Linux desktops. Pelorus runs a FastAPI server that gives an LLM agent (Ollama, OpenAI-compatible, or Gemini) control over mouse, keyboard, screenshot, and window management via the [Pixelflux computer-use backend](https://github.com/linuxserver/pixelflux#computer-use-interface-wayland), a Linux accessibility tree (AT-SPI), and optional KWin D-Bus integration.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

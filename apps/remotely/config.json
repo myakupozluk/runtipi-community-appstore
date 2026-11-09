@@ -1,0 +1,23 @@
+{
+  "name": "Remotely",
+  "id": "remotely",
+  "available": true,
+  "short_desc": "Remotely is a remote control and remote scripting solution, built with .NET 6, Blazor, and SignalR Core.",
+  "author": "xneo1/portainer_templates",
+  "port": 5009,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Remotely is a remote control and remote scripting solution, built with .NET 6, Blazor, and SignalR Core.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

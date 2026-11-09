@@ -1,0 +1,22 @@
+services:
+  homepage:
+    image: ghcr.io/benphelps/homepage:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PGID=15000
+    - PUID=15000
+    - TZ=America/Los_Angeles
+    volumes:
+    - ${APP_DATA_DIR}/app_config:/app/config
+    - ${APP_DATA_DIR}/etc_localtime:/etc/localtime
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

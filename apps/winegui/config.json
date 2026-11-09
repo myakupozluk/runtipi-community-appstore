@@ -1,0 +1,24 @@
+{
+  "name": "Winegui",
+  "id": "winegui",
+  "available": true,
+  "short_desc": "[WineGUI](https://gitlab.melroy.org/melroy/winegui) is a user-interface friendly Wine manager that provides a graphical frontend for creating and mana...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "development",
+    "games"
+  ],
+  "description": "[WineGUI](https://gitlab.melroy.org/melroy/winegui) is a user-interface friendly Wine manager that provides a graphical frontend for creating and managing Wine bottles.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

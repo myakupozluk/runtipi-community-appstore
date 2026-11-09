@@ -1,0 +1,24 @@
+{
+  "name": "Lazytainer",
+  "id": "lazytainer",
+  "available": true,
+  "short_desc": "Lazytainer monitors network traffic to containers. If there is traffic, the container runs, otherwise the container is stopped/paused.",
+  "author": "xneo1/portainer_templates",
+  "port": 81,
+  "categories": [
+    "network",
+    "productivity"
+  ],
+  "description": "Lazytainer monitors network traffic to containers. If there is traffic, the container runs, otherwise the container is stopped/paused.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

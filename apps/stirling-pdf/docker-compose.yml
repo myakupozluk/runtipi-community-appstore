@@ -1,0 +1,22 @@
+services:
+  stirling-pdf:
+    image: frooodle/s-pdf:0.18.1
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - DOCKER_ENABLE_SECURITY=
+    volumes:
+    - ${APP_DATA_DIR}/configs:/configs
+    - ${APP_DATA_DIR}/usr_share_tesseract-ocr_5_tessdata:/usr/share/tesseract-ocr/5/tessdata
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

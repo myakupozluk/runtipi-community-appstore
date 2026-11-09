@@ -1,0 +1,24 @@
+{
+  "name": "Pumperly",
+  "id": "pumperly",
+  "available": true,
+  "short_desc": "Open-source fuel and EV route planner with live prices from 22 countries. Source: https://github.com/GeiserX/Pumperly",
+  "author": "Community",
+  "port": 3000,
+  "categories": [
+    "network",
+    "development"
+  ],
+  "description": "Open-source fuel and EV route planner with live prices from 22 countries. Source: https://github.com/GeiserX/Pumperly",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,28 @@
+services:
+  transmission-openvpn-latest:
+    image: haugene/transmission-openvpn:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - OPENVPN_PROVIDER=MULLVAD
+    - OPENVPN_CONFIG=
+    - OPENVPN_USERNAME=
+    - OPENVPN_PASSWORD=
+    - LOCAL_NETWORK=192.168.0.0/24
+    - TRANSMISSION_WATCH_DIR_ENABLED=true
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    - ${APP_DATA_DIR}/data:/data
+    - ${APP_DATA_DIR}/etc_localtime:/etc/localtime
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 9091
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

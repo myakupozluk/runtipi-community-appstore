@@ -1,0 +1,25 @@
+{
+  "name": "Oracle Database Free",
+  "id": "oracle",
+  "available": true,
+  "short_desc": "Oracle Database Free (the 26ai line) - the actual Oracle Database, free for development AND production under the Oracle Free Use Terms and Conditions,...",
+  "author": "deployable-sh/stacks",
+  "port": 1521,
+  "categories": [
+    "development",
+    "data",
+    "finance"
+  ],
+  "description": "Oracle Database Free (the 26ai line) - the actual Oracle Database, free for development AND production under the Oracle Free Use Terms and Conditions, within software-enforced caps: 2 cores, 2 GB RAM, 12 GB user data, one instance per",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

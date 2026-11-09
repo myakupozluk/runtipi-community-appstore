@@ -1,0 +1,25 @@
+{
+  "name": "Dagu",
+  "id": "dagu",
+  "available": true,
+  "short_desc": "A powerful, self-contained DAG-based job scheduler with a web UI, YAML definitions, and no dependencies. Source: https://github.com/dagucloud/dagu",
+  "author": "Community",
+  "port": 8080,
+  "categories": [
+    "development",
+    "data",
+    "automation"
+  ],
+  "description": "A powerful, self-contained DAG-based job scheduler with a web UI, YAML definitions, and no dependencies. Source: https://github.com/dagucloud/dagu",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

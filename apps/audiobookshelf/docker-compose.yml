@@ -1,0 +1,19 @@
+services:
+  audiobookshelf:
+    image: ghcr.io/advplyr/audiobookshelf
+    volumes:
+    - ${APP_DATA_DIR}/audiobookshelf_portainer_Files_AppData_Config_audiobookshelf_audiobooks:/audiobooks
+    - ${APP_DATA_DIR}/audiobookshelf_portainer_Files_AppData_Config_audiobookshelf_podcasts:/podcasts
+    - ${APP_DATA_DIR}/audiobookshelf_portainer_Files_AppData_Config_audiobookshelf_metadata:/metadata
+    - ${APP_DATA_DIR}/audiobookshelf_portainer_Files_AppData_Config_audiobookshelf:/config
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

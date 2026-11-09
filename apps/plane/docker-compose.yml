@@ -1,0 +1,137 @@
+services:
+  plane-web:
+    build:
+      context: .
+      dockerfile: ./web/Dockerfile.web
+      args:
+        DOCKER_BUILDKIT: 1
+    restart: always
+    command: /usr/local/bin/start.sh web/server.js web
+    depends_on:
+    - plane-api
+    - plane-worker
+    networks:
+    - tipi_main_network
+    volumes: []
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+  plane-space:
+    build:
+      context: .
+      dockerfile: ./space/Dockerfile.space
+      args:
+        DOCKER_BUILDKIT: 1
+    restart: always
+    command: /usr/local/bin/start.sh space/server.js space
+    depends_on:
+    - plane-api
+    - plane-worker
+    - plane-web
+    networks:
+    - tipi_main_network
+    volumes: []
+  plane-api:
+    build:
+      context: ./apiserver
+      dockerfile: Dockerfile.api
+      args:
+        DOCKER_BUILDKIT: 1
+    restart: always
+    command: ./bin/takeoff
+    env_file:
+    - ./apiserver/.env
+    depends_on:
+    - plane-db
+    - plane-redis
+    networks:
+    - tipi_main_network
+    volumes: []
+  plane-worker:
+    build:
+      context: ./apiserver
+      dockerfile: Dockerfile.api
+      args:
+        DOCKER_BUILDKIT: 1
+    restart: always
+    command: ./bin/worker
+    env_file:
+    - ./apiserver/.env
+    depends_on:
+    - plane-api
+    - plane-db
+    - plane-redis
+    networks:
+    - tipi_main_network
+    volumes: []
+  plane-beat-worker:
+    build:
+      context: ./apiserver
+      dockerfile: Dockerfile.api
+      args:
+        DOCKER_BUILDKIT: 1
+    restart: always
+    command: ./bin/beat
+    env_file:
+    - ./apiserver/.env
+    depends_on:
+    - plane-api
+    - plane-db
+    - plane-redis
+    networks:
+    - tipi_main_network
+    volumes: []
+  plane-db:
+    image: postgres:15.2-alpine
+    restart: always
+    command: postgres -c 'max_connections=1000'
+    volumes:
+    - ${APP_DATA_DIR}/plane-db_portainer_Files_AppData_Config_plane_pgdata:/var/lib/postgresql/data
+    env_file:
+    - .env
+    environment:
+      POSTGRES_USER: ${PGUSER}
+      POSTGRES_DB: ${PGDATABASE}
+      POSTGRES_PASSWORD: ${PGPASSWORD}
+      PGDATA: /var/lib/postgresql/data
+    networks:
+    - tipi_main_network
+  plane-redis:
+    image: redis:6.2.7-alpine
+    restart: always
+    volumes:
+    - ${APP_DATA_DIR}/plane-redis_portainer_Files_AppData_Config_plane_redisdata:/data
+    networks:
+    - tipi_main_network
+  plane-minio:
+    image: minio/minio
+    restart: always
+    command: server /export --console-address ":9090"
+    volumes:
+    - ${APP_DATA_DIR}/plane-minio_portainer_Files_AppData_Config_plane_uploads:/export
+    environment:
+      MINIO_ROOT_USER: ${AWS_ACCESS_KEY_ID}
+      MINIO_ROOT_PASSWORD: ${AWS_SECRET_ACCESS_KEY}
+    networks:
+    - tipi_main_network
+  createbuckets:
+    image: minio/mc
+    entrypoint: '/bin/sh -c " /usr/bin/mc config host add plane-minio http://plane-minio:9000
+      \$AWS_ACCESS_KEY_ID \$AWS_SECRET_ACCESS_KEY; /usr/bin/mc mb plane-minio/\$AWS_S3_BUCKET_NAME;
+      /usr/bin/mc anonymous set download plane-minio/\$AWS_S3_BUCKET_NAME; exit 0;
+      "
+
+      '
+    env_file:
+    - .env
+    depends_on:
+    - plane-minio
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

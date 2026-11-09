@@ -1,0 +1,21 @@
+services:
+  oled-stats:
+    image: mklements/oled_stats:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - start=8
+    - end=23
+    volumes:
+    - ${APP_DATA_DIR}/etc_timezone:/etc/timezone
+    - ${APP_DATA_DIR}/etc_localtime:/etc/localtime
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

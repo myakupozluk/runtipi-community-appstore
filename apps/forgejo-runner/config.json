@@ -1,0 +1,24 @@
+{
+  "name": "Forgejo Runner",
+  "id": "forgejo-runner",
+  "available": true,
+  "short_desc": "A Forgejo Actions runner in `host` mode - CI for your self-hosted Forgejo or for Codeberg, with jobs running as shell steps in this container (no Dock...",
+  "author": "deployable-sh/stacks",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "A Forgejo Actions runner in `host` mode - CI for your self-hosted Forgejo or for Codeberg, with jobs running as shell steps in this container (no Docker daemon needed). GitHub-Actions-compatible workflow syntax.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

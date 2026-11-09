@@ -1,0 +1,23 @@
+{
+  "name": "Pinchflat",
+  "id": "pinchflat",
+  "available": true,
+  "short_desc": "Your next YouTube media manager",
+  "author": "xneo1/portainer_templates",
+  "port": 8945,
+  "categories": [
+    "media"
+  ],
+  "description": "Your next YouTube media manager",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

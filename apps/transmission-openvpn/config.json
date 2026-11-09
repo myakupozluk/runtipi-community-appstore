@@ -1,0 +1,25 @@
+{
+  "name": "Transmission OpenVPN v3",
+  "id": "transmission-openvpn",
+  "available": true,
+  "short_desc": "This container contains OpenVPN and Transmission with a configuration where Transmission is running only when OpenVPN has an active tunnel. It bundles...",
+  "author": "novaspirit/pi-hosted",
+  "port": 9091,
+  "categories": [
+    "security",
+    "network",
+    "development"
+  ],
+  "description": "This container contains OpenVPN and Transmission with a configuration where Transmission is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

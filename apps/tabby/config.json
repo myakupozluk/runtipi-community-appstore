@@ -1,0 +1,24 @@
+{
+  "name": "Tabby",
+  "id": "tabby",
+  "available": true,
+  "short_desc": "Tabby is an infinitely customizable cross-platform terminal app for local shells, serial, SSH and Telnet connections.",
+  "author": "xneo1/portainer_templates",
+  "port": 8010,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "Tabby is an infinitely customizable cross-platform terminal app for local shells, serial, SSH and Telnet connections.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Immich",
+  "id": "immich",
+  "available": true,
+  "short_desc": "Immich is a high performance self-hosted photo and video backup solution.",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "media",
+    "development",
+    "data"
+  ],
+  "description": "Immich is a high performance self-hosted photo and video backup solution.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

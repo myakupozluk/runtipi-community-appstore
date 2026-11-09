@@ -1,0 +1,23 @@
+{
+  "name": "Keepassxc",
+  "id": "keepassxc",
+  "available": true,
+  "short_desc": "[KeePassXC](https://keepassxc.org/) is a free and open-source password manager. It started as a community fork of KeePassX (itself a cross-platform po...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "security"
+  ],
+  "description": "[KeePassXC](https://keepassxc.org/) is a free and open-source password manager. It started as a community fork of KeePassX (itself a cross-platform port of KeePass).",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

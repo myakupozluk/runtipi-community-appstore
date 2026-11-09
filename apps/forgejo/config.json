@@ -1,0 +1,23 @@
+{
+  "name": "Forgejo (container)",
+  "id": "forgejo",
+  "available": true,
+  "short_desc": "A self-hosted lightweight software forge, providing Git hosting, code review, issue tracking, and CI/CD. Source: https://codeberg.org/forgejo/forgejo",
+  "author": "Community",
+  "port": 3000,
+  "categories": [
+    "development"
+  ],
+  "description": "A self-hosted lightweight software forge, providing Git hosting, code review, issue tracking, and CI/CD. Source: https://codeberg.org/forgejo/forgejo",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

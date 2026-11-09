@@ -1,0 +1,20 @@
+services:
+  speedtest-tracker:
+    restart: unless-stopped
+    environment:
+    - PUID=1000
+    - PGID=1000
+    - DB_CONNECTION=sqlite
+    volumes:
+    - ${APP_DATA_DIR}/speedtest-tracker_portainer_Files_AppData_Config_speedtest-tracker:/config
+    image: lscr.io/linuxserver/speedtest-tracker:latest
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

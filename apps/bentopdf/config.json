@@ -1,0 +1,25 @@
+{
+  "name": "BentoPDF",
+  "id": "bentopdf",
+  "available": true,
+  "short_desc": "PDF toolkit that runs in your browser, so files never leave your machine. Merge, split, compress, convert, sign and edit. Source: https://github.com/a...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8090,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "PDF toolkit that runs in your browser, so files never leave your machine. Merge, split, compress, convert, sign and edit. Source: https://github.com/alam00000/bentopdf",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

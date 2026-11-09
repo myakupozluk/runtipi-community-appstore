@@ -1,0 +1,25 @@
+{
+  "name": "OpenVPN Access Server",
+  "id": "openvpn-as",
+  "available": true,
+  "short_desc": "OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise manage...",
+  "author": "xneo1/portainer_templates",
+  "port": 943,
+  "categories": [
+    "security",
+    "network",
+    "games"
+  ],
+  "description": "OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Meshcentral",
+  "id": "meshcentral",
+  "available": true,
+  "short_desc": "MeshCentral is a full computer management web site. With MeshCentral, you can run your own web server to remotely manage and control computers on a lo...",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "network",
+    "games"
+  ],
+  "description": "MeshCentral is a full computer management web site. With MeshCentral, you can run your own web server to remotely manage and control computers on a local network or anywhere on the internet.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

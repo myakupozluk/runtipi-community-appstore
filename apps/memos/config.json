@@ -1,0 +1,24 @@
+{
+  "name": "Memos",
+  "id": "memos",
+  "available": true,
+  "short_desc": "Memos - the lightweight note hub: quick markdown notes with tags, search, and selective sharing. A single Go binary on SQLite, MIT-licensed - the \"cap...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "Memos - the lightweight note hub: quick markdown notes with tags, search, and selective sharing. A single Go binary on SQLite, MIT-licensed - the \"capture a thought in two seconds\" tool, on your infrastructure.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

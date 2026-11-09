@@ -1,0 +1,23 @@
+{
+  "name": "Wger",
+  "id": "wger",
+  "available": true,
+  "short_desc": "Self hosted FLOSS fitness/workout, nutrition and weight tracker written with Django",
+  "author": "xneo1/portainer_templates",
+  "port": 8000,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Self hosted FLOSS fitness/workout, nutrition and weight tracker written with Django",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

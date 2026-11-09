@@ -1,0 +1,23 @@
+{
+  "name": "Litmus Edge",
+  "id": "litmus-edge",
+  "available": true,
+  "short_desc": "Litmus Edge is an edge data platform that enables industrial AI at scale. It connects, processes, and analyzes real-time OT data at the edge to power ...",
+  "author": "portainer/templates",
+  "port": 9993,
+  "categories": [
+    "data"
+  ],
+  "description": "Litmus Edge is an edge data platform that enables industrial AI at scale. It connects, processes, and analyzes real-time OT data at the edge to power smart manufacturing.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

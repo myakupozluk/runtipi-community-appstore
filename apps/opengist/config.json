@@ -1,0 +1,23 @@
+{
+  "name": "Opengist",
+  "id": "opengist",
+  "available": true,
+  "short_desc": "Pastebin built on Git, like GitHub Gist: every snippet is a repo you can clone, push to and fork, with syntax highlighting, Markdown, embeds, search, ...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 6157,
+  "categories": [
+    "development"
+  ],
+  "description": "Pastebin built on Git, like GitHub Gist: every snippet is a repo you can clone, push to and fork, with syntax highlighting, Markdown, embeds, search, and public, unlisted or private gists. Source: https://github.com/thomiceli/opengist",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

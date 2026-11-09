@@ -1,0 +1,25 @@
+{
+  "name": "Prefect",
+  "id": "prefect",
+  "available": true,
+  "short_desc": "Prefect 3 - workflow orchestration for Python people: flows are decorated functions, deployments schedule them, and the UI shows every run. The server...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "automation",
+    "games"
+  ],
+  "description": "Prefect 3 - workflow orchestration for Python people: flows are decorated functions, deployments schedule them, and the UI shows every run. The server here holds UI/API/schedules; your flow code runs in WORKERS that connect outbound.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

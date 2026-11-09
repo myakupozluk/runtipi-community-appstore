@@ -1,0 +1,23 @@
+services:
+  kasm:
+    image: lscr.io/linuxserver/kasm:latest
+    privileged: true
+    environment:
+    - KASM_PORT=7443
+    - DOCKER_MTU=1500
+    volumes:
+    - ${APP_DATA_DIR}/kasm_portainer_Files_AppData_Config_kasmworkspaces_data:/opt
+    - ${APP_DATA_DIR}/kasm_portainer_Files_AppData_Config_kasmworkspaces_profiles:/profiles
+    - ${APP_DATA_DIR}/kasm_dev_input:/dev/input
+    - ${APP_DATA_DIR}/kasm_run_udev_data:/run/udev/data
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

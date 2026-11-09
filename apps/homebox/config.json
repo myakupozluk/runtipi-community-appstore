@@ -1,0 +1,25 @@
+{
+  "name": "Homebox",
+  "id": "homebox",
+  "available": true,
+  "short_desc": "Inventory and organization system built for the home user. Source: https://github.com/sysadminsmedia/homebox",
+  "author": "Community",
+  "port": 7745,
+  "categories": [
+    "media",
+    "development",
+    "productivity"
+  ],
+  "description": "Inventory and organization system built for the home user. Source: https://github.com/sysadminsmedia/homebox",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

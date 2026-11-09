@@ -1,0 +1,25 @@
+{
+  "name": "KitchenOwl",
+  "id": "kitchenowl",
+  "available": true,
+  "short_desc": "Grocery list and recipe manager for households, with shopping lists that sync live between everyone, recipes you can add to the list in one go, a meal...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "Grocery list and recipe manager for households, with shopping lists that sync live between everyone, recipes you can add to the list in one go, a meal planner and shared expenses. Source: https://github.com/TomBursch/kitchenowl",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Daapd",
+  "id": "daapd",
+  "available": true,
+  "short_desc": "DAAP (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), MPD and internet radio.",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "media",
+    "development",
+    "games"
+  ],
+  "description": "DAAP (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), MPD and internet radio.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

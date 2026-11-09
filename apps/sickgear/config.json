@@ -1,0 +1,25 @@
+{
+  "name": "Sickgear",
+  "id": "sickgear",
+  "available": true,
+  "short_desc": "[SickGear](https://github.com/sickgear/sickgear) provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and mor...",
+  "author": "technorabilia/portainer-templates",
+  "port": 8081,
+  "categories": [
+    "media",
+    "development",
+    "data"
+  ],
+  "description": "[SickGear](https://github.com/sickgear/sickgear) provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more.. For more information on SickGear visit their website and check it out: https://github.com/SickGear/SickGear",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

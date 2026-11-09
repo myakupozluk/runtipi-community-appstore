@@ -1,0 +1,25 @@
+{
+  "name": "Hedgedoc",
+  "id": "hedgedoc",
+  "available": true,
+  "short_desc": "[HedgeDoc](https://hedgedoc.org/) gives you access to all your files wherever you are. HedgeDoc is a real-time, multi-platform collaborative markdown ...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "security",
+    "media",
+    "development"
+  ],
+  "description": "[HedgeDoc](https://hedgedoc.org/) gives you access to all your files wherever you are. HedgeDoc is a real-time, multi-platform collaborative markdown note editor. This means that you can write notes with other people on your desktop, tablet or even on the phone. You can sign-in via multiple auth providers like Facebook, Twitter, GitHub and many more on the homepage.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,22 @@
+services:
+  chibisafe:
+    image: chibisafe/chibisafe:latest
+    mem_limit: 8g
+    cpu_shares: 2048
+    security_opt:
+    - no-new-privileges:true
+    volumes:
+    - ${APP_DATA_DIR}/chibisafe_portainer_Files_AppData_Config_chibisafe_db:/home/node/chibisafe/database
+    - ${APP_DATA_DIR}/chibisafe_portainer_Files_AppData_Config_chibisafe_uploads:/home/node/chibisafe/uploads
+    - ${APP_DATA_DIR}/chibisafe_portainer_Files_AppData_Config_chibisafe_logs:/home/node/chibisafe/logs
+    restart: on-failure:5
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,23 @@
+{
+  "name": "Freescout",
+  "id": "freescout",
+  "available": true,
+  "short_desc": "FreeScout is the super lightweight free open source help desk and shared inbox written in PHP (Laravel framework) – self hosted clone of HelpScout.",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "utilities"
+  ],
+  "description": "FreeScout is the super lightweight free open source help desk and shared inbox written in PHP (Laravel framework) – self hosted clone of HelpScout.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

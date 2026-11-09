@@ -1,0 +1,24 @@
+{
+  "name": "OpnForm",
+  "id": "opnform",
+  "available": true,
+  "short_desc": "OpnForm is an open-source form builder. It's an alternative to products like Typeform, JotForm, Tally etc.",
+  "author": "xneo1/portainer_templates",
+  "port": 8380,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "OpnForm is an open-source form builder. It's an alternative to products like Typeform, JotForm, Tally etc.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

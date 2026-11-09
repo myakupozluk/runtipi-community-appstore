@@ -1,0 +1,24 @@
+{
+  "name": "Feedcord",
+  "id": "feedcord",
+  "available": true,
+  "short_desc": "FeedCord is a dead-simple RSS Reader designed to integrate seamlessly with Discord. With just a few configuration steps, you can have a news feed text...",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "social",
+    "games"
+  ],
+  "description": "FeedCord is a dead-simple RSS Reader designed to integrate seamlessly with Discord. With just a few configuration steps, you can have a news feed text channel up and running in your server.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

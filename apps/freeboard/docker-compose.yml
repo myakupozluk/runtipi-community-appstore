@@ -1,0 +1,26 @@
+services:
+  nginx:
+    image: nginx:1.13
+    ports:
+    - 8003:80
+    volumes_from:
+    - freeboard:ro
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+  freeboard:
+    image: freeboard
+    build: .
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

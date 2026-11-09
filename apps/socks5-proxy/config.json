@@ -1,0 +1,25 @@
+{
+  "name": "Go-Socks5-Proxy",
+  "id": "socks5-proxy",
+  "available": true,
+  "short_desc": "Simple socks5 server using go-socks5 with authentication options",
+  "author": "novaspirit/pi-hosted",
+  "port": 8080,
+  "categories": [
+    "security",
+    "network",
+    "games"
+  ],
+  "description": "Simple socks5 server using go-socks5 with authentication options",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

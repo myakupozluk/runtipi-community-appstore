@@ -1,0 +1,24 @@
+{
+  "name": "Phoenix",
+  "id": "phoenix",
+  "available": true,
+  "short_desc": "Phoenix - LLM tracing, evaluations, datasets, and a prompt playground in ONE container, OpenTelemetry-native.",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "Phoenix - LLM tracing, evaluations, datasets, and a prompt playground in ONE container, OpenTelemetry-native.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

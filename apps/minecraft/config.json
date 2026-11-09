@@ -1,0 +1,25 @@
+{
+  "name": "Minecraft Server (container)",
+  "id": "minecraft",
+  "available": true,
+  "short_desc": "This docker image provides a Minecraft Server that will automatically download the latest stable version at startup. You can also run/upgrade to any s...",
+  "author": "novaspirit/pi-hosted",
+  "port": 25565,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "This docker image provides a Minecraft Server that will automatically download the latest stable version at startup. You can also run/upgrade to any specific version or the latest snapshot. See the Versions section below for more information.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

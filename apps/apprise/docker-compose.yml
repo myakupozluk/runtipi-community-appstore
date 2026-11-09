@@ -1,0 +1,40 @@
+services:
+  apprise-api:
+    image: lscr.io/linuxserver/apprise-api
+    volumes:
+    - ${APP_DATA_DIR}/apprise-api_$DATA_LOCATION_$SERVICE_config:/config
+    healthcheck:
+      test:
+      - CMD
+      - bash
+      - -c
+      - 'exec 5<>/dev/tcp/127.0.0.1/8036 && echo -e ''GET /healthz HTTP/1.1
+
+
+        '' >&5 && cat <&5 | head -n 1 | grep 200'
+      interval: 1m
+      timeout: 30s
+      retries: 3
+    restart: unless-stopped
+    networks:
+    - default
+    - tipi_main_network
+    labels:
+    - traefik.enable=true
+    - traefik.http.routers.$SERVICE.entrypoints=https
+    - traefik.http.routers.$SERVICE.rule=Host(`$URL`)
+    - traefik.http.routers.$SERVICE.tls=true
+    - traefik.http.routers.$SERVICE.tls.certresolver=http
+    - traefik.http.services.$SERVICE.loadbalancer.server.port=8036
+    - traefik.docker.network=$NETWORK
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  default:
+    external:
+      name: $NETWORK
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

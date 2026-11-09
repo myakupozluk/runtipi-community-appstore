@@ -1,0 +1,23 @@
+{
+  "name": "Minetest",
+  "id": "minetest",
+  "available": true,
+  "short_desc": "Server version of minetest, a free, open source alternative to minecraft.",
+  "author": "xneo1/portainer_templates",
+  "port": 30000,
+  "categories": [
+    "games"
+  ],
+  "description": "Server version of minetest, a free, open source alternative to minecraft.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Woodpecker CI",
+  "id": "woodpecker-ci",
+  "available": true,
+  "short_desc": "A simple yet powerful CI/CD engine with great extensibility, built for containers. Source: https://github.com/woodpecker-ci/woodpecker",
+  "author": "Community",
+  "port": 8000,
+  "categories": [
+    "development"
+  ],
+  "description": "A simple yet powerful CI/CD engine with great extensibility, built for containers. Source: https://github.com/woodpecker-ci/woodpecker",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

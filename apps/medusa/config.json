@@ -1,0 +1,24 @@
+{
+  "name": "Medusa (container)",
+  "id": "medusa",
+  "available": true,
+  "short_desc": "[Medusa](https://pymedusa.com/) is an automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they ...",
+  "author": "technorabilia/portainer-templates",
+  "port": 8081,
+  "categories": [
+    "media",
+    "development"
+  ],
+  "description": "[Medusa](https://pymedusa.com/) is an automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

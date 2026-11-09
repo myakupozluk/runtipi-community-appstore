@@ -1,0 +1,21 @@
+services:
+  homarr-secured:
+    image: ghcr.io/ajnart/homarr:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    volumes:
+    - ${APP_DATA_DIR}/app_data_configs:/app/data/configs
+    - ${APP_DATA_DIR}/app_public_icons:/app/public/icons
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 7575
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

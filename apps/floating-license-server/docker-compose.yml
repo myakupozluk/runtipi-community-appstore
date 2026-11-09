@@ -1,0 +1,18 @@
+services:
+  floating-license-server:
+    image: softingindustrial/floating-license-server:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/licsrv_licenses:/licsrv/licenses
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 6200
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

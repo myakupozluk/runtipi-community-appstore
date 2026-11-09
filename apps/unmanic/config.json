@@ -1,0 +1,23 @@
+{
+  "name": "Unmanic",
+  "id": "unmanic",
+  "available": true,
+  "short_desc": "Unmanic is a simple tool for optimising your file library. You can use it to convert your files into a single, uniform format, manage file movements b...",
+  "author": "novaspirit/pi-hosted",
+  "port": 8888,
+  "categories": [
+    "data"
+  ],
+  "description": "Unmanic is a simple tool for optimising your file library. You can use it to convert your files into a single, uniform format, manage file movements based on timestamps, or execute custom commands against a file based on its file size.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

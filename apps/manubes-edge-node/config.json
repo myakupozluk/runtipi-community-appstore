@@ -1,0 +1,24 @@
+{
+  "name": "Manubes Edge Node",
+  "id": "manubes-edge-node",
+  "available": true,
+  "short_desc": "High-performance cloud platform for industrial production management. Manubes is a no-code solution that is used to structure, monitor and control pro...",
+  "author": "portainer/templates",
+  "port": 9993,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "High-performance cloud platform for industrial production management. Manubes is a no-code solution that is used to structure, monitor and control production data, systems and processes in the cloud.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

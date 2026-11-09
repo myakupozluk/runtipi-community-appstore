@@ -1,0 +1,25 @@
+{
+  "name": "Aurral",
+  "id": "aurral",
+  "available": true,
+  "short_desc": "Streamlined Artist Request Manager for Lidarr. Search for artists using the MusicBrainz database and seamlessly add them to your Lidarr music library....",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "media",
+    "development",
+    "data"
+  ],
+  "description": "Streamlined Artist Request Manager for Lidarr. Search for artists using the MusicBrainz database and seamlessly add them to your Lidarr music library. Features personalized recommendations, genre analysis, and one-click requests.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

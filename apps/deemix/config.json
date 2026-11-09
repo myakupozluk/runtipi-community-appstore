@@ -1,0 +1,24 @@
+{
+  "name": "DeeMix",
+  "id": "deemix",
+  "available": true,
+  "short_desc": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
+  "author": "xneo1/portainer_templates",
+  "port": 6595,
+  "categories": [
+    "media",
+    "data"
+  ],
+  "description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

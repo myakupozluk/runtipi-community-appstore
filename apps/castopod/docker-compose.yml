@@ -1,0 +1,77 @@
+services:
+  app:
+    image: castopod/app:latest
+    volumes:
+    - ${APP_DATA_DIR}/app_portainer_Files_AppData_Config_castopod_app:/opt/castopod/public/media
+    environment:
+      MYSQL_DATABASE: castopod
+      MYSQL_USER: castopod
+      MYSQL_PASSWORD: changeme
+      CP_BASEURL: https://castopod.me
+      CP_ANALYTICS_SALT: changeme
+      CP_CACHE_HANDLER: redis
+      CP_REDIS_HOST: redis
+    networks:
+    - castopod-app
+    - castopod-db
+    - tipi_main_network
+    restart: always
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+  web-server:
+    image: castopod/web-server:latest
+    volumes:
+    - ${APP_DATA_DIR}/web-server_portainer_Files_AppData_Config_castopod_web:/var/www/html/media
+    networks:
+    - castopod-app
+    - tipi_main_network
+    ports:
+    - 8848:80
+    restart: unless-stopped
+  mariadb:
+    image: mariadb
+    networks:
+    - castopod-db
+    - tipi_main_network
+    volumes:
+    - ${APP_DATA_DIR}/mariadb_portainer_Files_AppData_Config_castopod_db:/var/lib/mysql
+    user: 1026:100
+    environment:
+      MYSQL_ROOT_PASSWORD: changeme
+      MYSQL_DATABASE: castopod
+      MYSQL_USER: castopod
+      MYSQL_PASSWORD: changeme
+    restart: always
+  redis:
+    image: redis
+    volumes:
+    - ${APP_DATA_DIR}/redis_portainer_Files_AppData_Config_castopod_redis:/data
+    user: 1026:100
+    networks:
+    - castopod-app
+    - tipi_main_network
+    restart: unless-stopped
+  video-clipper:
+    image: castopod/video-clipper:latest
+    volumes:
+    - ${APP_DATA_DIR}/video-clipper_portainer_Files_AppData_Config_castopod_media:/opt/castopod/public/media
+    environment:
+      MYSQL_DATABASE: castopod
+      MYSQL_USER: castopod
+      MYSQL_PASSWORD: changeme
+    networks:
+    - castopod-db
+    - tipi_main_network
+    restart: always
+volumes:
+  castopod-media: null
+  castopod-db: null
+  castopod-cache: null
+networks:
+  castopod-app: null
+  castopod-db: null
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

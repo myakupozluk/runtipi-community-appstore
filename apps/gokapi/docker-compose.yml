@@ -1,0 +1,17 @@
+services:
+  gokapi:
+    image: f0rc3/gokapi:latest
+    volumes:
+    - ${APP_DATA_DIR}/gokapi_portainer_Files_AppData_Config_gokapi_data:/app/data
+    - ${APP_DATA_DIR}/gokapi_portainer_Files_AppData_Config_gokapi_config:/app/config
+    restart: on-failure:5
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 53842
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

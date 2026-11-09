@@ -1,0 +1,24 @@
+{
+  "name": "Agent Box",
+  "id": "agent-box",
+  "available": true,
+  "short_desc": "Remote AI coding agents on Miget: a persistent box with Claude Code, opencode and Kilo CLI preinstalled, reachable from any browser as a web terminal ...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "security",
+    "development"
+  ],
+  "description": "Remote AI coding agents on Miget: a persistent box with Claude Code, opencode and Kilo CLI preinstalled, reachable from any browser as a web terminal (ttyd + tmux) behind basic auth.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

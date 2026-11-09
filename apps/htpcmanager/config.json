@@ -1,0 +1,24 @@
+{
+  "name": "Htpcmanager",
+  "id": "htpcmanager",
+  "available": true,
+  "short_desc": "[Htpcmanager](https://github.com/HTPC-Manager/HTPC-Manager) is a front end for many htpc related applications.",
+  "author": "technorabilia/portainer-templates",
+  "port": 8085,
+  "categories": [
+    "media",
+    "development"
+  ],
+  "description": "[Htpcmanager](https://github.com/HTPC-Manager/HTPC-Manager) is a front end for many htpc related applications.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

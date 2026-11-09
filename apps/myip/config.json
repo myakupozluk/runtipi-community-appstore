@@ -1,0 +1,25 @@
+{
+  "name": "MyIP",
+  "id": "myip",
+  "available": true,
+  "short_desc": "IP toolbox for checking your own connection: your IPv4 and IPv6 addresses and where they look like they are, which sites you can reach, WebRTC and DNS...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "security",
+    "network",
+    "development"
+  ],
+  "description": "IP toolbox for checking your own connection: your IPv4 and IPv6 addresses and where they look like they are, which sites you can reach, WebRTC and DNS leak tests, a speed test, and lookups for MTR, DNS records and whois. Source: https://github.com/jason5ng32/MyIP",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

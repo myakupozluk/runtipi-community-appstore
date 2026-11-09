@@ -1,0 +1,25 @@
+{
+  "name": "Listmonk",
+  "id": "listmonk",
+  "available": true,
+  "short_desc": "High performance self-hosted newsletter and mailing list manager with a modern dashboard. Source: https://github.com/knadh/listmonk",
+  "author": "Community",
+  "port": 9000,
+  "categories": [
+    "development",
+    "productivity",
+    "monitoring"
+  ],
+  "description": "High performance self-hosted newsletter and mailing list manager with a modern dashboard. Source: https://github.com/knadh/listmonk",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

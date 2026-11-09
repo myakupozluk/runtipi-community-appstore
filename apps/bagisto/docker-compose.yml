@@ -1,0 +1,45 @@
+name: bagisto
+services:
+  bagisto:
+    build: .
+    restart: unless-stopped
+    environment:
+      APP_KEY: ${APP_KEY}
+      APP_URL: ${APP_URL:-http://localhost:5000}
+      DB_CONNECTION: mysql
+      DB_HOST: db
+      DB_PORT: '3306'
+      DB_DATABASE: bagisto
+      DB_USERNAME: bagisto
+      DB_PASSWORD: bagisto-local-only
+    volumes:
+    - ${APP_DATA_DIR}/bagisto_bagistostorage:/var/www/bagisto/storage
+    depends_on:
+    - db
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+  db:
+    image: mysql:8
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root-local-only
+      MYSQL_USER: bagisto
+      MYSQL_PASSWORD: bagisto-local-only
+      MYSQL_DATABASE: bagisto
+    ports:
+    - 3306:3306
+    volumes:
+    - ${APP_DATA_DIR}/db_dbdata:/var/lib/mysql
+    networks:
+    - tipi_main_network
+volumes:
+  bagistostorage: null
+  dbdata: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

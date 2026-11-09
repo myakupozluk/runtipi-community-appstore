@@ -1,0 +1,24 @@
+{
+  "name": "Spliit",
+  "id": "spliit",
+  "available": true,
+  "short_desc": "Expense splitter for trips, flatmates and nights out, tracking who paid for what in a shared group and working out who owes who, with no accounts need...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "finance"
+  ],
+  "description": "Expense splitter for trips, flatmates and nights out, tracking who paid for what in a shared group and working out who owes who, with no accounts needed, just a link to the group. Handles several currencies, categories and uneven splits. Source: https://github.com/spliit-app/spliit",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

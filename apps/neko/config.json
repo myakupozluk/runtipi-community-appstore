@@ -1,0 +1,23 @@
+{
+  "name": "Neko",
+  "id": "neko",
+  "available": true,
+  "short_desc": "Simple room management system for n.eko. Self hosted rabb.it alternative. --Please add .env file as stated in neko.yml",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Simple room management system for n.eko. Self hosted rabb.it alternative. --Please add .env file as stated in neko.yml",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

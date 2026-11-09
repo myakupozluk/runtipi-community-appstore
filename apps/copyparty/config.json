@@ -1,0 +1,25 @@
+{
+  "name": "copyparty",
+  "id": "copyparty",
+  "available": true,
+  "short_desc": "File server in one Python app, with resumable uploads, thumbnails, search and a music player in the browser, plus WebDAV for mounting it as a drive. S...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "media",
+    "development",
+    "data"
+  ],
+  "description": "File server in one Python app, with resumable uploads, thumbnails, search and a music player in the browser, plus WebDAV for mounting it as a drive. Source: https://github.com/9001/copyparty",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

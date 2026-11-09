@@ -1,0 +1,24 @@
+{
+  "name": "Netboot.xyz (container)",
+  "id": "netbootxyz",
+  "available": true,
+  "short_desc": "Netbootxyz is a way to PXE boot various operating system installers or utilities from one place within the BIOS without the need of having to go retri...",
+  "author": "mediadepot/templates",
+  "port": 3000,
+  "categories": [
+    "media",
+    "data"
+  ],
+  "description": "Netbootxyz is a way to PXE boot various operating system installers or utilities from one place within the BIOS without the need of having to go retrieve the media to run the tool",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mediadepot/templates/",
+  "website": "https://github.com/mediadepot/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

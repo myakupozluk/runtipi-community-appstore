@@ -1,0 +1,23 @@
+{
+  "name": "RomM",
+  "id": "romm",
+  "available": true,
+  "short_desc": "A beautiful, powerful, self-hosted rom manager.",
+  "author": "xneo1/portainer_templates",
+  "port": 480,
+  "categories": [
+    "utilities"
+  ],
+  "description": "A beautiful, powerful, self-hosted rom manager.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

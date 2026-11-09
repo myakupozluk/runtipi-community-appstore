@@ -1,0 +1,23 @@
+{
+  "name": "Traggo",
+  "id": "traggo",
+  "available": true,
+  "short_desc": "Traggo is a tag-based time tracking tool. In Traggo there are no tasks, only tagged time spans.",
+  "author": "xneo1/portainer_templates",
+  "port": 3030,
+  "categories": [
+    "productivity"
+  ],
+  "description": "Traggo is a tag-based time tracking tool. In Traggo there are no tasks, only tagged time spans.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Halo",
+  "id": "halo",
+  "available": true,
+  "short_desc": "Website and blogging platform with a rich editor, themes, plugins, comments and pages, run from a web console. This one runs on Postgres. Source: http...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "social"
+  ],
+  "description": "Website and blogging platform with a rich editor, themes, plugins, comments and pages, run from a web console. This one runs on Postgres. Source: https://github.com/halo-dev/halo",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

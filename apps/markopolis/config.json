@@ -1,0 +1,23 @@
+{
+  "name": "Markopolis",
+  "id": "markopolis",
+  "available": true,
+  "short_desc": "Markopolis is like the self hosted version of Obsidian Publish.",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "productivity"
+  ],
+  "description": "Markopolis is like the self hosted version of Obsidian Publish.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

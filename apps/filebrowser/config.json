@@ -1,0 +1,23 @@
+{
+  "name": "FileBrowser (stack)",
+  "id": "filebrowser",
+  "available": true,
+  "short_desc": "FileBrowser - a fast web UI over a file volume: upload, organize, preview, edit, and share files via public links, with per-user scopes. Apache-2.0, n...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "data"
+  ],
+  "description": "FileBrowser - a fast web UI over a file volume: upload, organize, preview, edit, and share files via public links, with per-user scopes. Apache-2.0, non-root, ~30 MB of Go.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

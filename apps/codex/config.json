@@ -1,0 +1,25 @@
+{
+  "name": "Codex",
+  "id": "codex",
+  "available": true,
+  "short_desc": "Codex is a web server comic book browser and reader.",
+  "author": "xneo1/portainer_templates",
+  "port": 9810,
+  "categories": [
+    "media",
+    "development",
+    "games"
+  ],
+  "description": "Codex is a web server comic book browser and reader.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

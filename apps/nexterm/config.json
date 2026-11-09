@@ -1,0 +1,23 @@
+{
+  "name": "Nexterm",
+  "id": "nexterm",
+  "available": true,
+  "short_desc": "The open source server management software for SSH, VNC & RDP",
+  "author": "xneo1/portainer_templates",
+  "port": 6989,
+  "categories": [
+    "games"
+  ],
+  "description": "The open source server management software for SSH, VNC & RDP",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

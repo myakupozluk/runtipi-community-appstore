@@ -1,0 +1,23 @@
+{
+  "name": "Lidify",
+  "id": "lidify",
+  "available": true,
+  "short_desc": "Self-hosted, on-demand audio streaming platform that brings the Spotify experience to your personal music library. Features music streaming, podcast s...",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "media"
+  ],
+  "description": "Self-hosted, on-demand audio streaming platform that brings the Spotify experience to your personal music library. Features music streaming, podcast subscriptions, audiobook integration, playlist generation, and Lidarr integration for music discovery.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

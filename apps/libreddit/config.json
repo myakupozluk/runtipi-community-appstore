@@ -1,0 +1,23 @@
+{
+  "name": "libreddit",
+  "id": "libreddit",
+  "available": true,
+  "short_desc": "An alternative private front-end to Reddit",
+  "author": "novaspirit/pi-hosted",
+  "port": 8088,
+  "categories": [
+    "utilities"
+  ],
+  "description": "An alternative private front-end to Reddit",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

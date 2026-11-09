@@ -1,0 +1,21 @@
+services:
+  minio-container:
+    image: quay.io/minio/minio:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - MINIO_ROOT_USER=
+    - MINIO_ROOT_PASSWORD=
+    volumes:
+    - ${APP_DATA_DIR}/data:/data
+    - ${APP_DATA_DIR}/root_.minio:/root/.minio
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 9000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

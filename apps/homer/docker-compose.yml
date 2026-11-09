@@ -1,0 +1,19 @@
+services:
+  homer:
+    image: b4bz/homer:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/www_assets:/www/assets
+    - ${APP_DATA_DIR}/www_config.yml:/www/config.yml
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

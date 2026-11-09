@@ -1,0 +1,25 @@
+{
+  "name": "Mastodon (container)",
+  "id": "mastodon",
+  "available": true,
+  "short_desc": "[Mastodon](https://github.com/mastodon/mastodon/) is a free, open-source social network server based on ActivityPub where users can follow friends and...",
+  "author": "technorabilia/portainer-templates",
+  "port": 80,
+  "categories": [
+    "network",
+    "development",
+    "productivity"
+  ],
+  "description": "[Mastodon](https://github.com/mastodon/mastodon/) is a free, open-source social network server based on ActivityPub where users can follow friends and discover new ones..",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

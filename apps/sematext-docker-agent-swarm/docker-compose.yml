@@ -1,0 +1,27 @@
+services:
+  roach1:
+    image: cockroachdb/cockroach:latest
+    command: start --insecure
+    deploy:
+      replicas: 1
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+  roachN:
+    image: cockroachdb/cockroach:latest
+    command: start --insecure --join=roach1,roachN
+    deploy:
+      mode: global
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    volumes: []
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

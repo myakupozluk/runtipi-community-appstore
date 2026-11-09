@@ -1,0 +1,24 @@
+{
+  "name": "Twenty CRM",
+  "id": "twenty",
+  "available": true,
+  "short_desc": "Twenty - the open-source CRM rethought for this decade: a modern data model (any object, custom fields), pipelines, notes, tasks, email sync, and work...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "productivity",
+    "data"
+  ],
+  "description": "Twenty - the open-source CRM rethought for this decade: a modern data model (any object, custom fields), pipelines, notes, tasks, email sync, and workflows.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

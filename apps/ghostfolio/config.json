@@ -1,0 +1,24 @@
+{
+  "name": "Ghostfolio",
+  "id": "ghostfolio",
+  "available": true,
+  "short_desc": "Ghostfolio is an open source wealth management software built with web technology.",
+  "author": "xneo1/portainer_templates",
+  "port": 3443,
+  "categories": [
+    "finance",
+    "social"
+  ],
+  "description": "Ghostfolio is an open source wealth management software built with web technology.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

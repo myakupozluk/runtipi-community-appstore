@@ -1,0 +1,23 @@
+{
+  "name": "OpenAMT",
+  "id": "openamt",
+  "available": true,
+  "short_desc": "OpenAMT Cloud Toolkit",
+  "author": "portainer/templates",
+  "port": 9993,
+  "categories": [
+    "data"
+  ],
+  "description": "OpenAMT Cloud Toolkit",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

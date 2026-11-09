@@ -1,0 +1,39 @@
+services:
+  monica-app:
+    image: monica:apache
+    depends_on:
+    - monica-db
+    environment:
+    - DB_HOST=db
+    - DB_USERNAME=monica
+    - DB_PASSWORD=secret
+    volumes:
+    - ${APP_DATA_DIR}/monica-app_portainer_Files_AppData_Config_monica:/var/www/html/storage
+    restart: always
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+  monica-db:
+    image: mysql:5.7
+    environment:
+    - MYSQL_RANDOM_ROOT_PASSWORD=true
+    - MYSQL_DATABASE=monica
+    - MYSQL_USER=monica
+    - MYSQL_PASSWORD=secret
+    volumes:
+    - ${APP_DATA_DIR}/monica-db_portainer_Files_AppData_Config_monica_mysql:/var/lib/mysql
+    restart: always
+    networks:
+    - tipi_main_network
+volumes:
+  data:
+    name: data
+  mysql:
+    name: mysql
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

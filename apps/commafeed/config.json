@@ -1,0 +1,25 @@
+{
+  "name": "CommaFeed",
+  "id": "commafeed",
+  "available": true,
+  "short_desc": "RSS reader in the style of Google Reader, with four layouts, keyboard shortcuts for nearly everything, rules that mark entries as read, OPML import an...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8082,
+  "categories": [
+    "development",
+    "productivity",
+    "social"
+  ],
+  "description": "RSS reader in the style of Google Reader, with four layouts, keyboard shortcuts for nearly everything, rules that mark entries as read, OPML import and the Fever and Google Reader APIs for mobile apps. Source: https://github.com/Athou/commafeed",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

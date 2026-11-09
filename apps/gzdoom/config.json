@@ -1,0 +1,23 @@
+{
+  "name": "Gzdoom",
+  "id": "gzdoom",
+  "available": true,
+  "short_desc": "[GZDoom](https://gzdoom.app/) is a feature centric port for all Doom engine games, based on ZDoom, adding an OpenGL renderer and powerful scripting ca...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "games"
+  ],
+  "description": "[GZDoom](https://gzdoom.app/) is a feature centric port for all Doom engine games, based on ZDoom, adding an OpenGL renderer and powerful scripting capabilities.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

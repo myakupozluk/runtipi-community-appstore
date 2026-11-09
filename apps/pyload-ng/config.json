@@ -1,0 +1,23 @@
+{
+  "name": "Pyload-ng",
+  "id": "pyload-ng",
+  "available": true,
+  "short_desc": "[pyLoad](https://pyload.net/) is a Free and Open Source download manager written in Python and designed to be extremely lightweight, easily extensible...",
+  "author": "technorabilia/portainer-templates",
+  "port": 8000,
+  "categories": [
+    "data"
+  ],
+  "description": "[pyLoad](https://pyload.net/) is a Free and Open Source download manager written in Python and designed to be extremely lightweight, easily extensible and fully manageable via web.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

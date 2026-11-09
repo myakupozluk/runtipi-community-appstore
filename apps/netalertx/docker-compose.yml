@@ -1,0 +1,21 @@
+services:
+  netalertx:
+    image: jokobsk/netalertx:latest
+    network_mode: host
+    restart: unless-stopped
+    volumes:
+    - ${APP_DATA_DIR}/netalertx_portainer_Files_AppData_Config_netalertx_config:/app/config
+    - ${APP_DATA_DIR}/netalertx_portainer_Files_AppData_Config_netalertx_db:/app/db
+    environment:
+    - TZ=Europe/Athens
+    - PORT=20211
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,25 @@
+{
+  "name": "Yacht",
+  "id": "yacht",
+  "available": true,
+  "short_desc": "A web interface for managing docker containers with an emphasis on templating to provide 1 click deployments. Think of it like a decentralized app sto...",
+  "author": "xneo1/portainer_templates",
+  "port": 8001,
+  "categories": [
+    "development",
+    "productivity",
+    "games"
+  ],
+  "description": "A web interface for managing docker containers with an emphasis on templating to provide 1 click deployments. Think of it like a decentralized app store for servers that anyone can make packages for.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

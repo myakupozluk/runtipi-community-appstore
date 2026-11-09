@@ -1,0 +1,56 @@
+services:
+  listmonk:
+    image: listmonk/listmonk:latest
+    restart: unless-stopped
+    command:
+    - sh
+    - -c
+    - ./listmonk --install --idempotent --yes --config '' && ./listmonk --upgrade
+      --yes --config '' && ./listmonk --config ''
+    environment:
+    - LISTMONK_app__address=0.0.0.0:9000
+    - LISTMONK_ADMIN_USER=${LISTMONK_ADMIN_USER:-admin}
+    - LISTMONK_ADMIN_PASSWORD=${LISTMONK_ADMIN_PASSWORD:-}
+    - LISTMONK_db__host=postgres
+    - LISTMONK_db__port=5432
+    - LISTMONK_db__user=listmonk
+    - LISTMONK_db__password=listmonk
+    - LISTMONK_db__database=listmonk
+    - LISTMONK_db__ssl_mode=disable
+    - TZ=Etc/UTC
+    volumes:
+    - ${APP_DATA_DIR}/listmonk_listmonk-uploads:/listmonk/uploads
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 9000
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+    - POSTGRES_DB=listmonk
+    - POSTGRES_USER=listmonk
+    - POSTGRES_PASSWORD=listmonk
+    volumes:
+    - ${APP_DATA_DIR}/postgres_postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - pg_isready -U listmonk
+      interval: 10s
+      timeout: 5s
+      retries: 6
+    networks:
+    - tipi_main_network
+volumes:
+  listmonk-uploads: null
+  postgres-data: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

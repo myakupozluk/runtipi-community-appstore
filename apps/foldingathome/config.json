@@ -1,0 +1,25 @@
+{
+  "name": "Foldingathome",
+  "id": "foldingathome",
+  "available": true,
+  "short_desc": "[Folding@home](https://foldingathome.org/) is a distributed computing project for simulating protein dynamics, including the process of protein foldin...",
+  "author": "technorabilia/portainer-templates",
+  "port": 80,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "[Folding@home](https://foldingathome.org/) is a distributed computing project for simulating protein dynamics, including the process of protein folding and the movements of proteins implicated in a variety of diseases. It brings together citizen scientists who volunteer to run simulations of protein dynamics on their personal computers. Insights from this data are helping scientists to better understand biology, and providing new opportunities for developing therapeutics.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

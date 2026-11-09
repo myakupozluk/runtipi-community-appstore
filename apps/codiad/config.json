@@ -1,0 +1,24 @@
+{
+  "name": "Codiad",
+  "id": "codiad",
+  "available": true,
+  "short_desc": "Codiad is a web-based IDE framework with a small footprint and minimal requirements.",
+  "author": "xneo1/portainer_templates",
+  "port": 80,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "Codiad is a web-based IDE framework with a small footprint and minimal requirements.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Mealie",
+  "id": "mealie",
+  "available": true,
+  "short_desc": "A self-hosted recipe manager and meal planner",
+  "author": "novaspirit/pi-hosted",
+  "port": 9925,
+  "categories": [
+    "development"
+  ],
+  "description": "A self-hosted recipe manager and meal planner",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

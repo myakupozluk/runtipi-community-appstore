@@ -1,0 +1,23 @@
+{
+  "name": "Duckstation",
+  "id": "duckstation",
+  "available": true,
+  "short_desc": "[DuckStation](https://duckstation.org/) is a PS1 Emulator aiming for the best accuracy and game support.",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "games"
+  ],
+  "description": "[DuckStation](https://duckstation.org/) is a PS1 Emulator aiming for the best accuracy and game support.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

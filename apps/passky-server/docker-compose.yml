@@ -1,0 +1,20 @@
+services:
+  passky-server:
+    image: rabbitcompany/passky-server:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - ADMIN_USERNAME=admin
+    - ADMIN_PASSWORD=
+    volumes:
+    - ${APP_DATA_DIR}/var_www_html_databases:/var/www/html/databases
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,25 @@
+{
+  "name": "Homeassistant",
+  "id": "homeassistant",
+  "available": true,
+  "short_desc": "[Home Assistant Core](https://www.home-assistant.io/) - Open source home automation that puts local control and privacy first. Powered by a worldwide ...",
+  "author": "technorabilia/portainer-templates",
+  "port": 8123,
+  "categories": [
+    "security",
+    "development",
+    "automation"
+  ],
+  "description": "[Home Assistant Core](https://www.home-assistant.io/) - Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

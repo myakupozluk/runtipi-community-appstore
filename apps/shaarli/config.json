@@ -1,0 +1,25 @@
+{
+  "name": "Shaarli",
+  "id": "shaarli",
+  "available": true,
+  "short_desc": "The personal, minimalist, super fast, database-free, bookmarking service.",
+  "author": "xneo1/portainer_templates",
+  "port": 7755,
+  "categories": [
+    "media",
+    "development",
+    "data"
+  ],
+  "description": "The personal, minimalist, super fast, database-free, bookmarking service.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

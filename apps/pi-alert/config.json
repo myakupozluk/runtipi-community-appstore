@@ -1,0 +1,24 @@
+{
+  "name": "Pi.alert",
+  "id": "pi-alert",
+  "available": true,
+  "short_desc": "WIFI / LAN intruder detector",
+  "author": "xneo1/portainer_templates",
+  "port": 20211,
+  "categories": [
+    "network",
+    "monitoring"
+  ],
+  "description": "WIFI / LAN intruder detector",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

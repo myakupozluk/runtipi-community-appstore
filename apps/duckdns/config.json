@@ -1,0 +1,25 @@
+{
+  "name": "Duckdns",
+  "id": "duckdns",
+  "available": true,
+  "short_desc": "[Duckdns](https://duckdns.org/) is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is complete...",
+  "author": "technorabilia/portainer-templates",
+  "port": 80,
+  "categories": [
+    "security",
+    "network",
+    "social"
+  ],
+  "description": "[Duckdns](https://duckdns.org/) is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

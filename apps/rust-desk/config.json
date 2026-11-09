@@ -1,0 +1,23 @@
+{
+  "name": "Rust Desk (stack)",
+  "id": "rust-desk",
+  "available": true,
+  "short_desc": "Rust Desk is an Open source virtual or remote desktop infrastructure for everyone!",
+  "author": "xneo1/portainer_templates",
+  "port": 21115,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Rust Desk is an Open source virtual or remote desktop infrastructure for everyone!",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

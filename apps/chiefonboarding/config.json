@@ -1,0 +1,23 @@
+{
+  "name": "Chiefonboarding",
+  "id": "chiefonboarding",
+  "available": true,
+  "short_desc": "ChiefOnboarding is a free and open source employee onboarding platform. You can onboarding new hires through Slack or the dashboard.",
+  "author": "xneo1/portainer_templates",
+  "port": 127,
+  "categories": [
+    "monitoring"
+  ],
+  "description": "ChiefOnboarding is a free and open source employee onboarding platform. You can onboarding new hires through Slack or the dashboard.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "libresonic",
+  "id": "libresonic",
+  "available": true,
+  "short_desc": "Libresonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to yo...",
+  "author": "dnburgess/self-hosted-template",
+  "port": 4040,
+  "categories": [
+    "media",
+    "network",
+    "data"
+  ],
+  "description": "Libresonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room. /music = Location of music. /media = Location of other media. /podcasts = Location of podcasts. /playlists = Location for playlists storage. CONTEXT_PATH is for setting url-base in reverse proxy setups - (optional) Default user/pass is admin/admin",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/dnburgess/self-hosted-template/",
+  "website": "https://github.com/dnburgess/self-hosted-template/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

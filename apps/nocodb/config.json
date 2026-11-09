@@ -1,0 +1,25 @@
+{
+  "name": "NocoDB",
+  "id": "nocodb",
+  "available": true,
+  "short_desc": "Turns any MySQL, PostgreSQL, SQL Server, SQLite & MariaDB into a smart-spreadsheet.",
+  "author": "xneo1/portainer_templates",
+  "port": 8585,
+  "categories": [
+    "development",
+    "productivity",
+    "games"
+  ],
+  "description": "Turns any MySQL, PostgreSQL, SQL Server, SQLite & MariaDB into a smart-spreadsheet.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Temporal",
+  "id": "temporal",
+  "available": true,
+  "short_desc": "Temporal - durable execution: write workflows as ordinary code and Temporal makes them crash-proof, with automatic retries, timers that survive restar...",
+  "author": "deployable-sh/stacks",
+  "port": 8080,
+  "categories": [
+    "development",
+    "automation"
+  ],
+  "description": "Temporal - durable execution: write workflows as ordinary code and Temporal makes them crash-proof, with automatic retries, timers that survive restarts, and a complete event history.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

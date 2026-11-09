@@ -1,0 +1,24 @@
+{
+  "name": "Logzio Logs Collector",
+  "id": "logzio-logs-collector",
+  "available": true,
+  "short_desc": "Docker container that uses Filebeat to collect logs from other Docker containers and forward those logs to your Logz.io account.",
+  "author": "mediadepot/templates",
+  "port": 8080,
+  "categories": [
+    "productivity",
+    "monitoring"
+  ],
+  "description": "Docker container that uses Filebeat to collect logs from other Docker containers and forward those logs to your Logz.io account.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mediadepot/templates/",
+  "website": "https://github.com/mediadepot/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

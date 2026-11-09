@@ -1,0 +1,19 @@
+services:
+  commandbox:
+    image: ortussolutions/commandbox:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - CFENGINE=lucee@4.5
+    volumes:
+    - ${APP_DATA_DIR}/data:/data
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,21 @@
+services:
+  clamav:
+    image: mkodockx/docker-clamav:alpine
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    volumes:
+    - ${APP_DATA_DIR}/etc_timezone:/etc/timezone
+    - ${APP_DATA_DIR}/etc_localtime:/etc/localtime
+    - ${APP_DATA_DIR}/etc_clamav:/etc/clamav
+    - ${APP_DATA_DIR}/var_lib_clamav:/var/lib/clamav
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3310
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

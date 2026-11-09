@@ -1,0 +1,23 @@
+{
+  "name": "Reveal.js",
+  "id": "revealjs",
+  "available": true,
+  "short_desc": "It is an open source HTML presentation framework. It enables anyone with a web browser to create fully featured and beautiful presentations for free |...",
+  "author": "xneo1/portainer_templates",
+  "port": 6060,
+  "categories": [
+    "utilities"
+  ],
+  "description": "It is an open source HTML presentation framework. It enables anyone with a web browser to create fully featured and beautiful presentations for free | Production Mode",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

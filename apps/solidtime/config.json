@@ -1,0 +1,23 @@
+{
+  "name": "SolidTime",
+  "id": "solidtime",
+  "available": true,
+  "short_desc": "The modern Open-Source Time Tracker",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "utilities"
+  ],
+  "description": "The modern Open-Source Time Tracker",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

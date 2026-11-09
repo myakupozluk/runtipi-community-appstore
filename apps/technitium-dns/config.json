@@ -1,0 +1,25 @@
+{
+  "name": "Technitium DNS",
+  "id": "technitium-dns",
+  "available": true,
+  "short_desc": "An open source authoritative and recursive DNS server with a web console for management. Source: https://github.com/TechnitiumSoftware/DnsServer",
+  "author": "Community",
+  "port": 5380,
+  "categories": [
+    "security",
+    "network",
+    "development"
+  ],
+  "description": "An open source authoritative and recursive DNS server with a web console for management. Source: https://github.com/TechnitiumSoftware/DnsServer",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

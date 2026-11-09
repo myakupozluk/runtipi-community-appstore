@@ -1,0 +1,25 @@
+{
+  "name": "SparkyFitness",
+  "id": "sparkyfitness",
+  "available": true,
+  "short_desc": "Fitness tracker for food, exercise, water, sleep, fasting, mood and body measurements, with goals, long-term reports and family sharing, plus sync fro...",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "Fitness tracker for food, exercise, water, sleep, fasting, mood and body measurements, with goals, long-term reports and family sharing, plus sync from phone health apps, Fitbit, Strava and more. Source: https://github.com/CodeWithCJ/SparkyFitness",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Budibase",
+  "id": "budibase",
+  "available": true,
+  "short_desc": "Budibase allows no-code users to build apps quickly, with more functionality available with a little bit of inline code.",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "Budibase allows no-code users to build apps quickly, with more functionality available with a little bit of inline code.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

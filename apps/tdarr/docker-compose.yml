@@ -1,0 +1,31 @@
+services:
+  tdarr:
+    image: ghcr.io/haveagitgat/tdarr:latest
+    restart: unless-stopped
+    network_mode: bridge
+    environment:
+    - TZ=Europe/Athens
+    - PUID=${PUID}
+    - PGID=${PGID}
+    - UMASK_SET=002
+    - serverIP=0.0.0.0
+    - serverPort=8266
+    - webUIPort=8265
+    - internalNode=true
+    - nodeID=MyInternalNode
+    volumes:
+    - ${APP_DATA_DIR}/tdarr_portainer_Files_AppData_Config_tdarr_server:/app/server
+    - ${APP_DATA_DIR}/tdarr_portainer_Files_AppData_Config_tdarr_configs:/app/configs
+    - ${APP_DATA_DIR}/tdarr_portainer_Files_AppData_Config_logs:/app/logs
+    - ${APP_DATA_DIR}/tdarr_portainer_media:/media
+    - ${APP_DATA_DIR}/tdarr_portainer_transcode_cache:/temp
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8265
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,25 @@
+{
+  "name": "ChromaDB",
+  "id": "chromadb",
+  "available": true,
+  "short_desc": "Chroma vector database, single container + volume, internal-only (Chroma has no built-in auth; the project network is the boundary, like the MongoDB t...",
+  "author": "deployable-sh/stacks",
+  "port": 8000,
+  "categories": [
+    "security",
+    "network",
+    "development"
+  ],
+  "description": "Chroma vector database, single container + volume, internal-only (Chroma has no built-in auth; the project network is the boundary, like the MongoDB template).",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

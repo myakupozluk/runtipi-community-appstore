@@ -1,0 +1,23 @@
+{
+  "name": "Filegator",
+  "id": "filegator",
+  "available": true,
+  "short_desc": "FileGator is a free, open-source, self-hosted web application for managing files and folders.",
+  "author": "xneo1/portainer_templates",
+  "port": 8886,
+  "categories": [
+    "data"
+  ],
+  "description": "FileGator is a free, open-source, self-hosted web application for managing files and folders.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

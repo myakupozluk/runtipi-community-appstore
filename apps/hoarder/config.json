@@ -1,0 +1,23 @@
+{
+  "name": "Hoarder",
+  "id": "hoarder",
+  "available": true,
+  "short_desc": "Hoarder is an open source 'Bookmark Everything' app that uses AI for automatically tagging the content you throw at it.",
+  "author": "xneo1/portainer_templates",
+  "port": 3088,
+  "categories": [
+    "media"
+  ],
+  "description": "Hoarder is an open source 'Bookmark Everything' app that uses AI for automatically tagging the content you throw at it.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Dify",
+  "id": "dify",
+  "available": true,
+  "short_desc": "Dify - the LLM application platform: a visual builder for chatbots, agents, and workflows, with built-in RAG, model management, and observability.",
+  "author": "deployable-sh/stacks",
+  "port": 8080,
+  "categories": [
+    "social"
+  ],
+  "description": "Dify - the LLM application platform: a visual builder for chatbots, agents, and workflows, with built-in RAG, model management, and observability.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

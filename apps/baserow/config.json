@@ -1,0 +1,24 @@
+{
+  "name": "Baserow (container)",
+  "id": "baserow",
+  "available": true,
+  "short_desc": "Open source no-code database and Airtable alternative",
+  "author": "mediadepot/templates",
+  "port": 80,
+  "categories": [
+    "development",
+    "data"
+  ],
+  "description": "Open source no-code database and Airtable alternative",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mediadepot/templates/",
+  "website": "https://github.com/mediadepot/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

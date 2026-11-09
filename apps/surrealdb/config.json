@@ -1,0 +1,25 @@
+{
+  "name": "SurrealDB",
+  "id": "surrealdb",
+  "available": true,
+  "short_desc": "SurrealDB is an end-to-end cloud native database for web, mobile, serverless, jamstack, backend, and traditional applications.",
+  "author": "novaspirit/pi-hosted",
+  "port": 8020,
+  "categories": [
+    "development",
+    "data",
+    "games"
+  ],
+  "description": "SurrealDB is an end-to-end cloud native database for web, mobile, serverless, jamstack, backend, and traditional applications.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

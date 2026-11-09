@@ -1,0 +1,27 @@
+services:
+  excalidraw:
+    build:
+      context: .
+      args:
+      - NODE_ENV=development
+    restart: on-failure
+    stdin_open: true
+    healthcheck:
+      disable: true
+    environment:
+    - NODE_ENV=development
+    volumes:
+    - ${APP_DATA_DIR}/excalidraw_portainer_Files_AppData_Config_excalidraw:/opt/node_app/app
+    - ${APP_DATA_DIR}/excalidraw_portainer_Files_AppData_Config_excalidraw_package.json:/opt/node_app/package.json
+    - ${APP_DATA_DIR}/excalidraw_portainer_Files_AppData_Config_excalidraw_yarn.lock:/opt/node_app/yarn.lock
+    - ${APP_DATA_DIR}/excalidraw_portainer_Files_AppData_Config_excalidraw_notused:/opt/node_app/app/node_modules
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

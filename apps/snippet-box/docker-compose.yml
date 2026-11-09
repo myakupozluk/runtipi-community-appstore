@@ -1,0 +1,16 @@
+services:
+  snippet-box:
+    image: pawelmalak/snippet-box
+    volumes:
+    - ${APP_DATA_DIR}/snippet-box_portainer_Files_AppData_Config_snippetbox_data:/app/data
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

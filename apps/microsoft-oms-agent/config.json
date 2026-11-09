@@ -1,0 +1,23 @@
+{
+  "name": "Microsoft OMS Agent",
+  "id": "microsoft-oms-agent",
+  "available": true,
+  "short_desc": "Microsoft Operations Management Suite Linux agent.",
+  "author": "portainer/templates",
+  "port": 8080,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Microsoft Operations Management Suite Linux agent.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/portainer/templates/",
+  "website": "https://github.com/portainer/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

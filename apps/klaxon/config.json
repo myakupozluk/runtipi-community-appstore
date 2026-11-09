@@ -1,0 +1,23 @@
+{
+  "name": "Klaxon",
+  "id": "klaxon",
+  "available": true,
+  "short_desc": "Klaxon is a free, quick to set up and easy to use robot that checks websites regularly so you don't have to.",
+  "author": "mediadepot/templates",
+  "port": 9993,
+  "categories": [
+    "productivity"
+  ],
+  "description": "Klaxon is a free, quick to set up and easy to use robot that checks websites regularly so you don't have to.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/mediadepot/templates/",
+  "website": "https://github.com/mediadepot/templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

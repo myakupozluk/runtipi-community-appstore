@@ -1,0 +1,25 @@
+{
+  "name": "Traefik (container)",
+  "id": "traefik",
+  "available": true,
+  "short_desc": "Cloud-Native Networking Stack That Just Works. Source: https://github.com/traefik/traefik",
+  "author": "novaspirit/pi-hosted",
+  "port": 80,
+  "categories": [
+    "security",
+    "network",
+    "development"
+  ],
+  "description": "Cloud-Native Networking Stack That Just Works. Source: https://github.com/traefik/traefik",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

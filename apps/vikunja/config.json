@@ -1,0 +1,24 @@
+{
+  "name": "Vikunja",
+  "id": "vikunja",
+  "available": true,
+  "short_desc": "The to-do app to organize your life.| Before use create custom template and Edit: VIKUNJA_SERVICE_FRONTENDURL , VIKUNJA_API_URL & VIKUNJA_SERVICE_JWTS...",
+  "author": "xneo1/portainer_templates",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity"
+  ],
+  "description": "The to-do app to organize your life.| Before use create custom template and Edit: VIKUNJA_SERVICE_FRONTENDURL , VIKUNJA_API_URL & VIKUNJA_SERVICE_JWTSECRET",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

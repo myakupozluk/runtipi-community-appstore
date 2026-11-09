@@ -1,0 +1,23 @@
+{
+  "name": "Redis Sentinel",
+  "id": "redis-sentinel",
+  "available": true,
+  "short_desc": "Redis Sentinel - high availability for Redis with automatic failover. This template runs one master, two replicas, and three sentinels that watch the ...",
+  "author": "deployable-sh/stacks",
+  "port": 8080,
+  "categories": [
+    "development"
+  ],
+  "description": "Redis Sentinel - high availability for Redis with automatic failover. This template runs one master, two replicas, and three sentinels that watch the master and promote a replica if it goes down.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

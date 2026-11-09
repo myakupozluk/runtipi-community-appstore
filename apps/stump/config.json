@@ -1,0 +1,25 @@
+{
+  "name": "Stump",
+  "id": "stump",
+  "available": true,
+  "short_desc": "A free and open source comics, manga, and digital book server with OPDS support. Source: https://github.com/stumpapp/stump",
+  "author": "Community",
+  "port": 10801,
+  "categories": [
+    "media",
+    "development",
+    "games"
+  ],
+  "description": "A free and open source comics, manga, and digital book server with OPDS support. Source: https://github.com/stumpapp/stump",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

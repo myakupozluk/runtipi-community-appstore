@@ -1,0 +1,27 @@
+services:
+  your-spotify:
+    image: linuxserver/your_spotify:latest
+    restart: unless-stopped
+    environment:
+    - TZ=${TZ}
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+    - APP_URL=http://localhost
+    - SPOTIFY_PUBLIC=
+    - SPOTIFY_SECRET=
+    - SPOTIFY_API_DELAY_MS=2000
+    - CORS=http://localhost:80,https://localhost:443
+    - MONGO_ENDPOINT=mongodb://mongo:27017/your_spotify
+    volumes:
+    - ${APP_DATA_DIR}/config:/config
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

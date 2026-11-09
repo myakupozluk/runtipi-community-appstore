@@ -1,0 +1,25 @@
+{
+  "name": "AFFiNE",
+  "id": "affine",
+  "available": true,
+  "short_desc": "Workspace that mixes docs, whiteboards and databases, so a page can flip between writing and an endless canvas. Edits sync to this server as you type....",
+  "author": "NotAFlightRisk/portainer-templates-extras",
+  "port": 8080,
+  "categories": [
+    "development",
+    "productivity",
+    "data"
+  ],
+  "description": "Workspace that mixes docs, whiteboards and databases, so a page can flip between writing and an endless canvas. Edits sync to this server as you type. Source: https://github.com/toeverything/AFFiNE",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "website": "https://github.com/NotAFlightRisk/portainer-templates-extras/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

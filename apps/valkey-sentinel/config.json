@@ -1,0 +1,23 @@
+{
+  "name": "Valkey Sentinel",
+  "id": "valkey-sentinel",
+  "available": true,
+  "short_desc": "High availability for Valkey with automatic failover, using Valkey's built-in Sentinel (the same design as Redis Sentinel). One master, two replicas, ...",
+  "author": "deployable-sh/stacks",
+  "port": 8080,
+  "categories": [
+    "development"
+  ],
+  "description": "High availability for Valkey with automatic failover, using Valkey's built-in Sentinel (the same design as Redis Sentinel). One master, two replicas, and three sentinels that watch the master and promote a replica if it fails.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Airsonic (container)",
+  "id": "airsonic",
+  "available": true,
+  "short_desc": "Airsonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your...",
+  "author": "Qballjos/portainer_templates",
+  "port": 4040,
+  "categories": [
+    "media"
+  ],
+  "description": "Airsonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/Qballjos/portainer_templates/",
+  "website": "https://github.com/Qballjos/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

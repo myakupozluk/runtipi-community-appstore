@@ -1,0 +1,24 @@
+{
+  "name": "Midarr",
+  "id": "midarr",
+  "available": true,
+  "short_desc": "Your media enjoyed through a minimal lightweight media server.",
+  "author": "xneo1/portainer_templates",
+  "port": 4000,
+  "categories": [
+    "media",
+    "games"
+  ],
+  "description": "Your media enjoyed through a minimal lightweight media server.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/xneo1/portainer_templates/",
+  "website": "https://github.com/xneo1/portainer_templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

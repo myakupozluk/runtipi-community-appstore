@@ -1,0 +1,62 @@
+services:
+  postgres:
+    image: postgres:18-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: systemprompt
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-systemprompt}
+      POSTGRES_DB: systemprompt
+    volumes:
+    - ${APP_DATA_DIR}/postgres_postgres_data:/var/lib/postgresql
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - pg_isready -U systemprompt -d systemprompt
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks:
+    - tipi_main_network
+  app:
+    image: ghcr.io/systempromptio/systemprompt-template:0
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgres://systemprompt:${POSTGRES_PASSWORD:-systemprompt}@postgres:5432/systemprompt
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      EXTERNAL_URL: ${EXTERNAL_URL:-}
+      HOST: ${HOST:-0.0.0.0}
+      PORT: 8080
+    volumes:
+    - ${APP_DATA_DIR}/app_app_web:/app/web
+    - ${APP_DATA_DIR}/app_app_storage_data:/app/storage/data
+    - ${APP_DATA_DIR}/app_app_profiles:/app/services/profiles/docker
+    healthcheck:
+      test:
+      - CMD
+      - curl
+      - -f
+      - http://localhost:8080/api/v1/health
+      interval: 30s
+      timeout: 10s
+      start_period: 300s
+      retries: 3
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+volumes:
+  postgres_data: null
+  app_web: null
+  app_storage_data: null
+  app_profiles: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

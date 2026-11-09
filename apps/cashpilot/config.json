@@ -1,0 +1,25 @@
+{
+  "name": "CashPilot",
+  "id": "cashpilot",
+  "available": true,
+  "short_desc": "Self-hosted passive income orchestrator for bandwidth sharing, DePIN, storage, and GPU compute services. Source: https://github.com/GeiserX/CashPilot",
+  "author": "Community",
+  "port": 8080,
+  "categories": [
+    "development",
+    "data",
+    "monitoring"
+  ],
+  "description": "Self-hosted passive income orchestrator for bandwidth sharing, DePIN, storage, and GPU compute services. Source: https://github.com/GeiserX/CashPilot",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/runtipi/runtipi",
+  "website": "https://github.com/runtipi/runtipi",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

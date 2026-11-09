@@ -1,0 +1,24 @@
+name: agent-box
+services:
+  agent-box:
+    build: .
+    image: miget-agent-box:local
+    restart: unless-stopped
+    environment:
+      TTYD_USERNAME: ${TTYD_USERNAME:-agent}
+      TTYD_PASSWORD: ${TTYD_PASSWORD}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+    volumes:
+    - ${APP_DATA_DIR}/agent-box_workspace:/workspace
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+volumes:
+  workspace: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

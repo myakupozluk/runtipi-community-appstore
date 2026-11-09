@@ -1,0 +1,24 @@
+{
+  "name": "ArchiSteamFarm",
+  "id": "archisteamfarm",
+  "available": true,
+  "short_desc": "C# application with primary purpose of farming Steam cards from multiple accounts simultaneously. Source: https://github.com/JustArchiNET/ArchiSteamFa...",
+  "author": "novaspirit/pi-hosted",
+  "port": 1242,
+  "categories": [
+    "development",
+    "games"
+  ],
+  "description": "C# application with primary purpose of farming Steam cards from multiple accounts simultaneously. Source: https://github.com/JustArchiNET/ArchiSteamFarm",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

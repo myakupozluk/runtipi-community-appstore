@@ -1,0 +1,25 @@
+{
+  "name": "LLDAP",
+  "id": "lldap",
+  "available": true,
+  "short_desc": "This project is a lightweight authentication server that provides an opinionated, simplified LDAP interface for authentication.",
+  "author": "novaspirit/pi-hosted",
+  "port": 3890,
+  "categories": [
+    "security",
+    "development",
+    "productivity"
+  ],
+  "description": "This project is a lightweight authentication server that provides an opinionated, simplified LDAP interface for authentication.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/novaspirit/pi-hosted/",
+  "website": "https://github.com/novaspirit/pi-hosted/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

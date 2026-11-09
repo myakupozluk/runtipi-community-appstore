@@ -1,0 +1,23 @@
+{
+  "name": "Buildkite Agent",
+  "id": "buildkite-agent",
+  "available": true,
+  "short_desc": "A Buildkite agent: Buildkite hosts the UI and orchestration, your agents run the jobs - the hybrid-CI model where compute was always meant to be yours...",
+  "author": "deployable-sh/stacks",
+  "port": 8080,
+  "categories": [
+    "development"
+  ],
+  "description": "A Buildkite agent: Buildkite hosts the UI and orchestration, your agents run the jobs - the hybrid-CI model where compute was always meant to be yours. This is the cleanest runner in the catalogue: official image, one token, done.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

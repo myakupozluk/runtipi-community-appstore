@@ -1,0 +1,25 @@
+{
+  "name": "Spotube",
+  "id": "spotube",
+  "available": true,
+  "short_desc": "[Spotube](https://spotube.krtirtho.dev/) is an open source, cross-platform Spotify client compatible across multiple platforms utilizing Spotify's dat...",
+  "author": "technorabilia/portainer-templates",
+  "port": 3000,
+  "categories": [
+    "media",
+    "development",
+    "data"
+  ],
+  "description": "[Spotube](https://spotube.krtirtho.dev/) is an open source, cross-platform Spotify client compatible across multiple platforms utilizing Spotify's data API and YouTube, Piped.video or JioSaavn as an audio source, eliminating the need for Spotify Premium",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

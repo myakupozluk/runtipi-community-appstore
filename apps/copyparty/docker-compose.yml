@@ -1,0 +1,21 @@
+services:
+  2fauth:
+    image: 2fauth/2fauth:8
+    restart: unless-stopped
+    environment:
+      APP_KEY: ${TWOFAUTH_APP_KEY:?Set an app key of exactly 32 characters}
+      APP_URL: ''
+    volumes:
+    - ${APP_DATA_DIR}/2fauth_2fauth-data:/2fauth
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+volumes:
+  2fauth-data: null
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

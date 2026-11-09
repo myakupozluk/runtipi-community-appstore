@@ -1,0 +1,25 @@
+{
+  "name": "Audiosilo",
+  "id": "audiosilo",
+  "available": true,
+  "short_desc": "[AudioSilo](https://audiosilo.app) is a self-hosted audiobook server. Point it at your audiobook folders and listen from the built-in web player or th...",
+  "author": "technorabilia/portainer-templates",
+  "port": 8080,
+  "categories": [
+    "media",
+    "development",
+    "data"
+  ],
+  "description": "[AudioSilo](https://audiosilo.app) is a self-hosted audiobook server. Point it at your audiobook folders and listen from the built-in web player or the AudioSilo apps for iOS and Android, with listening progress synced across devices.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/technorabilia/portainer-templates/",
+  "website": "https://github.com/technorabilia/portainer-templates/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

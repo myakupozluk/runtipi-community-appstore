@@ -1,0 +1,35 @@
+services:
+  petio:
+    image: ghcr.io/petio-team/petio
+    environment:
+    - PUID=0
+    - PGID=0
+    - TZ=Europe/Athens
+    volumes:
+    - ${APP_DATA_DIR}/petio_portainer_Files_AppData_Config_petio:/config
+    restart: unless-stopped
+    depends_on:
+    - petio_mongo_db
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 7777
+  petio_mongo_db:
+    image: mongo:4.4.18
+    hostname: mongo
+    environment:
+    - PUID=0
+    - PGID=0
+    - TZ=Europe/Athens
+    volumes:
+    - ${APP_DATA_DIR}/petio_mongo_db_portainer_Files_AppData_Config_petio_mongo_db_config:/data/configdb
+    - ${APP_DATA_DIR}/petio_mongo_db_portainer_Files_AppData_Config_petio_mongo_db_DB:/data/db
+    restart: unless-stopped
+    networks:
+    - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

@@ -1,0 +1,25 @@
+{
+  "name": "Cronicle",
+  "id": "cronicle",
+  "available": true,
+  "short_desc": "Cronicle, a cron replacement with a web UI: schedules, run history, chaining, retries, and alerts. Single container, two small volumes (job data + log...",
+  "author": "deployable-sh/stacks",
+  "port": 5000,
+  "categories": [
+    "data",
+    "automation",
+    "monitoring"
+  ],
+  "description": "Cronicle, a cron replacement with a web UI: schedules, run history, chaining, retries, and alerts. Single container, two small volumes (job data + logs).",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/deployable-sh/stacks/",
+  "website": "https://github.com/deployable-sh/stacks/",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "form_fields": []
+}

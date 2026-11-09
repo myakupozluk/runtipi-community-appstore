@@ -1,0 +1,16 @@
+services:
+  pve-exporter:
+    image: prompve/prometheus-pve-exporter
+    volumes:
+    - ${APP_DATA_DIR}/pve-exporter_portainer_Files_AppData_Config_pve-exporter:/etc/pve.yml
+    restart: always
+    networks:
+    - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 9221
+networks:
+  tipi_main_network:
+    external: true
+x-runtipi:
+  schema_version: 2

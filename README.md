@@ -30,7 +30,7 @@ Bu depo, [Runtipi](https://runtipi.io) sunucunuz için **833+** popüler açık 
 2. Sol menüden **Settings (Ayarlar)** ➔ **App Stores (Uygulama Mağazaları)** sekmesine gidin.
 3. **"Add App Store"** butonuna tıklayın, mağazaya bir isim verin ve bu GitHub repo adresinizi yapıştırıp kaydedin:
    ```text
-   https://github.com/KULLANICI_ADINIZ/runtipi-community-appstore
+   https://github.com/myakupozluk/runtipi-community-appstore
    ```
 4. Artık **App Store** sayfanıza girdiğinizde 800'den fazla yeni uygulama anında listelenecektir!
 
